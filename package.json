@@ -1,0 +1,11 @@
+{
+  "name": "ai-history-timeline",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "update": "node scripts/extract-obsidian-events.mjs",
+    "serve": "python3 -m http.server 4173",
+    "deploy": "bash scripts/publish.sh"
+  }
+}
