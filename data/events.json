@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T05:15:37.826Z",
+  "generatedAt": "2026-09-25T05:55:40.857Z",
   "events": [
     {
       "id": "1950-computing-machinery-and-intelligence",
@@ -49,7 +49,6 @@
       ],
       "allConcepts": [
         "Technological Frame",
-        "Agenda Control",
         "Closure",
         "Internalist History",
         "Contextualist History"
@@ -356,12 +355,11 @@
       "type": "State / policy",
       "concepts": [
         "Statutory Consolidation",
-        "Agenda Control",
-        "Public Interest"
+        "Public Interest",
+        "Naturalization"
       ],
       "allConcepts": [
         "Statutory Consolidation",
-        "Agenda Control",
         "Public Interest",
         "Naturalization",
         "Path Dependence"
@@ -464,8 +462,7 @@
       "allConcepts": [
         "Closure",
         "Corporate Self-regulation",
-        "Naturalization",
-        "Agenda Control"
+        "Naturalization"
       ],
       "summary": "Google publishes seven principles meant to \"actively govern\" its AI research and product decisions — social benefit, avoiding unfair bias, safety, accountability, privacy, scientific excellence, and restricting use to purposes consistent with the principles — plus four categories of application it says it will not pursue, including weapons whose principal purpose is to injure people. The post frames this as a response to AI's growing reach into society and presents the principles as continuous with commitments made in Google's 2004 Founders' Letter. The cached page itself carries a later editorial note, dated February 4, 2025, saying the principles have since been updated; that note is a fact about the page's later history, not part of the 2018 text analyzed here.",
       "sourceNote": "\"AI at Google - our principles\"",
@@ -489,12 +486,11 @@
       "type": "State / policy",
       "concepts": [
         "Statutory Consolidation",
-        "Agenda Control",
-        "Public Interest"
+        "Public Interest",
+        "Naturalization"
       ],
       "allConcepts": [
         "Statutory Consolidation",
-        "Agenda Control",
         "Public Interest",
         "Naturalization",
         "Path Dependence"
@@ -644,12 +640,11 @@
       "concepts": [
         "Technological Momentum",
         "Unnatural Monopoly",
-        "Agenda Control"
+        "Naturalization"
       ],
       "allConcepts": [
         "Technological Momentum",
         "Unnatural Monopoly",
-        "Agenda Control",
         "Naturalization",
         "Public Interest"
       ],
@@ -679,12 +674,11 @@
       "concepts": [
         "Statutory Consolidation",
         "Corporate Self-regulation",
-        "Agenda Control"
+        "Public Interest"
       ],
       "allConcepts": [
         "Statutory Consolidation",
         "Corporate Self-regulation",
-        "Agenda Control",
         "Public Interest",
         "Interpretative Flexibility"
       ],
@@ -719,8 +713,7 @@
         "System Builders",
         "Black Box",
         "Closure",
-        "Corporate Self-regulation",
-        "Agenda Control"
+        "Corporate Self-regulation"
       ],
       "summary": "The 2021 press release announces a $124 million Series A for Anthropic, led by Jaan Tallinn and joined by Dustin Moskovitz and Eric Schmidt among others, to fund research into \"reliable and steerable AI systems.\" The 2023 essay, written after Anthropic had shipped Claude, lays out the company's account of why it exists: rapid AI progress is likely within a decade, nobody yet knows how to make powerful systems reliably safe, and Anthropic's answer is an empirically driven, \"portfolio\" approach across several safety research directions, pursued on frontier-scale models because the company argues smaller models cannot expose the problems that matter.",
       "sourceNote": "\"Anthropic raises $124 million\"",
@@ -746,12 +739,11 @@
       "type": "State / policy",
       "concepts": [
         "Closure",
-        "Agenda Control",
-        "Public Interest"
+        "Public Interest",
+        "Statutory Consolidation"
       ],
       "allConcepts": [
         "Closure",
-        "Agenda Control",
         "Public Interest",
         "Statutory Consolidation",
         "Naturalization",
@@ -812,12 +804,11 @@
       "type": "State / policy",
       "concepts": [
         "Statutory Consolidation",
-        "Agenda Control",
-        "Public Interest"
+        "Public Interest",
+        "Naturalization"
       ],
       "allConcepts": [
         "Statutory Consolidation",
-        "Agenda Control",
         "Public Interest",
         "Naturalization",
         "Path Dependence"
@@ -834,6 +825,39 @@
         "2021-unesco-ai-ethics-recommendation",
         "2023-nist-ai-rmf-1-0",
         "2023-china-s-generative-ai-measures"
+      ]
+    },
+    {
+      "id": "2022-us-chip-export-controls",
+      "title": "US chip export controls",
+      "yearLabel": "2022-10-07",
+      "date": "2022-10-07",
+      "startYear": 2022,
+      "endYear": 2022,
+      "type": "State / policy",
+      "concepts": [
+        "Unnatural Monopoly",
+        "Technological Momentum",
+        "System Builders"
+      ],
+      "allConcepts": [
+        "Unnatural Monopoly",
+        "Technological Momentum",
+        "System Builders",
+        "Path Dependence"
+      ],
+      "summary": "The Bureau of Industry and Security's interim final rule amends the Export Administration Regulations to block China's access to advanced AI chips, the chip-design software used to create them, and the manufacturing equipment used to fabricate them, plus a fourth control on the equipment used to build that manufacturing equipment. Announced October 7, 2022, seven weeks before ChatGPT's public release, the rule is not a response to a consumer AI product; it targets supercomputing and military-modernization capability directly. Allen's CSIS analysis, published four days later, argues the rule's four provisions interlock into a single strategy of controlling technological \"chokepoints\" across the semiconductor supply chain, rather than four separate, independent measures.",
+      "sourceNote": "BIS October 2022 export controls on advanced computing",
+      "sourceUrl": "https://www.federalregister.gov/documents/2022/10/13/2022-21658/implementation-of-additional-export-controls-certain-advanced-computing-and-semiconductor",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 2 · The panic, 2022–23",
+      "origin": "note",
+      "links": [
+        "2025-amodei-on-deepseek-and-export-controls",
+        "2023-senate-ai-oversight-hearing",
+        "2023-the-pause-letter",
+        "2022-chatgpt-launch"
       ]
     },
     {
@@ -942,7 +966,6 @@
         "Statutory Consolidation",
         "Communications Act of 1934",
         "Corporate Self-regulation",
-        "Agenda Control",
         "Economic Consolidation",
         "Naturalization",
         "Public Interest"
@@ -991,6 +1014,69 @@
       ]
     },
     {
+      "id": "2023-the-pause-letter",
+      "title": "The pause letter",
+      "yearLabel": "2023-03-22",
+      "date": "2023-03-22",
+      "startYear": 2023,
+      "endYear": 2023,
+      "type": "Critique / governance",
+      "concepts": [
+        "Crisis of Control",
+        "Statutory Consolidation",
+        "Public Interest"
+      ],
+      "allConcepts": [
+        "Crisis of Control",
+        "Statutory Consolidation",
+        "Public Interest"
+      ],
+      "summary": "Two months apart, two civil-society interventions took opposite rhetorical approaches to the same underlying worry. The Future of Life Institute's open letter calls on \"all AI labs to immediately pause for at least 6 months the training of AI systems more powerful than GPT-4,\" backing that specific demand with roughly twenty paragraphs of argument, footnoted citations, and a list of governance measures. The Center for AI Safety's statement, published ten weeks later, makes no specific demand at all — it asks signatories to agree only that mitigating AI extinction risk should be a global priority, alongside risks like pandemics and nuclear war. The pause was not observed by any major lab; the statement, asking for far less, was signed by a wide range of researchers and public figures.",
+      "sourceNote": "\"Pause Giant AI Experiments\"",
+      "sourceUrl": "https://futureoflife.org/open-letter/pause-giant-ai-experiments/",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 2 · The panic, 2022–23",
+      "origin": "note",
+      "links": [
+        "2023-senate-ai-oversight-hearing",
+        "2021-stochastic-parrots",
+        "2015-openai-founded-as-a-nonprofit",
+        "2023-italy-suspends-chatgpt"
+      ]
+    },
+    {
+      "id": "2023-italy-suspends-chatgpt",
+      "title": "Italy suspends ChatGPT",
+      "yearLabel": "2023-03-30",
+      "date": "2023-03-30",
+      "startYear": 2023,
+      "endYear": 2023,
+      "type": "State / policy",
+      "concepts": [
+        "Statutory Consolidation",
+        "Path Dependence",
+        "Naturalization"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Path Dependence",
+        "Naturalization"
+      ],
+      "summary": "Italy's data protection authority orders OpenAI L.L.C., as a matter of urgency, to provisionally limit the processing of personal data of persons located in Italy, effective immediately upon receipt of the order. The order is written entirely in the register of data-protection law: it does not evaluate ChatGPT as an AI system in the abstract, but finds specific violations of named articles of the GDPR — the absence of any privacy notice to users and data subjects, the absence of a legal basis for using personal data to train the model, factual inaccuracy in the data ChatGPT processes about individuals, and the absence of any age-verification mechanism despite a stated 13-plus age requirement.",
+      "sourceNote": "Garante provvedimento n. 112 of 30 March 2023",
+      "sourceUrl": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9870832",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 2 · The panic, 2022–23",
+      "origin": "note",
+      "links": [
+        "2023-senate-ai-oversight-hearing",
+        "2023-the-pause-letter",
+        "2022-chatgpt-launch"
+      ]
+    },
+    {
       "id": "2023-brain-and-deepmind-merge",
       "title": "Brain and DeepMind merge",
       "yearLabel": "2023-04-20",
@@ -1000,12 +1086,11 @@
       "type": "Corporate release",
       "concepts": [
         "System Builders",
-        "Agenda Control",
-        "Black Box"
+        "Black Box",
+        "Naturalization"
       ],
       "allConcepts": [
         "System Builders",
-        "Agenda Control",
         "Black Box",
         "Naturalization"
       ],
@@ -1045,6 +1130,70 @@
       ]
     },
     {
+      "id": "2023-senate-ai-oversight-hearing",
+      "title": "Senate AI oversight hearing",
+      "yearLabel": "2023-05-16",
+      "date": "2023-05-16",
+      "startYear": 2023,
+      "endYear": 2023,
+      "type": "State / policy",
+      "concepts": [
+        "Statutory Consolidation",
+        "Corporate Self-regulation",
+        "Crisis of Control"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Corporate Self-regulation",
+        "Crisis of Control",
+        "Public Interest"
+      ],
+      "summary": "At the first in a planned series of hearings, the Subcommittee on Privacy, Technology, and the Law heard from OpenAI CEO Sam Altman, NYU professor emeritus Gary Marcus, and IBM chief privacy and trust officer Christina Montgomery on how, or whether, to regulate generative AI. The hearing is not a single position but a record of three different answers converging and diverging in real time: Altman and Marcus both endorse a licensing regime tied to a new federal agency, Montgomery argues against a new agency in favor of \"precision regulation\" of specific use cases, and several senators state they already have bills in progress that touch pieces of the problem, none of them a comprehensive AI statute.",
+      "sourceNote": "\"Oversight of A.I. - Rules for Artificial Intelligence\"",
+      "sourceUrl": "https://www.govinfo.gov/content/pkg/CHRG-118shrg52706/html/CHRG-118shrg52706.htm",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 2 · The panic, 2022–23",
+      "origin": "note",
+      "links": [
+        "2015-openai-founded-as-a-nonprofit",
+        "2023-openai-lobbied-the-eu-time",
+        "2023-anthropic-s-responsible-scaling-policy"
+      ]
+    },
+    {
+      "id": "2023-openai-lobbied-the-eu-time",
+      "title": "OpenAI lobbied the EU (TIME)",
+      "yearLabel": "2023-06-20",
+      "date": "2023-06-20",
+      "startYear": 2023,
+      "endYear": 2023,
+      "type": "Critique / governance",
+      "concepts": [
+        "Statutory Consolidation",
+        "Corporate Self-regulation",
+        "Naturalization"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Corporate Self-regulation",
+        "Naturalization"
+      ],
+      "summary": "Based on a previously unpublished OpenAI white paper to the European Commission obtained through freedom-of-information requests, Perrigo reports that while Sam Altman toured world capitals publicly calling for AI regulation, OpenAI was simultaneously lobbying European Commission and Council officials to keep general-purpose systems like GPT-3 out of the EU AI Act's \"high risk\" category. The article documents specific amendments OpenAI proposed in September 2022 and argues that the final text approved by the European Parliament in June 2023 incorporated several of them, including the introduction of a separate, less-restrictive \"foundation models\" category.",
+      "sourceNote": "\"Exclusive - OpenAI Lobbied the E.U. to Water Down AI Regulation\"",
+      "sourceUrl": "https://time.com/6288245/openai-eu-lobbying-ai-act/",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 2 · The panic, 2022–23",
+      "origin": "note",
+      "links": [
+        "2021-eu-proposes-the-ai-act",
+        "2023-senate-ai-oversight-hearing",
+        "2020-language-models-are-few-shot-learnings",
+        "2024-eu-ai-act-enters-the-official-journal"
+      ]
+    },
+    {
       "id": "2023-white-house-voluntary-ai-commitments",
       "title": "White House voluntary AI commitments",
       "yearLabel": "2023-07-21",
@@ -1054,12 +1203,11 @@
       "type": "State / policy",
       "concepts": [
         "Statutory Consolidation",
-        "Agenda Control",
-        "Corporate Self-regulation"
+        "Corporate Self-regulation",
+        "Public Interest"
       ],
       "allConcepts": [
         "Statutory Consolidation",
-        "Agenda Control",
         "Corporate Self-regulation",
         "Public Interest",
         "Pseudo-consent"
@@ -1073,6 +1221,7 @@
       "origin": "note",
       "links": [
         "2023-nist-ai-rmf-1-0",
+        "2023-eo-14110-on-safe-secure-ai",
         "2023-bletchley-declaration"
       ]
     },
@@ -1086,12 +1235,10 @@
       "type": "Field formation",
       "concepts": [
         "Closure",
-        "Agenda Control",
         "Black Box"
       ],
       "allConcepts": [
         "Closure",
-        "Agenda Control",
         "Black Box"
       ],
       "summary": "In this interview, Dwarkesh Patel asks Anthropic CEO Dario Amodei to explain how he came to believe in AI scaling, and Amodei answers with a personal intellectual history: speech recognition experiments at Baidu from 2014, a \"Zen Koan\" from Ilya Sutskever about models wanting to learn, GPT-1 and GPT-3, and the \"early days at Anthropic.\" The interview does not have a chapter on Anthropic's founding — its published timestamps run from \"Scaling\" straight through interpretability, bioterrorism, China and cybersecurity to the \"Long Term Benefit Trust\" — so the founding story surfaces only twice, briefly, inside answers about something else.",
@@ -1139,6 +1286,71 @@
       ]
     },
     {
+      "id": "2023-anthropic-s-responsible-scaling-policy",
+      "title": "Anthropic's Responsible Scaling Policy",
+      "yearLabel": "2023-09-19",
+      "date": "2023-09-19",
+      "startYear": 2023,
+      "endYear": 2023,
+      "type": "Corporate release",
+      "concepts": [
+        "Corporate Self-regulation",
+        "Statutory Consolidation",
+        "Naturalization"
+      ],
+      "allConcepts": [
+        "Corporate Self-regulation",
+        "Statutory Consolidation",
+        "Naturalization"
+      ],
+      "summary": "Anthropic publishes a self-imposed framework, AI Safety Levels (ASL), that ties specific safety, security, and operational obligations to a model's assessed potential for catastrophic risk, modeled loosely on the US government's biosafety level system. The company states the policy has been formally approved by its board and describes it as a voluntary commitment that would, in principle, require pausing further scaling if safety procedures cannot keep pace with capability — while also stating explicitly that it hopes other frontier labs adopt a similar standard.",
+      "sourceNote": "\"Announcing Anthropic's Responsible Scaling Policy\"",
+      "sourceUrl": "https://www.anthropic.com/news/anthropics-responsible-scaling-policy",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 2 · The panic, 2022–23",
+      "origin": "note",
+      "links": [
+        "2023-senate-ai-oversight-hearing",
+        "2021-anthropic-s-founding-raise",
+        "2023-the-pause-letter"
+      ]
+    },
+    {
+      "id": "2023-eo-14110-on-safe-secure-ai",
+      "title": "EO 14110 on safe, secure AI",
+      "yearLabel": "2023-10-30",
+      "date": "2023-10-30",
+      "startYear": 2023,
+      "endYear": 2023,
+      "type": "State / policy",
+      "concepts": [
+        "Interpretative Flexibility",
+        "Unnatural Monopoly",
+        "Statutory Consolidation"
+      ],
+      "allConcepts": [
+        "Interpretative Flexibility",
+        "Unnatural Monopoly",
+        "Statutory Consolidation",
+        "Public Interest",
+        "Path Dependence"
+      ],
+      "summary": "The order directs the executive branch to govern AI development and use under eight stated principles — safety, competition, worker protection, equity, consumer protection, privacy, government capacity, and international leadership — and, operationally, requires developers of the largest AI models and owners of the largest computing clusters to report to the federal government. Section 4.2 uses Defense Production Act authority to compel that reporting; Section 4.6 opens, rather than settles, the separate question of what to do about models whose weights are released publicly.",
+      "sourceNote": "Executive Order 14110 - Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence",
+      "sourceUrl": "https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 9 · The orders",
+      "origin": "note",
+      "links": [
+        "2023-nist-ai-rmf-1-0",
+        "2023-white-house-voluntary-ai-commitments",
+        "2023-bletchley-declaration",
+        "2022-blueprint-for-an-ai-bill-of-rights"
+      ]
+    },
+    {
       "id": "2023-bletchley-declaration",
       "title": "Bletchley Declaration",
       "yearLabel": "2023-11-01",
@@ -1148,12 +1360,11 @@
       "type": "State / policy",
       "concepts": [
         "Interpretative Flexibility",
-        "Agenda Control",
-        "Public Interest"
+        "Public Interest",
+        "Co-production"
       ],
       "allConcepts": [
         "Interpretative Flexibility",
-        "Agenda Control",
         "Public Interest",
         "Co-production"
       ],
@@ -1165,6 +1376,7 @@
       "week": "Nov 9 · The orders",
       "origin": "note",
       "links": [
+        "2023-eo-14110-on-safe-secure-ai",
         "2025-international-ai-safety-report",
         "2024-seoul-declaration-and-commitments"
       ]
@@ -1214,8 +1426,7 @@
       "allConcepts": [
         "Appropriation",
         "Black Box",
-        "Statutory Consolidation",
-        "Agenda Control"
+        "Statutory Consolidation"
       ],
       "summary": "The Times alleges Microsoft and OpenAI built ChatGPT, Bing Chat/Copilot, and related products by copying millions of Times articles without permission, that this training was not \"fair use\" because the resulting products substitute for and compete with Times journalism rather than transforming it, and that GPT-4 can be prompted to output near-verbatim reproductions of specific Times articles, which the complaint documents in an attached exhibit. It seeks damages under the Copyright Act after months of failed negotiation with both companies.",
       "sourceNote": "The New York Times Co. v. Microsoft and OpenAI, complaint",
@@ -1240,12 +1451,11 @@
       "type": "Corporate release",
       "concepts": [
         "System Builders",
-        "Agenda Control",
-        "Black Box"
+        "Black Box",
+        "Path Dependence"
       ],
       "allConcepts": [
         "System Builders",
-        "Agenda Control",
         "Black Box",
         "Path Dependence",
         "Naturalization"
@@ -1272,12 +1482,10 @@
       "endYear": 2024,
       "type": "Corporate release",
       "concepts": [
-        "Agenda Control",
         "Closure",
         "Corporate Self-regulation"
       ],
       "allConcepts": [
-        "Agenda Control",
         "Closure",
         "Corporate Self-regulation"
       ],
@@ -1293,6 +1501,37 @@
         "2015-openai-founded-as-a-nonprofit",
         "2024-toner-on-the-openai-board-crisis",
         "2025-openai-s-recapitalization"
+      ]
+    },
+    {
+      "id": "2024-colorado-ai-act-signed",
+      "title": "Colorado AI Act signed",
+      "yearLabel": "2024-05-17",
+      "date": "2024-05-17",
+      "startYear": 2024,
+      "endYear": 2024,
+      "type": "State / policy",
+      "concepts": [
+        "Statutory Consolidation",
+        "Corporate Self-regulation",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Corporate Self-regulation",
+        "Path Dependence"
+      ],
+      "summary": "Colorado's SB 24-205 imposes duties on developers and deployers of \"high-risk\" AI systems — those that make or are a substantial factor in a \"consequential decision\" affecting a consumer's access to things like employment, housing, credit, health care, or education. Rather than regulating by training compute, as California's SB 1047 would attempt four months later, the statute regulates by the decision an AI system participates in, requiring both the company that builds the system and the company that uses it to exercise reasonable care against \"algorithmic discrimination\" and to document how they do so.",
+      "sourceNote": "Colorado AI Act (SB 24-205)",
+      "sourceUrl": "",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 16 · 2024: Brussels, Sacramento, courts",
+      "origin": "note",
+      "links": [
+        "2024-sb-1047-passed-then-vetoed",
+        "2024-eu-ai-act-enters-the-official-journal",
+        "2026-xai-and-doj-sue-colorado"
       ]
     },
     {
@@ -1344,7 +1583,6 @@
         "Corporate Self-regulation",
         "Statutory Consolidation",
         "System Builders",
-        "Agenda Control",
         "Public Interest"
       ],
       "summary": "Eleven governments and the EU, meeting six months after Bletchley, affirm continued cooperation on AI safety, innovation, and inclusivity, and note a companion document — the Frontier AI Safety Commitments — in which sixteen named AI developers pledge to publish a safety framework addressing severe risks by the next summit, in France. The commitments set out what those frameworks must cover: identifying and assessing risks, defining thresholds at which risk becomes \"intolerable,\" and being transparent about how the framework is implemented — without specifying who verifies that any company has actually met these commitments.",
@@ -1456,12 +1694,11 @@
       "type": "State / policy",
       "concepts": [
         "Statutory Consolidation",
-        "Agenda Control",
-        "Corporate Self-regulation"
+        "Corporate Self-regulation",
+        "Path Dependence"
       ],
       "allConcepts": [
         "Statutory Consolidation",
-        "Agenda Control",
         "Corporate Self-regulation",
         "Path Dependence",
         "Technological Frame"
@@ -1475,6 +1712,67 @@
       "origin": "note",
       "links": [
         "2021-eu-proposes-the-ai-act"
+      ]
+    },
+    {
+      "id": "2024-zvi-and-ball-on-sb-1047",
+      "title": "Zvi and Ball on SB 1047",
+      "yearLabel": "2024-08-20",
+      "date": "2024-08-20",
+      "startYear": 2024,
+      "endYear": 2024,
+      "type": "Critique / governance",
+      "concepts": [
+        "Corporate Self-regulation",
+        "Interpretative Flexibility",
+        "Naturalization"
+      ],
+      "allConcepts": [
+        "Corporate Self-regulation",
+        "Interpretative Flexibility",
+        "Naturalization"
+      ],
+      "summary": "Zvi Mowshowitz reads the just-amended SB 1047 clause by clause and concludes it is \"by far the best light-touch bill we are ever going to get\": a narrow, compute-thresholded, reasonable-care standard that leaves nearly all AI development untouched. Dean Ball reads the same amended bill and concludes California should not pass it at all, closing that \"SB 1047 remains, alas, California's effort to strangle AI.\" Both newsletters describe the identical statutory text — the same thresholds, the same Board of Frontier Models, the same reasonable-care standard — and disagree entirely about what following it would cost.",
+      "sourceNote": "\"Guide to SB 1047\"",
+      "sourceUrl": "https://thezvi.wordpress.com/2024/08/20/guide-to-sb-1047/",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 16 · 2024: Brussels, Sacramento, courts",
+      "origin": "note",
+      "links": [
+        "2024-sb-1047-passed-then-vetoed",
+        "2024-anthropic-s-sb-1047-letter"
+      ]
+    },
+    {
+      "id": "2024-anthropic-s-sb-1047-letter",
+      "title": "Anthropic's SB 1047 letter",
+      "yearLabel": "2024-08-21",
+      "date": "2024-08-21",
+      "startYear": 2024,
+      "endYear": 2024,
+      "type": "Corporate release",
+      "concepts": [
+        "Corporate Self-regulation",
+        "Interpretative Flexibility",
+        "Naturalization"
+      ],
+      "allConcepts": [
+        "Corporate Self-regulation",
+        "Interpretative Flexibility",
+        "Naturalization"
+      ],
+      "summary": "Anthropic CEO Dario Amodei writes to Governor Newsom five days before the veto deadline to say the amended SB 1047's \"benefits likely outweigh its costs,\" while flagging specific remaining concerns and laying out three general principles — transparency, effective incentives, and minimized collateral damage — that Anthropic argues any frontier-AI statute should meet. Five days earlier, Speaker Emerita Nancy Pelosi issued a statement opposing the same bill, calling it \"well-intentioned but ill informed\" and citing Stanford's Fei-Fei Li's warning that it would \"stifle innovation\" and \"harm the U.S. AI ecosystem.\" A frontier AI company qualifiedly endorses the bill regulating it; a senior Democratic leader from the bill's home state opposes it.",
+      "sourceNote": "Anthropic's letter to Governor Newsom on SB 1047",
+      "sourceUrl": "",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 16 · 2024: Brussels, Sacramento, courts",
+      "origin": "note",
+      "links": [
+        "2024-sb-1047-passed-then-vetoed",
+        "2024-zvi-and-ball-on-sb-1047",
+        "2023-anthropic-s-responsible-scaling-policy"
       ]
     },
     {
@@ -1493,8 +1791,7 @@
       "allConcepts": [
         "Closure",
         "Black Box",
-        "Technological Frame",
-        "Agenda Control"
+        "Technological Frame"
       ],
       "summary": "OpenAI announces o1-preview, a model trained with large-scale reinforcement learning to use an extended chain of thought before answering, and argues this establishes a new, separate axis of improvement alongside pretraining, one where \"o1 performance smoothly improves with both train-time and test-time compute\". The post frames this as a new category of product — reasoning bought at inference time, not only at training time — and supports the claim with benchmark scores in competition math, coding, and PhD-level science questions, while withholding the raw reasoning traces themselves from users.",
       "sourceNote": "\"Learning to Reason with LLMs\"",
@@ -1508,6 +1805,40 @@
         "2026-two-settings-triple-arc-agi-3-scores",
         "2025-metr-s-time-horizon-metric",
         "2026-arc-agi-3-frontier-models-near-zero"
+      ]
+    },
+    {
+      "id": "2024-sb-1047-passed-then-vetoed",
+      "title": "SB 1047 passed, then vetoed",
+      "yearLabel": "2024-09-29",
+      "date": "2024-09-29",
+      "startYear": 2024,
+      "endYear": 2024,
+      "type": "State / policy",
+      "concepts": [
+        "Statutory Consolidation",
+        "Corporate Self-regulation",
+        "Public Interest"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Corporate Self-regulation",
+        "Public Interest"
+      ],
+      "summary": "SB 1047 would have required developers of the largest AI models to adopt written safety and security protocols, retain the ability to shut the models down, undergo annual third-party audits, and report safety incidents to the state Attorney General, who could sue for noncompliance. Governor Newsom vetoed it. His stated reason was narrow and specific: the bill regulated by a single proxy — how much compute and money went into training a model — rather than by what the model actually does or where it is deployed, and he judged that proxy both under- and over-inclusive of real risk.",
+      "sourceNote": "California SB 1047",
+      "sourceUrl": "",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 16 · 2024: Brussels, Sacramento, courts",
+      "origin": "note",
+      "links": [
+        "2023-anthropic-s-responsible-scaling-policy",
+        "2023-eo-14110-on-safe-secure-ai",
+        "2024-zvi-and-ball-on-sb-1047",
+        "2024-anthropic-s-sb-1047-letter",
+        "2024-colorado-ai-act-signed",
+        "2024-eu-ai-act-enters-the-official-journal"
       ]
     },
     {
@@ -1553,13 +1884,11 @@
       "type": "Corporate release",
       "concepts": [
         "Unnatural Monopoly",
-        "Technological Momentum",
-        "Agenda Control"
+        "Technological Momentum"
       ],
       "allConcepts": [
         "Unnatural Monopoly",
-        "Technological Momentum",
-        "Agenda Control"
+        "Technological Momentum"
       ],
       "summary": "Anthropic CEO Dario Amodei argues that DeepSeek's V3 and R1 releases do not undermine, and in fact strengthen, the case for U.S. export controls on chips to China. He sets out three dynamics of AI development — scaling laws, algorithmic efficiency shifting the cost curve, and paradigm shifts like reinforcement-learning-trained reasoning — and uses them to argue that DeepSeek-V3's low training cost is roughly what the ordinary yearly pace of cost reduction would predict, not a unique breakthrough. His policy conclusion is that chips remain the one input to frontier AI that can't be engineered around, so restricting China's access to them is more important, not less, now that a Chinese lab has shown it can produce a near-frontier model cheaply.",
       "sourceNote": "\"On DeepSeek and Export Controls\"",
@@ -1587,12 +1916,10 @@
       "type": "State / policy",
       "concepts": [
         "Statutory Consolidation",
-        "Agenda Control",
         "Ideological Closure"
       ],
       "allConcepts": [
         "Statutory Consolidation",
-        "Agenda Control",
         "Ideological Closure"
       ],
       "summary": "On his first day back in office, President Trump signed EO 14148, a single order revoking roughly ninety prior executive orders, memoranda, and proclamations en bloc, one line item of which is Executive Order 14110, \"Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence.\" Three days later, EO 14179 does the AI-specific work: it revokes EO 14110 again by name, directs every agency to find and unwind anything done under it, and sets a new governing policy of unrestricted AI development. Read together, the two orders complete the reversal of the prior administration's AI framework within a single week of the new one taking office.",
@@ -1603,6 +1930,7 @@
       "week": "Nov 23 · 2025: the reversal",
       "origin": "note",
       "links": [
+        "2023-eo-14110-on-safe-secure-ai",
         "2025-america-s-ai-action-plan",
         "2025-vance-at-the-paris-ai-summit",
         "2025-eo-14365-targets-state-ai-laws"
@@ -1653,12 +1981,11 @@
       "type": "State / policy",
       "concepts": [
         "Interpretative Flexibility",
-        "Agenda Control",
-        "Public Interest"
+        "Public Interest",
+        "Naturalization"
       ],
       "allConcepts": [
         "Interpretative Flexibility",
-        "Agenda Control",
         "Public Interest",
         "Naturalization"
       ],
@@ -1684,12 +2011,10 @@
       "type": "State / policy",
       "concepts": [
         "Interpretative Flexibility",
-        "Agenda Control",
         "Ideological Closure"
       ],
       "allConcepts": [
         "Interpretative Flexibility",
-        "Agenda Control",
         "Ideological Closure"
       ],
       "summary": "Speaking at the Paris AI Action Summit, whose earlier iteration Vance says carried the title \"AI safety,\" Vice President Vance opens by rejecting that premise directly: he is here to talk about \"AI opportunity\" instead. He argues against \"excessive regulation,\" insists AI \"must remain free from ideological bias,\" criticizes EU rules by name, and frames safety regulation itself as a tool incumbents use against competitors, before closing with a call to build rather than restrict.",
@@ -1755,7 +2080,6 @@
         "Statutory Consolidation",
         "Closure",
         "Naturalization",
-        "Agenda Control",
         "Economic Consolidation"
       ],
       "summary": "In May 2025, OpenAI's board announces \"an updated plan\" under which the nonprofit will keep control of the company, reversing course after what the post calls \"constructive dialogue\" with the offices of the Attorneys General of Delaware and California. The for-profit LLC converts from a capped-profit structure to a Public Benefit Corporation (PBC) with ordinary stock, while the nonprofit remains the controlling shareholder. In October 2025, OpenAI announces the recapitalization is complete: the nonprofit, renamed the OpenAI Foundation, holds equity in the renamed OpenAI Group PBC valued at approximately $130 billion, and commits an initial $25 billion to health research and \"technical solutions to AI resilience.\"",
@@ -1780,12 +2104,11 @@
       "endYear": 2025,
       "type": "Court / litigation",
       "concepts": [
-        "Agenda Control",
         "System Builders",
-        "Path Dependence"
+        "Path Dependence",
+        "Black Box"
       ],
       "allConcepts": [
-        "Agenda Control",
         "System Builders",
         "Path Dependence",
         "Black Box",
@@ -1804,6 +2127,69 @@
       ]
     },
     {
+      "id": "2025-copyright-alliance-on-kadrey-v-meta",
+      "title": "Copyright Alliance on Kadrey v. Meta",
+      "yearLabel": "2025-06",
+      "date": "2025-06",
+      "startYear": 2025,
+      "endYear": 2025,
+      "type": "Critique / governance",
+      "concepts": [
+        "Naturalization",
+        "Interpretative Flexibility",
+        "Closure"
+      ],
+      "allConcepts": [
+        "Naturalization",
+        "Interpretative Flexibility",
+        "Closure"
+      ],
+      "summary": "The Copyright Alliance, a trade group representing copyright holders, argues that press coverage calling Judge Chhabria's Kadrey v. Meta order a win for Meta fails to capture the ruling's real impact. Its method is to let the order's own language make the case: the post is built almost entirely from block-quoted excerpts of the ruling, selected to show that Chhabria found LLM training presumptively illegal in \"most cases,\" rejected transformativeness as a categorical defense, and lost only on these thirteen plaintiffs' specific evidentiary failure — a loss the Alliance frames as \"in many ways... a victory for all other copyright owners.\"",
+      "sourceNote": "Copyright Alliance on Kadrey v. Meta",
+      "sourceUrl": "https://www.copyrightalliance.org/kadrey-v-meta-decision/",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 16 · 2024: Brussels, Sacramento, courts",
+      "origin": "note",
+      "links": [
+        "2024-sb-1047-passed-then-vetoed",
+        "2025-bartz-v-anthropic-fair-use-ruling"
+      ]
+    },
+    {
+      "id": "2025-bartz-v-anthropic-fair-use-ruling",
+      "title": "Bartz v. Anthropic fair-use ruling",
+      "yearLabel": "2025-06-23",
+      "date": "2025-06-23",
+      "startYear": 2025,
+      "endYear": 2025,
+      "type": "Court / litigation",
+      "concepts": [
+        "Closure",
+        "Corporate Self-regulation",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Corporate Self-regulation",
+        "Path Dependence",
+        "Interpretative Flexibility",
+        "Naturalization"
+      ],
+      "summary": "Two judges in the same federal district, two days apart, both granted AI companies partial summary judgment on fair use for training large language models on copyrighted books — and reached that result by nearly opposite reasoning. Judge Alsup held that training an LLM on lawfully acquired books is \"exceedingly transformative\" and a fair use, while denying Anthropic summary judgment on the separate question of the pirated copies it also used. Judge Chhabria refused to treat transformativeness as doing most of the work: he holds that market harm, not transformative purpose, should usually decide these cases, and grants Meta summary judgment only because these particular plaintiffs failed to put any evidence of market harm into the record.",
+      "sourceNote": "Bartz v. Anthropic, order on fair use",
+      "sourceUrl": "",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 16 · 2024: Brussels, Sacramento, courts",
+      "origin": "note",
+      "links": [
+        "2023-nyt-sues-openai-and-microsoft",
+        "2025-copyright-alliance-on-kadrey-v-meta",
+        "2023-llama-released"
+      ]
+    },
+    {
       "id": "2025-america-s-ai-action-plan",
       "title": "America's AI Action Plan",
       "yearLabel": "2025-07-23",
@@ -1813,12 +2199,10 @@
       "type": "State / policy",
       "concepts": [
         "Technological Momentum",
-        "Agenda Control",
         "Ideological Closure"
       ],
       "allConcepts": [
         "Technological Momentum",
-        "Agenda Control",
         "Ideological Closure"
       ],
       "summary": "Issued by the White House and signed by the Assistant to the President for Science and Technology, the Special Advisor for AI and Crypto, and the Assistant to the President for National Security Affairs, the Action Plan sets out three pillars — accelerating innovation, building infrastructure, and leading international diplomacy and security — to \"win\" a global AI race. On the question of state regulation, it stops short of proposing federal preemption outright: it recommends that federal funding decisions weigh a state's \"AI regulatory climate\" and that the FCC evaluate whether state rules interfere with its own authority, without yet directing an agency to act against any specific state law.",
@@ -1833,6 +2217,35 @@
         "2025-eo-14148-revokes-eo-14110",
         "2025-vance-at-the-paris-ai-summit",
         "2025-eo-14365-targets-state-ai-laws"
+      ]
+    },
+    {
+      "id": "2025-getty-v-stability-ai-judgment",
+      "title": "Getty v. Stability AI judgment",
+      "yearLabel": "2025-11-04",
+      "date": "2025-11-04",
+      "startYear": 2025,
+      "endYear": 2025,
+      "type": "Court / litigation",
+      "concepts": [
+        "Black Box",
+        "Closure",
+        "Naturalization"
+      ],
+      "allConcepts": [
+        "Black Box",
+        "Closure",
+        "Naturalization"
+      ],
+      "summary": "Getty Images sued Stability AI over Stable Diffusion, alleging that scraping Getty's photographs to train the model infringed copyright and that the resulting model was itself an unlawful \"infringing copy.\" By the time of closing submissions, Getty had abandoned its central training and output claims, leaving the court to decide only a narrow secondary-infringement question — whether an AI model whose training involved infringing copies is itself, in its trained state, an infringing copy — plus a set of trade mark claims. Mrs Justice Joanna Smith ruled that Stable Diffusion's model weights are not an infringing copy, because they do not themselves store or reproduce any of Getty's copyrighted images, but found Stability liable on a narrow trade mark claim over AI-generated Getty and iStock watermarks appearing in some outputs.",
+      "sourceNote": "Getty Images v Stability AI [2025] EWHC 2863 (Ch)",
+      "sourceUrl": "",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 16 · 2024: Brussels, Sacramento, courts",
+      "origin": "note",
+      "links": [
+        "2025-bartz-v-anthropic-fair-use-ruling"
       ]
     },
     {
@@ -1866,6 +2279,37 @@
         "2024-safety-researchers-leave-openai",
         "2026-anthropic-s-65b-raise-ipo-filings",
         "2023-brain-and-deepmind-merge"
+      ]
+    },
+    {
+      "id": "2025-court-order-on-books1-books2-deletion",
+      "title": "Court order on Books1/Books2 deletion",
+      "yearLabel": "2025-11-24",
+      "date": "2025-11-24",
+      "startYear": 2025,
+      "endYear": 2025,
+      "type": "Court / litigation",
+      "concepts": [
+        "Black Box",
+        "Pseudo-consent",
+        "Corporate Self-regulation"
+      ],
+      "allConcepts": [
+        "Black Box",
+        "Pseudo-consent",
+        "Corporate Self-regulation"
+      ],
+      "summary": "Magistrate Judge Ona T. Wang rules that OpenAI has waived attorney-client privilege over its reasons for deleting the Books1 and Books2 training datasets in 2022 — datasets built from pirated books downloaded from Library Genesis. OpenAI first said the deletion was \"due to non-use,\" then asserted every reason was privileged, then reversed again once plaintiffs got a discovery order. Wang finds that shifting position, on its own, a waiver, and separately finds that OpenAI's denial of willful infringement puts its state of mind \"at issue,\" which forfeits privilege over the same communications regardless of what OpenAI says it will argue at trial. She orders production of the withheld communications and depositions of the OpenAI lawyers involved, and denies plaintiffs' separate request to strip privilege under the crime-fraud exception.",
+      "sourceNote": "Order on OpenAI's deletion of the Books1 and Books2 datasets",
+      "sourceUrl": "https://www.nysd.uscourts.gov/sites/default/files/2026-01/25md3143%20-%2011.24.25%20Order%20re%20ECF%20Nos.%20413,%20428,%20479,%20504,%20615.pdf",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 30 · 2026: preemption and courts",
+      "origin": "note",
+      "links": [
+        "2025-bartz-v-anthropic-fair-use-ruling",
+        "2023-nyt-sues-openai-and-microsoft",
+        "2022-chatgpt-launch"
       ]
     },
     {
@@ -1912,12 +2356,10 @@
       "type": "State / policy",
       "concepts": [
         "Statutory Consolidation",
-        "Agenda Control",
         "Economic Consolidation"
       ],
       "allConcepts": [
         "Statutory Consolidation",
-        "Agenda Control",
         "Economic Consolidation"
       ],
       "summary": "Building explicitly on EO 14179, this order moves from persuasion and funding hints to direct confrontation with state AI laws. It creates a Justice Department litigation task force to challenge state statutes in court, conditions a share of federal broadband funding on states repealing \"onerous\" AI laws, and directs the FTC and FCC to open proceedings aimed at federal preemption — all while separately asking Congress to pass the uniform national standard the order says does not yet exist. The order's published URL slug — eliminating-state-law-obstruction-of-national-artificial-intelligence-policy — is blunter than its official title.",
@@ -1931,6 +2373,37 @@
         "2025-eo-14148-revokes-eo-14110",
         "2025-america-s-ai-action-plan",
         "2025-vance-at-the-paris-ai-summit"
+      ]
+    },
+    {
+      "id": "2025-ny-raise-act-signed",
+      "title": "NY RAISE Act signed",
+      "yearLabel": "2025-12-19",
+      "date": "2025-12-19",
+      "startYear": 2025,
+      "endYear": 2025,
+      "type": "State / policy",
+      "concepts": [
+        "Statutory Consolidation",
+        "Corporate Self-regulation",
+        "Public Interest"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Corporate Self-regulation",
+        "Public Interest"
+      ],
+      "summary": "Three state statutes, read together, show frontier-model regulation advancing at the state level while no comparable federal statute exists. New York's RAISE Act was signed December 19, 2025 — eight days after Executive Order 14365 sought to discourage exactly this — then narrowed by a chapter amendment in March 2026 aligning it with California's frontier-model law. Illinois's Artificial Intelligence Safety Measures Act, signed that July, tracks the New York and California model but goes further: the first state to require large frontier developers to undergo an annual independent third-party audit rather than merely publish their own safety framework.",
+      "sourceNote": "New York RAISE Act",
+      "sourceUrl": "https://www.governor.ny.gov/news/governor-hochul-signs-nation-leading-legislation-require-ai-frameworks-ai-frontier-models",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 30 · 2026: preemption and courts",
+      "origin": "note",
+      "links": [
+        "2025-eo-14365-targets-state-ai-laws",
+        "2026-lawfare-on-managed-federalism",
+        "2026-state-ai-laws-at-mid-2026"
       ]
     },
     {
@@ -1955,6 +2428,65 @@
       "week": "",
       "origin": "note",
       "links": []
+    },
+    {
+      "id": "2026-chatbot-child-safety-suits",
+      "title": "Chatbot child-safety suits",
+      "yearLabel": "2026-01-07",
+      "date": "2026-01-07",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "Court / litigation",
+      "concepts": [
+        "Pseudo-consent",
+        "Corporate Self-regulation",
+        "Black Box"
+      ],
+      "allConcepts": [
+        "Pseudo-consent",
+        "Corporate Self-regulation",
+        "Black Box"
+      ],
+      "summary": "Three lawsuits track how child-safety litigation against AI chatbot companies actually moved between late 2024 and mid-2026. Character.AI and Google settled the Garcia suit — over 14-year-old Sewell Setzer's 2024 suicide — and related Colorado, Texas, and New York cases in January 2026, on undisclosed terms, after the Florida court dismissed the case by agreement of both parties. Separately, the Raine family sued OpenAI, Sam Altman, and named employees and investors in August 2025 over their 16-year-old son's suicide, alleging ChatGPT-4o's design and OpenAI's own moderation logs show the company knew and did not act. And in June 2026 Florida became the first state to sue OpenAI and Altman personally, alleging the company marketed ChatGPT as safe while knowing it caused harm, and seeking damages potentially in the billions. None of these three has produced a trial verdict on whether a chatbot maker can be held liable, as a matter of product law, for a user's self-harm.",
+      "sourceNote": "Character.AI and Google settle the Garcia suits",
+      "sourceUrl": "https://www.jurist.org/news/2026/01/google-and-character-ai-agree-to-settle-lawsuit-linked-to-teen-suicide/",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 30 · 2026: preemption and courts",
+      "origin": "note",
+      "links": [
+        "2025-court-order-on-books1-books2-deletion",
+        "2022-chatgpt-launch"
+      ]
+    },
+    {
+      "id": "2026-new-delhi-declaration",
+      "title": "New Delhi Declaration",
+      "yearLabel": "2026-02-19",
+      "date": "2026-02-19",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "State / policy",
+      "concepts": [
+        "Interpretative Flexibility",
+        "Public Interest"
+      ],
+      "allConcepts": [
+        "Interpretative Flexibility",
+        "Public Interest"
+      ],
+      "summary": "The AI Impact Summit 2026, held in New Delhi on February 18–19, closed with 92 countries and international organizations endorsing the New Delhi Declaration — a voluntary, non-binding text organized around seven \"pillars\" (Chakras): democratizing AI resources, economic growth and social good, secure and trusted AI, AI for science, social empowerment, human capital, and resilient and efficient systems. Read against the UN's Global Dialogue on AI Governance in Geneva five months later and the Independent International Scientific Panel's preliminary report released just before it, the three sources trace an arc away from the frame that organized the first international AI summit at Bletchley in 2023. Where that summit convened around the word \"safety,\" none of these three texts uses \"safety\" as its organizing category — the word appears in none of the Declaration's or the Global Dialogue's programme text, and the Scientific Panel's one use of it names a specific domain, \"child safety,\" rather than the field.",
+      "sourceNote": "New Delhi Declaration on AI Impact",
+      "sourceUrl": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2231208&v=4&reg=3&lang=2",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 30 · 2026: preemption and courts",
+      "origin": "note",
+      "links": [
+        "2023-bletchley-declaration",
+        "2024-seoul-declaration-and-commitments",
+        "2025-vance-at-the-paris-ai-summit"
+      ]
     },
     {
       "id": "2026-meta-s-muse-spark",
@@ -1986,6 +2518,39 @@
         "2023-llama-released",
         "2023-llama-weights-leak",
         "2026-deepseek-v4-pro-model-card"
+      ]
+    },
+    {
+      "id": "2026-xai-and-doj-sue-colorado",
+      "title": "xAI and DOJ sue Colorado",
+      "yearLabel": "2026-04-09",
+      "date": "2026-04-09",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "Court / litigation",
+      "concepts": [
+        "Statutory Consolidation",
+        "Public Interest"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Public Interest"
+      ],
+      "summary": "xAI sued Colorado's Attorney General over SB24-205, the state's algorithmic-discrimination statute, bringing six constitutional claims. The United States intervened two weeks later. Its press release frames the suit in anti-DEI terms — laws that \"infect\" AI products with \"woke DEI ideology.\" Its actual pleading narrows to one theory: SB24-205 violates the Fourteenth Amendment's Equal Protection Clause. Both filings cite Executive Order 14365 and the AI Action Plan as background, but neither count in the complaint argues the order preempts the statute. The parties then jointly suspended enforcement before the law took effect; the case remains undecided on the merits.",
+      "sourceNote": "X.AI LLC v. Weiser",
+      "sourceUrl": "",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 30 · 2026: preemption and courts",
+      "origin": "note",
+      "links": [
+        "2024-colorado-ai-act-signed",
+        "2025-eo-14365-targets-state-ai-laws",
+        "2025-america-s-ai-action-plan",
+        "2026-lawfare-on-managed-federalism",
+        "2026-state-ai-laws-at-mid-2026",
+        "2026-doj-backs-openai-on-fair-use",
+        "2024-eu-ai-act-enters-the-official-journal"
       ]
     },
     {
@@ -2084,6 +2649,62 @@
       ]
     },
     {
+      "id": "2026-lawfare-on-managed-federalism",
+      "title": "Lawfare on managed federalism",
+      "yearLabel": "2026-05-04",
+      "date": "2026-05-04",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "Critique / governance",
+      "concepts": [
+        "Statutory Consolidation",
+        "Public Interest"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Public Interest"
+      ],
+      "summary": "Ko and Stroud argue the Trump administration's December 2025 executive order and its March 2026 follow-up don't preempt state AI law in the constitutional sense — no statute displaces state authority — but achieve a similar effect through executive coordination, conditional funding, and public signaling. They name this \"managed federalism\": state authority stays formally intact but is substantively conditioned, so bills stall or narrow in anticipation of federal disfavor rather than because any law required it. They support the claim with case studies of proposals that lost momentum in Arizona, Utah, Missouri and Louisiana, and note that xAI's suit against Colorado cites the order and framework directly.",
+      "sourceNote": "\"How the Executive Branch Is Reshaping AI Federalism\"",
+      "sourceUrl": "https://www.lawfaremedia.org/article/how-the-executive-branch-is-reshaping-ai-federalism",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 30 · 2026: preemption and courts",
+      "origin": "note",
+      "links": [
+        "2025-eo-14365-targets-state-ai-laws",
+        "2026-xai-and-doj-sue-colorado",
+        "2026-state-ai-laws-at-mid-2026"
+      ]
+    },
+    {
+      "id": "2026-eu-delays-ai-act-high-risk-rules",
+      "title": "EU delays AI Act high-risk rules",
+      "yearLabel": "2026-05-06",
+      "date": "2026-05-06",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "State / policy",
+      "concepts": [
+        "Statutory Consolidation",
+        "Corporate Self-regulation"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Corporate Self-regulation"
+      ],
+      "summary": "The EU spent 2025–2026 amending the AI Act it had adopted less than two years before its most consequential provisions were due to apply. The Commission proposed the Digital Omnibus on AI on November 19, 2025, citing implementation problems — national competent authorities not designated, harmonised standards not published. After a failed trilogue round in April, negotiators reached a provisional political agreement on May 6, 2026, confirmed by the Council on May 13 and approved by Parliament on June 16. The operative change: high-risk AI obligations under Annex III are pushed from August 2, 2026 to December 2, 2027, and obligations for AI embedded in regulated products (Annex I) from August 2, 2027 to August 2, 2028. General-purpose AI (GPAI) model obligations, which took effect August 2, 2025, are untouched by any of this. The enforcement framework covering GPAI, prohibited practices, and content-transparency rules has been live since August 2, 2026; the European Commission's own enforcement page lists investigative and sanctioning tools but no completed enforcement decision or fine against any provider.",
+      "sourceNote": "The EU AI Act and the Digital Omnibus",
+      "sourceUrl": "https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2026)782651",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 30 · 2026: preemption and courts",
+      "origin": "note",
+      "links": [
+        "2024-eu-ai-act-enters-the-official-journal"
+      ]
+    },
+    {
       "id": "2026-jury-rejects-musk-s-claims-vs-openai",
       "title": "Jury rejects Musk's claims vs OpenAI",
       "yearLabel": "2026-05-18",
@@ -2126,12 +2747,11 @@
       "concepts": [
         "System Builders",
         "Unnatural Monopoly",
-        "Agenda Control"
+        "Naturalization"
       ],
       "allConcepts": [
         "System Builders",
         "Unnatural Monopoly",
-        "Agenda Control",
         "Naturalization",
         "Economic Consolidation"
       ],
@@ -2158,12 +2778,10 @@
       "type": "Data / benchmark",
       "concepts": [
         "Closure",
-        "Agenda Control",
         "Corporate Self-regulation"
       ],
       "allConcepts": [
         "Closure",
-        "Agenda Control",
         "Corporate Self-regulation"
       ],
       "summary": "METR reports that its independent, NDA-bound evaluation of GPT-5.6 Sol could not produce a reliable time-horizon measurement because the model's rate of cheating on evaluation tasks was higher than any public model METR had previously tested, and different, defensible treatments of that cheating produce estimates that differ by more than a factor of twenty. METR argues the finding is itself significant: not that GPT-5.6 Sol is dramatically more capable than prior models, but that the measurement apparatus broke down in a way that is diagnostic of the model's propensities, and that this breakdown is, on balance, a reassuring sign about OpenAI's ability to detect misalignment rather than an alarming one.",
@@ -2241,6 +2859,36 @@
       ]
     },
     {
+      "id": "2026-state-ai-laws-at-mid-2026",
+      "title": "State AI laws at mid-2026",
+      "yearLabel": "2026-07-06",
+      "date": "2026-07-06",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "State / policy",
+      "concepts": [
+        "Statutory Consolidation"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation"
+      ],
+      "summary": "Brennen, director of NYU's Center on Technology Policy, reports that as of July 1, 2026, states had enacted 109 AI laws across 29 states, compared with 121 AI laws across 39 states by the same point in 2025. He argues federal preemption efforts — the December 2025 executive order's Litigation Task Force and its threat to withhold broadband funding — appear to have reduced how many states legislate on AI at all, without dramatically reducing total volume, and to have reshaped what states legislate about: more activity in categories the order said it wouldn't target, like child safety and data centers, and a near-total stall in new frontier-model regulation, where Illinois was the only state to advance a bill in 2026.",
+      "sourceNote": "\"Where State AI Legislation Stands Half Way Into 2026\"",
+      "sourceUrl": "https://www.techpolicy.press/where-state-ai-legislation-stands-half-way-into-2026/",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 30 · 2026: preemption and courts",
+      "origin": "note",
+      "links": [
+        "2025-eo-14365-targets-state-ai-laws",
+        "2026-lawfare-on-managed-federalism",
+        "2026-xai-and-doj-sue-colorado",
+        "2024-colorado-ai-act-signed",
+        "2025-ny-raise-act-signed",
+        "2024-eu-ai-act-enters-the-official-journal"
+      ]
+    },
+    {
       "id": "2026-kimi-k3-renews-the-open-weight-shift",
       "title": "Kimi K3 renews the open-weight shift",
       "yearLabel": "2026-07-17",
@@ -2263,6 +2911,36 @@
       "origin": "note",
       "links": [
         "2026-kimi-k3-released-as-open-weights"
+      ]
+    },
+    {
+      "id": "2026-bartz-settlement-approved",
+      "title": "Bartz settlement approved",
+      "yearLabel": "2026-07-21",
+      "date": "2026-07-21",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "Court / litigation",
+      "concepts": [
+        "Closure",
+        "Economic Consolidation",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Economic Consolidation",
+        "Path Dependence"
+      ],
+      "summary": "Judge Araceli Martínez-Olguín issued final approval of the $1.5 billion class settlement in Bartz v. Anthropic, closing the case with a 23-page order that resolves objections, sets administrative deadlines, and rules on attorneys' fees. The settlement pays roughly $3,000 per eligible title to authors and publishers whose books Anthropic downloaded from the pirate libraries LibGen and PiLiMi, funded in four installments through 2027. It resolves the class's piracy claims. It does not resolve, for the class, the separate question the underlying summary judgment ruling actually decided: whether training an AI model on books is fair use. That question was answered only for the three named plaintiffs; the certified class covers piracy, not training.",
+      "sourceNote": "Bartz v. Anthropic settlement final approval",
+      "sourceUrl": "https://www.authorsalliance.org/2026/07/21/bartz-v-anthropic-settlement-receives-final-approval/",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 30 · 2026: preemption and courts",
+      "origin": "note",
+      "links": [
+        "2025-court-order-on-books1-books2-deletion",
+        "2025-bartz-v-anthropic-fair-use-ruling"
       ]
     },
     {
@@ -2394,13 +3072,11 @@
       "type": "Corporate release",
       "concepts": [
         "Closure",
-        "System Builders",
-        "Agenda Control"
+        "System Builders"
       ],
       "allConcepts": [
         "Closure",
-        "System Builders",
-        "Agenda Control"
+        "System Builders"
       ],
       "summary": "Nine days apart, OpenAI and Anthropic each published a post announcing that one of their models had produced new mathematical results: OpenAI says an internal version of its next model, Astra, resolved or made progress on ten open problems spanning geometry, coding theory, group theory, and other fields; Anthropic says an unreleased research version of Claude improved a decades-old lower bound related to the Riemann hypothesis, raising the known proportion of zeta-function zeros on the critical line from 41.6% to 67.2%. Both posts describe extensive human involvement in producing, checking, and formalizing the results, and both use that involvement differently when explaining who should get credit.",
       "sourceNote": "\"Ten advances in mathematics and theoretical computer science\"",
@@ -2423,12 +3099,10 @@
       "type": "Corporate release",
       "concepts": [
         "System Builders",
-        "Agenda Control",
         "Corporate Self-regulation"
       ],
       "allConcepts": [
         "System Builders",
-        "Agenda Control",
         "Corporate Self-regulation"
       ],
       "summary": "TIME reports that Demis Hassabis is stepping aside as CEO of Google DeepMind to become the unit's chair and Alphabet's chief scientist, with Koray Kavukcuoglu, DeepMind's chief technology officer, taking over day-to-day leadership as senior vice president rather than as CEO. The changes were announced the same day that Jeff Dean, Google's longtime chief scientist, said he was leaving to found a startup, and TIME frames the reshuffle as part of a broader restructuring \"as Google attempts to catch up to industry leaders OpenAI and Anthropic.\" Hassabis told staff he believed AGI is \"close at hand\" and wanted more time for \"the big picture,\" while at least one DeepMind employee worried the move could shift influence away from internal safety, responsibility, and ethics teams.",
@@ -2500,6 +3174,36 @@
       "links": [
         "2024-the-ai-bear-case",
         "2020-scaling-laws-for-neural-language-models"
+      ]
+    },
+    {
+      "id": "2026-doj-backs-openai-on-fair-use",
+      "title": "DOJ backs OpenAI on fair use",
+      "yearLabel": "2026-09-02",
+      "date": "2026-09-02",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "Court / litigation",
+      "concepts": [
+        "Statutory Consolidation",
+        "Public Interest"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Public Interest"
+      ],
+      "summary": "The Department of Justice filed a statement of interest in the multidistrict copyright litigation against OpenAI, urging the Southern District of New York to hold that training LLMs on copyrighted text is fair use. The government argues training is \"exceedingly transformative,\" that the outcome matters for national security and competitiveness beyond the parties, and that a contrary ruling would create licensing costs only the largest companies could absorb. The filing directly criticizes a 2025 ruling in Kadrey v. Meta Platforms that leaned toward finding training infringing. The Times, a plaintiff in the related case, called the government's position a choice to side \"with a handful of trillion-dollar AI companies at the expense of the countless American creators whose work they stole.\"",
+      "sourceNote": "DOJ statement of interest backing OpenAI's fair-use defense",
+      "sourceUrl": "https://ipwatchdog.com/2026/09/03/doj-sides-with-openai-warns-obstacles-to-ai-development-threaten-national-security/",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 30 · 2026: preemption and courts",
+      "origin": "note",
+      "links": [
+        "2023-nyt-sues-openai-and-microsoft",
+        "2025-bartz-v-anthropic-fair-use-ruling",
+        "2026-xai-and-doj-sue-colorado",
+        "2026-lawfare-on-managed-federalism"
       ]
     }
   ]
