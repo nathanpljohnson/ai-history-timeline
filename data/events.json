@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T04:45:24.701Z",
+  "generatedAt": "2026-09-25T04:56:32.410Z",
   "events": [
     {
       "id": "1950-computing-machinery-and-intelligence",
@@ -830,6 +830,35 @@
       ]
     },
     {
+      "id": "2023-sutskever-i-deeply-regret",
+      "title": "Sutskever: I deeply regret",
+      "yearLabel": "2023-11-20",
+      "date": "2023-11-20",
+      "startYear": 2023,
+      "endYear": 2023,
+      "type": "Critique / governance",
+      "concepts": [
+        "Crisis of Control",
+        "Closure"
+      ],
+      "allConcepts": [
+        "Crisis of Control",
+        "Closure"
+      ],
+      "summary": "On the morning of November 20, 2023, Ilya Sutskever — OpenAI's chief scientist and one of the four board members who had voted three days earlier to remove Sam Altman as CEO — posted: \"I deeply regret my participation in the board's actions. I never intended to harm OpenAI.\" The post is short, and it is the only document in this note's sources in which one of the people who made the decision speaks about it directly, in public, before the outcome was settled.",
+      "sourceNote": "\"I deeply regret my participation\"",
+      "sourceUrl": "https://x.com/ilyasut/status/1726590052392956028",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 12 · 2023: products and the coup",
+      "origin": "note",
+      "links": [
+        "2015-openai-founded-as-a-nonprofit",
+        "2024-openai-board-review-completed",
+        "2024-toner-on-the-openai-board-crisis"
+      ]
+    },
+    {
       "id": "2024-openai-publishes-the-musk-emails",
       "title": "OpenAI publishes the Musk emails",
       "yearLabel": "2024-03-05",
@@ -860,6 +889,136 @@
         "2015-openai-founded-as-a-nonprofit",
         "2025-musk-v-altman-amended-complaint",
         "2020-hao-s-inside-account-of-openai"
+      ]
+    },
+    {
+      "id": "2024-openai-board-review-completed",
+      "title": "OpenAI board review completed",
+      "yearLabel": "2024-03-08",
+      "date": "2024-03-08",
+      "startYear": 2024,
+      "endYear": 2024,
+      "type": "Corporate release",
+      "concepts": [
+        "Agenda Control",
+        "Closure",
+        "Corporate Self-regulation"
+      ],
+      "allConcepts": [
+        "Agenda Control",
+        "Closure",
+        "Corporate Self-regulation"
+      ],
+      "summary": "Four months after Sam Altman's removal and reinstatement, OpenAI's Special Committee announces that the law firm WilmerHale has completed its review of the events of November 17, 2023, and states the Board's \"full confidence\" in Altman and Greg Brockman's continued leadership. The release pairs that conclusion with governance changes — three new board members, a whistleblower hotline, a strengthened conflict-of-interest policy — and a four-paragraph summary of WilmerHale's findings. The underlying WilmerHale report itself is not published; only this summary is.",
+      "sourceNote": "\"Review completed & Altman, Brockman to continue to lead OpenAI\"",
+      "sourceUrl": "https://openai.com/index/review-completed-altman-brockman-to-continue-to-lead-openai/",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 12 · 2023: products and the coup",
+      "origin": "note",
+      "links": [
+        "2023-sutskever-i-deeply-regret",
+        "2015-openai-founded-as-a-nonprofit",
+        "2024-toner-on-the-openai-board-crisis",
+        "2025-openai-s-recapitalization"
+      ]
+    },
+    {
+      "id": "2024-safety-researchers-leave-openai",
+      "title": "Safety researchers leave OpenAI",
+      "yearLabel": "2024-05-17",
+      "date": "2024-05-17",
+      "startYear": 2024,
+      "endYear": 2024,
+      "type": "Critique / governance",
+      "concepts": [
+        "Technological Momentum",
+        "Crisis of Control"
+      ],
+      "allConcepts": [
+        "Technological Momentum",
+        "Crisis of Control"
+      ],
+      "summary": "Four executives left two frontier labs across twenty-seven months, each explaining the departure differently. Jan Leike, OpenAI's head of alignment and superalignment co-lead, posted a 13-part thread on May 17, 2024 stating he had been \"disagreeing with OpenAI leadership about the company's core priorities for quite some time.\" Miles Brundage, OpenAI's Senior Advisor for AGI Readiness, published a long, structured explanation on October 23, 2024, citing opportunity costs, a wish for independence, and a belief that \"neither OpenAI nor any other frontier lab is ready\" for AGI. Reuters reported in November 2025 that Yann LeCun, Meta's chief AI scientist, was leaving to start his own company after being placed under a new reporting line inside Meta's Superintelligence Labs reorganization — a departure covered entirely through reporting, without a statement from LeCun himself in this source. Brad Lightcap, one of OpenAI's longest-serving executives, announced on August 11, 2026 that he was \"moving on from OpenAI to start something new,\" giving few concrete reasons beyond a reference to \"the next horizon.\"",
+      "sourceNote": "Jan Leike's resignation thread",
+      "sourceUrl": "https://x.com/janleike/status/1791498178346549382",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 19 · Money, verdicts, markets",
+      "origin": "note",
+      "links": [
+        "2026-anthropic-s-65b-raise-ipo-filings",
+        "2025-openai-s-recapitalization",
+        "2025-amodei-on-deepseek-and-export-controls",
+        "2026-hassabis-steps-aside-at-deepmind",
+        "2026-anthropic-s-run-rate-reaches-65b",
+        "2023-brain-and-deepmind-merge"
+      ]
+    },
+    {
+      "id": "2024-toner-on-the-openai-board-crisis",
+      "title": "Toner on the OpenAI board crisis",
+      "yearLabel": "2024-05-28",
+      "date": "2024-05-28",
+      "startYear": 2024,
+      "endYear": 2024,
+      "type": "Critique / governance",
+      "concepts": [
+        "Black Box",
+        "Crisis of Control",
+        "Corporate Self-regulation"
+      ],
+      "allConcepts": [
+        "Black Box",
+        "Crisis of Control",
+        "Corporate Self-regulation",
+        "Pseudo-consent"
+      ],
+      "summary": "Six months after resigning from OpenAI's board, and after both the board's Nov 17 statement and the Special Committee's Mar 8 review summary had settled into the public record, Helen Toner gives her own account of why the board fired Sam Altman: a pattern, over years, of being given inaccurate or withheld information, culminating in a breakdown of trust so complete that \"all four of us who fired him came to the conclusion that we just couldn't believe things that Sam was telling us.\" This is Toner's account, offered on the record for the first time in this interview, not an independent finding — the host frames it explicitly as \"the future of regulation,\" and Toner uses the episode to argue that AI companies cannot be trusted to govern themselves.",
+      "sourceNote": "\"What really went down at OpenAI and the future of regulation\"",
+      "sourceUrl": "https://www.ted.com/pages/what-really-went-down-at-openai-and-the-future-of-regulation-w-helen-toner",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 12 · 2023: products and the coup",
+      "origin": "note",
+      "links": [
+        "2023-sutskever-i-deeply-regret",
+        "2024-openai-board-review-completed",
+        "2020-hao-s-inside-account-of-openai",
+        "2022-chatgpt-launch"
+      ]
+    },
+    {
+      "id": "2024-the-ai-bear-case",
+      "title": "The AI bear case",
+      "yearLabel": "2024-06-20",
+      "date": "2024-06-20",
+      "startYear": 2024,
+      "endYear": 2024,
+      "type": "Critique / governance",
+      "concepts": [
+        "Interpretative Flexibility",
+        "Unnatural Monopoly",
+        "Technological Momentum"
+      ],
+      "allConcepts": [
+        "Interpretative Flexibility",
+        "Unnatural Monopoly",
+        "Technological Momentum",
+        "Statutory Consolidation",
+        "Naturalization"
+      ],
+      "summary": "Three readings, in sequence, make the bear case against the AI infrastructure buildout. Cahn updates his own 2023 revenue-gap analysis and finds the industry needs to generate $600 billion in annual revenue to justify current GPU spending, arguing compute lacks the pricing power of physical infrastructure like railroads. Zitron argues the entire generative AI business is structurally unprofitable and dependent on continued subsidy from hyperscalers, and predicts a \"subprime AI crisis.\" Ramzanali, writing eighteen months later and after neither collapse has occurred, treats a crash as sufficiently likely that Congress should pre-draft structural reforms now rather than improvise them afterward.",
+      "sourceNote": "\"AI's $600B Question\"",
+      "sourceUrl": "https://www.sequoiacap.com/article/ais-600b-question/",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 19 · Money, verdicts, markets",
+      "origin": "note",
+      "links": [
+        "2026-nvidia-q2-fy2027-compute-is-revenue",
+        "2026-anthropic-s-65b-raise-ipo-filings",
+        "2022-chatgpt-launch"
       ]
     },
     {
@@ -1051,6 +1210,39 @@
       ]
     },
     {
+      "id": "2025-openai-s-recapitalization",
+      "title": "OpenAI's recapitalization",
+      "yearLabel": "2025-05-05",
+      "date": "2025-05-05",
+      "startYear": 2025,
+      "endYear": 2025,
+      "type": "Corporate release",
+      "concepts": [
+        "Statutory Consolidation",
+        "Closure",
+        "Naturalization"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Closure",
+        "Naturalization",
+        "Agenda Control",
+        "Economic Consolidation"
+      ],
+      "summary": "In May 2025, OpenAI's board announces \"an updated plan\" under which the nonprofit will keep control of the company, reversing course after what the post calls \"constructive dialogue\" with the offices of the Attorneys General of Delaware and California. The for-profit LLC converts from a capped-profit structure to a Public Benefit Corporation (PBC) with ordinary stock, while the nonprofit remains the controlling shareholder. In October 2025, OpenAI announces the recapitalization is complete: the nonprofit, renamed the OpenAI Foundation, holds equity in the renamed OpenAI Group PBC valued at approximately $130 billion, and commits an initial $25 billion to health research and \"technical solutions to AI resilience.\"",
+      "sourceNote": "\"Evolving OpenAI's structure\"",
+      "sourceUrl": "https://openai.com/index/evolving-our-structure/",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 19 · Money, verdicts, markets",
+      "origin": "note",
+      "links": [
+        "2015-openai-founded-as-a-nonprofit",
+        "2026-anthropic-s-65b-raise-ipo-filings",
+        "2026-jury-rejects-musk-s-claims-vs-openai"
+      ]
+    },
+    {
       "id": "2025-musk-v-altman-amended-complaint",
       "title": "Musk v. Altman amended complaint",
       "yearLabel": "2025-05-22",
@@ -1080,6 +1272,39 @@
       "links": [
         "2015-openai-founded-as-a-nonprofit",
         "2024-openai-publishes-the-musk-emails"
+      ]
+    },
+    {
+      "id": "2025-ai-orchestrated-espionage-disclosed",
+      "title": "AI-orchestrated espionage disclosed",
+      "yearLabel": "2025-11-13",
+      "date": "2025-11-13",
+      "startYear": 2025,
+      "endYear": 2025,
+      "type": "Corporate release",
+      "concepts": [
+        "Appropriation",
+        "Crisis of Control",
+        "Corporate Self-regulation"
+      ],
+      "allConcepts": [
+        "Appropriation",
+        "Crisis of Control",
+        "Corporate Self-regulation",
+        "Statutory Consolidation"
+      ],
+      "summary": "Anthropic's blog post describes detecting, in mid-September 2025, what it calls \"a highly sophisticated espionage campaign,\" which it attributes with \"high confidence\" to a Chinese state-sponsored group. The group, Anthropic says, manipulated its Claude Code tool into functioning as the \"orchestrator and execution engine\" of an attack against roughly thirty targets, with Claude itself performing \"80-90% of the campaign\" and human operators intervening only at a handful of decision points. Anthropic frames the case as the first documented large-scale cyberattack \"executed without substantial human intervention,\" and uses it to argue that continued development of AI, paired with safeguards, is the right response. Thirteen days later, three chairs of the House Homeland Security Committee sent CEO Dario Amodei a letter — built almost entirely on Anthropic's own report and one Wall Street Journal story — requesting he testify at a joint subcommittee hearing on AI, quantum computing, and cloud security.",
+      "sourceNote": "\"Disrupting the first reported AI-orchestrated cyber espionage campaign\"",
+      "sourceUrl": "https://www.anthropic.com/news/disrupting-AI-espionage",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 19 · Money, verdicts, markets",
+      "origin": "note",
+      "links": [
+        "2026-hassabis-steps-aside-at-deepmind",
+        "2024-safety-researchers-leave-openai",
+        "2026-anthropic-s-65b-raise-ipo-filings",
+        "2023-brain-and-deepmind-merge"
       ]
     },
     {
@@ -1267,6 +1492,71 @@
       ]
     },
     {
+      "id": "2026-jury-rejects-musk-s-claims-vs-openai",
+      "title": "Jury rejects Musk's claims vs OpenAI",
+      "yearLabel": "2026-05-18",
+      "date": "2026-05-18",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "Court / litigation",
+      "concepts": [
+        "Closure",
+        "Interpretative Flexibility",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Interpretative Flexibility",
+        "Path Dependence"
+      ],
+      "summary": "An advisory jury in the Northern District of California finds, in under two hours, that Elon Musk waited too long to sue Sam Altman and OpenAI over the direction of the company since their 2018 falling out; Judge Yvonne Gonzalez Rogers accepts the finding and dismisses the case on statute-of-limitations grounds. The article reports that the jury \"sidestepped questions at the heart of Musk's case\" — whether Altman and Brockman breached a charitable trust — so the substantive dispute over OpenAI's founding mission is never ruled on, and both sides publicly claim the outcome as vindication.",
+      "sourceNote": "\"Jury dismisses all claims in Elon Musk's lawsuit against OpenAI CEO Sam Altman\"",
+      "sourceUrl": "https://www.npr.org/2026/05/18/nx-s1-5822366/musk-altman-openai-jury-verdict-claims-dismissed",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 19 · Money, verdicts, markets",
+      "origin": "note",
+      "links": [
+        "2015-openai-founded-as-a-nonprofit",
+        "2024-openai-publishes-the-musk-emails",
+        "2025-musk-v-altman-amended-complaint",
+        "2025-openai-s-recapitalization"
+      ]
+    },
+    {
+      "id": "2026-anthropic-s-65b-raise-ipo-filings",
+      "title": "Anthropic's $65B raise; IPO filings",
+      "yearLabel": "2026-05-28",
+      "date": "2026-05-28",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "Corporate release",
+      "concepts": [
+        "System Builders",
+        "Unnatural Monopoly",
+        "Agenda Control"
+      ],
+      "allConcepts": [
+        "System Builders",
+        "Unnatural Monopoly",
+        "Agenda Control",
+        "Naturalization",
+        "Economic Consolidation"
+      ],
+      "summary": "Anthropic announces a $65 billion Series H round at a $965 billion post-money valuation, reporting that its run-rate revenue \"crossed $47 billion earlier this month,\" and describing new gigawatt-scale compute agreements with Amazon, Google/Broadcom, and SpaceX. Four days later, Anthropic confidentially submits a draft S-1 for a possible IPO, and a week after that, OpenAI announces it has also submitted a confidential S-1, using the unusually direct line: \"we expect it to leak so we're just announcing it.\" The two frontier labs move toward public markets within eight days of each other.",
+      "sourceNote": "\"Anthropic raises $65B at $965B post-money\"",
+      "sourceUrl": "https://www.anthropic.com/news/series-h",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 19 · Money, verdicts, markets",
+      "origin": "note",
+      "links": [
+        "2025-openai-s-recapitalization",
+        "2026-anthropic-s-run-rate-reaches-65b",
+        "2024-the-ai-bear-case"
+      ]
+    },
+    {
       "id": "2026-metr-evaluates-gpt-5-6-sol",
       "title": "METR evaluates GPT-5.6 Sol",
       "yearLabel": "2026-06-26",
@@ -1440,6 +1730,38 @@
       ]
     },
     {
+      "id": "2026-big-tech-ai-capex-2026",
+      "title": "Big Tech AI capex, 2026",
+      "yearLabel": "2026-07-29",
+      "date": "2026-07-29",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "Corporate release",
+      "concepts": [
+        "Technological Momentum",
+        "Black Box",
+        "Corporate Self-regulation"
+      ],
+      "allConcepts": [
+        "Technological Momentum",
+        "Black Box",
+        "Corporate Self-regulation",
+        "Naturalization"
+      ],
+      "summary": "Three companies' mid-2026 disclosures, read together, show the same pattern from three angles. Microsoft's FY26 Q4 release reports $90.0 billion in quarterly revenue and additions to property and equipment of roughly $115.9 billion for the fiscal year, alongside a note that Microsoft's own non-GAAP results now have to be adjusted for \"the impact from investments in OpenAI.\" Sundar Pichai's Q2 2026 remarks report Google Cloud revenue up 82%, a cloud backlog of $514 billion, and states the company remains \"supply constrained.\" Fortune's report on Meta's Q1 2026 earnings covers Meta raising its full-year 2026 capex guidance from $115–135 billion to $125–145 billion, a move that sent Meta's stock down more than 6% even as revenue grew 33% year over year — while Alphabet and Amazon, reporting the same day, saw shares rise. The cached Microsoft document is the earnings press release itself, not an analyst call transcript, so no analyst Q&A is available for Microsoft in this source; Fortune's Meta piece does include a reported exchange with Zuckerberg on ROI.",
+      "sourceNote": "Microsoft FY26 Q4 earnings and 2026 AI capex",
+      "sourceUrl": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 19 · Money, verdicts, markets",
+      "origin": "note",
+      "links": [
+        "2026-nvidia-q2-fy2027-compute-is-revenue",
+        "2026-anthropic-s-65b-raise-ipo-filings",
+        "2026-anthropic-s-run-rate-reaches-65b"
+      ]
+    },
+    {
       "id": "2026-two-settings-triple-arc-agi-3-scores",
       "title": "Two settings triple ARC-AGI-3 scores",
       "yearLabel": "2026-07-29",
@@ -1497,6 +1819,95 @@
       "origin": "note",
       "links": [
         "2024-openai-o1-learning-to-reason"
+      ]
+    },
+    {
+      "id": "2026-hassabis-steps-aside-at-deepmind",
+      "title": "Hassabis steps aside at DeepMind",
+      "yearLabel": "2026-08-06",
+      "date": "2026-08-06",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "Corporate release",
+      "concepts": [
+        "System Builders",
+        "Agenda Control",
+        "Corporate Self-regulation"
+      ],
+      "allConcepts": [
+        "System Builders",
+        "Agenda Control",
+        "Corporate Self-regulation"
+      ],
+      "summary": "TIME reports that Demis Hassabis is stepping aside as CEO of Google DeepMind to become the unit's chair and Alphabet's chief scientist, with Koray Kavukcuoglu, DeepMind's chief technology officer, taking over day-to-day leadership as senior vice president rather than as CEO. The changes were announced the same day that Jeff Dean, Google's longtime chief scientist, said he was leaving to found a startup, and TIME frames the reshuffle as part of a broader restructuring \"as Google attempts to catch up to industry leaders OpenAI and Anthropic.\" Hassabis told staff he believed AGI is \"close at hand\" and wanted more time for \"the big picture,\" while at least one DeepMind employee worried the move could shift influence away from internal safety, responsibility, and ethics teams.",
+      "sourceNote": "\"Inside Google DeepMind's Reshuffle After CEO Demis Hassabis Steps Aside\"",
+      "sourceUrl": "https://time.com/article/2026/08/06/google-deepmind-ai-demis-hassabis/",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 19 · Money, verdicts, markets",
+      "origin": "note",
+      "links": [
+        "2023-brain-and-deepmind-merge",
+        "2024-safety-researchers-leave-openai",
+        "2026-anthropic-s-run-rate-reaches-65b"
+      ]
+    },
+    {
+      "id": "2026-anthropic-s-run-rate-reaches-65b",
+      "title": "Anthropic's run-rate reaches $65B",
+      "yearLabel": "2026-08-17",
+      "date": "2026-08-17",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "Corporate release",
+      "concepts": [
+        "Interpretative Flexibility",
+        "Naturalization",
+        "Black Box"
+      ],
+      "allConcepts": [
+        "Interpretative Flexibility",
+        "Naturalization",
+        "Black Box"
+      ],
+      "summary": "TechCrunch reports that Anthropic's annualized revenue run rate \"surpassed $65 billion at the end of July,\" per Bloomberg, up from $47 billion in May and $9 billion at the end of 2025, and that investors expect the company to finish 2026 between $100 billion and $120 billion. The article sets this beside OpenAI, whose own run rate \"doubled... to $40 billion, up from $20 billion at the end of 2025,\" and notes that \"the two companies may calculate their revenue metrics differently\" without explaining how — while observing that Anthropic's growth rate has drawn more investor attention than OpenAI's. Both companies have filed confidential IPO paperwork, with Anthropic expected to go public first and seeking a valuation of \"$2 trillion or more.\"",
+      "sourceNote": "\"Anthropic's annualized revenue surges to $65B\"",
+      "sourceUrl": "https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 19 · Money, verdicts, markets",
+      "origin": "note",
+      "links": []
+    },
+    {
+      "id": "2026-nvidia-q2-fy2027-compute-is-revenue",
+      "title": "NVIDIA Q2 FY2027: compute is revenue",
+      "yearLabel": "2026-08-26",
+      "date": "2026-08-26",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "Corporate release",
+      "concepts": [
+        "Technological Momentum",
+        "System Builders",
+        "Unnatural Monopoly"
+      ],
+      "allConcepts": [
+        "Technological Momentum",
+        "System Builders",
+        "Unnatural Monopoly",
+        "Naturalization"
+      ],
+      "summary": "NVIDIA reports Q2 fiscal 2027 revenue of $96.2 billion, up 106% year over year, with Data Center revenue of $89.0 billion, up 117% year over year. CEO Jensen Huang states that the buildout has moved from speculative infrastructure spending to realized income — \"Now, compute is revenue\" — and the release outlines an outlook of $108.0 billion for the following quarter alongside a series of financing and supply agreements meant to sustain the buildout at that scale.",
+      "sourceNote": "\"NVIDIA Announces Financial Results for Second Quarter Fiscal 2027\"",
+      "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 19 · Money, verdicts, markets",
+      "origin": "note",
+      "links": [
+        "2024-the-ai-bear-case",
+        "2020-scaling-laws-for-neural-language-models"
       ]
     }
   ]

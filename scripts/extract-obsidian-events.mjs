@@ -99,7 +99,8 @@ function parseFrontmatter(markdown) {
     const kv = line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
     if (kv) {
       currentKey = kv[1];
-      data[currentKey] = kv[2].trim().replace(/^["']|["']$/g, "") || [];
+      const value = kv[2].trim();
+      data[currentKey] = value === "[]" ? [] : value.replace(/^["']|["']$/g, "") || [];
       continue;
     }
     const item = line.match(/^\s*-\s*(.*)$/);
