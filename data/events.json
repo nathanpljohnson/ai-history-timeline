@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T05:55:40.857Z",
+  "generatedAt": "2026-09-25T06:30:12.735Z",
   "events": [
     {
       "id": "1950-computing-machinery-and-intelligence",
@@ -16,9 +16,12 @@
       "allConcepts": [
         "Relativist Methodology",
         "Closure",
+        "Script",
         "Interpretative Flexibility",
         "Technological Determinism",
-        "Naturalization"
+        "Naturalization",
+        "System Builders",
+        "Black Box"
       ],
       "summary": "replaced \"can machines think?\" with an agreed behavioural criterion",
       "detail": "",
@@ -32,6 +35,7 @@
         "2016-mastering-the-game-of-go-with-deepneural-networks-and-tree-search",
         "1955-56-a-proposal-for-the-dartmouth-summer-research-projecton-artificial-intelligence",
         "2023-histories-of-artificial-intelligence-a-genealogy-of-power",
+        "1986-backpropagation-popularized",
         "2006-12-the-data-that-transformed-ai-research-and-possibly-the-world"
       ]
     },
@@ -51,7 +55,10 @@
         "Technological Frame",
         "Closure",
         "Internalist History",
-        "Contextualist History"
+        "Contextualist History",
+        "System Builders",
+        "Path Dependence",
+        "Naturalization"
       ],
       "summary": "named the field in a funding proposal",
       "detail": "",
@@ -65,7 +72,8 @@
         "2023-histories-of-artificial-intelligence-a-genealogy-of-power",
         "1950-computing-machinery-and-intelligence",
         "2016-mastering-the-game-of-go-with-deepneural-networks-and-tree-search",
-        "2020-scaling-laws-for-neural-language-models"
+        "2020-scaling-laws-for-neural-language-models",
+        "1986-backpropagation-popularized"
       ]
     },
     {
@@ -239,7 +247,11 @@
         "Closure",
         "Technological Momentum",
         "Path Dependence",
-        "Constitutive Choices"
+        "Constitutive Choices",
+        "Unnatural Monopoly",
+        "Naturalization",
+        "Closing-out Obduracy",
+        "Stabilization"
       ],
       "summary": "ImageNet: taxonomy + global annotation labour + competition",
       "detail": "",
@@ -251,7 +263,10 @@
       "origin": "AI — Primary Sources Timeline",
       "links": [
         "2012-imagenet-classification-with-deep-convolutional-neural-networks",
-        "2023-histories-of-artificial-intelligence-a-genealogy-of-power"
+        "2023-histories-of-artificial-intelligence-a-genealogy-of-power",
+        "1950-computing-machinery-and-intelligence",
+        "1955-56-a-proposal-for-the-dartmouth-summer-research-projecton-artificial-intelligence",
+        "2016-mastering-the-game-of-go-with-deepneural-networks-and-tree-search"
       ]
     },
     {
@@ -328,7 +343,10 @@
         "Closure",
         "Black Box",
         "Radical Invention",
-        "System Builders"
+        "System Builders",
+        "Path Dependence",
+        "Technological Momentum",
+        "Interpretative Flexibility"
       ],
       "summary": "a benchmark ends a public argument",
       "detail": "",
@@ -342,7 +360,9 @@
         "1950-computing-machinery-and-intelligence",
         "1955-56-a-proposal-for-the-dartmouth-summer-research-projecton-artificial-intelligence",
         "2023-histories-of-artificial-intelligence-a-genealogy-of-power",
-        "2006-12-the-data-that-transformed-ai-research-and-possibly-the-world"
+        "2006-12-the-data-that-transformed-ai-research-and-possibly-the-world",
+        "1997-deep-blue-defeats-kasparov",
+        "2017-attention-is-all-you-need"
       ]
     },
     {
@@ -400,7 +420,10 @@
         "Black Box",
         "Technological Momentum",
         "Radical Invention",
-        "Internalist History"
+        "Internalist History",
+        "System Builders",
+        "Co-production",
+        "Naturalization"
       ],
       "summary": "translation architecture, later reinterpreted",
       "detail": "",
@@ -526,7 +549,10 @@
         "Script",
         "Technological Systems",
         "Structure",
-        "Naturalization"
+        "Naturalization",
+        "Technological Momentum",
+        "Technological Frame",
+        "Crisis of Control"
       ],
       "summary": "GPT-3: the user configures the task at run time",
       "detail": "",
@@ -537,7 +563,9 @@
       "week": "",
       "origin": "AI — Primary Sources Timeline",
       "links": [
-        "2020-scaling-laws-for-neural-language-models"
+        "2020-scaling-laws-for-neural-language-models",
+        "2022-chatgpt-launch",
+        "2022-instructgpt-and-rlhf"
       ]
     },
     {
@@ -560,7 +588,10 @@
         "Marketplace Democracy",
         "Unnatural Monopoly",
         "Crisis of Control",
-        "Internalist History"
+        "Internalist History",
+        "System Builders",
+        "Co-production",
+        "Use Stage"
       ],
       "summary": "returns to scale stated as a law",
       "detail": "",
@@ -572,7 +603,8 @@
       "origin": "AI — Primary Sources Timeline",
       "links": [
         "2020-language-models-are-few-shot-learnings",
-        "2017-attention-is-all-you-need"
+        "2017-attention-is-all-you-need",
+        "2026-chinese-labs-undercut-u-s-costs"
       ]
     },
     {
@@ -615,8 +647,16 @@
       "startYear": 2021,
       "endYear": 2021,
       "type": "Critique / governance",
-      "concepts": [],
-      "allConcepts": [],
+      "concepts": [
+        "Unnatural Monopoly",
+        "Path Dependence",
+        "Black Box"
+      ],
+      "allConcepts": [
+        "Unnatural Monopoly",
+        "Path Dependence",
+        "Black Box"
+      ],
       "summary": "The paper argues that the NLP field's post-2018 turn toward ever-larger language models should not be narrated simply as technical progress. Larger models improve benchmark performance, but they also create environmental costs, access barriers, documentation debt, bias amplification, misleading claims about understanding, and downstream social harms.",
       "sourceNote": "\"On the Dangers of Stochastic Parrots - Can Language Models Be Too Big\"",
       "sourceUrl": "https://doi.org/10.1145/3442188.3445922",
@@ -626,6 +666,7 @@
       "origin": "note",
       "links": [
         "2020-language-models-are-few-shot-learnings",
+        "2022-instructgpt-and-rlhf",
         "2020-scaling-laws-for-neural-language-models"
       ]
     },
@@ -773,14 +814,14 @@
       "endYear": 2022,
       "type": "Model innovation",
       "concepts": [
-        "Social Construction of Technology",
-        "Technological Frame",
-        "Internalist History"
+        "Pseudo-consent",
+        "Naturalization",
+        "Co-production"
       ],
       "allConcepts": [
-        "Social Construction of Technology",
-        "Technological Frame",
-        "Internalist History"
+        "Pseudo-consent",
+        "Naturalization",
+        "Co-production"
       ],
       "summary": "This paper introduces InstructGPT: GPT-3 models fine-tuned to follow written instructions using supervised demonstrations and reinforcement learning from human feedback (RLHF). The important historical move is that scale alone is explicitly separated from usefulness: the paper argues that next-token pretraining produces capability, but not necessarily instruction-following, truthfulness, harmlessness, or alignment with user intent.",
       "sourceNote": "\"Training Language Models to Follow Instructions with Human Feedback\"",
@@ -869,12 +910,14 @@
       "endYear": 2022,
       "type": "Corporate release",
       "concepts": [
-        "Internalist History",
-        "Technological Frame"
+        "Technological Momentum",
+        "Technological Frame",
+        "Co-production"
       ],
       "allConcepts": [
-        "Internalist History",
-        "Technological Frame"
+        "Technological Momentum",
+        "Technological Frame",
+        "Co-production"
       ],
       "summary": "OpenAI's launch post presents ChatGPT as a dialogue-oriented sibling of InstructGPT, trained through reinforcement learning from human feedback and released as a research preview. The post's historical importance is that it frames ChatGPT not as a sudden invention, but as an incremental product of GPT-3.5, InstructGPT, supervised dialogue data, reward modeling, PPO, user feedback, and iterative deployment.",
       "sourceNote": "OpenAI (2022) - Introducing ChatGPT",
@@ -884,8 +927,9 @@
       "week": "",
       "origin": "note",
       "links": [
+        "2022-instructgpt-and-rlhf",
         "2020-language-models-are-few-shot-learnings",
-        "2022-instructgpt-and-rlhf"
+        "2023-llama-weights-leak"
       ]
     },
     {
@@ -935,10 +979,14 @@
       "endYear": 2023,
       "type": "Corporate release",
       "concepts": [
-        "Technical Artifact"
+        "System Builders",
+        "Corporate Self-regulation",
+        "Naturalization"
       ],
       "allConcepts": [
-        "Technical Artifact"
+        "System Builders",
+        "Corporate Self-regulation",
+        "Naturalization"
       ],
       "summary": "The article argues that Meta's LLaMA changed the large language model landscape by making a powerful foundation model available for research use in multiple sizes, including smaller models that required less computing infrastructure to study, retrain, and fine-tune. Its central historical problem is access: by early 2023, large language models had become technically important but institutionally concentrated because only a small number of organizations could afford to train and operate them. Meta presents LLaMA as a way to widen research participation while still managing risk through controlled, noncommercial access.",
       "sourceNote": "Introducing LLaMA - A foundational 65-billion-parameter large language model",
@@ -947,7 +995,11 @@
       "draft": false,
       "week": "",
       "origin": "note",
-      "links": []
+      "links": [
+        "2020-language-models-are-few-shot-learnings",
+        "2023-llama-weights-leak",
+        "2023-google-no-moat-memo"
+      ]
     },
     {
       "id": "2023-nist-ai-rmf-1-0",
@@ -993,12 +1045,14 @@
       "endYear": 2023,
       "type": "Corporate release",
       "concepts": [
-        "Technological Systems",
-        "Technological Culture"
+        "Unnatural Monopoly",
+        "Crisis of Control",
+        "Script"
       ],
       "allConcepts": [
-        "Technological Systems",
-        "Technological Culture"
+        "Unnatural Monopoly",
+        "Crisis of Control",
+        "Script"
       ],
       "summary": "James Vincent argues that the leak of Meta’s LLaMA model marked a significant moment in the struggle over who should control access to powerful AI systems. The article explains a shift from large language models as guarded corporate or research assets toward models that could circulate through informal online networks, independent researchers, and open-source communities. What mattered was not simply that LLaMA was technically capable, but that its leakage exposed unresolved questions about AI safety, openness, institutional trust, and the political economy of access to expensive computational systems.",
       "sourceNote": "Meta’s powerful AI language model has leaked online — what happens now?",
@@ -1008,9 +1062,10 @@
       "week": "",
       "origin": "note",
       "links": [
+        "2023-llama-released",
+        "2023-google-no-moat-memo",
         "2020-language-models-are-few-shot-learnings",
-        "2022-chatgpt-launch",
-        "2023-llama-released"
+        "2022-chatgpt-launch"
       ]
     },
     {
@@ -1115,8 +1170,17 @@
       "startYear": 2023,
       "endYear": 2023,
       "type": "Corporate release",
-      "concepts": [],
-      "allConcepts": [],
+      "concepts": [
+        "Unnatural Monopoly",
+        "Path Dependence",
+        "Appropriation"
+      ],
+      "allConcepts": [
+        "Unnatural Monopoly",
+        "Path Dependence",
+        "Appropriation",
+        "Technological Momentum"
+      ],
       "summary": "The article republishes and contextualizes a leaked internal Google document arguing that the decisive shift in large language models in early 2023 was not simply OpenAI versus Google, but the rapid rise of open-source and semi-open AI development. The leaked author claims that cheaper fine-tuning methods, smaller models, quantization, leaked model weights, and distributed experimentation had undermined the assumption that frontier AI advantage depended mainly on enormous proprietary models and corporate secrecy. Historically, the article tries to explain why the center of AI innovation appeared to move, at least temporarily, from large firms with massive compute budgets toward a broader ecosystem of researchers, hobbyists, universities, startups, and open-source communities.",
       "sourceNote": "Google We Have No Moat And Neither Does OpenAI",
       "sourceUrl": "https://newsletter.semianalysis.com/p/google-we-have-no-moat-and-neither",
@@ -1125,8 +1189,8 @@
       "week": "",
       "origin": "note",
       "links": [
-        "2020-scaling-laws-for-neural-language-models",
-        "2023-llama-released"
+        "2023-llama-released",
+        "2020-scaling-laws-for-neural-language-models"
       ]
     },
     {
@@ -1671,8 +1735,16 @@
       "startYear": 2024,
       "endYear": 2024,
       "type": "Corporate release",
-      "concepts": [],
-      "allConcepts": [],
+      "concepts": [
+        "Unnatural Monopoly",
+        "Naturalization",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Unnatural Monopoly",
+        "Naturalization",
+        "Path Dependence"
+      ],
       "summary": "Mark Zuckerberg argues that advanced AI should develop through open-source ecosystems rather than closed proprietary platforms. The article frames Meta's Llama 3.1 release as an inflection point: open models, he claims, are becoming competitive with closed frontier systems while offering developers more control, lower costs, better customization, and less dependence on dominant vendors. Historically, the article tries to explain a platform transition: AI is becoming a foundational computing layer, and Zuckerberg argues that its dominant infrastructure should resemble Linux and other open-source systems rather than closed Unix-like or Apple-style ecosystems.",
       "sourceNote": "\"Open Source AI is the Path Forward\"",
       "sourceUrl": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/",
@@ -1681,7 +1753,9 @@
       "week": "",
       "origin": "note",
       "links": [
-        "2023-llama-released"
+        "2023-llama-released",
+        "2023-llama-weights-leak",
+        "2026-chinese-labs-undercut-u-s-costs"
       ]
     },
     {
@@ -2897,10 +2971,14 @@
       "endYear": 2026,
       "type": "Corporate release",
       "concepts": [
-        "Technological Systems"
+        "Interpretative Flexibility",
+        "Technological Momentum",
+        "Use Stage"
       ],
       "allConcepts": [
-        "Technological Systems"
+        "Interpretative Flexibility",
+        "Technological Momentum",
+        "Use Stage"
       ],
       "summary": "The article argues that Moonshot AI's release of Kimi K3 marked another moment when Chinese AI firms appeared to narrow the performance gap with leading U.S. labs, especially through large open-weight models. Its historical significance lies less in any single benchmark result than in what it reveals about changing AI competition: model capability, cost, access, compute constraints, national rivalry, and developer adoption are becoming intertwined. The article frames Kimi K3 as evidence that AI progress is no longer only about proprietary frontier systems from U.S. companies, but also about open-weight ecosystems, cheaper inference, and the tools that let developers swap models into applications.",
       "sourceNote": "Chinese AI has leveled up, and brought renewed focus on the open weight model shift",
@@ -2910,7 +2988,8 @@
       "week": "",
       "origin": "note",
       "links": [
-        "2026-kimi-k3-released-as-open-weights"
+        "2026-kimi-k3-released-as-open-weights",
+        "2026-chinese-labs-undercut-u-s-costs"
       ]
     },
     {
@@ -2982,10 +3061,14 @@
       "endYear": 2026,
       "type": "Corporate release",
       "concepts": [
-        "Technological Systems"
+        "Unnatural Monopoly",
+        "Path Dependence",
+        "Economic Consolidation"
       ],
       "allConcepts": [
-        "Technological Systems"
+        "Unnatural Monopoly",
+        "Path Dependence",
+        "Economic Consolidation"
       ],
       "summary": "Gordon argues that Chinese AI firms such as Moonshot AI, Z.ai, DeepSeek, Meituan, Tencent, Xiaomi, Alibaba, and MiniMax have narrowed the perceived gap with leading U.S. AI labs by producing models that are competitive in capability and dramatically cheaper to use. The article explains this shift as the result of constraint-driven engineering, open-source distribution, lower energy and infrastructure costs, domestic chip adaptation, and aggressive market positioning. Historically, the article is trying to explain why U.S. export controls and compute advantage did not preserve a stable American lead in AI, and why global users began treating Chinese models as practical infrastructure rather than second-tier alternatives.",
       "sourceNote": "\"China's Moonshot, Z.AI, and DeepSeek are challenging U.S. AI labs-and beating them on cost\"",
@@ -2995,6 +3078,8 @@
       "week": "",
       "origin": "note",
       "links": [
+        "2024-deepseek-v3-technical-report",
+        "2025-thompson-s-deepseek-faq",
         "2026-kimi-k3-released-as-open-weights",
         "2026-deepseek-v4-pro-model-card"
       ]
