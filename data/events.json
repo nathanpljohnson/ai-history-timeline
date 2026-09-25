@@ -1,6 +1,99 @@
 {
-  "generatedAt": "2026-09-25T10:28:50.113Z",
+  "generatedAt": "2026-09-25T15:55:30.478Z",
   "events": [
+    {
+      "id": "1943-logical-calculus-of-nervous-activity",
+      "title": "Logical calculus of nervous activity",
+      "yearLabel": "1943",
+      "date": null,
+      "startYear": 1943,
+      "endYear": 1943,
+      "type": "Theory / question",
+      "concepts": [
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "McCulloch and Pitts made neurons legible as logical switching elements, giving later artificial neural-network work a formal bridge between nervous systems, computation, and symbolic proof.",
+      "sourceNote": "McCulloch and Pitts - A Logical Calculus of the Ideas Immanent in Nervous Activity",
+      "sourceUrl": "https://doi.org/10.1007/BF02478259",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1950-computing-machinery-and-intelligence",
+        "1955-56-a-proposal-for-the-dartmouth-summer-research-projecton-artificial-intelligence",
+        "1986-backpropagation-popularized"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "1948-wiener-publishes-cybernetics",
+      "title": "Wiener publishes Cybernetics",
+      "yearLabel": "1948",
+      "date": null,
+      "startYear": 1948,
+      "endYear": 1948,
+      "type": "Field formation",
+      "concepts": [
+        "Technological Systems",
+        "Co-production",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Technological Systems",
+        "Co-production",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "Wiener framed feedback, control, communication, organisms, and machines as one research problem, giving postwar AI-adjacent work a language for adaptive systems.",
+      "sourceNote": "Cybernetics - Control and Communication in the Animal and the Machine",
+      "sourceUrl": "https://mitpress.mit.edu/9780262730099/cybernetics/",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1955-56-a-proposal-for-the-dartmouth-summer-research-projecton-artificial-intelligence"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "1949-hebbian-learning",
+      "title": "Hebbian learning",
+      "yearLabel": "1949",
+      "date": null,
+      "startYear": 1949,
+      "endYear": 1949,
+      "type": "Theory / question",
+      "concepts": [
+        "Naturalization",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Naturalization",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "Hebb made learning intelligible as the strengthening of connections between co-active cells, a durable theoretical ancestor of connectionist learning.",
+      "sourceNote": "The Organization of Behavior",
+      "sourceUrl": "https://doi.org/10.4324/9781410612403",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1943-logical-calculus-of-nervous-activity",
+        "1958-rosenblatt-introduces-the-perceptron"
+      ],
+      "drafted_by_codex_expansion": true
+    },
     {
       "id": "1950-computing-machinery-and-intelligence",
       "title": "Turing's imitation game",
@@ -77,6 +170,322 @@
       ]
     },
     {
+      "id": "1956-09-logic-theorist-demonstrated",
+      "title": "Logic Theorist demonstrated",
+      "yearLabel": "1956-09",
+      "date": "1956-09",
+      "startYear": 1956,
+      "endYear": 1956,
+      "type": "Model innovation",
+      "concepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "Newell, Shaw, and Simon demonstrated theorem proving as symbol manipulation, making heuristic search a working model of artificial intelligence.",
+      "sourceNote": "The Logic Theory Machine",
+      "sourceUrl": "https://doi.org/10.1109/TIT.1956.1056797",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1955-56-a-proposal-for-the-dartmouth-summer-research-projecton-artificial-intelligence"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "1958-lisp-appears",
+      "title": "Lisp appears",
+      "yearLabel": "1958",
+      "date": null,
+      "startYear": 1958,
+      "endYear": 1958,
+      "type": "Model innovation",
+      "concepts": [
+        "Technological Systems",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Technological Systems",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "Lisp gave symbolic AI a programming medium, making list processing, recursion, and interactive experimentation part of the field's infrastructure.",
+      "sourceNote": "Recursive Functions of Symbolic Expressions and Their Computation by Machine",
+      "sourceUrl": "https://doi.org/10.1145/367177.367199",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1955-56-a-proposal-for-the-dartmouth-summer-research-projecton-artificial-intelligence",
+        "1956-09-logic-theorist-demonstrated"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "1958-mechanisation-of-thought-processes-conference",
+      "title": "Mechanisation of Thought Processes conference",
+      "yearLabel": "1958",
+      "date": null,
+      "startYear": 1958,
+      "endYear": 1958,
+      "type": "Field formation",
+      "concepts": [
+        "Agenda Control",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Agenda Control",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "The NPL symposium gathered early work on search, learning, games, language, and heuristics, showing AI field formation outside the US Dartmouth story.",
+      "sourceNote": "Mechanisation of Thought Processes",
+      "sourceUrl": "https://www.npl.co.uk/resources/qm/mechanisation-of-thought-processes",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1955-56-a-proposal-for-the-dartmouth-summer-research-projecton-artificial-intelligence",
+        "1973-lighthill-report-criticizes-uk-ai"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "1958-rosenblatt-introduces-the-perceptron",
+      "title": "Rosenblatt introduces the perceptron",
+      "yearLabel": "1958",
+      "date": null,
+      "startYear": 1958,
+      "endYear": 1958,
+      "type": "Model innovation",
+      "concepts": [
+        "Interpretative Flexibility",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Interpretative Flexibility",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "Rosenblatt made adaptive pattern recognition into a public technical object, linking neural theories, machines, and Cold War claims about learning.",
+      "sourceNote": "The Perceptron - A Probabilistic Model for Information Storage and Organization in the Brain",
+      "sourceUrl": "https://doi.org/10.1037/h0042519",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1949-hebbian-learning",
+        "1969-minsky-and-papert-publish-perceptrons",
+        "1986-backpropagation-popularized"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "1961-unimate-enters-factory-work",
+      "title": "Unimate enters factory work",
+      "yearLabel": "1961",
+      "date": null,
+      "startYear": 1961,
+      "endYear": 1961,
+      "type": "Model innovation",
+      "concepts": [
+        "Technological Systems",
+        "Script",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Technological Systems",
+        "Script",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "Unimate put machine autonomy into industrial production, making robotics part of labor history before consumer-facing AI systems.",
+      "sourceNote": "Unimate enters General Motors production",
+      "sourceUrl": "https://robotsguide.com/robots/unimate",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1979-stanford-cart-crosses-a-room"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "1965-dendral-begins-expert-system-chemistry-work",
+      "title": "DENDRAL begins expert-system chemistry work",
+      "yearLabel": "1965",
+      "date": null,
+      "startYear": 1965,
+      "endYear": 1965,
+      "type": "Model innovation",
+      "concepts": [
+        "System Builders",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "System Builders",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "DENDRAL showed that expert knowledge could be encoded for scientific inference, becoming a prototype for later expert systems.",
+      "sourceNote": "DENDRAL and expert-system chemistry",
+      "sourceUrl": "https://profiles.nlm.nih.gov/spotlight/bb/catalog/nlm:nlmuid-101584906X230-doc",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1972-mycin-begins-at-stanford",
+        "1982-r1-xcon-expert-systems-go-commercial"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "1966-alpac-report-cools-machine-translation-funding",
+      "title": "ALPAC report cools machine translation funding",
+      "yearLabel": "1966",
+      "date": null,
+      "startYear": 1966,
+      "endYear": 1966,
+      "type": "State / policy",
+      "concepts": [
+        "Closure",
+        "Agenda Control",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Agenda Control",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "The ALPAC report judged machine translation progress disappointing and redirected US support away from expansive automatic-translation promises.",
+      "sourceNote": "Language and Machines - ALPAC report",
+      "sourceUrl": "https://nap.nationalacademies.org/catalog/9547/language-and-machines-computers-in-translation-and-linguistics",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1973-lighthill-report-criticizes-uk-ai"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "1966-eliza-is-published",
+      "title": "ELIZA is published",
+      "yearLabel": "1966",
+      "date": null,
+      "startYear": 1966,
+      "endYear": 1966,
+      "type": "Critique / governance",
+      "concepts": [
+        "Script",
+        "Pseudo-consent",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Script",
+        "Pseudo-consent",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "ELIZA exposed how easily users attribute understanding to rule-based conversational scripts, making chatbot history also a history of projection and critique.",
+      "sourceNote": "ELIZA - A Computer Program For the Study of Natural Language Communication",
+      "sourceUrl": "https://doi.org/10.1145/365153.365168",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "2022-chatgpt-launch",
+        "2021-stochastic-parrots"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "1969-minsky-and-papert-publish-perceptrons",
+      "title": "Minsky and Papert publish Perceptrons",
+      "yearLabel": "1969",
+      "date": null,
+      "startYear": 1969,
+      "endYear": 1969,
+      "type": "Critique / governance",
+      "concepts": [
+        "Closure",
+        "Technological Momentum",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Technological Momentum",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "Minsky and Papert's critique of perceptrons helped redirect prestige and funding away from early neural networks and toward symbolic AI.",
+      "sourceNote": "Perceptrons - An Introduction to Computational Geometry",
+      "sourceUrl": "https://mitpress.mit.edu/9780262631112/perceptrons/",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1958-rosenblatt-introduces-the-perceptron",
+        "1986-backpropagation-popularized"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "1970-shrdlu-demonstrates-blocks-world-language-understanding",
+      "title": "SHRDLU demonstrates blocks-world language understanding",
+      "yearLabel": "1970",
+      "date": null,
+      "startYear": 1970,
+      "endYear": 1970,
+      "type": "Model innovation",
+      "concepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "SHRDLU made natural-language understanding look powerful by restricting the world, vocabulary, and actions to a blocks-world domain.",
+      "sourceNote": "SHRDLU",
+      "sourceUrl": "https://hci.stanford.edu/winograd/shrdlu/",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1966-eliza-is-published",
+        "2020-language-models-are-few-shot-learnings"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
       "id": "1971-computer-a-history-of-the-information-machine-the-shaping-of-the-personal-computer",
       "title": "Intel 4004: a calculator chip becomes a computer",
       "yearLabel": "1971",
@@ -110,6 +519,191 @@
       ]
     },
     {
+      "id": "1972-mycin-begins-at-stanford",
+      "title": "MYCIN begins at Stanford",
+      "yearLabel": "1972",
+      "date": null,
+      "startYear": 1972,
+      "endYear": 1972,
+      "type": "Model innovation",
+      "concepts": [
+        "Public Interest",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Public Interest",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "MYCIN made rule-based expert advice in medicine a canonical case for knowledge engineering, uncertainty, authority, and liability.",
+      "sourceNote": "MYCIN",
+      "sourceUrl": "https://profiles.nlm.nih.gov/spotlight/bb/catalog/nlm:nlmuid-101584906X229-doc",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1965-dendral-begins-expert-system-chemistry-work",
+        "1982-r1-xcon-expert-systems-go-commercial"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "1973-lighthill-report-criticizes-uk-ai",
+      "title": "Lighthill report criticizes UK AI",
+      "yearLabel": "1973",
+      "date": null,
+      "startYear": 1973,
+      "endYear": 1973,
+      "type": "State / policy",
+      "concepts": [
+        "Agenda Control",
+        "Technological Momentum",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Agenda Control",
+        "Technological Momentum",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "The Lighthill report criticized British AI progress and helped turn technical disappointment into a funding and legitimacy crisis.",
+      "sourceNote": "Lighthill Report",
+      "sourceUrl": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/overview.htm",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1958-mechanisation-of-thought-processes-conference",
+        "1966-alpac-report-cools-machine-translation-funding"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "1979-fukushima-publishes-neocognitron",
+      "title": "Fukushima publishes neocognitron",
+      "yearLabel": "1979",
+      "date": null,
+      "startYear": 1979,
+      "endYear": 1979,
+      "type": "Model innovation",
+      "concepts": [
+        "Path Dependence",
+        "Technological Frame"
+      ],
+      "allConcepts": [
+        "Path Dependence",
+        "Technological Frame"
+      ],
+      "summary": "Fukushima's neocognitron anticipated convolutional vision architectures by building hierarchical, shift-tolerant pattern recognition.",
+      "sourceNote": "Neocognitron",
+      "sourceUrl": "https://doi.org/10.1007/BF00344251",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1958-rosenblatt-introduces-the-perceptron",
+        "1998-lenet-5-and-mnist",
+        "2012-imagenet-classification-with-deep-convolutional-neural-networks"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "1979-stanford-cart-crosses-a-room",
+      "title": "Stanford Cart crosses a room",
+      "yearLabel": "1979",
+      "date": null,
+      "startYear": 1979,
+      "endYear": 1979,
+      "type": "Data / benchmark",
+      "concepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "The Stanford Cart's room-crossing performance made navigation, perception, planning, and motion visible as one embodied AI benchmark.",
+      "sourceNote": "Stanford Cart crosses a room",
+      "sourceUrl": "https://ai.stanford.edu/~nilsson/OnlinePubs-Nils/General%20Essays/AIMag03-04-002.pdf",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1961-unimate-enters-factory-work",
+        "2004-darpa-grand-challenge-has-no-winner"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "1980-aaai-founded",
+      "title": "AAAI founded",
+      "yearLabel": "1980",
+      "date": null,
+      "startYear": 1980,
+      "endYear": 1980,
+      "type": "Field formation",
+      "concepts": [
+        "Agenda Control",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Agenda Control",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "AAAI gave artificial intelligence a professional society, conference infrastructure, and disciplinary boundary work beyond individual labs.",
+      "sourceNote": "AAAI founded",
+      "sourceUrl": "https://aaai.org/about-aaai/aaai-history/",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1955-56-a-proposal-for-the-dartmouth-summer-research-projecton-artificial-intelligence"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "1981-japan-launches-fifth-generation-computer-systems-project",
+      "title": "Japan launches Fifth Generation Computer Systems project",
+      "yearLabel": "1981",
+      "date": null,
+      "startYear": 1981,
+      "endYear": 1981,
+      "type": "State / policy",
+      "concepts": [
+        "Technological Momentum",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Technological Momentum",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "Japan's Fifth Generation project made AI and logic programming part of national industrial strategy and provoked international responses.",
+      "sourceNote": "Fifth Generation Computer Systems project",
+      "sourceUrl": "https://www.jipdec.or.jp/archives/publications/JIPDEC_report/fgcs.html",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1983-strategic-computing-initiative"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
       "id": "1982-r1-xcon-expert-systems-go-commercial",
       "title": "R1/XCON: expert systems go commercial",
       "yearLabel": "1982",
@@ -138,6 +732,39 @@
       "links": [
         "1986-backpropagation-popularized"
       ]
+    },
+    {
+      "id": "1983-strategic-computing-initiative",
+      "title": "Strategic Computing initiative",
+      "yearLabel": "1983",
+      "date": null,
+      "startYear": 1983,
+      "endYear": 1983,
+      "type": "State / policy",
+      "concepts": [
+        "Technological Systems",
+        "System Builders",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Technological Systems",
+        "System Builders",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "DARPA's Strategic Computing initiative tied AI, chips, autonomy, and military systems into a large state-backed technical program.",
+      "sourceNote": "Strategic Computing Initiative",
+      "sourceUrl": "https://apps.dtic.mil/sti/citations/ADA152100",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1981-japan-launches-fifth-generation-computer-systems-project",
+        "2004-darpa-grand-challenge-has-no-winner"
+      ],
+      "drafted_by_codex_expansion": true
     },
     {
       "id": "1985-95-gap-expert-systems-ai-winter",
@@ -195,6 +822,224 @@
       ]
     },
     {
+      "id": "1987-lisp-machine-market-collapses",
+      "title": "Lisp machine market collapses",
+      "yearLabel": "1987",
+      "date": null,
+      "startYear": 1987,
+      "endYear": 1987,
+      "type": "Corporate release",
+      "concepts": [
+        "Unnatural Monopoly",
+        "Path Dependence",
+        "Technological Frame"
+      ],
+      "allConcepts": [
+        "Unnatural Monopoly",
+        "Path Dependence",
+        "Technological Frame"
+      ],
+      "summary": "The collapse of specialized Lisp-machine firms showed how AI hardware niches could be absorbed by cheaper general-purpose computing platforms.",
+      "sourceNote": "Lisp machine market collapse",
+      "sourceUrl": "https://mitpress.mit.edu/9780262691918/the-dream-machine/",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1958-lisp-appears",
+        "2007-nvidia-releases-cuda"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "1988-pearl-publishes-probabilistic-reasoning",
+      "title": "Pearl publishes Probabilistic Reasoning",
+      "yearLabel": "1988",
+      "date": null,
+      "startYear": 1988,
+      "endYear": 1988,
+      "type": "Model innovation",
+      "concepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "Pearl's book consolidated Bayesian networks as a way to reason under uncertainty, broadening AI beyond brittle rule systems.",
+      "sourceNote": "Probabilistic Reasoning in Intelligent Systems",
+      "sourceUrl": "https://doi.org/10.1016/C2009-0-27609-4",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1972-mycin-begins-at-stanford",
+        "2001-random-forests"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "1989-backpropagation-applied-to-handwritten-zip-codes",
+      "title": "Backpropagation applied to handwritten ZIP codes",
+      "yearLabel": "1989",
+      "date": null,
+      "startYear": 1989,
+      "endYear": 1989,
+      "type": "Model innovation",
+      "concepts": [
+        "Stabilization",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Stabilization",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "LeCun and collaborators showed backpropagation could support a practical document-recognition task rather than only laboratory demonstrations.",
+      "sourceNote": "Backpropagation Applied to Handwritten Zip Code Recognition",
+      "sourceUrl": "https://doi.org/10.1162/neco.1989.1.4.541",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1986-backpropagation-popularized",
+        "1998-lenet-5-and-mnist"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "1989-q-learning-introduced",
+      "title": "Q-learning introduced",
+      "yearLabel": "1989",
+      "date": null,
+      "startYear": 1989,
+      "endYear": 1989,
+      "type": "Model innovation",
+      "concepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "Q-learning gave reinforcement learning a model-free algorithm for learning action values from delayed reward.",
+      "sourceNote": "Learning from Delayed Rewards - Q-learning",
+      "sourceUrl": "https://link.springer.com/article/10.1007/BF00992698",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1995-td-gammon",
+        "2016-mastering-the-game-of-go-with-deepneural-networks-and-tree-search"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "1995-support-vector-machines",
+      "title": "Support-vector machines",
+      "yearLabel": "1995",
+      "date": null,
+      "startYear": 1995,
+      "endYear": 1995,
+      "type": "Model innovation",
+      "concepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "Support-vector machines anchored a statistical-learning era in which margins, kernels, and benchmark performance shaped practical machine learning.",
+      "sourceNote": "Support-vector networks",
+      "sourceUrl": "https://doi.org/10.1007/BF00994018",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "2001-random-forests",
+        "2012-imagenet-classification-with-deep-convolutional-neural-networks"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "1995-td-gammon",
+      "title": "TD-Gammon",
+      "yearLabel": "1995",
+      "date": null,
+      "startYear": 1995,
+      "endYear": 1995,
+      "type": "Data / benchmark",
+      "concepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "TD-Gammon used self-play reinforcement learning to reach expert-level backgammon, foreshadowing later game benchmarks.",
+      "sourceNote": "TD-Gammon",
+      "sourceUrl": "https://doi.org/10.1145/203330.203343",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1989-q-learning-introduced",
+        "1997-deep-blue-defeats-kasparov",
+        "2016-mastering-the-game-of-go-with-deepneural-networks-and-tree-search"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "1997-long-short-term-memory",
+      "title": "Long Short-Term Memory",
+      "yearLabel": "1997",
+      "date": null,
+      "startYear": 1997,
+      "endYear": 1997,
+      "type": "Model innovation",
+      "concepts": [
+        "Restabilization",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Restabilization",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "LSTM addressed long-range dependency problems in recurrent neural networks and became a key architecture for sequence modeling before transformers.",
+      "sourceNote": "Long Short-Term Memory",
+      "sourceUrl": "https://doi.org/10.1162/neco.1997.9.8.1735",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "2017-attention-is-all-you-need",
+        "2018-bert"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
       "id": "1997-deep-blue-defeats-kasparov",
       "title": "Deep Blue defeats Kasparov",
       "yearLabel": "1997-05-11",
@@ -223,6 +1068,132 @@
         "2016-mastering-the-game-of-go-with-deepneural-networks-and-tree-search",
         "1950-computing-machinery-and-intelligence"
       ]
+    },
+    {
+      "id": "1998-lenet-5-and-mnist",
+      "title": "LeNet-5 and MNIST",
+      "yearLabel": "1998",
+      "date": null,
+      "startYear": 1998,
+      "endYear": 1998,
+      "type": "Data / benchmark",
+      "concepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "LeNet-5 and MNIST stabilized neural vision around a reusable dataset, architecture, and application domain.",
+      "sourceNote": "Gradient-Based Learning Applied to Document Recognition",
+      "sourceUrl": "http://yann.lecun.com/exdb/lenet/",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1989-backpropagation-applied-to-handwritten-zip-codes",
+        "2009-imagenet-presented-at-cvpr",
+        "2012-imagenet-classification-with-deep-convolutional-neural-networks"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "2001-random-forests",
+      "title": "Random Forests",
+      "yearLabel": "2001",
+      "date": null,
+      "startYear": 2001,
+      "endYear": 2001,
+      "type": "Model innovation",
+      "concepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "Random forests made ensemble learning a robust practical tool and became part of the pre-deep-learning machine-learning mainstream.",
+      "sourceNote": "Random Forests",
+      "sourceUrl": "https://doi.org/10.1023/A:1010933404324",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1995-support-vector-machines",
+        "2006-netflix-prize-launches"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "2004-darpa-grand-challenge-has-no-winner",
+      "title": "DARPA Grand Challenge has no winner",
+      "yearLabel": "2004",
+      "date": null,
+      "startYear": 2004,
+      "endYear": 2004,
+      "type": "Data / benchmark",
+      "concepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "The failed 2004 DARPA Grand Challenge made autonomous driving visible as a hard systems-integration benchmark.",
+      "sourceNote": "DARPA Grand Challenge 2004",
+      "sourceUrl": "https://www.darpa.mil/research/programs/grand-challenge",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1979-stanford-cart-crosses-a-room",
+        "1983-strategic-computing-initiative",
+        "2009-google-self-driving-car-project-begins"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "2006-deep-belief-nets-revive-deep-learning",
+      "title": "Deep belief nets revive deep learning",
+      "yearLabel": "2006",
+      "date": null,
+      "startYear": 2006,
+      "endYear": 2006,
+      "type": "Model innovation",
+      "concepts": [
+        "Technological Momentum",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Technological Momentum",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "Hinton, Osindero, and Teh helped relaunch deep learning by showing how multi-layer generative models could be trained effectively.",
+      "sourceNote": "A Fast Learning Algorithm for Deep Belief Nets",
+      "sourceUrl": "https://doi.org/10.1162/neco.2006.18.7.1527",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1986-backpropagation-popularized",
+        "2012-imagenet-classification-with-deep-convolutional-neural-networks"
+      ],
+      "drafted_by_codex_expansion": true
     },
     {
       "id": "2006-12-the-data-that-transformed-ai-research-and-possibly-the-world",
@@ -270,6 +1241,197 @@
       ]
     },
     {
+      "id": "2006-netflix-prize-launches",
+      "title": "Netflix Prize launches",
+      "yearLabel": "2006",
+      "date": null,
+      "startYear": 2006,
+      "endYear": 2006,
+      "type": "Data / benchmark",
+      "concepts": [
+        "Closure",
+        "Pseudo-consent",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Pseudo-consent",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "The Netflix Prize turned recommender systems into a public data competition, joining corporate data, leaderboard culture, and prize incentives.",
+      "sourceNote": "Netflix Prize",
+      "sourceUrl": "https://www.netflixprize.com/",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "2001-random-forests",
+        "2009-imagenet-presented-at-cvpr"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "2007-nvidia-releases-cuda",
+      "title": "NVIDIA releases CUDA",
+      "yearLabel": "2007",
+      "date": null,
+      "startYear": 2007,
+      "endYear": 2007,
+      "type": "Model innovation",
+      "concepts": [
+        "Appropriation",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Appropriation",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "CUDA made GPUs programmable for general-purpose numerical computing, laying infrastructure for deep-learning scale.",
+      "sourceNote": "NVIDIA CUDA",
+      "sourceUrl": "https://developer.nvidia.com/cuda-zone",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "2017-attention-is-all-you-need",
+        "2020-scaling-laws-for-neural-language-models",
+        "2026-nvidia-q2-fy2027-compute-is-revenue"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "2009-google-self-driving-car-project-begins",
+      "title": "Google self-driving car project begins",
+      "yearLabel": "2009",
+      "date": null,
+      "startYear": 2009,
+      "endYear": 2009,
+      "type": "Corporate release",
+      "concepts": [
+        "Unnatural Monopoly",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Unnatural Monopoly",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "Google's self-driving car project turned DARPA autonomy into a corporate platform project built from maps, sensors, capital, and data.",
+      "sourceNote": "Google self-driving car project begins",
+      "sourceUrl": "https://waymo.com/company/",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "2004-darpa-grand-challenge-has-no-winner",
+        "1983-strategic-computing-initiative"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "2009-imagenet-presented-at-cvpr",
+      "title": "ImageNet presented at CVPR",
+      "yearLabel": "2009",
+      "date": null,
+      "startYear": 2009,
+      "endYear": 2009,
+      "type": "Data / benchmark",
+      "concepts": [
+        "System Builders",
+        "Structure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "System Builders",
+        "Structure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "The ImageNet paper made web images, WordNet categories, annotation labor, and a competition-ready dataset into shared AI infrastructure.",
+      "sourceNote": "ImageNet - A Large-Scale Hierarchical Image Database",
+      "sourceUrl": "https://ieeexplore.ieee.org/document/5206848",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "2006-12-the-data-that-transformed-ai-research-and-possibly-the-world",
+        "2012-imagenet-classification-with-deep-convolutional-neural-networks"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "2011-ibm-watson-wins-jeopardy",
+      "title": "IBM Watson wins Jeopardy",
+      "yearLabel": "2011",
+      "date": null,
+      "startYear": 2011,
+      "endYear": 2011,
+      "type": "Corporate release",
+      "concepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "Watson's televised Jeopardy victory made statistical NLP and enterprise AI visible as a corporate spectacle.",
+      "sourceNote": "IBM Watson wins Jeopardy",
+      "sourceUrl": "https://www.ibm.com/history/watson-jeopardy",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "1997-deep-blue-defeats-kasparov",
+        "2022-chatgpt-launch"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "2012-google-brain-cat-paper",
+      "title": "Google Brain cat paper",
+      "yearLabel": "2012",
+      "date": null,
+      "startYear": 2012,
+      "endYear": 2012,
+      "type": "Model innovation",
+      "concepts": [
+        "System Builders",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "System Builders",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "The Google Brain cat paper made large-scale distributed training itself part of the AI result.",
+      "sourceNote": "Building High-level Features Using Large Scale Unsupervised Learning",
+      "sourceUrl": "https://arxiv.org/abs/1112.6209",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "2007-nvidia-releases-cuda",
+        "2020-scaling-laws-for-neural-language-models"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
       "id": "2012-imagenet-classification-with-deep-convolutional-neural-networks",
       "title": "ImageNet Classification with Deep Convolutional Neural Networks",
       "yearLabel": "2012",
@@ -294,6 +1456,131 @@
       "week": "",
       "origin": "AI — Primary Sources Timeline",
       "links": []
+    },
+    {
+      "id": "2013-word2vec",
+      "title": "word2vec",
+      "yearLabel": "2013",
+      "date": null,
+      "startYear": 2013,
+      "endYear": 2013,
+      "type": "Model innovation",
+      "concepts": [
+        "Appropriation",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Appropriation",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "word2vec made reusable word embeddings cheap and widely available, helping stabilize distributional semantics as NLP infrastructure.",
+      "sourceNote": "Efficient Estimation of Word Representations in Vector Space",
+      "sourceUrl": "https://arxiv.org/abs/1301.3781",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "2018-bert",
+        "2017-attention-is-all-you-need"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "2014-amazon-echo-and-alexa-launch",
+      "title": "Amazon Echo and Alexa launch",
+      "yearLabel": "2014",
+      "date": null,
+      "startYear": 2014,
+      "endYear": 2014,
+      "type": "Corporate release",
+      "concepts": [
+        "Script",
+        "Pseudo-consent",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Script",
+        "Pseudo-consent",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "Echo and Alexa put cloud-based voice AI into domestic space, normalizing always-listening assistants as consumer infrastructure.",
+      "sourceNote": "Amazon Echo and Alexa launch",
+      "sourceUrl": "https://www.aboutamazon.com/news/devices/amazon-echo-alexa-history",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "2022-chatgpt-launch"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "2014-generative-adversarial-networks",
+      "title": "Generative adversarial networks",
+      "yearLabel": "2014",
+      "date": null,
+      "startYear": 2014,
+      "endYear": 2014,
+      "type": "Model innovation",
+      "concepts": [
+        "Interpretative Flexibility",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Interpretative Flexibility",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "GANs reframed generative modeling as an adversarial training game, making synthetic images a central AI research frontier.",
+      "sourceNote": "Generative Adversarial Nets",
+      "sourceUrl": "https://arxiv.org/abs/1406.2661",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "2022-laion-5b-released",
+        "2023-02-03-getty-images-sues-stability-ai-in-delaware"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "2015-resnet-wins-imagenet",
+      "title": "ResNet wins ImageNet",
+      "yearLabel": "2015",
+      "date": null,
+      "startYear": 2015,
+      "endYear": 2015,
+      "type": "Model innovation",
+      "concepts": [
+        "Stabilization",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Stabilization",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "Residual connections allowed very deep networks to train effectively and consolidated the ImageNet-era deep-vision paradigm.",
+      "sourceNote": "Deep Residual Learning for Image Recognition",
+      "sourceUrl": "https://arxiv.org/abs/1512.03385",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "2012-imagenet-classification-with-deep-convolutional-neural-networks",
+        "2009-imagenet-presented-at-cvpr"
+      ],
+      "drafted_by_codex_expansion": true
     },
     {
       "id": "2015-openai-founded-as-a-nonprofit",
@@ -364,6 +1651,36 @@
         "1997-deep-blue-defeats-kasparov",
         "2017-attention-is-all-you-need"
       ]
+    },
+    {
+      "id": "2016-09-28-partnership-on-ai-announced",
+      "title": "Partnership on AI announced",
+      "yearLabel": "2016-09-28",
+      "date": "2016-09-28",
+      "startYear": 2016,
+      "endYear": 2016,
+      "type": "Critique / governance",
+      "concepts": [
+        "Public Interest",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Public Interest",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "Major technology firms created Partnership on AI as a multistakeholder governance body before binding AI regulation arrived.",
+      "sourceNote": "Partnership on AI announced",
+      "sourceUrl": "https://deepmind.google/blog/announcing-the-partnership-on-ai-to-benefit-people-society/",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "2018-google-s-2018-ai-principles"
+      ],
+      "drafted_by_codex_expansion": true
     },
     {
       "id": "2016-obama-white-house-ai-report",
@@ -470,6 +1787,68 @@
       ]
     },
     {
+      "id": "2018-bert",
+      "title": "BERT",
+      "yearLabel": "2018",
+      "date": null,
+      "startYear": 2018,
+      "endYear": 2018,
+      "type": "Model innovation",
+      "concepts": [
+        "Restabilization",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Restabilization",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "BERT made transformer pretraining and task-specific fine-tuning the default NLP workflow immediately before the large language model turn.",
+      "sourceNote": "BERT - Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "sourceUrl": "https://arxiv.org/abs/1810.04805",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "2017-attention-is-all-you-need",
+        "2020-language-models-are-few-shot-learnings"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "2018-gender-shades",
+      "title": "Gender Shades",
+      "yearLabel": "2018",
+      "date": null,
+      "startYear": 2018,
+      "endYear": 2018,
+      "type": "Critique / governance",
+      "concepts": [
+        "Public Interest",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Public Interest",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "Gender Shades showed that commercial face-analysis systems had large intersectional error disparities, making audit and dataset composition central AI governance problems.",
+      "sourceNote": "Gender Shades",
+      "sourceUrl": "http://proceedings.mlr.press/v81/buolamwini18a.html",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "2021-stochastic-parrots",
+        "2023-nist-ai-rmf-1-0"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
       "id": "2018-google-s-2018-ai-principles",
       "title": "Google's 2018 AI principles",
       "yearLabel": "2018-06-07",
@@ -498,6 +1877,38 @@
         "2023-brain-and-deepmind-merge",
         "2017-deepmind-s-missing-ethics-board"
       ]
+    },
+    {
+      "id": "2019-mlperf-benchmarks-emerge",
+      "title": "MLPerf benchmarks emerge",
+      "yearLabel": "2019",
+      "date": null,
+      "startYear": 2019,
+      "endYear": 2019,
+      "type": "Data / benchmark",
+      "concepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "MLPerf standardized AI performance benchmarking across hardware and software systems, making compute competition legible.",
+      "sourceNote": "MLPerf benchmarks",
+      "sourceUrl": "https://mlcommons.org/benchmarks/",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "2007-nvidia-releases-cuda",
+        "2026-nvidia-q2-fy2027-compute-is-revenue",
+        "2020-scaling-laws-for-neural-language-models"
+      ],
+      "drafted_by_codex_expansion": true
     },
     {
       "id": "2019-eo-13859-american-ai-leadership",
@@ -531,6 +1942,68 @@
         "2021-eu-proposes-the-ai-act",
         "2024-eu-ai-act-enters-the-official-journal"
       ]
+    },
+    {
+      "id": "2019-05-22-oecd-ai-principles-adopted",
+      "title": "OECD AI Principles adopted",
+      "yearLabel": "2019-05-22",
+      "date": "2019-05-22",
+      "startYear": 2019,
+      "endYear": 2019,
+      "type": "State / policy",
+      "concepts": [
+        "Statutory Consolidation",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "The OECD AI Principles became the first intergovernmental standard on AI and gave governments a shared vocabulary for trustworthy AI.",
+      "sourceNote": "OECD AI Principles",
+      "sourceUrl": "https://www.oecd.org/en/topics/ai-principles.html",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "2021-unesco-ai-ethics-recommendation",
+        "2023-nist-ai-rmf-1-0"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
+      "id": "2020-80-million-tiny-images-withdrawn",
+      "title": "80 Million Tiny Images withdrawn",
+      "yearLabel": "2020",
+      "date": null,
+      "startYear": 2020,
+      "endYear": 2020,
+      "type": "Data / benchmark",
+      "concepts": [
+        "Pseudo-consent",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Pseudo-consent",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "The withdrawal of 80 Million Tiny Images made slurs, consent, and downstream dataset reuse visible as AI infrastructure failures.",
+      "sourceNote": "80 Million Tiny Images withdrawn",
+      "sourceUrl": "https://groups.csail.mit.edu/vision/TinyImages/",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "2022-laion-5b-released",
+        "2021-stochastic-parrots"
+      ],
+      "drafted_by_codex_expansion": true
     },
     {
       "id": "2020-language-models-are-few-shot-learnings",
@@ -771,6 +2244,39 @@
       ]
     },
     {
+      "id": "2021-08-16-foundation-models-report",
+      "title": "Foundation models report",
+      "yearLabel": "2021-08-16",
+      "date": "2021-08-16",
+      "startYear": 2021,
+      "endYear": 2021,
+      "type": "Critique / governance",
+      "concepts": [
+        "Agenda Control",
+        "Naturalization",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Agenda Control",
+        "Naturalization",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "The Stanford CRFM report named foundation models as a technical, institutional, and governance category after GPT-3.",
+      "sourceNote": "On the Opportunities and Risks of Foundation Models",
+      "sourceUrl": "https://arxiv.org/abs/2108.07258",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "2020-language-models-are-few-shot-learnings",
+        "2021-eu-proposes-the-ai-act"
+      ],
+      "drafted_by_codex_expansion": true
+    },
+    {
       "id": "2021-unesco-ai-ethics-recommendation",
       "title": "UNESCO AI ethics recommendation",
       "yearLabel": "2021-11",
@@ -834,6 +2340,37 @@
         "2020-language-models-are-few-shot-learnings",
         "2022-chatgpt-launch"
       ]
+    },
+    {
+      "id": "2022-laion-5b-released",
+      "title": "LAION-5B released",
+      "yearLabel": "2022",
+      "date": null,
+      "startYear": 2022,
+      "endYear": 2022,
+      "type": "Data / benchmark",
+      "concepts": [
+        "Pseudo-consent",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Pseudo-consent",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "LAION-5B made web-scale image-text scraping available as open dataset infrastructure for text-to-image systems.",
+      "sourceNote": "LAION-5B",
+      "sourceUrl": "https://laion.ai/blog/laion-5b/",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "2014-generative-adversarial-networks",
+        "2023-02-03-getty-images-sues-stability-ai-in-delaware"
+      ],
+      "drafted_by_codex_expansion": true
     },
     {
       "id": "2022-blueprint-for-an-ai-bill-of-rights",
@@ -1035,6 +2572,35 @@
         "2022-blueprint-for-an-ai-bill-of-rights",
         "2023-china-s-generative-ai-measures"
       ]
+    },
+    {
+      "id": "2023-02-03-getty-images-sues-stability-ai-in-delaware",
+      "title": "Getty Images sues Stability AI in Delaware",
+      "yearLabel": "2023-02-03",
+      "date": "2023-02-03",
+      "startYear": 2023,
+      "endYear": 2023,
+      "type": "Court / litigation",
+      "concepts": [
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "Getty's Delaware complaint made scraped training data, copyright, trademark, and generated-output liability a central AI litigation battleground.",
+      "sourceNote": "Getty Images v Stability AI Delaware complaint",
+      "sourceUrl": "https://www.courtlistener.com/docket/66788385/getty-images-us-inc-v-stability-ai-inc/",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "links": [
+        "2022-laion-5b-released",
+        "2023-nyt-sues-openai-and-microsoft"
+      ],
+      "drafted_by_codex_expansion": true
     },
     {
       "id": "2023-llama-weights-leak",
