@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T04:56:32.410Z",
+  "generatedAt": "2026-09-25T05:06:32.119Z",
   "events": [
     {
       "id": "1950-computing-machinery-and-intelligence",
@@ -347,6 +347,42 @@
       ]
     },
     {
+      "id": "2016-obama-white-house-ai-report",
+      "title": "Obama White House AI report",
+      "yearLabel": "2016-10-12",
+      "date": "2016-10-12",
+      "startYear": 2016,
+      "endYear": 2016,
+      "type": "State / policy",
+      "concepts": [
+        "Statutory Consolidation",
+        "Agenda Control",
+        "Public Interest"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Agenda Control",
+        "Public Interest",
+        "Naturalization",
+        "Path Dependence"
+      ],
+      "summary": "The report surveys \"the current state of AI, its existing and potential applications, and the questions that are raised for society and public policy by progress in AI,\" and closes with 23 numbered recommendations to federal agencies. It is not a request for legislation. It asks agencies to study, monitor, coordinate, and report — on open training data, on regulatory expertise, on workforce diversity, on autonomous weapons policy — rather than proposing anything Congress would need to pass. The document is explicit that AI's economic effects, safety risks, and fairness questions are all still open, and that the government's role for now is to convene, monitor, and prepare rather than to decide.",
+      "sourceNote": "\"Preparing for the Future of Artificial Intelligence\"",
+      "sourceUrl": "https://obamawhitehouse.archives.gov/sites/default/files/whitehouse_files/microsites/ostp/NSTC/preparing_for_the_future_of_ai.pdf",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 26 · State groundwork, 2016–22",
+      "origin": "note",
+      "links": [
+        "2012-imagenet-classification-with-deep-convolutional-neural-networks",
+        "2016-mastering-the-game-of-go-with-deepneural-networks-and-tree-search",
+        "2019-eo-13859-american-ai-leadership",
+        "2021-nscai-final-report",
+        "2021-eu-proposes-the-ai-act",
+        "2006-12-the-data-that-transformed-ai-research-and-possibly-the-world"
+      ]
+    },
+    {
       "id": "2017-attention-is-all-you-need",
       "title": "Transformer (Attention Is All You Need)",
       "yearLabel": "2017",
@@ -440,6 +476,39 @@
       "links": [
         "2023-brain-and-deepmind-merge",
         "2017-deepmind-s-missing-ethics-board"
+      ]
+    },
+    {
+      "id": "2019-eo-13859-american-ai-leadership",
+      "title": "EO 13859: American AI leadership",
+      "yearLabel": "2019-02-11",
+      "date": "2019-02-11",
+      "startYear": 2019,
+      "endYear": 2019,
+      "type": "State / policy",
+      "concepts": [
+        "Statutory Consolidation",
+        "Agenda Control",
+        "Public Interest"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Agenda Control",
+        "Public Interest",
+        "Naturalization",
+        "Path Dependence"
+      ],
+      "summary": "The order establishes the \"American AI Initiative,\" guided by five principles that pair promotion with protection: drive technological breakthroughs, reduce barriers to deployment, train the workforce, foster public trust, and promote an international environment while \"protecting our critical AI technologies from acquisition by strategic competitors and adversarial nations.\" Operationally, it is short: it instructs named agency heads to prioritize AI in budgets, review federal data for wider AI research access, draft a regulatory-guidance memorandum, produce a NIST standards plan, and prepare a classified action plan to protect the U.S. AI advantage — each on a fixed deadline (90, 120, or 180 days) but without appropriating money or creating enforceable rights.",
+      "sourceNote": "Executive Order 13859 - Maintaining American Leadership in Artificial Intelligence",
+      "sourceUrl": "https://www.federalregister.gov/documents/2019/02/14/2019-02544/maintaining-american-leadership-in-artificial-intelligence",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 26 · State groundwork, 2016–22",
+      "origin": "note",
+      "links": [
+        "2016-obama-white-house-ai-report",
+        "2021-nscai-final-report",
+        "2021-eu-proposes-the-ai-act"
       ]
     },
     {
@@ -563,6 +632,73 @@
       ]
     },
     {
+      "id": "2021-nscai-final-report",
+      "title": "NSCAI final report",
+      "yearLabel": "2021-03",
+      "date": "2021-03",
+      "startYear": 2021,
+      "endYear": 2021,
+      "type": "State / policy",
+      "concepts": [
+        "Technological Momentum",
+        "Unnatural Monopoly",
+        "Agenda Control"
+      ],
+      "allConcepts": [
+        "Technological Momentum",
+        "Unnatural Monopoly",
+        "Agenda Control",
+        "Naturalization",
+        "Public Interest"
+      ],
+      "summary": "The Commission concludes that \"the United States needs to implement a strategy to defend and compete in the AI era,\" organized in two parts: defending against AI-enabled threats (Part I) and winning the broader technology competition with China (Part II). Its central factual claim is that China \"possesses the might, talent, and ambition to surpass the United States as the world's leader in AI in the next decade if current trends do not change,\" and its central policy claim is that only a \"White House–led strategy,\" backed by tens of billions in new federal spending — $40 billion for AI R&D, up to $35 billion for domestic microelectronics — can prevent that outcome.",
+      "sourceNote": "NSCAI Final Report",
+      "sourceUrl": "https://reports.nscai.gov/final-report/",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 26 · State groundwork, 2016–22",
+      "origin": "note",
+      "links": [
+        "2016-obama-white-house-ai-report",
+        "2019-eo-13859-american-ai-leadership",
+        "2021-eu-proposes-the-ai-act",
+        "2025-amodei-on-deepseek-and-export-controls"
+      ]
+    },
+    {
+      "id": "2021-eu-proposes-the-ai-act",
+      "title": "EU proposes the AI Act",
+      "yearLabel": "2021-04-21",
+      "date": "2021-04-21",
+      "startYear": 2021,
+      "endYear": 2021,
+      "type": "State / policy",
+      "concepts": [
+        "Statutory Consolidation",
+        "Corporate Self-regulation",
+        "Agenda Control"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Corporate Self-regulation",
+        "Agenda Control",
+        "Public Interest",
+        "Interpretative Flexibility"
+      ],
+      "summary": "The Commission proposes binding EU-wide rules for AI systems, built on a risk tier rather than a technology definition: certain practices are prohibited outright, \"high-risk\" systems face mandatory conformity requirements and ex-ante assessment before they can reach the market, a narrow set of systems face transparency-only obligations, and everything else is unregulated apart from voluntary codes of conduct. Unlike the U.S. documents drafted for this course week, this is a Regulation — directly applicable law under Article 288 TFEU, chosen specifically \"for a uniform application of the new rules\" rather than an advisory report or an executive order.",
+      "sourceNote": "EU AI Act proposal - COM(2021) 206",
+      "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:52021PC0206",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 26 · State groundwork, 2016–22",
+      "origin": "note",
+      "links": [
+        "2016-obama-white-house-ai-report",
+        "2019-eo-13859-american-ai-leadership",
+        "2021-nscai-final-report"
+      ]
+    },
+    {
       "id": "2021-anthropic-s-founding-raise",
       "title": "Anthropic's founding raise",
       "yearLabel": "2021-05-28",
@@ -597,6 +733,42 @@
       ]
     },
     {
+      "id": "2021-unesco-ai-ethics-recommendation",
+      "title": "UNESCO AI ethics recommendation",
+      "yearLabel": "2021-11",
+      "date": "2021-11",
+      "startYear": 2021,
+      "endYear": 2021,
+      "type": "State / policy",
+      "concepts": [
+        "Closure",
+        "Agenda Control",
+        "Public Interest"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Agenda Control",
+        "Public Interest",
+        "Statutory Consolidation",
+        "Naturalization",
+        "Co-production"
+      ],
+      "summary": "UNESCO's General Conference adopts a values-and-principles instrument on AI ethics — the organization's own summary calls it \"UNESCO's first-ever global standard on AI ethics\" — and recommends that member states apply it \"on a voluntary basis.\" The text sets out values (human rights and dignity, environmental flourishing, diversity, peaceful societies), ten principles (proportionality, safety, fairness, privacy, human oversight, transparency, responsibility, awareness, and multi-stakeholder governance), and eight policy action areas member states are asked to consider, from ethical impact assessment to gender and culture.",
+      "sourceNote": "\"Recommendation on the Ethics of Artificial Intelligence\"",
+      "sourceUrl": "https://www.unesco.org/en/articles/recommendation-ethics-artificial-intelligence",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 26 · State groundwork, 2016–22",
+      "origin": "note",
+      "links": [
+        "2016-obama-white-house-ai-report",
+        "2021-nscai-final-report",
+        "2022-blueprint-for-an-ai-bill-of-rights",
+        "2023-nist-ai-rmf-1-0",
+        "2023-china-s-generative-ai-measures"
+      ]
+    },
+    {
       "id": "2022-instructgpt-and-rlhf",
       "title": "InstructGPT and RLHF",
       "yearLabel": "2022",
@@ -624,6 +796,40 @@
       "links": [
         "2020-language-models-are-few-shot-learnings",
         "2022-chatgpt-launch"
+      ]
+    },
+    {
+      "id": "2022-blueprint-for-an-ai-bill-of-rights",
+      "title": "Blueprint for an AI Bill of Rights",
+      "yearLabel": "2022-10",
+      "date": "2022-10",
+      "startYear": 2022,
+      "endYear": 2022,
+      "type": "State / policy",
+      "concepts": [
+        "Statutory Consolidation",
+        "Agenda Control",
+        "Public Interest"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Agenda Control",
+        "Public Interest",
+        "Naturalization",
+        "Path Dependence"
+      ],
+      "summary": "OSTP sets out five principles meant to guide \"the design, use, and deployment of automated systems to protect the rights of the American public\" in the age of artificial intelligence: safe and effective systems, algorithmic discrimination protections, data privacy, notice and explanation, and human alternatives with fallback. The document states its own limits directly: it \"is non-binding and does not constitute U.S. government policy,\" and it \"does not supersede, modify, or direct an interpretation of any existing statute, regulation, policy, or international instrument.\"",
+      "sourceNote": "\"Blueprint for an AI Bill of Rights\"",
+      "sourceUrl": "https://www.govinfo.gov/content/pkg/GOVPUB-PREX23-PURL-gpo193638/pdf/GOVPUB-PREX23-PURL-gpo193638.pdf",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 26 · State groundwork, 2016–22",
+      "origin": "note",
+      "links": [
+        "2019-eo-13859-american-ai-leadership",
+        "2021-unesco-ai-ethics-recommendation",
+        "2023-nist-ai-rmf-1-0",
+        "2023-china-s-generative-ai-measures"
       ]
     },
     {
@@ -714,6 +920,42 @@
       "week": "",
       "origin": "note",
       "links": []
+    },
+    {
+      "id": "2023-nist-ai-rmf-1-0",
+      "title": "NIST AI RMF 1.0",
+      "yearLabel": "2023-01-26",
+      "date": "2023-01-26",
+      "startYear": 2023,
+      "endYear": 2023,
+      "type": "State / policy",
+      "concepts": [
+        "Statutory Consolidation",
+        "Communications Act of 1934",
+        "Corporate Self-regulation"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Communications Act of 1934",
+        "Corporate Self-regulation",
+        "Agenda Control",
+        "Economic Consolidation",
+        "Naturalization",
+        "Public Interest"
+      ],
+      "summary": "NIST offers organizations a voluntary framework for managing the risks of AI systems, organized around four functions — GOVERN, MAP, MEASURE, and MANAGE — and built on seven characteristics of trustworthy AI, including \"valid and reliable,\" \"explainable and interpretable,\" and \"fair with their harmful biases managed.\" The document does not set a technical standard or a compliance bar; it is explicit that it does neither.",
+      "sourceNote": "NIST AI Risk Management Framework 1.0",
+      "sourceUrl": "https://doi.org/10.6028/NIST.AI.100-1",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 26 · State groundwork, 2016–22",
+      "origin": "note",
+      "links": [
+        "2016-obama-white-house-ai-report",
+        "2019-eo-13859-american-ai-leadership",
+        "2022-blueprint-for-an-ai-bill-of-rights",
+        "2023-china-s-generative-ai-measures"
+      ]
     },
     {
       "id": "2023-llama-weights-leak",
@@ -827,6 +1069,37 @@
         "2021-anthropic-s-founding-raise",
         "2020-language-models-are-few-shot-learnings",
         "2020-scaling-laws-for-neural-language-models"
+      ]
+    },
+    {
+      "id": "2023-china-s-generative-ai-measures",
+      "title": "China's generative AI measures",
+      "yearLabel": "2023-08-15",
+      "date": "2023-08-15",
+      "startYear": 2023,
+      "endYear": 2023,
+      "type": "State / policy",
+      "concepts": [
+        "Statutory Consolidation",
+        "Ideological Closure",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Ideological Closure",
+        "Path Dependence",
+        "Corporate Self-regulation"
+      ],
+      "summary": "Six Chinese state bodies jointly issue binding rules for generative AI services offered to the public in mainland China, imposing obligations on providers at each stage of the AI lifecycle — training data sourcing, content moderation, user agreements, labeling, and security review — enforced through warnings, corrections, service suspension, and referral for \"public security administrative sanction\" or criminal responsibility. A 2025 companion instrument, also translated by China Law Translate, adds detailed labeling requirements for AI-generated content.",
+      "sourceNote": "China's Interim Measures for Generative AI Services",
+      "sourceUrl": "https://www.chinalawtranslate.com/en/generative-ai-interim/",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 26 · State groundwork, 2016–22",
+      "origin": "note",
+      "links": [
+        "2023-nist-ai-rmf-1-0",
+        "2022-blueprint-for-an-ai-bill-of-rights"
       ]
     },
     {
