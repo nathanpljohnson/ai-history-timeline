@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T05:06:32.119Z",
+  "generatedAt": "2026-09-25T05:15:37.826Z",
   "events": [
     {
       "id": "1950-computing-machinery-and-intelligence",
@@ -379,7 +379,8 @@
         "2019-eo-13859-american-ai-leadership",
         "2021-nscai-final-report",
         "2021-eu-proposes-the-ai-act",
-        "2006-12-the-data-that-transformed-ai-research-and-possibly-the-world"
+        "2006-12-the-data-that-transformed-ai-research-and-possibly-the-world",
+        "2024-eu-ai-act-enters-the-official-journal"
       ]
     },
     {
@@ -508,7 +509,8 @@
       "links": [
         "2016-obama-white-house-ai-report",
         "2021-nscai-final-report",
-        "2021-eu-proposes-the-ai-act"
+        "2021-eu-proposes-the-ai-act",
+        "2024-eu-ai-act-enters-the-official-journal"
       ]
     },
     {
@@ -662,7 +664,8 @@
         "2016-obama-white-house-ai-report",
         "2019-eo-13859-american-ai-leadership",
         "2021-eu-proposes-the-ai-act",
-        "2025-amodei-on-deepseek-and-export-controls"
+        "2025-amodei-on-deepseek-and-export-controls",
+        "2024-eu-ai-act-enters-the-official-journal"
       ]
     },
     {
@@ -695,7 +698,8 @@
       "links": [
         "2016-obama-white-house-ai-report",
         "2019-eo-13859-american-ai-leadership",
-        "2021-nscai-final-report"
+        "2021-nscai-final-report",
+        "2024-eu-ai-act-enters-the-official-journal"
       ]
     },
     {
@@ -1041,6 +1045,38 @@
       ]
     },
     {
+      "id": "2023-white-house-voluntary-ai-commitments",
+      "title": "White House voluntary AI commitments",
+      "yearLabel": "2023-07-21",
+      "date": "2023-07-21",
+      "startYear": 2023,
+      "endYear": 2023,
+      "type": "State / policy",
+      "concepts": [
+        "Statutory Consolidation",
+        "Agenda Control",
+        "Corporate Self-regulation"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Agenda Control",
+        "Corporate Self-regulation",
+        "Public Interest",
+        "Pseudo-consent"
+      ],
+      "summary": "Seven companies — Amazon, Anthropic, Google, Inflection, Meta, Microsoft, and OpenAI — commit, in a three-page document, to eight practices grouped under safety, security, and trust: red-teaming before release, information sharing on risks, protecting model weights, incentivizing vulnerability reporting, watermarking AI-generated audiovisual content, publicly reporting model capabilities and limitations, researching societal risks, and applying frontier AI to major challenges. The document states these commitments apply only to future models \"more powerful than the current industry frontier\" and are explicitly meant to lapse once matching regulation exists.",
+      "sourceNote": "White House Voluntary AI Commitments",
+      "sourceUrl": "https://bidenwhitehouse.archives.gov/wp-content/uploads/2023/07/Ensuring-Safe-Secure-and-Trustworthy-AI.pdf",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 9 · The orders",
+      "origin": "note",
+      "links": [
+        "2023-nist-ai-rmf-1-0",
+        "2023-bletchley-declaration"
+      ]
+    },
+    {
       "id": "2023-amodei-tells-the-founding-story",
       "title": "Amodei tells the founding story",
       "yearLabel": "2023-08-08",
@@ -1103,6 +1139,37 @@
       ]
     },
     {
+      "id": "2023-bletchley-declaration",
+      "title": "Bletchley Declaration",
+      "yearLabel": "2023-11-01",
+      "date": "2023-11-01",
+      "startYear": 2023,
+      "endYear": 2023,
+      "type": "State / policy",
+      "concepts": [
+        "Interpretative Flexibility",
+        "Agenda Control",
+        "Public Interest"
+      ],
+      "allConcepts": [
+        "Interpretative Flexibility",
+        "Agenda Control",
+        "Public Interest",
+        "Co-production"
+      ],
+      "summary": "Twenty-eight governments and the European Union, meeting at the first international AI Safety Summit, jointly affirm that \"frontier\" AI — the most capable general-purpose models — poses risks that are \"inherently international in nature\" and best addressed through cooperation. The two-page text commits signatories to nothing more specific than building \"a shared scientific and evidence-based understanding\" of frontier AI risk and developing national, risk-based policies that may differ by country, while resolving to sustain an international research network and meet again the following year.",
+      "sourceNote": "\"The Bletchley Declaration\"",
+      "sourceUrl": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 9 · The orders",
+      "origin": "note",
+      "links": [
+        "2025-international-ai-safety-report",
+        "2024-seoul-declaration-and-commitments"
+      ]
+    },
+    {
       "id": "2023-sutskever-i-deeply-regret",
       "title": "Sutskever: I deeply regret",
       "yearLabel": "2023-11-20",
@@ -1129,6 +1196,38 @@
         "2015-openai-founded-as-a-nonprofit",
         "2024-openai-board-review-completed",
         "2024-toner-on-the-openai-board-crisis"
+      ]
+    },
+    {
+      "id": "2023-nyt-sues-openai-and-microsoft",
+      "title": "NYT sues OpenAI and Microsoft",
+      "yearLabel": "2023-12-27",
+      "date": "2023-12-27",
+      "startYear": 2023,
+      "endYear": 2023,
+      "type": "Court / litigation",
+      "concepts": [
+        "Appropriation",
+        "Black Box",
+        "Statutory Consolidation"
+      ],
+      "allConcepts": [
+        "Appropriation",
+        "Black Box",
+        "Statutory Consolidation",
+        "Agenda Control"
+      ],
+      "summary": "The Times alleges Microsoft and OpenAI built ChatGPT, Bing Chat/Copilot, and related products by copying millions of Times articles without permission, that this training was not \"fair use\" because the resulting products substitute for and compete with Times journalism rather than transforming it, and that GPT-4 can be prompted to output near-verbatim reproductions of specific Times articles, which the complaint documents in an attached exhibit. It seeks damages under the Copyright Act after months of failed negotiation with both companies.",
+      "sourceNote": "The New York Times Co. v. Microsoft and OpenAI, complaint",
+      "sourceUrl": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.612697/gov.uscourts.nysd.612697.1.0.pdf",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 9 · The orders",
+      "origin": "note",
+      "links": [
+        "2022-chatgpt-launch",
+        "2020-language-models-are-few-shot-learnings",
+        "2023-bletchley-declaration"
       ]
     },
     {
@@ -1229,6 +1328,38 @@
       ]
     },
     {
+      "id": "2024-seoul-declaration-and-commitments",
+      "title": "Seoul Declaration and commitments",
+      "yearLabel": "2024-05-21",
+      "date": "2024-05-21",
+      "startYear": 2024,
+      "endYear": 2024,
+      "type": "State / policy",
+      "concepts": [
+        "Corporate Self-regulation",
+        "Statutory Consolidation",
+        "System Builders"
+      ],
+      "allConcepts": [
+        "Corporate Self-regulation",
+        "Statutory Consolidation",
+        "System Builders",
+        "Agenda Control",
+        "Public Interest"
+      ],
+      "summary": "Eleven governments and the EU, meeting six months after Bletchley, affirm continued cooperation on AI safety, innovation, and inclusivity, and note a companion document — the Frontier AI Safety Commitments — in which sixteen named AI developers pledge to publish a safety framework addressing severe risks by the next summit, in France. The commitments set out what those frameworks must cover: identifying and assessing risks, defining thresholds at which risk becomes \"intolerable,\" and being transparent about how the framework is implemented — without specifying who verifies that any company has actually met these commitments.",
+      "sourceNote": "\"Seoul Declaration for safe, innovative and inclusive AI\"",
+      "sourceUrl": "https://www.gov.uk/government/publications/seoul-declaration-for-safe-innovative-and-inclusive-ai-ai-seoul-summit-2024/seoul-declaration-for-safe-innovative-and-inclusive-ai-by-participants-attending-the-leaders-session-ai-seoul-summit-21-may-2024",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 9 · The orders",
+      "origin": "note",
+      "links": [
+        "2023-bletchley-declaration",
+        "2023-white-house-voluntary-ai-commitments"
+      ]
+    },
+    {
       "id": "2024-toner-on-the-openai-board-crisis",
       "title": "Toner on the OpenAI board crisis",
       "yearLabel": "2024-05-28",
@@ -1313,6 +1444,37 @@
       "origin": "note",
       "links": [
         "2023-llama-released"
+      ]
+    },
+    {
+      "id": "2024-eu-ai-act-enters-the-official-journal",
+      "title": "EU AI Act enters the Official Journal",
+      "yearLabel": "2024-07-12",
+      "date": "2024-07-12",
+      "startYear": 2024,
+      "endYear": 2024,
+      "type": "State / policy",
+      "concepts": [
+        "Statutory Consolidation",
+        "Agenda Control",
+        "Corporate Self-regulation"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Agenda Control",
+        "Corporate Self-regulation",
+        "Path Dependence",
+        "Technological Frame"
+      ],
+      "summary": "The enacted Regulation creates a distinct legal category for \"general-purpose AI models\" (Article 3) and, in Chapter V, a two-tier obligation structure for them: baseline transparency duties for every general-purpose model, and a heavier regime — systematic risk assessment, adversarial testing, incident reporting, cybersecurity — for the subset classified as posing \"systemic risk,\" which the Regulation presumes occurs once training compute exceeds 10^25 floating-point operations. This is the operative text that finally answers the question the 2021 Commission proposal could not: what obligations, if any, attach to a model built for no single stated purpose.",
+      "sourceNote": "Regulation (EU) 2024-1689 (the AI Act)",
+      "sourceUrl": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 9 · The orders",
+      "origin": "note",
+      "links": [
+        "2021-eu-proposes-the-ai-act"
       ]
     },
     {
@@ -1416,6 +1578,37 @@
       ]
     },
     {
+      "id": "2025-eo-14148-revokes-eo-14110",
+      "title": "EO 14148 revokes EO 14110",
+      "yearLabel": "2025-01-20",
+      "date": "2025-01-20",
+      "startYear": 2025,
+      "endYear": 2025,
+      "type": "State / policy",
+      "concepts": [
+        "Statutory Consolidation",
+        "Agenda Control",
+        "Ideological Closure"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Agenda Control",
+        "Ideological Closure"
+      ],
+      "summary": "On his first day back in office, President Trump signed EO 14148, a single order revoking roughly ninety prior executive orders, memoranda, and proclamations en bloc, one line item of which is Executive Order 14110, \"Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence.\" Three days later, EO 14179 does the AI-specific work: it revokes EO 14110 again by name, directs every agency to find and unwind anything done under it, and sets a new governing policy of unrestricted AI development. Read together, the two orders complete the reversal of the prior administration's AI framework within a single week of the new one taking office.",
+      "sourceNote": "Executive Order 14148 - Initial Rescissions of Harmful Executive Orders and Actions",
+      "sourceUrl": "https://www.federalregister.gov/documents/2025/01/28/2025-01901/initial-rescissions-of-harmful-executive-orders-and-actions",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 23 · 2025: the reversal",
+      "origin": "note",
+      "links": [
+        "2025-america-s-ai-action-plan",
+        "2025-vance-at-the-paris-ai-summit",
+        "2025-eo-14365-targets-state-ai-laws"
+      ]
+    },
+    {
       "id": "2025-thompson-s-deepseek-faq",
       "title": "Thompson's DeepSeek FAQ",
       "yearLabel": "2025-01-27",
@@ -1448,6 +1641,69 @@
         "2026-meta-s-muse-spark",
         "2026-kimi-k3-renews-the-open-weight-shift",
         "2026-kimi-k3-released-as-open-weights"
+      ]
+    },
+    {
+      "id": "2025-international-ai-safety-report",
+      "title": "International AI Safety Report",
+      "yearLabel": "2025-01-29",
+      "date": "2025-01-29",
+      "startYear": 2025,
+      "endYear": 2025,
+      "type": "State / policy",
+      "concepts": [
+        "Interpretative Flexibility",
+        "Agenda Control",
+        "Public Interest"
+      ],
+      "allConcepts": [
+        "Interpretative Flexibility",
+        "Agenda Control",
+        "Public Interest",
+        "Naturalization"
+      ],
+      "summary": "An expert advisory panel nominated by thirty governments plus the UN, EU, and OECD, chaired by Yoshua Bengio and drawing on 96 international experts, produces the first synthesis of scientific research on general-purpose AI capabilities, risks, and mitigations. The report states explicitly that it represents scientific synthesis, not political consensus or government endorsement, and that the underlying science is \"not yet settled\" — the experts who wrote it continue to disagree with each other on both the pace of future capability growth and the severity of resulting risk.",
+      "sourceNote": "\"International AI Safety Report 2025\"",
+      "sourceUrl": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 9 · The orders",
+      "origin": "note",
+      "links": [
+        "2023-bletchley-declaration",
+        "2024-seoul-declaration-and-commitments"
+      ]
+    },
+    {
+      "id": "2025-vance-at-the-paris-ai-summit",
+      "title": "Vance at the Paris AI summit",
+      "yearLabel": "2025-02-11",
+      "date": "2025-02-11",
+      "startYear": 2025,
+      "endYear": 2025,
+      "type": "State / policy",
+      "concepts": [
+        "Interpretative Flexibility",
+        "Agenda Control",
+        "Ideological Closure"
+      ],
+      "allConcepts": [
+        "Interpretative Flexibility",
+        "Agenda Control",
+        "Ideological Closure"
+      ],
+      "summary": "Speaking at the Paris AI Action Summit, whose earlier iteration Vance says carried the title \"AI safety,\" Vice President Vance opens by rejecting that premise directly: he is here to talk about \"AI opportunity\" instead. He argues against \"excessive regulation,\" insists AI \"must remain free from ideological bias,\" criticizes EU rules by name, and frames safety regulation itself as a tool incumbents use against competitors, before closing with a call to build rather than restrict.",
+      "sourceNote": "Vance's remarks at the AI Action Summit, Paris",
+      "sourceUrl": "https://www.presidency.ucsb.edu/documents/remarks-the-vice-president-the-artificial-intelligence-action-summit-paris-france",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 23 · 2025: the reversal",
+      "origin": "note",
+      "links": [
+        "2023-bletchley-declaration",
+        "2025-eo-14148-revokes-eo-14110",
+        "2025-america-s-ai-action-plan",
+        "2025-eo-14365-targets-state-ai-laws"
       ]
     },
     {
@@ -1548,6 +1804,38 @@
       ]
     },
     {
+      "id": "2025-america-s-ai-action-plan",
+      "title": "America's AI Action Plan",
+      "yearLabel": "2025-07-23",
+      "date": "2025-07-23",
+      "startYear": 2025,
+      "endYear": 2025,
+      "type": "State / policy",
+      "concepts": [
+        "Technological Momentum",
+        "Agenda Control",
+        "Ideological Closure"
+      ],
+      "allConcepts": [
+        "Technological Momentum",
+        "Agenda Control",
+        "Ideological Closure"
+      ],
+      "summary": "Issued by the White House and signed by the Assistant to the President for Science and Technology, the Special Advisor for AI and Crypto, and the Assistant to the President for National Security Affairs, the Action Plan sets out three pillars — accelerating innovation, building infrastructure, and leading international diplomacy and security — to \"win\" a global AI race. On the question of state regulation, it stops short of proposing federal preemption outright: it recommends that federal funding decisions weigh a state's \"AI regulatory climate\" and that the FCC evaluate whether state rules interfere with its own authority, without yet directing an agency to act against any specific state law.",
+      "sourceNote": "\"Winning the Race - America's AI Action Plan\"",
+      "sourceUrl": "https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 23 · 2025: the reversal",
+      "origin": "note",
+      "links": [
+        "2023-nist-ai-rmf-1-0",
+        "2025-eo-14148-revokes-eo-14110",
+        "2025-vance-at-the-paris-ai-summit",
+        "2025-eo-14365-targets-state-ai-laws"
+      ]
+    },
+    {
       "id": "2025-ai-orchestrated-espionage-disclosed",
       "title": "AI-orchestrated espionage disclosed",
       "yearLabel": "2025-11-13",
@@ -1612,6 +1900,37 @@
         "2026-kimi-k3-renews-the-open-weight-shift",
         "2025-thompson-s-deepseek-faq",
         "2023-llama-released"
+      ]
+    },
+    {
+      "id": "2025-eo-14365-targets-state-ai-laws",
+      "title": "EO 14365 targets state AI laws",
+      "yearLabel": "2025-12-11",
+      "date": "2025-12-11",
+      "startYear": 2025,
+      "endYear": 2025,
+      "type": "State / policy",
+      "concepts": [
+        "Statutory Consolidation",
+        "Agenda Control",
+        "Economic Consolidation"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Agenda Control",
+        "Economic Consolidation"
+      ],
+      "summary": "Building explicitly on EO 14179, this order moves from persuasion and funding hints to direct confrontation with state AI laws. It creates a Justice Department litigation task force to challenge state statutes in court, conditions a share of federal broadband funding on states repealing \"onerous\" AI laws, and directs the FTC and FCC to open proceedings aimed at federal preemption — all while separately asking Congress to pass the uniform national standard the order says does not yet exist. The order's published URL slug — eliminating-state-law-obstruction-of-national-artificial-intelligence-policy — is blunter than its official title.",
+      "sourceNote": "Executive Order 14365 - Ensuring a National Policy Framework for Artificial Intelligence",
+      "sourceUrl": "https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/",
+      "status": "vault",
+      "draft": true,
+      "week": "Nov 23 · 2025: the reversal",
+      "origin": "note",
+      "links": [
+        "2025-eo-14148-revokes-eo-14110",
+        "2025-america-s-ai-action-plan",
+        "2025-vance-at-the-paris-ai-summit"
       ]
     },
     {
