@@ -14,6 +14,8 @@
   --model: #87569c;
   --product: #bc8a2d;
   --critique: #4f607b;
+  --state: #3f7a4f;
+  --court: #9b3f5c;
   --research: #786c61;
   --sans: ui-sans-serif, system-ui, sans-serif;
 }
@@ -394,6 +396,8 @@ input[type="range"] {
 .type-model-innovation { --accent: var(--model); }
 .type-corporate-release { --accent: var(--product); }
 .type-critique-governance { --accent: var(--critique); }
+.type-state-policy { --accent: var(--state); }
+.type-court-litigation { --accent: var(--court); }
 .type-research-source { --accent: var(--research); }
 
 .event-meta {
@@ -409,6 +413,19 @@ input[type="range"] {
   font-family: var(--sans);
   font-size: .68rem;
   font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.draft-pill {
+  margin-left: .5rem;
+  padding: 0 .35rem;
+  border: 1px solid var(--muted);
+  border-radius: 3px;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: .62rem;
+  font-weight: 700;
   letter-spacing: .04em;
   text-transform: uppercase;
 }

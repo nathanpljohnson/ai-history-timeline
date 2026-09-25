@@ -5,6 +5,8 @@ const typeOrder = [
   "Model innovation",
   "Corporate release",
   "Critique / governance",
+  "State / policy",
+  "Court / litigation",
   "Research source"
 ];
 
@@ -25,6 +27,7 @@ const state = {
   activeTypes: new Set(typeOrder),
   query: "",
   lens: "",
+  week: "",
   showLinks: true,
   pxPerYear: 10,
   bounds: { min: 1950, max: 2030 }
@@ -45,6 +48,7 @@ const els = {
   arcLayer: document.querySelector("#arcLayer"),
   focusArcLayer: document.querySelector("#focusArcLayer"),
   lensSelect: document.querySelector("#lensSelect"),
+  weekSelect: document.querySelector("#weekSelect"),
   linksToggle: document.querySelector("#linksToggle"),
   detail: document.querySelector("#eventDetail"),
   zoomRange: document.querySelector("#zoomRange"),
@@ -89,7 +93,8 @@ function visibleEvents() {
   return state.events.filter((event) => {
     const typeMatch = state.activeTypes.has(event.type);
     const queryMatch = !query || eventText(event).includes(query);
-    return typeMatch && queryMatch;
+    const weekMatch = !state.week || event.week === state.week;
+    return typeMatch && queryMatch && weekMatch;
   });
 }
 
@@ -351,6 +356,16 @@ function renderLensOptions() {
     .join("")}`;
 }
 
+// Week labels look like "Sep 21 · Open weights and the China shock"; the course runs Fall 2026.
+function renderWeekOptions() {
+  const weeks = [...new Set(state.events.map((event) => event.week).filter(Boolean))]
+    .sort((a, b) => Date.parse(`${a.split(" · ")[0]} 2026`) - Date.parse(`${b.split(" · ")[0]} 2026`));
+  els.weekSelect.innerHTML = `<option value="">All weeks</option>${weeks
+    .map((week) => `<option value="${escapeHtml(week)}">${escapeHtml(week)}</option>`)
+    .join("")}`;
+  els.weekSelect.hidden = !weeks.length;
+}
+
 function setLens(concept) {
   state.lens = concept;
   if (concept && ![...els.lensSelect.options].some((option) => option.value === concept)) {
@@ -394,6 +409,7 @@ function renderDetail(event) {
   els.detail.innerHTML = `
     <button class="detail-close" type="button" aria-label="Close details">×</button>
     <span class="type-pill">${escapeHtml(event.type)}</span>
+    ${event.draft ? `<span class="draft-pill" title="Drafted by Claude, not yet reviewed">Draft</span>` : ""}
     <h2>${escapeHtml(event.title)}</h2>
     <p>${escapeHtml(event.summary)}</p>
     ${event.detail ? `<p class="detail-claim">${escapeHtml(event.detail)}</p>` : ""}
@@ -455,6 +471,7 @@ async function init() {
     computeBounds();
     renderTypeFilters();
     renderLensOptions();
+    renderWeekOptions();
     fitTimeline();
   } catch (error) {
     els.cardLayer.innerHTML = `<p class="empty-state">The timeline data could not be loaded. Run <code>npm run update</code>, then refresh.</p>`;
@@ -594,6 +611,10 @@ els.detail.addEventListener("click", (event) => {
 });
 
 els.lensSelect.addEventListener("change", (event) => setLens(event.target.value));
+els.weekSelect.addEventListener("change", (event) => {
+  state.week = event.target.value;
+  renderTimeline();
+});
 
 els.linksToggle.addEventListener("click", () => {
   state.showLinks = !state.showLinks;

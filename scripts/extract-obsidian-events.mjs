@@ -215,6 +215,8 @@ function sourceEvent(note, conceptNames) {
     sourceNote: note.name,
     sourceUrl,
     status: "vault",
+    draft: String(frontmatter.status).toLowerCase() === "draft",
+    week: typeof frontmatter.course_week === "string" ? frontmatter.course_week : "",
     origin: "note"
   };
 }
@@ -342,6 +344,8 @@ for (const row of timelineRows(timelineNote?.markdown || "")) {
     sourceNote: note ? note.name : row.title,
     sourceUrl: fromNote?.sourceUrl || "",
     status: row.gap ? "gap" : "vault",
+    draft: fromNote?.draft || false,
+    week: fromNote?.week || "",
     origin: TIMELINE_NOTE
   });
 }
