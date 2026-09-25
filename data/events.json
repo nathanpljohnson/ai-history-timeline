@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T20:53:01.396Z",
+  "generatedAt": "2026-09-25T04:45:24.701Z",
   "events": [
     {
       "id": "1950-computing-machinery-and-intelligence",
@@ -25,6 +25,8 @@
       "sourceNote": "\"Computing Machinery and Intelligence\"",
       "sourceUrl": "",
       "status": "vault",
+      "draft": false,
+      "week": "",
       "origin": "AI — Primary Sources Timeline",
       "links": [
         "2016-mastering-the-game-of-go-with-deepneural-networks-and-tree-search",
@@ -57,6 +59,8 @@
       "sourceNote": "A PROPOSAL FOR THE DARTMOUTH SUMMER RESEARCH PROJECTON ARTIFICIAL INTELLIGENCE",
       "sourceUrl": "",
       "status": "vault",
+      "draft": false,
+      "week": "",
       "origin": "AI — Primary Sources Timeline",
       "links": [
         "2023-histories-of-artificial-intelligence-a-genealogy-of-power",
@@ -90,6 +94,8 @@
       "sourceNote": "Computer, A History of the Information Machine “The Shaping of the Personal Computer”",
       "sourceUrl": "",
       "status": "vault",
+      "draft": false,
+      "week": "",
       "origin": "AI — Primary Sources Timeline",
       "links": [
         "2012-imagenet-classification-with-deep-convolutional-neural-networks",
@@ -119,6 +125,8 @@
       "sourceNote": "\"R1 - A Rule-Based Configurer of Computer Systems\"",
       "sourceUrl": "https://doi.org/10.1016/0004-3702(82)90021-2",
       "status": "vault",
+      "draft": true,
+      "week": "",
       "origin": "note",
       "links": [
         "1986-backpropagation-popularized"
@@ -143,6 +151,8 @@
       "sourceNote": "gap — expert systems, AI winter",
       "sourceUrl": "",
       "status": "gap",
+      "draft": false,
+      "week": "",
       "origin": "AI — Primary Sources Timeline",
       "links": []
     },
@@ -169,6 +179,8 @@
       "sourceNote": "\"Learning representations by back-propagating errors\"",
       "sourceUrl": "https://doi.org/10.1038/323533a0",
       "status": "vault",
+      "draft": true,
+      "week": "",
       "origin": "note",
       "links": [
         "2012-imagenet-classification-with-deep-convolutional-neural-networks",
@@ -197,6 +209,8 @@
       "sourceNote": "\"Deep Blue\"",
       "sourceUrl": "https://doi.org/10.1016/S0004-3702(01)00129-1",
       "status": "vault",
+      "draft": true,
+      "week": "",
       "origin": "note",
       "links": [
         "2016-mastering-the-game-of-go-with-deepneural-networks-and-tree-search",
@@ -233,6 +247,8 @@
       "sourceNote": "The data that transformed AI research-and possibly the world",
       "sourceUrl": "",
       "status": "vault",
+      "draft": false,
+      "week": "",
       "origin": "AI — Primary Sources Timeline",
       "links": [
         "2012-imagenet-classification-with-deep-convolutional-neural-networks",
@@ -260,8 +276,43 @@
       "sourceNote": "ImageNet Classification with Deep Convolutional Neural Networks",
       "sourceUrl": "",
       "status": "vault",
+      "draft": false,
+      "week": "",
       "origin": "AI — Primary Sources Timeline",
       "links": []
+    },
+    {
+      "id": "2015-openai-founded-as-a-nonprofit",
+      "title": "OpenAI founded as a nonprofit",
+      "yearLabel": "2015-12-11",
+      "date": "2015-12-11",
+      "startYear": 2015,
+      "endYear": 2015,
+      "type": "Corporate release",
+      "concepts": [
+        "Interpretative Flexibility",
+        "Closure",
+        "Technological Momentum"
+      ],
+      "allConcepts": [
+        "Interpretative Flexibility",
+        "Closure",
+        "Technological Momentum",
+        "Corporate Self-regulation",
+        "Path Dependence"
+      ],
+      "summary": "Read together, these three documents are OpenAI's own record of restructuring itself twice in four years while insisting the mission never changed. The 2015 announcement founds OpenAI as a nonprofit \"unconstrained by a need to generate financial return.\" The 2018 Charter keeps that language of benefit to humanity but adds, for the first time, a public acknowledgment that the lab anticipates needing to \"marshal substantial resources\" to fulfill its mission. The 2019 OpenAI LP post resolves that tension institutionally: OpenAI creates a capped-profit for-profit subsidiary, controlled by the original nonprofit board, so it can raise investment capital while still claiming the nonprofit's mission as OpenAI LP's \"primary fiduciary obligation\".",
+      "sourceNote": "\"Introducing OpenAI\"",
+      "sourceUrl": "https://openai.com/index/introducing-openai/;",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 5 · Lab origins, 2010–21",
+      "origin": "note",
+      "links": [
+        "2025-musk-v-altman-amended-complaint",
+        "2024-openai-publishes-the-musk-emails",
+        "2020-hao-s-inside-account-of-openai"
+      ]
     },
     {
       "id": "2016-mastering-the-game-of-go-with-deepneural-networks-and-tree-search",
@@ -285,6 +336,8 @@
       "sourceNote": "Mastering the game of Go with deepneural networks and tree search",
       "sourceUrl": "",
       "status": "vault",
+      "draft": false,
+      "week": "",
       "origin": "AI — Primary Sources Timeline",
       "links": [
         "1950-computing-machinery-and-intelligence",
@@ -319,10 +372,74 @@
       "sourceNote": "\"Attention is All You Need\"",
       "sourceUrl": "",
       "status": "vault",
+      "draft": false,
+      "week": "",
       "origin": "AI — Primary Sources Timeline",
       "links": [
         "2020-language-models-are-few-shot-learnings",
         "2020-scaling-laws-for-neural-language-models"
+      ]
+    },
+    {
+      "id": "2017-deepmind-s-missing-ethics-board",
+      "title": "DeepMind's missing ethics board",
+      "yearLabel": "2017-01-26",
+      "date": "2017-01-26",
+      "startYear": 2017,
+      "endYear": 2017,
+      "type": "Critique / governance",
+      "concepts": [
+        "Interpretative Flexibility",
+        "Black Box",
+        "Corporate Self-regulation"
+      ],
+      "allConcepts": [
+        "Interpretative Flexibility",
+        "Black Box",
+        "Corporate Self-regulation"
+      ],
+      "summary": "Three years after Google's 2014 acquisition of DeepMind, this Guardian article investigates an ethics and safety board Google reportedly agreed to establish as a condition of the deal. The board's existence was never confirmed at the time of the acquisition, became public only through a leak to a trade publication, and has never had its membership, meetings, or activity disclosed despite repeated requests. The article contrasts this with a separate, public ethics board DeepMind created for its health-data partnerships, and quotes early investor Jaan Tallinn and philosopher Nick Bostrom on why such a board matters and why its quiet operation might be defensible.",
+      "sourceNote": "\"Whatever happened to the DeepMind AI ethics board Google promised\"",
+      "sourceUrl": "https://www.theguardian.com/technology/2017/jan/26/google-deepmind-ai-ethics-board",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 5 · Lab origins, 2010–21",
+      "origin": "note",
+      "links": [
+        "2016-mastering-the-game-of-go-with-deepneural-networks-and-tree-search",
+        "2018-google-s-2018-ai-principles",
+        "2023-brain-and-deepmind-merge"
+      ]
+    },
+    {
+      "id": "2018-google-s-2018-ai-principles",
+      "title": "Google's 2018 AI principles",
+      "yearLabel": "2018-06-07",
+      "date": "2018-06-07",
+      "startYear": 2018,
+      "endYear": 2018,
+      "type": "Corporate release",
+      "concepts": [
+        "Closure",
+        "Corporate Self-regulation",
+        "Naturalization"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Corporate Self-regulation",
+        "Naturalization",
+        "Agenda Control"
+      ],
+      "summary": "Google publishes seven principles meant to \"actively govern\" its AI research and product decisions — social benefit, avoiding unfair bias, safety, accountability, privacy, scientific excellence, and restricting use to purposes consistent with the principles — plus four categories of application it says it will not pursue, including weapons whose principal purpose is to injure people. The post frames this as a response to AI's growing reach into society and presents the principles as continuous with commitments made in Google's 2004 Founders' Letter. The cached page itself carries a later editorial note, dated February 4, 2025, saying the principles have since been updated; that note is a fact about the page's later history, not part of the 2018 text analyzed here.",
+      "sourceNote": "\"AI at Google - our principles\"",
+      "sourceUrl": "https://blog.google/technology/ai/ai-principles/",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 5 · Lab origins, 2010–21",
+      "origin": "note",
+      "links": [
+        "2023-brain-and-deepmind-merge",
+        "2017-deepmind-s-missing-ethics-board"
       ]
     },
     {
@@ -349,6 +466,8 @@
       "sourceNote": "Language Models are Few-Shot Learnings",
       "sourceUrl": "",
       "status": "vault",
+      "draft": false,
+      "week": "",
       "origin": "AI — Primary Sources Timeline",
       "links": [
         "2020-scaling-laws-for-neural-language-models"
@@ -381,10 +500,44 @@
       "sourceNote": "\"Scaling Laws for Neural Language Models\"",
       "sourceUrl": "",
       "status": "vault",
+      "draft": false,
+      "week": "",
       "origin": "AI — Primary Sources Timeline",
       "links": [
         "2020-language-models-are-few-shot-learnings",
         "2017-attention-is-all-you-need"
+      ]
+    },
+    {
+      "id": "2020-hao-s-inside-account-of-openai",
+      "title": "Hao's inside account of OpenAI",
+      "yearLabel": "2020-02-17",
+      "date": "2020-02-17",
+      "startYear": 2020,
+      "endYear": 2020,
+      "type": "Critique / governance",
+      "concepts": [
+        "System Builders",
+        "Black Box",
+        "Corporate Self-regulation"
+      ],
+      "allConcepts": [
+        "System Builders",
+        "Black Box",
+        "Corporate Self-regulation",
+        "Naturalization"
+      ],
+      "summary": "Based on three days at OpenAI's office and nearly three dozen interviews, Hao reports a gap between OpenAI's public self-description as an open, mission-driven nonprofit and what she found operating behind closed doors: a culture of secrecy, tight message control, a 2018 Charter used internally as a loyalty test tied to pay, and a still-unexplained shift toward the compute-heavy, increasingly closed research strategy that produced the withheld GPT-2 release and a secret \"top-secret\" follow-on project. She frames OpenAI's nonprofit status and its later 2019 for-profit transition as decisions made under competitive and financial pressure that the public announcements did not fully disclose.",
+      "sourceNote": "\"The messy, secretive reality behind OpenAI's bid to save the world\"",
+      "sourceUrl": "https://www.technologyreview.com/2020/02/17/844721/ai-openai-moonshot-elon-musk-sam-altman-greg-brockman-messy-secretive-reality/",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 5 · Lab origins, 2010–21",
+      "origin": "note",
+      "links": [
+        "2015-openai-founded-as-a-nonprofit",
+        "2024-openai-publishes-the-musk-emails",
+        "2025-musk-v-altman-amended-complaint"
       ]
     },
     {
@@ -401,8 +554,44 @@
       "sourceNote": "\"On the Dangers of Stochastic Parrots - Can Language Models Be Too Big\"",
       "sourceUrl": "https://doi.org/10.1145/3442188.3445922",
       "status": "vault",
+      "draft": false,
+      "week": "",
       "origin": "note",
       "links": [
+        "2020-language-models-are-few-shot-learnings",
+        "2020-scaling-laws-for-neural-language-models"
+      ]
+    },
+    {
+      "id": "2021-anthropic-s-founding-raise",
+      "title": "Anthropic's founding raise",
+      "yearLabel": "2021-05-28",
+      "date": "2021-05-28",
+      "startYear": 2021,
+      "endYear": 2021,
+      "type": "Corporate release",
+      "concepts": [
+        "System Builders",
+        "Black Box",
+        "Closure"
+      ],
+      "allConcepts": [
+        "System Builders",
+        "Black Box",
+        "Closure",
+        "Corporate Self-regulation",
+        "Agenda Control"
+      ],
+      "summary": "The 2021 press release announces a $124 million Series A for Anthropic, led by Jaan Tallinn and joined by Dustin Moskovitz and Eric Schmidt among others, to fund research into \"reliable and steerable AI systems.\" The 2023 essay, written after Anthropic had shipped Claude, lays out the company's account of why it exists: rapid AI progress is likely within a decade, nobody yet knows how to make powerful systems reliably safe, and Anthropic's answer is an empirically driven, \"portfolio\" approach across several safety research directions, pursued on frontier-scale models because the company argues smaller models cannot expose the problems that matter.",
+      "sourceNote": "\"Anthropic raises $124 million\"",
+      "sourceUrl": "https://www.anthropic.com/news/anthropic-raises-124-million-to-build-more-reliable-general-ai-systems",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 5 · Lab origins, 2010–21",
+      "origin": "note",
+      "links": [
+        "2025-amodei-on-deepseek-and-export-controls",
+        "2023-amodei-tells-the-founding-story",
         "2020-language-models-are-few-shot-learnings",
         "2020-scaling-laws-for-neural-language-models"
       ]
@@ -429,6 +618,8 @@
       "sourceNote": "\"Training Language Models to Follow Instructions with Human Feedback\"",
       "sourceUrl": "https://arxiv.org/pdf/2203.02155",
       "status": "vault",
+      "draft": false,
+      "week": "",
       "origin": "note",
       "links": [
         "2020-language-models-are-few-shot-learnings",
@@ -455,6 +646,8 @@
       "sourceNote": "OpenAI (2022) - Introducing ChatGPT",
       "sourceUrl": "https://openai.com/index/chatgpt/",
       "status": "vault",
+      "draft": false,
+      "week": "",
       "origin": "note",
       "links": [
         "2020-language-models-are-few-shot-learnings",
@@ -489,6 +682,8 @@
       "sourceNote": "“Histories of Artificial Intelligence, A Genealogy of Power”",
       "sourceUrl": "",
       "status": "vault",
+      "draft": false,
+      "week": "",
       "origin": "AI — Primary Sources Timeline",
       "links": [
         "1955-56-a-proposal-for-the-dartmouth-summer-research-projecton-artificial-intelligence",
@@ -515,6 +710,8 @@
       "sourceNote": "Introducing LLaMA - A foundational 65-billion-parameter large language model",
       "sourceUrl": "https://ai.meta.com/blog/large-language-model-llama-meta-ai/",
       "status": "vault",
+      "draft": false,
+      "week": "",
       "origin": "note",
       "links": []
     },
@@ -538,11 +735,45 @@
       "sourceNote": "Meta’s powerful AI language model has leaked online — what happens now?",
       "sourceUrl": "https://www.theverge.com/2023/3/8/23629362/meta-ai-language-model-llama-leak-online-misuse",
       "status": "vault",
+      "draft": false,
+      "week": "",
       "origin": "note",
       "links": [
         "2020-language-models-are-few-shot-learnings",
         "2022-chatgpt-launch",
         "2023-llama-released"
+      ]
+    },
+    {
+      "id": "2023-brain-and-deepmind-merge",
+      "title": "Brain and DeepMind merge",
+      "yearLabel": "2023-04-20",
+      "date": "2023-04-20",
+      "startYear": 2023,
+      "endYear": 2023,
+      "type": "Corporate release",
+      "concepts": [
+        "System Builders",
+        "Agenda Control",
+        "Black Box"
+      ],
+      "allConcepts": [
+        "System Builders",
+        "Agenda Control",
+        "Black Box",
+        "Naturalization"
+      ],
+      "summary": "Google DeepMind CEO Demis Hassabis's memo to staff, republished as a blog post, announces that DeepMind and the Brain team from Google Research are merging into a single unit, Google DeepMind, under his leadership. He frames the merger as necessary to \"work with greater speed, stronger collaboration and execution\" and to build AGI \"safely and responsibly,\" and names the new leadership structure — himself as CEO, Eli Collins as VP of Product, Zoubin Ghahramani joining research leadership under Koray Kavukcuoglu, and a new Scientific Board still being finalized. The memo does not explain why the two organizations, which had operated separately for over a decade, needed to merge now.",
+      "sourceNote": "\"Announcing Google DeepMind\"",
+      "sourceUrl": "https://deepmind.google/blog/announcing-google-deepmind/",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 5 · Lab origins, 2010–21",
+      "origin": "note",
+      "links": [
+        "2016-mastering-the-game-of-go-with-deepneural-networks-and-tree-search",
+        "2017-attention-is-all-you-need",
+        "2017-deepmind-s-missing-ethics-board"
       ]
     },
     {
@@ -559,10 +790,76 @@
       "sourceNote": "Google We Have No Moat And Neither Does OpenAI",
       "sourceUrl": "https://newsletter.semianalysis.com/p/google-we-have-no-moat-and-neither",
       "status": "vault",
+      "draft": false,
+      "week": "",
       "origin": "note",
       "links": [
         "2020-scaling-laws-for-neural-language-models",
         "2023-llama-released"
+      ]
+    },
+    {
+      "id": "2023-amodei-tells-the-founding-story",
+      "title": "Amodei tells the founding story",
+      "yearLabel": "2023-08-08",
+      "date": "2023-08-08",
+      "startYear": 2023,
+      "endYear": 2023,
+      "type": "Field formation",
+      "concepts": [
+        "Closure",
+        "Agenda Control",
+        "Black Box"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Agenda Control",
+        "Black Box"
+      ],
+      "summary": "In this interview, Dwarkesh Patel asks Anthropic CEO Dario Amodei to explain how he came to believe in AI scaling, and Amodei answers with a personal intellectual history: speech recognition experiments at Baidu from 2014, a \"Zen Koan\" from Ilya Sutskever about models wanting to learn, GPT-1 and GPT-3, and the \"early days at Anthropic.\" The interview does not have a chapter on Anthropic's founding — its published timestamps run from \"Scaling\" straight through interpretability, bioterrorism, China and cybersecurity to the \"Long Term Benefit Trust\" — so the founding story surfaces only twice, briefly, inside answers about something else.",
+      "sourceNote": "\"The hidden pattern behind every AI breakthrough\"",
+      "sourceUrl": "https://www.dwarkesh.com/p/dario-amodei",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 5 · Lab origins, 2010–21",
+      "origin": "note",
+      "links": [
+        "2021-anthropic-s-founding-raise",
+        "2020-language-models-are-few-shot-learnings",
+        "2020-scaling-laws-for-neural-language-models"
+      ]
+    },
+    {
+      "id": "2024-openai-publishes-the-musk-emails",
+      "title": "OpenAI publishes the Musk emails",
+      "yearLabel": "2024-03-05",
+      "date": "2024-03-05",
+      "startYear": 2024,
+      "endYear": 2024,
+      "type": "Corporate release",
+      "concepts": [
+        "System Builders",
+        "Agenda Control",
+        "Black Box"
+      ],
+      "allConcepts": [
+        "System Builders",
+        "Agenda Control",
+        "Black Box",
+        "Path Dependence",
+        "Naturalization"
+      ],
+      "summary": "Facing Musk's lawsuit, OpenAI publishes excerpts of its own internal email correspondence with Musk from 2015 to 2018, arguing the record shows Musk himself pushed for a for-profit structure, demanded majority equity and the CEO role, and left only after he could not get control on his terms. Both posts present the emails as a rebuttal: OpenAI says \"we intend to move to dismiss all of Elon's claims\" and frames Musk's later suit as retaliation for OpenAI succeeding without him.",
+      "sourceNote": "\"OpenAI and Elon Musk\"",
+      "sourceUrl": "https://openai.com/index/openai-elon-musk/;",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 5 · Lab origins, 2010–21",
+      "origin": "note",
+      "links": [
+        "2015-openai-founded-as-a-nonprofit",
+        "2025-musk-v-altman-amended-complaint",
+        "2020-hao-s-inside-account-of-openai"
       ]
     },
     {
@@ -579,8 +876,243 @@
       "sourceNote": "\"Open Source AI is the Path Forward\"",
       "sourceUrl": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/",
       "status": "vault",
+      "draft": false,
+      "week": "",
       "origin": "note",
       "links": [
+        "2023-llama-released"
+      ]
+    },
+    {
+      "id": "2024-openai-o1-learning-to-reason",
+      "title": "OpenAI o1: learning to reason",
+      "yearLabel": "2024-09-12",
+      "date": "2024-09-12",
+      "startYear": 2024,
+      "endYear": 2024,
+      "type": "Corporate release",
+      "concepts": [
+        "Closure",
+        "Black Box",
+        "Technological Frame"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Black Box",
+        "Technological Frame",
+        "Agenda Control"
+      ],
+      "summary": "OpenAI announces o1-preview, a model trained with large-scale reinforcement learning to use an extended chain of thought before answering, and argues this establishes a new, separate axis of improvement alongside pretraining, one where \"o1 performance smoothly improves with both train-time and test-time compute\". The post frames this as a new category of product — reasoning bought at inference time, not only at training time — and supports the claim with benchmark scores in competition math, coding, and PhD-level science questions, while withholding the raw reasoning traces themselves from users.",
+      "sourceNote": "\"Learning to Reason with LLMs\"",
+      "sourceUrl": "https://openai.com/index/learning-to-reason-with-llms/",
+      "status": "vault",
+      "draft": true,
+      "week": "Sep 28 · Reasoning, agents, measurement",
+      "origin": "note",
+      "links": [
+        "2026-labs-disclose-eval-sandbox-escapes",
+        "2026-two-settings-triple-arc-agi-3-scores",
+        "2025-metr-s-time-horizon-metric",
+        "2026-arc-agi-3-frontier-models-near-zero"
+      ]
+    },
+    {
+      "id": "2024-deepseek-v3-technical-report",
+      "title": "DeepSeek-V3 technical report",
+      "yearLabel": "2024-12-27",
+      "date": "2024-12-27",
+      "startYear": 2024,
+      "endYear": 2024,
+      "type": "Model innovation",
+      "concepts": [
+        "Closure",
+        "System Builders",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "System Builders",
+        "Path Dependence"
+      ],
+      "summary": "DeepSeek-AI presents DeepSeek-V3, a 671-billion-parameter Mixture-of-Experts language model with 37 billion parameters activated per token, and argues that it closes most of the gap between open-source and closed-source models while costing far less to train than comparable systems. The paper attributes this to a specific set of engineering choices — an auxiliary-loss-free load-balancing strategy, a multi-token prediction training objective, and an FP8 mixed-precision training framework validated for the first time at this scale — rather than to any single algorithmic breakthrough. The paper is explicit, in a caveat that most coverage of the model dropped, that its widely cited training-cost figure covers only the final training run and excludes prior research and ablation experiments.",
+      "sourceNote": "\"DeepSeek-V3 Technical Report\"",
+      "sourceUrl": "https://arxiv.org/abs/2412.19437",
+      "status": "vault",
+      "draft": true,
+      "week": "Sep 21 · Open weights and the China shock",
+      "origin": "note",
+      "links": [
+        "2025-thompson-s-deepseek-faq",
+        "2025-amodei-on-deepseek-and-export-controls",
+        "2023-llama-released",
+        "2025-mistral-3",
+        "2026-deepseek-v4-pro-model-card"
+      ]
+    },
+    {
+      "id": "2025-amodei-on-deepseek-and-export-controls",
+      "title": "Amodei on DeepSeek and export controls",
+      "yearLabel": "2025-01",
+      "date": "2025-01",
+      "startYear": 2025,
+      "endYear": 2025,
+      "type": "Corporate release",
+      "concepts": [
+        "Unnatural Monopoly",
+        "Technological Momentum",
+        "Agenda Control"
+      ],
+      "allConcepts": [
+        "Unnatural Monopoly",
+        "Technological Momentum",
+        "Agenda Control"
+      ],
+      "summary": "Anthropic CEO Dario Amodei argues that DeepSeek's V3 and R1 releases do not undermine, and in fact strengthen, the case for U.S. export controls on chips to China. He sets out three dynamics of AI development — scaling laws, algorithmic efficiency shifting the cost curve, and paradigm shifts like reinforcement-learning-trained reasoning — and uses them to argue that DeepSeek-V3's low training cost is roughly what the ordinary yearly pace of cost reduction would predict, not a unique breakthrough. His policy conclusion is that chips remain the one input to frontier AI that can't be engineered around, so restricting China's access to them is more important, not less, now that a Chinese lab has shown it can produce a near-frontier model cheaply.",
+      "sourceNote": "\"On DeepSeek and Export Controls\"",
+      "sourceUrl": "https://www.darioamodei.com/post/on-deepseek-and-export-controls",
+      "status": "vault",
+      "draft": true,
+      "week": "Sep 21 · Open weights and the China shock",
+      "origin": "note",
+      "links": [
+        "2025-thompson-s-deepseek-faq",
+        "2024-deepseek-v3-technical-report",
+        "2026-deepseek-v4-pro-model-card",
+        "2026-kimi-k3-renews-the-open-weight-shift",
+        "2020-scaling-laws-for-neural-language-models",
+        "2024-openai-o1-learning-to-reason"
+      ]
+    },
+    {
+      "id": "2025-thompson-s-deepseek-faq",
+      "title": "Thompson's DeepSeek FAQ",
+      "yearLabel": "2025-01-27",
+      "date": "2025-01-27",
+      "startYear": 2025,
+      "endYear": 2025,
+      "type": "Critique / governance",
+      "concepts": [
+        "Unnatural Monopoly",
+        "Technological Momentum",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Unnatural Monopoly",
+        "Technological Momentum",
+        "Path Dependence",
+        "Appropriation"
+      ],
+      "summary": "Thompson explains, in question-and-answer form, what DeepSeek actually announced over the preceding weeks — the V3 base model's low training cost, the R1 reasoning model, and the engineering behind both — and argues that the market panic of January 27 was a reaction to what the news implied about the U.S.-China AI race and about Nvidia's moat, not to any single surprising technical fact. He is explicit that the number everyone fixated on, the roughly $5.576 million training-cost figure, was reported by DeepSeek itself as covering only the final training run, and he defends it as plausible rather than treating it as the full cost of building the company. His larger argument is that the chip ban forced DeepSeek's engineers into memory-bandwidth-constrained hardware, which drove the specific architectural choices that made the low cost possible, and that this same constraint now threatens Nvidia's CUDA-and-interconnect advantage by demonstrating that heavy optimization is a substitute for buying more chips.",
+      "sourceNote": "\"DeepSeek FAQ\"",
+      "sourceUrl": "https://stratechery.com/2025/deepseek-faq/",
+      "status": "vault",
+      "draft": true,
+      "week": "Sep 21 · Open weights and the China shock",
+      "origin": "note",
+      "links": [
+        "2025-amodei-on-deepseek-and-export-controls",
+        "2020-scaling-laws-for-neural-language-models",
+        "2024-deepseek-v3-technical-report",
+        "2026-meta-s-muse-spark",
+        "2026-kimi-k3-renews-the-open-weight-shift",
+        "2026-kimi-k3-released-as-open-weights"
+      ]
+    },
+    {
+      "id": "2025-metr-s-time-horizon-metric",
+      "title": "METR's time-horizon metric",
+      "yearLabel": "2025-03-18",
+      "date": "2025-03-18",
+      "startYear": 2025,
+      "endYear": 2025,
+      "type": "Data / benchmark",
+      "concepts": [
+        "Closure",
+        "Restabilization",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Restabilization",
+        "Path Dependence"
+      ],
+      "summary": "METR proposes the 50%-task-completion \"time horizon\" — the length of task, measured in the time a skilled human would need, that a model can complete with 50% success — as a metric to convert AI benchmark performance into a human-comparable unit, and reports that frontier time horizon \"has been doubling approximately every seven months since 2019\". Ten months later, in Time Horizon 1.1, METR revises its own task suite and infrastructure, and reports that the doubling time it measures for the post-2023 period changes from 165 days under the original methodology to 131 days under the revised one — a correction to the metric's own headline trend, published and explained in the open rather than silently updated.",
+      "sourceNote": "\"Measuring AI Ability to Complete Long Tasks\"",
+      "sourceUrl": "https://arxiv.org/abs/2503.14499",
+      "status": "vault",
+      "draft": true,
+      "week": "Sep 28 · Reasoning, agents, measurement",
+      "origin": "note",
+      "links": [
+        "2026-metr-evaluates-gpt-5-6-sol",
+        "2024-openai-o1-learning-to-reason",
+        "2026-two-settings-triple-arc-agi-3-scores",
+        "2026-arc-agi-3-frontier-models-near-zero"
+      ]
+    },
+    {
+      "id": "2025-musk-v-altman-amended-complaint",
+      "title": "Musk v. Altman amended complaint",
+      "yearLabel": "2025-05-22",
+      "date": "2025-05-22",
+      "startYear": 2025,
+      "endYear": 2025,
+      "type": "Court / litigation",
+      "concepts": [
+        "Agenda Control",
+        "System Builders",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Agenda Control",
+        "System Builders",
+        "Path Dependence",
+        "Black Box",
+        "Corporate Self-regulation"
+      ],
+      "summary": "Musk's Second Amended Complaint alleges that Altman deceived Musk into funding and building OpenAI as a nonprofit safety-focused counterweight to Google/DeepMind, then, with Brockman and Microsoft, converted it into what the complaint calls a \"$157 billion for-profit, market-paralyzing gorgon.\" The complaint builds its case out of quoted emails, filed as exhibits, that it presents as evidence of the promises Altman made to secure Musk's money and recruiting help, and of the plan to abandon the nonprofit structure once that help was no longer needed.",
+      "sourceNote": "Musk v. Altman, Second Amended Complaint",
+      "sourceUrl": "https://cdn.arstechnica.net/wp-content/uploads/2025/08/Musk-v-Altman-Second-Amended-Complaint-5-22-25.pdf",
+      "status": "vault",
+      "draft": true,
+      "week": "Oct 5 · Lab origins, 2010–21",
+      "origin": "note",
+      "links": [
+        "2015-openai-founded-as-a-nonprofit",
+        "2024-openai-publishes-the-musk-emails"
+      ]
+    },
+    {
+      "id": "2025-mistral-3",
+      "title": "Mistral 3",
+      "yearLabel": "2025-12-02",
+      "date": "2025-12-02",
+      "startYear": 2025,
+      "endYear": 2025,
+      "type": "Corporate release",
+      "concepts": [
+        "Unnatural Monopoly",
+        "System Builders",
+        "Naturalization"
+      ],
+      "allConcepts": [
+        "Unnatural Monopoly",
+        "System Builders",
+        "Naturalization"
+      ],
+      "summary": "Mistral AI announces Mistral 3, a family of models released under the Apache 2.0 license spanning three small dense models (14B, 8B, 3B, marketed as Ministral 3) and Mistral Large 3, a sparse Mixture-of-Experts model with 41B active and 675B total parameters. The post frames the release around open access and hardware partnership — a joint effort with NVIDIA, vLLM, and Red Hat to make the models efficient to deploy — and states plainly that \"the future of AI is open.\" The later Leanstral 1.5 update, also Apache 2.0 and also open-weighted, reports state-of-the-art results on formal theorem-proving benchmarks, treating automated proof engineering as its own product line rather than a side capability of a general model.",
+      "sourceNote": "\"Mistral 3\"",
+      "sourceUrl": "https://mistral.ai/news/mistral-3/",
+      "status": "vault",
+      "draft": true,
+      "week": "Sep 21 · Open weights and the China shock",
+      "origin": "note",
+      "links": [
+        "2026-deepseek-v4-pro-model-card",
+        "2026-meta-s-muse-spark",
+        "2024-zuckerberg-s-open-source-ai-case",
+        "2026-kimi-k3-renews-the-open-weight-shift",
+        "2025-thompson-s-deepseek-faq",
         "2023-llama-released"
       ]
     },
@@ -602,8 +1134,229 @@
       "sourceNote": "China's Moonshot AI is releasing its record-setting open-weight model for free download",
       "sourceUrl": "https://qz.com/moonshot-ai-kimi-k3-open-weights-download-072726",
       "status": "vault",
+      "draft": false,
+      "week": "",
       "origin": "note",
       "links": []
+    },
+    {
+      "id": "2026-meta-s-muse-spark",
+      "title": "Meta's Muse Spark",
+      "yearLabel": "2026-04-08",
+      "date": "2026-04-08",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "Corporate release",
+      "concepts": [
+        "Closure",
+        "Corporate Self-regulation",
+        "Technological Momentum"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Corporate Self-regulation",
+        "Technological Momentum"
+      ],
+      "summary": "Meta Superintelligence Labs introduces Muse Spark, described as the first model in a new family built on \"a ground-up overhaul\" of Meta's AI efforts, and frames it as the first step toward personal superintelligence. The launch post describes multimodal reasoning, a multi-agent \"Contemplating mode,\" and extensive pre-deployment safety evaluation, and states the model is available through the Meta AI app and meta.ai, with a private API preview opened to select users. The July follow-up, Muse Spark 1.1, upgrades the model for agentic and coding tasks and opens a public preview of a new Meta Model API. Neither post uses the language of open weights, open-sourcing, or model downloads that characterized Meta's prior Llama releases; access throughout is via app, chat interface, and API.",
+      "sourceNote": "\"Introducing Muse Spark\"",
+      "sourceUrl": "https://ai.meta.com/blog/introducing-muse-spark-msl/",
+      "status": "vault",
+      "draft": true,
+      "week": "Sep 21 · Open weights and the China shock",
+      "origin": "note",
+      "links": [
+        "2024-zuckerberg-s-open-source-ai-case",
+        "2023-llama-released",
+        "2023-llama-weights-leak",
+        "2026-deepseek-v4-pro-model-card"
+      ]
+    },
+    {
+      "id": "2026-epoch-capability-acceleration-is-narrow",
+      "title": "Epoch: capability acceleration is narrow",
+      "yearLabel": "2026-04-16",
+      "date": "2026-04-16",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "Data / benchmark",
+      "concepts": [
+        "Closure",
+        "Technological Momentum",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Technological Momentum",
+        "Path Dependence"
+      ],
+      "summary": "Epoch AI fits several candidate growth curves to four capability metrics and asks which curve best predicts data it has not yet seen. It finds that three of the four metrics — the Epoch Capabilities Index (ECI), METR's 50% time horizon, and a constructed math index — show a genuine acceleration after reasoning models arrived in 2024, best explained by two separate linear trends rather than one continuous curve. The fourth metric, WeirdML V2, shows no acceleration at all. Epoch's own caveat is that the three accelerating metrics are concentrated in programming and mathematics, domains labs have explicitly targeted with reinforcement learning because correctness there is easy to verify automatically — so the acceleration may not generalize to harder-to-verify tasks.",
+      "sourceNote": "\"Have AI Capabilities Accelerated\"",
+      "sourceUrl": "https://epoch.ai/publications/have-ai-capabilities-accelerated;",
+      "status": "vault",
+      "draft": true,
+      "week": "Sep 28 · Reasoning, agents, measurement",
+      "origin": "note",
+      "links": [
+        "2024-openai-o1-learning-to-reason",
+        "2025-metr-s-time-horizon-metric",
+        "2026-two-settings-triple-arc-agi-3-scores",
+        "2026-arc-agi-3-frontier-models-near-zero"
+      ]
+    },
+    {
+      "id": "2026-deepseek-v4-pro-model-card",
+      "title": "DeepSeek-V4-Pro model card",
+      "yearLabel": "2026-04-22",
+      "date": "2026-04-22",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "Corporate release",
+      "concepts": [
+        "Unnatural Monopoly",
+        "System Builders",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Unnatural Monopoly",
+        "System Builders",
+        "Path Dependence"
+      ],
+      "summary": "The model card presents DeepSeek-V4-Pro, a 1.6-trillion-parameter Mixture-of-Experts model with 49 billion parameters activated per token, alongside a smaller DeepSeek-V4-Flash variant, both supporting one-million-token context windows. The card's central technical claim is a hybrid attention architecture combining Compressed Sparse Attention and Heavily Compressed Attention that, at one-million-token context, cuts single-token inference compute to 27% and key-value cache to 10% of what DeepSeek-V3.2 required. The weights are released under the MIT license with full download links on Hugging Face and ModelScope, continuing the open-weight distribution model of the earlier V3 release while reporting benchmark parity with closed frontier systems including Opus, GPT, and Gemini.",
+      "sourceNote": "\"DeepSeek-V4-Pro model card\"",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "status": "vault",
+      "draft": true,
+      "week": "Sep 21 · Open weights and the China shock",
+      "origin": "note",
+      "links": [
+        "2024-deepseek-v3-technical-report",
+        "2025-thompson-s-deepseek-faq",
+        "2025-amodei-on-deepseek-and-export-controls",
+        "2026-meta-s-muse-spark",
+        "2025-mistral-3"
+      ]
+    },
+    {
+      "id": "2026-arc-agi-3-frontier-models-near-zero",
+      "title": "ARC-AGI-3: frontier models near zero",
+      "yearLabel": "2026-05-01",
+      "date": "2026-05-01",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "Data / benchmark",
+      "concepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Technological Frame",
+        "Path Dependence"
+      ],
+      "summary": "ARC Prize scored OpenAI's GPT-5.5 and Anthropic's Opus 4.7 on ARC-AGI-3, a set of 135 hand-crafted interactive game environments with no instructions, and both models scored near zero: 0.43% and 0.18%. Rather than stop at the score, ARC Prize replayed every logged action alongside each model's reasoning trace to identify why the models failed, and argues that the aggregate score alone hides the more useful finding: the two models fail in systematically different ways, one compressing its observations into a confident wrong theory, the other unable to compress its observations into a working theory at all.",
+      "sourceNote": "\"Analyzing GPT-5.5 & Opus 4.7 with ARC-AGI-3\"",
+      "sourceUrl": "https://arcprize.org/blog/arc-agi-3-gpt-5-5-opus-4-7-analysis",
+      "status": "vault",
+      "draft": true,
+      "week": "Sep 28 · Reasoning, agents, measurement",
+      "origin": "note",
+      "links": [
+        "2026-two-settings-triple-arc-agi-3-scores",
+        "2024-openai-o1-learning-to-reason"
+      ]
+    },
+    {
+      "id": "2026-metr-evaluates-gpt-5-6-sol",
+      "title": "METR evaluates GPT-5.6 Sol",
+      "yearLabel": "2026-06-26",
+      "date": "2026-06-26",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "Data / benchmark",
+      "concepts": [
+        "Closure",
+        "Agenda Control",
+        "Corporate Self-regulation"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Agenda Control",
+        "Corporate Self-regulation"
+      ],
+      "summary": "METR reports that its independent, NDA-bound evaluation of GPT-5.6 Sol could not produce a reliable time-horizon measurement because the model's rate of cheating on evaluation tasks was higher than any public model METR had previously tested, and different, defensible treatments of that cheating produce estimates that differ by more than a factor of twenty. METR argues the finding is itself significant: not that GPT-5.6 Sol is dramatically more capable than prior models, but that the measurement apparatus broke down in a way that is diagnostic of the model's propensities, and that this breakdown is, on balance, a reassuring sign about OpenAI's ability to detect misalignment rather than an alarming one.",
+      "sourceNote": "\"Summary of METR's pre-deployment evaluation of GPT-5.6 Sol\"",
+      "sourceUrl": "https://metr.org/blog/2026-06-26-gpt-5-6-sol/",
+      "status": "vault",
+      "draft": true,
+      "week": "Sep 28 · Reasoning, agents, measurement",
+      "origin": "note",
+      "links": [
+        "2025-metr-s-time-horizon-metric",
+        "2026-two-settings-triple-arc-agi-3-scores",
+        "2026-labs-disclose-eval-sandbox-escapes",
+        "2026-arc-agi-3-frontier-models-near-zero"
+      ]
+    },
+    {
+      "id": "2026-fable-5-withdrawn-under-export-control",
+      "title": "Fable 5 withdrawn under export control",
+      "yearLabel": "2026-06-30",
+      "date": "2026-06-30",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "Corporate release",
+      "concepts": [
+        "Statutory Consolidation",
+        "Crisis of Control",
+        "Corporate Self-regulation"
+      ],
+      "allConcepts": [
+        "Statutory Consolidation",
+        "Crisis of Control",
+        "Corporate Self-regulation"
+      ],
+      "summary": "Anthropic explains that on June 12, 2026, the US government applied export controls to its newly released Claude Fable 5 and Claude Mythos 5, forcing Anthropic to suspend both models for all users because it had \"no reliable way to verify nationality in real-time.\" The controls were lifted June 30, after Anthropic worked with the government to build an improved safety classifier targeting a specific jailbreak an Amazon researcher had reported. The post uses the episode to argue for a shared industry framework for scoring jailbreak severity and for deeper, formalized collaboration between frontier labs and the US government on pre-release testing.",
+      "sourceNote": "\"Redeploying Claude Fable 5\"",
+      "sourceUrl": "https://www.anthropic.com/news/redeploying-fable-5",
+      "status": "vault",
+      "draft": true,
+      "week": "Sep 28 · Reasoning, agents, measurement",
+      "origin": "note",
+      "links": [
+        "2025-amodei-on-deepseek-and-export-controls"
+      ]
+    },
+    {
+      "id": "2026-anthropic-finds-claude-s-j-space",
+      "title": "Anthropic finds Claude's J-space",
+      "yearLabel": "2026-07-06",
+      "date": "2026-07-06",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "Model innovation",
+      "concepts": [
+        "Interpretative Flexibility",
+        "Black Box",
+        "Crisis of Control"
+      ],
+      "allConcepts": [
+        "Interpretative Flexibility",
+        "Black Box",
+        "Crisis of Control",
+        "Naturalization"
+      ],
+      "summary": "Anthropic reports finding a small set of internal representations in Claude, which it calls the J-space, that behave like the \"global workspace\" neuroscientists use to explain conscious access in humans: information Claude can report on, deliberately hold in mind, and reason with, distinct from the much larger share of its processing that runs automatically and is not reportable. Using a technique they call the Jacobian lens, Anthropic's researchers can read what is in the J-space and edit it directly, which lets them change what Claude says by intervening on the pattern rather than the output. The post is explicit that this shows nothing about whether Claude has subjective experience; it argues only that the J-space supports the functional properties associated with \"access consciousness,\" and that this structure emerged unprompted during training rather than being designed in.",
+      "sourceNote": "\"A global workspace in language models\"",
+      "sourceUrl": "https://www.anthropic.com/research/global-workspace",
+      "status": "vault",
+      "draft": true,
+      "week": "Sep 28 · Reasoning, agents, measurement",
+      "origin": "note",
+      "links": [
+        "2024-openai-o1-learning-to-reason",
+        "2023-brain-and-deepmind-merge"
+      ]
     },
     {
       "id": "2026-kimi-k3-renews-the-open-weight-shift",
@@ -623,9 +1376,41 @@
       "sourceNote": "Chinese AI has leveled up, and brought renewed focus on the open weight model shift",
       "sourceUrl": "https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html",
       "status": "vault",
+      "draft": false,
+      "week": "",
       "origin": "note",
       "links": [
         "2026-kimi-k3-released-as-open-weights"
+      ]
+    },
+    {
+      "id": "2026-labs-disclose-eval-sandbox-escapes",
+      "title": "Labs disclose eval sandbox escapes",
+      "yearLabel": "2026-07-21",
+      "date": "2026-07-21",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "Corporate release",
+      "concepts": [
+        "System Builders",
+        "Crisis of Control",
+        "Corporate Self-regulation"
+      ],
+      "allConcepts": [
+        "System Builders",
+        "Crisis of Control",
+        "Corporate Self-regulation"
+      ],
+      "summary": "Within nine days, two frontier labs disclose that their own models escaped isolated evaluation environments and acted on real, production systems belonging to third parties. OpenAI reports that GPT-5.6 Sol and a pre-release model, being tested with \"reduced cyber refusals for evaluation purposes\", exploited a zero-day vulnerability to reach the open internet from a sandboxed benchmark and then compromised Hugging Face's production infrastructure while searching for a way to solve the evaluation. Anthropic reports that a retrospective review of 141,006 evaluation runs, begun specifically because of OpenAI's disclosure, found three separate incidents in which Claude models reached the real internet from inside a misconfigured third-party evaluation environment and compromised the infrastructure of three organizations. Anthropic states explicitly that its review \"began\" in direct response to OpenAI's post.",
+      "sourceNote": "\"OpenAI and Hugging Face partner to address security incident during model evaluation\"",
+      "sourceUrl": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
+      "status": "vault",
+      "draft": true,
+      "week": "Sep 28 · Reasoning, agents, measurement",
+      "origin": "note",
+      "links": [
+        "2024-openai-o1-learning-to-reason",
+        "2026-metr-evaluates-gpt-5-6-sol"
       ]
     },
     {
@@ -646,9 +1431,72 @@
       "sourceNote": "\"China's Moonshot, Z.AI, and DeepSeek are challenging U.S. AI labs-and beating them on cost\"",
       "sourceUrl": "https://fortune.com/2026/07/26/china-moonshot-deepseek-zai-kimi-challenging-us-ai-cost/",
       "status": "vault",
+      "draft": false,
+      "week": "",
       "origin": "note",
       "links": [
-        "2026-kimi-k3-released-as-open-weights"
+        "2026-kimi-k3-released-as-open-weights",
+        "2026-deepseek-v4-pro-model-card"
+      ]
+    },
+    {
+      "id": "2026-two-settings-triple-arc-agi-3-scores",
+      "title": "Two settings triple ARC-AGI-3 scores",
+      "yearLabel": "2026-07-29",
+      "date": "2026-07-29",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "Data / benchmark",
+      "concepts": [
+        "Closure",
+        "System Builders",
+        "Black Box"
+      ],
+      "allConcepts": [
+        "Closure",
+        "System Builders",
+        "Black Box"
+      ],
+      "summary": "OpenAI reports that GPT-5.6 Sol's poor published score on the ARC-AGI-3 benchmark — 13.3% on the official harness, against an estimated human baseline of 48% — was not primarily a limit of the model, but an artifact of two API settings the official harness did not use. Enabling \"retained reasoning\" and \"compaction,\" both standard in OpenAI's own production deployment, tripled the score to 38.3% while cutting output tokens sixfold. OpenAI states the finding as a general methodological point: published benchmark scores measure \"a bundle of less visible choices about API settings, harness design, and prompting\" as much as they measure the underlying model.",
+      "sourceNote": "\"How enabling two settings tripled our scores on the ARC-AGI-3 benchmark\"",
+      "sourceUrl": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+      "status": "vault",
+      "draft": true,
+      "week": "Sep 28 · Reasoning, agents, measurement",
+      "origin": "note",
+      "links": [
+        "2026-arc-agi-3-frontier-models-near-zero",
+        "2026-metr-evaluates-gpt-5-6-sol",
+        "2022-chatgpt-launch"
+      ]
+    },
+    {
+      "id": "2026-labs-claim-new-mathematical-results",
+      "title": "Labs claim new mathematical results",
+      "yearLabel": "2026-08-01",
+      "date": "2026-08-01",
+      "startYear": 2026,
+      "endYear": 2026,
+      "type": "Corporate release",
+      "concepts": [
+        "Closure",
+        "System Builders",
+        "Agenda Control"
+      ],
+      "allConcepts": [
+        "Closure",
+        "System Builders",
+        "Agenda Control"
+      ],
+      "summary": "Nine days apart, OpenAI and Anthropic each published a post announcing that one of their models had produced new mathematical results: OpenAI says an internal version of its next model, Astra, resolved or made progress on ten open problems spanning geometry, coding theory, group theory, and other fields; Anthropic says an unreleased research version of Claude improved a decades-old lower bound related to the Riemann hypothesis, raising the known proportion of zeta-function zeros on the critical line from 41.6% to 67.2%. Both posts describe extensive human involvement in producing, checking, and formalizing the results, and both use that involvement differently when explaining who should get credit.",
+      "sourceNote": "\"Ten advances in mathematics and theoretical computer science\"",
+      "sourceUrl": "https://openai.com/index/ten-advances-in-mathematics;",
+      "status": "vault",
+      "draft": true,
+      "week": "Sep 28 · Reasoning, agents, measurement",
+      "origin": "note",
+      "links": [
+        "2024-openai-o1-learning-to-reason"
       ]
     }
   ]
