@@ -138,7 +138,7 @@ function citationDate(citation, frontmatter) {
   const fmIso = fmDate.match(/^(\d{4})-(\d{2})(?:-(\d{2}))?/);
   if (fmIso) return { year: Number(fmIso[1]), date: fmIso[0] };
 
-  const fmYear = Number(frontmatter.year) || null;
+  const fmYear = Number(frontmatter.year) || Number(fmDate.match(/^(\d{4})$/)?.[1]) || null;
   const citationYear = Number(citation.match(/\b(1[89]\d\d|20\d\d)\b/)?.[1]) || null;
   const year = fmYear || citationYear;
   if (!year) return { year: null, date: null };

@@ -4,6 +4,7 @@ const typeOrder = [
   "Data / benchmark",
   "Model innovation",
   "Corporate release",
+  "Infrastructure / compute",
   "Critique / governance",
   "State / policy",
   "Court / litigation",

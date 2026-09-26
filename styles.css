@@ -17,6 +17,7 @@
   --state: #3f7a4f;
   --court: #9b3f5c;
   --research: #786c61;
+  --infra: #3d6f9e;
   --sans: ui-sans-serif, system-ui, sans-serif;
 }
 
@@ -399,6 +400,7 @@ input[type="range"] {
 .type-state-policy { --accent: var(--state); }
 .type-court-litigation { --accent: var(--court); }
 .type-research-source { --accent: var(--research); }
+.type-infrastructure-compute { --accent: var(--infra); }
 
 .event-meta {
   align-items: center;
