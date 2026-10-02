@@ -7,6 +7,7 @@
     "update": "node scripts/extract-obsidian-events.mjs",
     "serve": "python3 -m http.server 4173",
     "audit": "node scripts/audit.mjs",
+    "context": "node scripts/build-context.mjs",
     "deploy": "bash scripts/publish.sh"
   }
 }

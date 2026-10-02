@@ -1,4 +1,5 @@
 import data from "../data/events-data.js";
+import { RHYMES, TOURS } from "../data/curated.js";
 
 const events = data.events || [];
 const warnings = data.warnings || [];
@@ -39,4 +40,16 @@ if (duplicates.length) {
   for (const group of duplicates) console.log(`- ${group.map((event) => `${event.yearLabel} ${event.title}`).join(" | ")}`);
 }
 
-process.exit(thin.length || unavailable.length || duplicates.length ? 1 : 0);
+const ids = new Set(events.map((event) => event.id));
+const curatedRefs = [
+  ...RHYMES.flatMap((rhyme) => rhyme.ids.map((id) => [`rhyme ${rhyme.id}`, id])),
+  ...TOURS.flatMap((tour) => tour.steps.flatMap((step, i) => step.ids.map((id) => [`tour ${tour.id} stop ${i + 1}`, id])))
+];
+const brokenRefs = curatedRefs.filter(([, id]) => !ids.has(id));
+console.log(`Curated references (rhymes, tours): ${curatedRefs.length - brokenRefs.length}/${curatedRefs.length} resolve`);
+if (brokenRefs.length) {
+  console.log(`\nBroken curated references (fix data/curated.js):`);
+  for (const [where, id] of brokenRefs) console.log(`- ${where}: ${id}`);
+}
+
+process.exit(thin.length || unavailable.length || duplicates.length || brokenRefs.length ? 1 : 0);
