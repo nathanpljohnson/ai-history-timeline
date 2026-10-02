@@ -6,6 +6,7 @@ import os from "node:os";
 const defaultVault = path.join(os.homedir(), "Documents", "Obsidian Vault");
 const vaultPath = process.argv[2] || process.env.OBSIDIAN_VAULT || defaultVault;
 const outPath = path.resolve("data/events.json");
+const moduleOutPath = path.resolve("data/events-data.js");
 const TIMELINE_NOTE = "AI — Primary Sources Timeline";
 const CONCEPT_INDEX = "Concept Index";
 
@@ -30,6 +31,24 @@ const conceptTypeHints = new Map([
   ["Co-production", "Critique / governance"],
   ["Revisionist History", "Critique / governance"]
 ]);
+
+const conceptAliases = new Map([
+  ["corporate self regulation", "Corporate Self-regulation"],
+  ["corporate self-regulation", "Corporate Self-regulation"],
+  ["path dependence", "Path Dependence"],
+  ["black box", "Black Box"],
+  ["socio technical ensemble", "Sociotechnical Ensemble"],
+  ["sociotechnical ensemble", "Sociotechnical Ensemble"],
+  ["public interest", "Public Interest"]
+]);
+
+const analyticLexicons = {
+  decision: ["board", "court", "agency", "congress", "white house", "commission", "company", "lab", "funder", "foundation", "judge", "regulator", "executive order", "senate", "coalition"],
+  power: ["state", "market", "corporate", "military", "university", "labor", "labour", "public", "capital", "monopoly", "platform", "institution", "government"],
+  material: ["compute", "chip", "gpu", "data center", "dataset", "benchmark", "energy", "labor", "labour", "infrastructure", "cloud", "cuda", "scraping"],
+  closure: ["benchmark", "standard", "test", "evaluation", "law", "order", "verdict", "settlement", "demo", "model card", "principles", "framework"],
+  controversy: ["sues", "lawsuit", "veto", "withdraw", "leak", "ban", "suspend", "complaint", "critic", "risk", "safety", "copyright", "privacy", "bias"]
+};
 
 function stripMarkdown(value = "") {
   return value
@@ -171,7 +190,12 @@ function rankedConcepts(body, conceptNames) {
       if (hits) counts.set(name, hits);
     }
   }
-  return [...counts.entries()].sort((a, b) => b[1] - a[1]).map(([name]) => name);
+  return [...counts.entries()].sort((a, b) => b[1] - a[1]).map(([name]) => normalizeConcept(name));
+}
+
+function normalizeConcept(name) {
+  const key = noteKey(name);
+  return conceptAliases.get(key) || name;
 }
 
 function asList(value) {
@@ -181,6 +205,189 @@ function asList(value) {
 
 function escapeRegex(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function escapeHtml(value = "") {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
+}
+
+function inlineMarkdown(value = "") {
+  return escapeHtml(value)
+    .replace(/`([^`]+)`/g, "<code>$1</code>")
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noreferrer">$1</a>')
+    .replace(/\[\[([^\]|#]+)(?:#[^\]|]*)?\|([^\]]+)\]\]/g, "$2")
+    .replace(/\[\[([^\]|#]+)(?:#[^\]|]*)?\]\]/g, "$1")
+    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/\*([^*]+)\*/g, "<em>$1</em>");
+}
+
+function noteHtml(markdown = "") {
+  const lines = bodyOf(markdown).split(/\r?\n/);
+  const html = [];
+  let paragraph = [];
+  let list = [];
+
+  const flushParagraph = () => {
+    if (!paragraph.length) return;
+    html.push(`<p>${inlineMarkdown(paragraph.join(" "))}</p>`);
+    paragraph = [];
+  };
+  const flushList = () => {
+    if (!list.length) return;
+    html.push(`<ul>${list.map((item) => `<li>${inlineMarkdown(item)}</li>`).join("")}</ul>`);
+    list = [];
+  };
+
+  for (const rawLine of lines) {
+    const line = rawLine.trim();
+    if (!line || line === "---") {
+      flushParagraph();
+      flushList();
+      continue;
+    }
+    const heading = line.match(/^(#{1,4})\s+(.+)$/);
+    if (heading) {
+      flushParagraph();
+      flushList();
+      const level = Math.min(4, heading[1].length + 2);
+      html.push(`<h${level}>${inlineMarkdown(heading[2])}</h${level}>`);
+      continue;
+    }
+    const bullet = line.match(/^[-*]\s+(.+)$/);
+    if (bullet) {
+      flushParagraph();
+      list.push(bullet[1]);
+      continue;
+    }
+    if (/^>\s*/.test(line)) {
+      flushParagraph();
+      flushList();
+      html.push(`<blockquote>${inlineMarkdown(line.replace(/^>\s*/, ""))}</blockquote>`);
+      continue;
+    }
+    flushList();
+    paragraph.push(line);
+  }
+  flushParagraph();
+  flushList();
+  return html.join("");
+}
+
+function sectionsForNote(markdown = "") {
+  const body = bodyOf(markdown);
+  const matches = [...body.matchAll(/^#{2,4}\s+(.+)$/gm)];
+  const sections = [];
+  for (let i = 0; i < matches.length; i += 1) {
+    const match = matches[i];
+    const next = matches[i + 1];
+    const title = stripMarkdown(match[1]);
+    const start = match.index + match[0].length;
+    const end = next ? next.index : body.length;
+    const markdownSlice = body.slice(start, end).trim();
+    if (!markdownSlice) continue;
+    sections.push({
+      id: slugify(title).slice(0, 64),
+      title,
+      html: noteHtml(markdownSlice),
+      text: stripMarkdown(markdownSlice).slice(0, 900)
+    });
+  }
+  return sections;
+}
+
+function includesAny(text, terms) {
+  const lower = text.toLowerCase();
+  return terms.some((term) => lower.includes(term));
+}
+
+function countAny(text, terms) {
+  const lower = text.toLowerCase();
+  return terms.filter((term) => lower.includes(term)).length;
+}
+
+function eventFacets(event, noteMarkdown = "") {
+  const text = `${event.title} ${event.type} ${event.summary} ${event.detail || ""} ${noteMarkdown}`.toLowerCase();
+  return {
+    decision: analyticLexicons.decision.filter((term) => text.includes(term)),
+    power: analyticLexicons.power.filter((term) => text.includes(term)),
+    material: analyticLexicons.material.filter((term) => text.includes(term)),
+    closure: analyticLexicons.closure.filter((term) => text.includes(term)),
+    controversy: analyticLexicons.controversy.filter((term) => text.includes(term)),
+    governance: /policy|court|litigation|state|governance|law|order|regulat|safety|principles|framework/i.test(`${event.type} ${text}`)
+  };
+}
+
+function qualityForEvent(event, noteMarkdown = "") {
+  const body = bodyOf(noteMarkdown);
+  const sections = sectionsForNote(noteMarkdown);
+  const sourceish = section(body, "citation") || section(body, "source") || event.sourceUrl;
+  const claimish = section(body, "core claim") || section(body, "why this note belongs in a technology-history vault") || event.summary;
+  const concepts = event.allConcepts || event.concepts || [];
+  const worldHits = countAny(body, analyticLexicons.power);
+  const decisionHits = countAny(body, analyticLexicons.decision);
+  const scoreParts = [
+    Boolean(noteMarkdown),
+    body.length > 1200,
+    body.length > 4000,
+    Boolean(sourceish),
+    Boolean(claimish),
+    concepts.length >= 2,
+    sections.length >= 3,
+    decisionHits >= 2,
+    worldHits >= 2,
+    (event.links || []).length >= 2
+  ];
+  const score = scoreParts.filter(Boolean).length;
+  const missing = [];
+  if (!noteMarkdown) missing.push("vault note");
+  if (!sourceish) missing.push("source/citation");
+  if (!claimish) missing.push("core claim");
+  if (concepts.length < 2) missing.push("concept links");
+  if (decisionHits < 2) missing.push("decision-maker context");
+  if (worldHits < 2) missing.push("institution/world context");
+  return {
+    score,
+    label: !noteMarkdown ? "unavailable" : score >= 8 ? "complete" : score >= 6 ? "solid draft" : "thin",
+    missing,
+    sections: sections.length,
+    words: body.trim() ? body.trim().split(/\s+/).length : 0
+  };
+}
+
+function attachVaultNote(event, notesByKey) {
+  const note = notesByKey.get(noteKey(event.sourceNote));
+  if (!note) {
+    event.vaultNote = {
+      title: event.sourceNote || event.title,
+      available: false,
+      html: "",
+      sections: [],
+      textLength: 0
+    };
+    event.quality = qualityForEvent(event, "");
+    event.facets = eventFacets(event, "");
+    event.obsidianUri = "";
+    return event;
+  }
+  const body = bodyOf(note.markdown);
+  const noteSections = sectionsForNote(note.markdown);
+  event.vaultNote = {
+    title: note.name,
+    available: true,
+    html: noteHtml(note.markdown),
+    sections: noteSections,
+    citation: stripMarkdown(section(body, "citation") || section(body, "source")).slice(0, 700),
+    keyClaim: stripMarkdown(section(body, "core claim") || section(body, "why this note belongs in a technology-history vault") || event.summary).slice(0, 700),
+    textLength: bodyOf(note.markdown).trim().length
+  };
+  event.quality = qualityForEvent(event, note.markdown);
+  event.facets = eventFacets(event, note.markdown);
+  event.obsidianUri = `obsidian://open?path=${encodeURIComponent(note.file)}`;
+  return event;
 }
 
 function sourceEvent(note, conceptNames) {
@@ -311,7 +518,7 @@ const conceptNames = new Map(
   (conceptIndex ? wikilinks(conceptIndex.markdown) : [])
     .map(normalizeTitle)
     .filter((name) => notesByKey.has(noteKey(name)) && !/concepts and methods|synthesis|timeline/i.test(name))
-    .map((name) => [noteKey(name), name])
+    .map((name) => [noteKey(name), normalizeConcept(name)])
 );
 
 const eventsByNote = new Map();
@@ -353,6 +560,7 @@ for (const row of timelineRows(timelineNote?.markdown || "")) {
 
 const events = [...curated, ...eventsByNote.values()]
   .filter((event) => event.startYear && event.startYear >= 1900)
+  .map((event) => attachVaultNote(event, notesByKey))
   .map((event) => ({ ...event, date: event.date || null }))
   .sort((a, b) => (a.date || `${a.startYear}`).localeCompare(b.date || `${b.startYear}`) || a.title.localeCompare(b.title));
 
@@ -394,6 +602,29 @@ for (const event of events) {
   event.links = [...links];
 }
 
+for (const event of events) {
+  event.backlinks = events
+    .filter((candidate) => candidate.id !== event.id && (candidate.links || []).includes(event.id))
+    .map((candidate) => candidate.id);
+  event.centrality = (event.links || []).length + (event.backlinks || []).length;
+  event.isNew = Date.parse(event.date || `${event.startYear}-01-01`) > Date.now() - 1000 * 60 * 60 * 24 * 45;
+}
+
+const duplicateTitles = [...events.reduce((map, event) => {
+  const key = noteKey(event.title);
+  map.set(key, [...(map.get(key) || []), event.id]);
+  return map;
+}, new Map())].filter(([, ids]) => ids.length > 1);
+
+const warnings = [
+  ...events.filter((event) => event.quality?.missing?.length).map((event) => ({
+    id: event.id,
+    title: event.title,
+    missing: event.quality.missing
+  })),
+  ...duplicateTitles.map(([title, ids]) => ({ id: `duplicate-${title}`, title, missing: [`duplicate title: ${ids.join(", ")}`] }))
+];
+
 if (evicted.length) {
   console.warn(`Warning: ${evicted.length} note(s) are still offloaded to iCloud:`);
   for (const name of evicted) console.warn(`  - ${name}`);
@@ -410,10 +641,15 @@ if (commonConcepts.size) {
 
 const payload = {
   generatedAt: new Date().toISOString(),
+  vaultPath,
+  offloadedNotes: evicted,
+  warnings,
   events
 };
 
 await fs.mkdir(path.dirname(outPath), { recursive: true });
-await fs.writeFile(outPath, `${JSON.stringify(payload, null, 2)}\n`);
+const payloadJson = JSON.stringify(payload, null, 2);
+await fs.writeFile(outPath, `${payloadJson}\n`);
+await fs.writeFile(moduleOutPath, `const timelinePayload = ${payloadJson};\n\nexport default timelinePayload;\n`);
 const linkCount = events.reduce((sum, event) => sum + event.links.length, 0);
-console.log(`Wrote ${events.length} events to ${outPath} (${curated.length} from the timeline table, ${eventsByNote.size} from dated notes, ${linkCount} links)`);
+console.log(`Wrote ${events.length} events to ${outPath} and ${moduleOutPath} (${curated.length} from the timeline table, ${eventsByNote.size} from dated notes, ${linkCount} links)`);

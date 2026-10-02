@@ -6,12 +6,13 @@
     <meta name="description" content="An updateable AI history timeline generated from an Obsidian vault.">
     <title>AI History Timeline</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23211d18'/%3E%3Cpath d='M10 34h44' stroke='%23e8d8b8' stroke-width='4'/%3E%3Ccircle cx='18' cy='34' r='6' fill='%23b6533f'/%3E%3Ccircle cx='33' cy='34' r='6' fill='%232f7f8f'/%3E%3Ccircle cx='48' cy='34' r='6' fill='%23bc8a2d'/%3E%3C/svg%3E">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=genius-pass-5">
   </head>
   <body>
     <a class="skip-link" href="#timeline">Skip to timeline</a>
     <header class="topbar">
       <div class="brand">
+        <button class="toolbar-trigger" id="filtersToggle" type="button" aria-controls="filterDock" aria-expanded="false">Filters</button>
         <h1>AI, Told as Technology History</h1>
         <details class="sync">
           <summary>Vault sync <strong id="syncTime">Loading data</strong></summary>
@@ -21,13 +22,48 @@
             <li>Refresh the page.</li>
           </ol>
         </details>
+        <button class="toolbar-trigger" id="preferencesToggle" type="button" aria-controls="preferencesMenu" aria-expanded="false">Preferences</button>
       </div>
-      <div class="controls" aria-label="Timeline controls">
+      <div id="filterDock" class="controls control-dock" aria-label="Timeline controls" hidden>
+        <div class="dock-heading">
+          <strong>Explore</strong>
+          <button class="chip icon-chip" id="filtersClose" type="button" aria-label="Close filters">×</button>
+        </div>
         <label class="search-box">
           <span class="sr-only">Search notes, concepts, events</span>
           <input id="searchInput" type="search" placeholder="Search: ChatGPT, closure, ImageNet…">
         </label>
+        <label class="jump-box">
+          <span class="sr-only">Jump to year</span>
+          <input id="jumpYear" inputmode="numeric" pattern="[0-9]*" placeholder="Jump to year">
+        </label>
         <div id="typeFilters" class="chip-row" role="group" aria-label="Event type"></div>
+        <label class="lens">
+          <span>Concept lens</span>
+          <select id="lensSelect"><option value="">No concept lens</option></select>
+        </label>
+        <label class="lens">
+          <span>Course week</span>
+          <select id="weekSelect" hidden><option value="">All weeks</option></select>
+        </label>
+        <label class="lens">
+          <span>Analytic lens</span>
+          <select id="analysisLens">
+            <option value="">No analytic lens</option>
+            <option value="decision">Decision makers</option>
+            <option value="power">Power / institution</option>
+            <option value="material">Material infrastructure</option>
+            <option value="closure">Closure devices</option>
+            <option value="governance">Governance only</option>
+            <option value="controversy">Controversies</option>
+          </select>
+        </label>
+      </div>
+      <div id="preferencesMenu" class="command-bar preferences-menu" aria-label="Timeline preferences" hidden>
+        <div class="dock-heading">
+          <strong>Preferences</strong>
+          <button class="chip icon-chip" id="preferencesClose" type="button" aria-label="Close preferences">×</button>
+        </div>
         <div class="zoom-controls" role="group" aria-label="Timeline zoom controls">
           <button class="chip icon-chip" id="zoomOut" type="button" aria-label="Zoom out">−</button>
           <label class="zoom-slider">
@@ -37,27 +73,73 @@
           <button class="chip icon-chip" id="zoomIn" type="button" aria-label="Zoom in">+</button>
           <button class="chip" id="fitTimeline" type="button">Fit</button>
         </div>
+        <div class="decade-row" id="decadeShortcuts" role="group" aria-label="Jump to decade"></div>
+        <div class="segmented" role="group" aria-label="View controls">
+          <button class="chip" id="resetFilters" type="button">Reset</button>
+          <button class="chip" id="listToggle" type="button" aria-pressed="false">List</button>
+          <button class="chip" id="readingModeToggle" type="button" aria-pressed="false">Reading</button>
+          <button class="chip" id="splitPaneToggle" type="button" aria-pressed="false">Split detail</button>
+          <button class="chip" id="darkToggle" type="button" aria-pressed="false">Dark</button>
+          <button class="chip" id="printButton" type="button">Print</button>
+        </div>
+        <div class="preset-row" id="presetRow" role="group" aria-label="Story presets">
+          <button class="chip" type="button" data-preset="governance">Governance arc</button>
+          <button class="chip" type="button" data-preset="infrastructure">Infrastructure arc</button>
+          <button class="chip" type="button" data-preset="corporate">Corporate power arc</button>
+          <button class="chip" type="button" data-preset="benchmarks">Benchmarks arc</button>
+        </div>
+        <div class="segmented" role="group" aria-label="Timeline overlays">
+          <button class="chip is-active" id="linksToggle" type="button" aria-pressed="true">Connections</button>
+          <button class="chip" id="legendToggle" type="button" aria-pressed="false">Legend</button>
+          <button class="chip" id="glossaryToggle" type="button" aria-pressed="false">Glossary</button>
+          <button class="chip" id="bibliographyToggle" type="button" aria-pressed="false">Bibliography</button>
+          <button class="chip" id="newOnlyToggle" type="button" aria-pressed="false">New only</button>
+          <button class="chip" id="debateToggle" type="button" aria-pressed="false">Debate map</button>
+          <button class="chip" id="narrativeToggle" type="button" aria-pressed="false">Grand narrative</button>
+        </div>
+        <label class="importance-control">
+          <span>Importance</span>
+          <input id="importanceRange" type="range" min="0" max="20" step="1" value="0">
+          <output id="importanceReadout" for="importanceRange">All</output>
+        </label>
+        <div class="world-layer-control" aria-label="World context layers">
+          <span>World layers</span>
+          <button class="chip" type="button" data-world-layer="power" aria-pressed="false">Power</button>
+          <button class="chip" type="button" data-world-layer="material" aria-pressed="false">Material</button>
+          <button class="chip" type="button" data-world-layer="closure" aria-pressed="false">Closure</button>
+          <button class="chip" type="button" data-world-layer="controversy" aria-pressed="false">Controversy</button>
+        </div>
+        <label class="density-control">
+          <span>Density</span>
+          <select id="densitySelect">
+            <option value="normal">Normal</option>
+            <option value="sparse">Sparse</option>
+            <option value="dense">Dense</option>
+          </select>
+        </label>
       </div>
     </header>
 
     <main id="timeline" class="timeline-shell" aria-label="AI history timeline">
+      <div id="selectedRibbon" class="selected-ribbon" hidden></div>
       <div class="timeline-toolbar">
         <span><strong id="zoomReadout">Decades</strong> · <span id="visibleRange">-</span></span>
         <span><span id="eventCount">0</span> events · <span id="yearRange">-</span></span>
-        <label class="lens">
-          <span class="sr-only">Concept lens</span>
-          <select id="lensSelect"><option value="">No concept lens</option></select>
-        </label>
-        <label class="lens">
-          <span class="sr-only">Course week</span>
-          <select id="weekSelect" hidden><option value="">All weeks</option></select>
-        </label>
-        <button class="chip is-active" id="linksToggle" type="button" aria-pressed="true">Connections</button>
+        <span id="decadeSummary" class="decade-summary">-</span>
         <span class="hint">Drag or scroll to move · pinch to zoom</span>
       </div>
+      <section id="legendPanel" class="side-panel legend-panel" hidden></section>
+      <section id="glossaryPanel" class="side-panel glossary-panel" hidden></section>
+      <section id="bibliographyPanel" class="side-panel bibliography-panel" hidden></section>
+      <section id="trailPanel" class="side-panel trail-panel" hidden></section>
+      <section id="chainPanel" class="chain-panel" hidden></section>
+      <section id="listPanel" class="list-panel" hidden aria-label="Timeline list view"></section>
+      <div class="sticky-decade-anchor" aria-hidden="true"><span id="stickyDecade" class="sticky-decade"></span></div>
       <div id="timelineViewport" class="timeline-viewport" tabindex="0" aria-label="Scrollable zoomable timeline">
         <div id="timelineCanvas" class="timeline-canvas">
           <div id="tickLayer" class="tick-layer" aria-hidden="true"></div>
+          <div id="densityLayer" class="density-layer" aria-hidden="true"></div>
+          <div id="contextLayer" class="context-layer" aria-hidden="true"></div>
           <svg id="arcLayer" class="arc-layer" aria-hidden="true"></svg>
           <div class="timeline-axis" aria-hidden="true"></div>
           <div id="spanLayer" aria-hidden="true"></div>
@@ -65,9 +147,15 @@
           <svg id="focusArcLayer" class="arc-layer focus-layer" aria-hidden="true"></svg>
         </div>
       </div>
+      <div class="minimap" aria-label="Timeline overview">
+        <div id="heatmapTrack" class="heatmap-track" aria-hidden="true"></div>
+        <div id="minimapTrack" class="minimap-track"></div>
+        <button id="minimapWindow" class="minimap-window" type="button" aria-label="Current timeline viewport"></button>
+      </div>
+      <div id="hoverPreview" class="hover-preview" hidden></div>
       <article id="eventDetail" class="detail-panel" hidden></article>
     </main>
 
-    <script type="module" src="app.js"></script>
+    <script type="module" src="app.js?v=genius-pass-5"></script>
   </body>
 </html>

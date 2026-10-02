@@ -2,6 +2,7 @@ const typeOrder = [
   "Theory / question",
   "Field formation",
   "Data / benchmark",
+  "Infrastructure / compute",
   "Model innovation",
   "Corporate release",
   "Critique / governance",
@@ -9,6 +10,8 @@ const typeOrder = [
   "Court / litigation",
   "Research source"
 ];
+
+import timelinePayload from "./data/events-data.js";
 
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const TICK_STEPS = [100, 50, 20, 10, 5, 2, 1, 1 / 2, 1 / 4, 1 / 12];
@@ -20,10 +23,58 @@ const RIGHT_PAD = 300;
 const COMPACT = { width: 200, height: 74 };
 const FULL = { width: 250, height: 150 };
 const FULL_CARD_THRESHOLD = 70;
+const DENSITY = {
+  sparse: { compact: { width: 230, height: 86 }, full: { width: 286, height: 170 }, gap: 16 },
+  normal: { compact: COMPACT, full: FULL, gap: 10 },
+  dense: { compact: { width: 170, height: 62 }, full: { width: 220, height: 128 }, gap: 6 }
+};
+const TYPE_ICON = {
+  "Theory / question": "?",
+  "Field formation": "F",
+  "Data / benchmark": "D",
+  "Infrastructure / compute": "I",
+  "Model innovation": "M",
+  "Corporate release": "C",
+  "Critique / governance": "!",
+  "State / policy": "S",
+  "Court / litigation": "§",
+  "Research source": "R"
+};
+const GLOSSARY = {
+  "Agenda Control": "The power to define which questions, metrics, or futures count as legitimate.",
+  "Black Box": "A system whose inputs and outputs are visible while its internal workings become socially opaque.",
+  "Closure": "The process by which disagreement narrows enough that a technology or interpretation seems settled.",
+  "Co-production": "The mutual making of technical systems and social order.",
+  "Interpretative Flexibility": "The same artifact can mean different things to different relevant groups.",
+  "Naturalization": "A made choice starts to look inevitable, neutral, or simply how things are.",
+  "Path Dependence": "Early choices constrain later possibilities even when alternatives remain imaginable.",
+  "Script": "A design or rule that imagines and steers users toward particular behavior.",
+  "System Builders": "Actors who assemble technical, institutional, financial, and cultural pieces into a working system.",
+  "Technological Frame": "A group's shared assumptions, problems, examples, and standards for judging a technology.",
+  "Technological Momentum": "A system becomes harder to redirect as institutions and habits accumulate around it.",
+  "Public Interest": "The claim that technical choices should be accountable to publics beyond builders and owners."
+};
 
 const state = {
   events: [],
   selectedId: null,
+  showVaultNote: false,
+  noteSection: "",
+  viewMode: "timeline",
+  analysisLens: "",
+  density: "normal",
+  dark: false,
+  showLegend: false,
+  showGlossary: false,
+  showBibliography: false,
+  readingMode: false,
+  splitPane: false,
+  newOnly: false,
+  debateMap: false,
+  narrativeMode: false,
+  minImportance: 0,
+  chainRootId: null,
+  worldLayers: new Set(),
   activeTypes: new Set(typeOrder),
   query: "",
   lens: "",
@@ -35,21 +86,61 @@ const state = {
 
 const els = {
   syncTime: document.querySelector("#syncTime"),
+  filtersToggle: document.querySelector("#filtersToggle"),
+  filtersClose: document.querySelector("#filtersClose"),
+  filterDock: document.querySelector("#filterDock"),
+  preferencesToggle: document.querySelector("#preferencesToggle"),
+  preferencesClose: document.querySelector("#preferencesClose"),
+  preferencesMenu: document.querySelector("#preferencesMenu"),
   typeFilters: document.querySelector("#typeFilters"),
   search: document.querySelector("#searchInput"),
+  jumpYear: document.querySelector("#jumpYear"),
+  decadeShortcuts: document.querySelector("#decadeShortcuts"),
+  resetFilters: document.querySelector("#resetFilters"),
+  listToggle: document.querySelector("#listToggle"),
+  readingModeToggle: document.querySelector("#readingModeToggle"),
+  splitPaneToggle: document.querySelector("#splitPaneToggle"),
+  darkToggle: document.querySelector("#darkToggle"),
+  printButton: document.querySelector("#printButton"),
+  presetRow: document.querySelector("#presetRow"),
+  bibliographyToggle: document.querySelector("#bibliographyToggle"),
+  newOnlyToggle: document.querySelector("#newOnlyToggle"),
+  debateToggle: document.querySelector("#debateToggle"),
+  narrativeToggle: document.querySelector("#narrativeToggle"),
+  importanceRange: document.querySelector("#importanceRange"),
+  importanceReadout: document.querySelector("#importanceReadout"),
+  densitySelect: document.querySelector("#densitySelect"),
   eventCount: document.querySelector("#eventCount"),
   yearRange: document.querySelector("#yearRange"),
   visibleRange: document.querySelector("#visibleRange"),
+  decadeSummary: document.querySelector("#decadeSummary"),
+  stickyDecade: document.querySelector("#stickyDecade"),
+  selectedRibbon: document.querySelector("#selectedRibbon"),
   viewport: document.querySelector("#timelineViewport"),
   canvas: document.querySelector("#timelineCanvas"),
   tickLayer: document.querySelector("#tickLayer"),
+  densityLayer: document.querySelector("#densityLayer"),
   spanLayer: document.querySelector("#spanLayer"),
   cardLayer: document.querySelector("#cardLayer"),
   arcLayer: document.querySelector("#arcLayer"),
   focusArcLayer: document.querySelector("#focusArcLayer"),
+  contextLayer: document.querySelector("#contextLayer"),
   lensSelect: document.querySelector("#lensSelect"),
   weekSelect: document.querySelector("#weekSelect"),
+  analysisLens: document.querySelector("#analysisLens"),
   linksToggle: document.querySelector("#linksToggle"),
+  legendToggle: document.querySelector("#legendToggle"),
+  glossaryToggle: document.querySelector("#glossaryToggle"),
+  legendPanel: document.querySelector("#legendPanel"),
+  glossaryPanel: document.querySelector("#glossaryPanel"),
+  bibliographyPanel: document.querySelector("#bibliographyPanel"),
+  trailPanel: document.querySelector("#trailPanel"),
+  chainPanel: document.querySelector("#chainPanel"),
+  listPanel: document.querySelector("#listPanel"),
+  heatmapTrack: document.querySelector("#heatmapTrack"),
+  minimapTrack: document.querySelector("#minimapTrack"),
+  minimapWindow: document.querySelector("#minimapWindow"),
+  hoverPreview: document.querySelector("#hoverPreview"),
   detail: document.querySelector("#eventDetail"),
   zoomRange: document.querySelector("#zoomRange"),
   zoomIn: document.querySelector("#zoomIn"),
@@ -57,6 +148,17 @@ const els = {
   zoomReadout: document.querySelector("#zoomReadout"),
   fitTimeline: document.querySelector("#fitTimeline")
 };
+
+function setPanelOpen(panel, trigger, open) {
+  if (!panel || !trigger) return;
+  panel.hidden = !open;
+  trigger.setAttribute("aria-expanded", String(open));
+  trigger.classList.toggle("is-active", open);
+}
+
+function togglePanel(panel, trigger) {
+  setPanelOpen(panel, trigger, panel.hidden);
+}
 
 function typeClass(type) {
   return `type-${type.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`;
@@ -70,6 +172,34 @@ function escapeHtml(value = "") {
     .replaceAll('"', "&quot;");
 }
 
+function eventById(id) {
+  return state.events.find((event) => event.id === id);
+}
+
+function actorGlyph(event) {
+  const type = event.type || "";
+  const facets = event.facets || {};
+  if (type.includes("Court")) return "§";
+  if (type.includes("State") || facets.governance) return "G";
+  if (type.includes("Corporate")) return "$";
+  if (type.includes("Data")) return "#";
+  if (type.includes("Infrastructure")) return "N";
+  if (type.includes("Research") || type.includes("Theory")) return "L";
+  return TYPE_ICON[type] || "•";
+}
+
+function activeDensity() {
+  return DENSITY[state.density] || DENSITY.normal;
+}
+
+function highlight(value = "") {
+  const escaped = escapeHtml(value);
+  const query = state.query.trim();
+  if (!query) return escaped;
+  const pattern = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`, "ig");
+  return escaped.replace(pattern, "<mark>$1</mark>");
+}
+
 function eventText(event) {
   return [
     event.title,
@@ -77,6 +207,8 @@ function eventText(event) {
     event.type,
     event.summary,
     event.sourceNote,
+    event.vaultNote?.keyClaim,
+    event.vaultNote?.citation,
     ...(event.concepts || [])
   ].join(" ").toLowerCase();
 }
@@ -94,8 +226,100 @@ function visibleEvents() {
     const typeMatch = state.activeTypes.has(event.type);
     const queryMatch = !query || eventText(event).includes(query);
     const weekMatch = !state.week || event.week === state.week;
-    return typeMatch && queryMatch && weekMatch;
+    const importanceMatch = importanceScore(event) >= state.minImportance;
+    const newMatch = !state.newOnly || event.isNew;
+    const lensMatch = !state.analysisLens
+      || (state.analysisLens === "governance" && event.facets?.governance)
+      || (state.analysisLens !== "governance" && (event.facets?.[state.analysisLens] || []).length);
+    return typeMatch && queryMatch && weekMatch && importanceMatch && newMatch && lensMatch;
   });
+}
+
+function selectedIndex(events = visibleEvents()) {
+  if (!state.selectedId) return -1;
+  return events.findIndex((event) => event.id === state.selectedId);
+}
+
+function selectEvent(id, options = {}) {
+  const event = eventById(id);
+  if (!event) return;
+  state.selectedId = id;
+  state.showVaultNote = Boolean(options.showVaultNote);
+  state.noteSection = "";
+  scrollEventIntoView(event);
+  renderTimeline();
+}
+
+function selectAdjacent(direction) {
+  const events = visibleEvents();
+  if (!events.length) return;
+  const current = selectedIndex(events);
+  const next = current === -1
+    ? (direction > 0 ? 0 : events.length - 1)
+    : Math.max(0, Math.min(events.length - 1, current + direction));
+  selectEvent(events[next].id);
+}
+
+function qualityClass(event) {
+  return `quality-${(event.quality?.label || "unknown").toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+}
+
+function eventImportance(event) {
+  return event.centrality >= 16 ? "importance-high" : event.centrality >= 8 ? "importance-medium" : "importance-normal";
+}
+
+function importanceScore(event) {
+  return Number(event.centrality || 0);
+}
+
+function whyItMatters(event) {
+  const facets = event.facets || {};
+  if (facets.governance || event.type.includes("State") || event.type.includes("Court")) {
+    return "This is a governance move: it changes who can authorize, constrain, or contest AI systems.";
+  }
+  if ((facets.material || []).length || event.type.includes("Infrastructure") || event.type.includes("Data")) {
+    return "This shifts the material base of AI: data, compute, benchmarks, or infrastructure become historical force.";
+  }
+  if (event.type.includes("Corporate")) {
+    return "This matters because corporate strategy turns technical possibility into institutions, markets, and defaults.";
+  }
+  if ((facets.closure || []).length) {
+    return "This matters as a closure device: it narrows what counts as progress, proof, or success.";
+  }
+  return "This matters because it changes the vocabulary, institutions, or standards through which AI becomes legible.";
+}
+
+function currentDecade() {
+  return Math.floor(xToYear(els.viewport.scrollLeft + els.viewport.clientWidth * 0.45) / 10) * 10;
+}
+
+function decadeMicroSummary(decade, events = visibleEvents()) {
+  const decadeEvents = events.filter((event) => event.startYear >= decade && event.startYear < decade + 10);
+  if (!decadeEvents.length) return `${decade}s · no visible events`;
+  const topTypes = [...decadeEvents.reduce((map, event) => map.set(event.type, (map.get(event.type) || 0) + 1), new Map())]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 2)
+    .map(([type]) => type.toLowerCase());
+  const high = decadeEvents.filter((event) => importanceScore(event) >= 8).length;
+  return `${decade}s · ${decadeEvents.length} visible · ${topTypes.join(" + ")} · ${high} structural`;
+}
+
+function chainIds(rootId) {
+  if (!rootId) return new Set();
+  const ids = new Set([rootId]);
+  const root = eventById(rootId);
+  (root?.links || []).forEach((id) => ids.add(id));
+  for (const event of state.events) {
+    if ((event.links || []).includes(rootId)) ids.add(event.id);
+  }
+  return ids;
+}
+
+function analysisSummary(event) {
+  if (!state.analysisLens) return "";
+  if (state.analysisLens === "governance") return event.facets?.governance ? "governance signal" : "";
+  const values = event.facets?.[state.analysisLens] || [];
+  return values.length ? values.slice(0, 3).join(", ") : "";
 }
 
 function displayDate(event) {
@@ -193,12 +417,15 @@ function renderTicks() {
   const viewFrom = xToYear(els.viewport.scrollLeft);
   const viewTo = xToYear(els.viewport.scrollLeft + els.viewport.clientWidth);
   els.visibleRange.textContent = `${formatTick(Math.max(state.bounds.min, viewFrom), step)} – ${formatTick(Math.min(state.bounds.max, viewTo), step)}`;
+  els.decadeSummary.textContent = decadeMicroSummary(currentDecade());
+  els.stickyDecade.textContent = `${currentDecade()}s`;
 }
 
 function layoutCards(events, axisY) {
-  const compact = layoutWithSize(events, axisY, COMPACT);
+  const density = activeDensity();
+  const compact = layoutWithSize(events, axisY, density.compact);
   if (state.pxPerYear < FULL_CARD_THRESHOLD) return compact;
-  const full = layoutWithSize(events, axisY, FULL);
+  const full = layoutWithSize(events, axisY, density.full);
   const viewLeft = els.viewport.scrollLeft;
   const viewRight = viewLeft + els.viewport.clientWidth;
   const pins = (layout) => layout.filter((item) => item.pinOnly && item.x >= viewLeft && item.x <= viewRight).length;
@@ -206,7 +433,7 @@ function layoutCards(events, axisY) {
 }
 
 function layoutWithSize(events, axisY, size) {
-  const gap = 10;
+  const gap = activeDensity().gap;
   const lanesPerSide = Math.max(1, Math.floor((axisY - 34) / (size.height + gap)));
   const lanes = [];
   for (let i = 0; i < lanesPerSide; i += 1) {
@@ -237,6 +464,11 @@ function connectedIds(id) {
 }
 
 function focusClass(event) {
+  if (state.narrativeMode && importanceScore(event) < 12 && !event.isNew) return "dim";
+  if (state.debateMap && !(event.facets?.controversy || []).length && !event.type.includes("Court") && !event.type.includes("Critique")) return "dim";
+  if (state.chainRootId) {
+    return chainIds(state.chainRootId).has(event.id) ? "in-chain" : "dim";
+  }
   if (state.lens && !(event.allConcepts || event.concepts || []).includes(state.lens)) return "dim";
   if (state.lens) return "in-lens";
   if (!state.selectedId || event.id === state.selectedId) return "";
@@ -247,24 +479,32 @@ function focusClass(event) {
 
 function cardTemplate({ event, x, left, top, stem, side, size, pinOnly }) {
   const pressed = state.selectedId === event.id ? "true" : "false";
+  const icon = TYPE_ICON[event.type] || "•";
+  const actor = actorGlyph(event);
+  const quality = event.quality?.label || "unknown";
+  const analytic = analysisSummary(event);
   if (pinOnly) {
     const label = `${displayDate(event)}: ${event.title}`;
-    return `<button class="event-pin ${typeClass(event.type)} ${focusClass(event)}" type="button" data-id="${escapeHtml(event.id)}" aria-pressed="${pressed}" aria-label="${escapeHtml(label)}" title="${escapeHtml(label)}" style="left:${x.toFixed(1)}px"></button>`;
+    return `<button class="event-pin ${typeClass(event.type)} ${qualityClass(event)} ${eventImportance(event)} ${focusClass(event)}" type="button" data-id="${escapeHtml(event.id)}" aria-pressed="${pressed}" aria-label="${escapeHtml(label)}" title="${escapeHtml(label)}" style="left:${x.toFixed(1)}px"><span>${escapeHtml(actor)}</span></button>`;
   }
-  const full = size === FULL;
+  const full = size.height >= activeDensity().full.height;
   const concepts = full
     ? `<span class="concepts">${(event.concepts || []).slice(0, 3).map((c) => `<span>${escapeHtml(c)}</span>`).join("")}</span>`
     : "";
   const summary = full ? `<p>${escapeHtml(excerpt(event.summary))}</p>` : "";
-  const typePill = full ? `<span class="type-pill">${escapeHtml(event.type)}</span>` : "";
+  const typePill = full ? `<span class="type-pill"><span class="type-icon">${escapeHtml(icon)}</span>${escapeHtml(event.type)}</span>` : "";
   return `
-    <button class="event-card ${full ? "full" : "compact"} ${side} ${typeClass(event.type)} ${event.status === "gap" ? "gap" : ""} ${focusClass(event)}" type="button" data-id="${escapeHtml(event.id)}" aria-pressed="${pressed}" style="left:${left.toFixed(1)}px;top:${top.toFixed(1)}px;width:${size.width}px;height:${size.height}px;--stem:${stem}px">
+    <button class="event-card ${full ? "full" : "compact"} ${side} ${typeClass(event.type)} ${qualityClass(event)} ${eventImportance(event)} ${event.status === "gap" ? "gap" : ""} ${event.isNew ? "is-new" : ""} ${focusClass(event)}" type="button" data-id="${escapeHtml(event.id)}" aria-pressed="${pressed}" style="left:${left.toFixed(1)}px;top:${top.toFixed(1)}px;width:${size.width}px;height:${size.height}px;--stem:${stem}px">
       <span class="event-meta">
         <span class="year-pill">${escapeHtml(displayDate(event))}</span>
+        <span class="actor-glyph" title="Institutional actor">${escapeHtml(actor)}</span>
         ${typePill}
+        ${event.isNew ? `<span class="new-pill">New</span>` : ""}
       </span>
-      <strong>${escapeHtml(event.title)}</strong>
+      <strong>${highlight(event.title)}</strong>
       ${summary}
+      ${analytic ? `<span class="analysis-hit">${escapeHtml(analytic)}</span>` : ""}
+      <span class="quality-dot" title="${escapeHtml(quality)}"></span>
       ${concepts}
     </button>
   `;
@@ -274,11 +514,15 @@ function renderTimeline() {
   const events = visibleEvents();
   const height = els.viewport.clientHeight;
   const axisY = Math.round(height / 2);
+  document.body.classList.toggle("zoom-close", state.pxPerYear >= FULL_CARD_THRESHOLD);
+  document.body.classList.toggle("zoom-far", state.pxPerYear < 24);
+  document.body.classList.toggle("debate-mode", state.debateMap);
+  document.body.classList.toggle("narrative-mode", state.narrativeMode);
   els.canvas.style.width = `${canvasWidth()}px`;
   els.canvas.style.setProperty("--axis-y", `${axisY}px`);
 
   if (!events.length) {
-    els.cardLayer.innerHTML = `<p class="empty-state">No events match those filters.</p>`;
+    els.cardLayer.innerHTML = `<div class="empty-state empty-archive"><b>No visible events</b><span>Relax a filter, clear the preset, or lower the importance threshold.</span></div>`;
     els.spanLayer.innerHTML = "";
   } else {
     els.spanLayer.innerHTML = events
@@ -303,7 +547,178 @@ function renderTimeline() {
     els.yearRange.textContent = "-";
   }
   renderTicks();
+  renderDensityLayer(events, axisY);
+  renderRibbon();
+  renderList(events);
+  renderMinimap(events);
+  renderHeatmap(events);
+  renderContextLayer(events);
+  renderPanels();
+  renderTrailPanel(events);
+  renderChainPanel();
   renderDetail(state.events.find((item) => item.id === state.selectedId));
+}
+
+function renderDensityLayer(events, axisY) {
+  const span = Math.max(1, state.bounds.max - state.bounds.min);
+  const buckets = new Map();
+  for (const event of events) {
+    const decade = Math.floor(event.startYear / 10) * 10;
+    buckets.set(decade, (buckets.get(decade) || 0) + 1);
+  }
+  const max = Math.max(1, ...buckets.values());
+  els.densityLayer.innerHTML = Array.from(buckets.entries()).map(([decade, count]) => {
+    const left = yearToX(decade);
+    const width = Math.max(12, (10 / span) * (canvasWidth() - LEFT_PAD - RIGHT_PAD));
+    const height = 4 + Math.round(10 * count / max);
+    return `<span class="axis-density-band" style="left:${left.toFixed(1)}px;width:${width.toFixed(1)}px;height:${height}px;top:${axisY - Math.round(height / 2)}px"></span>`;
+  }).join("");
+}
+
+function renderRibbon() {
+  const event = eventById(state.selectedId);
+  if (!event) {
+    els.selectedRibbon.hidden = true;
+    return;
+  }
+  els.selectedRibbon.hidden = false;
+  els.selectedRibbon.className = `selected-ribbon ${typeClass(event.type)}`;
+  els.selectedRibbon.innerHTML = `
+    <button type="button" data-step="-1" aria-label="Previous event">‹</button>
+    <span><b>${escapeHtml(displayDate(event))}</b> ${escapeHtml(event.title)}</span>
+    <button type="button" data-step="1" aria-label="Next event">›</button>
+  `;
+}
+
+function renderList(events) {
+  const isListMode = state.viewMode === "list";
+  const minimap = els.minimapTrack.closest(".minimap");
+  document.body.classList.toggle("is-list-mode", isListMode);
+  els.viewport.hidden = isListMode;
+  if (minimap) minimap.hidden = isListMode;
+  els.listPanel.hidden = !isListMode;
+  if (els.listPanel.hidden) return;
+  els.listPanel.innerHTML = events.map((event) => `
+    <button class="list-event ${typeClass(event.type)} ${qualityClass(event)}" type="button" data-id="${escapeHtml(event.id)}">
+      <span>${escapeHtml(displayDate(event))}</span>
+      <strong>${highlight(event.title)}</strong>
+      <em>${escapeHtml(event.type)}</em>
+      <small>${escapeHtml(excerpt(event.summary, 130))}</small>
+    </button>
+  `).join("") || `<p class="empty-state">No events match those filters.</p>`;
+}
+
+function renderMinimap(events) {
+  const span = Math.max(1, state.bounds.max - state.bounds.min);
+  els.minimapTrack.innerHTML = events.map((event) => {
+    const left = ((eventStart(event) - state.bounds.min) / span) * 100;
+    const width = eventEnd(event) ? Math.max(0.45, ((eventEnd(event) - event.startYear) / span) * 100) : 0.45;
+    return `<span class="${typeClass(event.type)}" style="left:${left.toFixed(2)}%;width:${width.toFixed(2)}%"></span>`;
+  }).join("");
+  const leftYear = xToYear(els.viewport.scrollLeft);
+  const rightYear = xToYear(els.viewport.scrollLeft + els.viewport.clientWidth);
+  const left = Math.max(0, ((leftYear - state.bounds.min) / span) * 100);
+  const width = Math.min(100 - left, Math.max(6, ((rightYear - leftYear) / span) * 100));
+  els.minimapWindow.style.left = `${left}%`;
+  els.minimapWindow.style.width = `${width}%`;
+}
+
+function renderHeatmap(events) {
+  const span = Math.max(1, state.bounds.max - state.bounds.min);
+  const buckets = new Map();
+  for (const event of events) {
+    const decade = Math.floor(event.startYear / 10) * 10;
+    buckets.set(decade, (buckets.get(decade) || 0) + 1);
+  }
+  const max = Math.max(1, ...buckets.values());
+  els.heatmapTrack.innerHTML = Array.from(buckets.entries()).sort((a, b) => a[0] - b[0]).map(([decade, count]) => {
+    const left = ((decade - state.bounds.min) / span) * 100;
+    const width = Math.max(3, (10 / span) * 100);
+    return `<span title="${decade}s: ${count} events" style="left:${left.toFixed(2)}%;width:${width.toFixed(2)}%;opacity:${(0.24 + 0.64 * count / max).toFixed(2)}"></span>`;
+  }).join("");
+}
+
+function renderContextLayer(events) {
+  if (!state.worldLayers.size) {
+    els.contextLayer.innerHTML = "";
+    return;
+  }
+  const layerOrder = ["power", "material", "closure", "controversy"];
+  els.contextLayer.innerHTML = events.flatMap((event) => {
+    const left = yearToX(eventStart(event));
+    return layerOrder
+      .filter((layer) => state.worldLayers.has(layer) && (event.facets?.[layer] || []).length)
+      .map((layer, index) => `<span class="context-mark context-${layer}" title="${escapeHtml(event.title)} · ${layer}" style="left:${left.toFixed(1)}px;--row:${index}"></span>`);
+  }).join("");
+}
+
+function renderPanels() {
+  els.legendPanel.hidden = !state.showLegend;
+  els.glossaryPanel.hidden = !state.showGlossary;
+  els.bibliographyPanel.hidden = !state.showBibliography;
+  if (state.showLegend) {
+    const warningCount = timelinePayload.warnings?.length || 0;
+    els.legendPanel.innerHTML = `
+      <h2>Legend</h2>
+      <div class="legend-grid">${typeOrder.map((type) => `<span class="${typeClass(type)}"><b>${escapeHtml(TYPE_ICON[type] || "•")}</b>${escapeHtml(type)}</span>`).join("")}</div>
+      <p><b>${state.events.length}</b> events · <b>${timelinePayload.offloadedNotes?.length || 0}</b> offloaded note · <b>${warningCount}</b> audit warnings</p>
+      <p>Quality dots: complete, solid draft, thin, unavailable. Larger event pins mean more links and backlinks.</p>
+    `;
+  }
+  if (state.showGlossary) {
+    els.glossaryPanel.innerHTML = `
+      <h2>Technology History Terms</h2>
+      <dl>${Object.entries(GLOSSARY).map(([term, definition]) => `<dt>${escapeHtml(term)}</dt><dd>${escapeHtml(definition)}</dd>`).join("")}</dl>
+    `;
+  }
+  if (state.showBibliography) {
+    const events = visibleEvents().filter((event) => event.vaultNote?.citation || event.sourceNote);
+    els.bibliographyPanel.innerHTML = `
+      <h2>Visible Bibliography</h2>
+      <ol>${events.map((event) => `<li><b>${escapeHtml(displayDate(event))} · ${escapeHtml(event.title)}</b><span>${escapeHtml(event.vaultNote?.citation || event.sourceNote || "No source listed")}</span></li>`).join("")}</ol>
+    `;
+  }
+}
+
+function renderTrailPanel(events) {
+  if (!state.lens) {
+    els.trailPanel.hidden = true;
+    return;
+  }
+  const trail = events
+    .filter((event) => (event.allConcepts || event.concepts || []).includes(state.lens))
+    .sort((a, b) => eventStart(a) - eventStart(b))
+    .slice(0, 12);
+  els.trailPanel.hidden = !trail.length;
+  if (!trail.length) return;
+  els.trailPanel.innerHTML = `
+    <h2>Argument Trail · ${escapeHtml(state.lens)}</h2>
+    <ol>${trail.map((event) => `<li><button type="button" data-goto="${escapeHtml(event.id)}"><b>${escapeHtml(displayDate(event))}</b><span>${escapeHtml(event.title)}</span><small>${escapeHtml(whyItMatters(event))}</small></button></li>`).join("")}</ol>
+  `;
+}
+
+function renderChainPanel() {
+  const root = eventById(state.chainRootId);
+  if (!root) {
+    els.chainPanel.hidden = true;
+    return;
+  }
+  const ids = chainIds(root.id);
+  const chain = state.events.filter((event) => ids.has(event.id)).sort((a, b) => eventStart(a) - eventStart(b));
+  els.chainPanel.hidden = false;
+  els.chainPanel.innerHTML = `
+    <div>
+      <strong>Chain View</strong>
+      <span>${escapeHtml(root.title)} · ${chain.length} connected events</span>
+    </div>
+    <button class="chip" type="button" data-clear-chain>Clear</button>
+  `;
+}
+
+function renderDecadeShortcuts() {
+  const decades = [];
+  for (let year = Math.ceil(state.bounds.min / 10) * 10; year <= state.bounds.max; year += 10) decades.push(year);
+  els.decadeShortcuts.innerHTML = decades.map((year) => `<button class="chip" type="button" data-year="${year}">${year}s</button>`).join("");
 }
 
 function arcPath(a, b, axisY) {
@@ -375,6 +790,50 @@ function setLens(concept) {
   renderTimeline();
 }
 
+let presetShiftTimer;
+
+function applyPreset(name) {
+  const allTypes = new Set(typeOrder);
+  state.query = "";
+  state.week = "";
+  state.newOnly = false;
+  state.chainRootId = null;
+  state.worldLayers.clear();
+  state.activeTypes = allTypes;
+  if (name === "governance") {
+    state.analysisLens = "governance";
+    state.worldLayers.add("power").add("closure").add("controversy");
+    state.activeTypes = new Set(["Critique / governance", "State / policy", "Court / litigation", "Corporate release"]);
+  } else if (name === "infrastructure") {
+    state.analysisLens = "material";
+    state.worldLayers.add("material").add("power");
+    state.activeTypes = new Set(["Infrastructure / compute", "Data / benchmark", "Model innovation", "Corporate release"]);
+  } else if (name === "corporate") {
+    state.analysisLens = "power";
+    state.worldLayers.add("power").add("controversy");
+    state.activeTypes = new Set(["Corporate release", "Infrastructure / compute", "Court / litigation", "State / policy"]);
+  } else if (name === "benchmarks") {
+    state.analysisLens = "closure";
+    state.worldLayers.add("closure").add("material");
+    state.activeTypes = new Set(["Data / benchmark", "Research source", "Model innovation"]);
+  }
+  els.search.value = "";
+  els.weekSelect.value = "";
+  els.analysisLens.value = state.analysisLens;
+  document.querySelectorAll("[data-world-layer]").forEach((button) => {
+    const active = state.worldLayers.has(button.dataset.worldLayer);
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
+  renderTypeFilters();
+  document.body.classList.remove("preset-shift");
+  void document.body.offsetWidth;
+  document.body.classList.add("preset-shift");
+  clearTimeout(presetShiftTimer);
+  presetShiftTimer = setTimeout(() => document.body.classList.remove("preset-shift"), 520);
+  renderTimeline();
+}
+
 function scrollEventIntoView(event) {
   const x = yearToX(eventStart(event));
   const { scrollLeft, clientWidth } = els.viewport;
@@ -402,23 +861,92 @@ function renderDetail(event) {
       .map((item) => `<button class="connection-link ${typeClass(item.type)}" type="button" data-goto="${escapeHtml(item.id)}"><b>${escapeHtml(displayDate(item))}</b> ${escapeHtml(item.title)}</button>`)
       .join("")}</div>`
     : "";
+  const backlinks = (event.backlinks || [])
+    .map((id) => state.events.find((item) => item.id === id))
+    .filter(Boolean)
+    .sort((a, b) => eventStart(a) - eventStart(b));
+  const backlinkPanel = backlinks.length
+    ? `<div class="connections"><span>Backlinks</span>${backlinks
+      .map((item) => `<button class="connection-link ${typeClass(item.type)}" type="button" data-goto="${escapeHtml(item.id)}"><b>${escapeHtml(displayDate(item))}</b> ${escapeHtml(item.title)}</button>`)
+      .join("")}</div>`
+    : "";
   const source = event.sourceUrl
     ? `<a href="${escapeHtml(event.sourceUrl)}" target="_blank" rel="noreferrer">${escapeHtml(event.sourceNote || event.sourceUrl)}</a>`
     : escapeHtml(event.sourceNote || "Vault note");
+  const noteAvailable = event.vaultNote?.available && event.vaultNote.html;
+  const noteSections = event.vaultNote?.sections || [];
+  const sectionNav = noteSections.length
+    ? `<div class="section-nav" role="group" aria-label="Vault note sections">${noteSections
+      .map((section) => `<button type="button" data-note-section="${escapeHtml(section.id)}" class="${state.noteSection === section.id ? "is-active" : ""}">${escapeHtml(section.title)}</button>`)
+      .join("")}</div>`
+    : "";
+  const noteHtml = state.noteSection
+    ? noteSections.find((section) => section.id === state.noteSection)?.html || event.vaultNote.html
+    : event.vaultNote.html;
+  const noteButton = noteAvailable
+    ? `<button class="vault-note-toggle" type="button" data-toggle-note aria-expanded="${state.showVaultNote ? "true" : "false"}">${state.showVaultNote ? "Hide full vault note" : "Read full vault note"}</button>`
+    : `<p class="vault-note-unavailable">Full vault note is unavailable locally. Open Obsidian or download the iCloud note, then run <code>npm run update</code>.</p>`;
+  const notePanel = noteAvailable && state.showVaultNote
+    ? `<section class="vault-note" aria-label="Full Obsidian note">
+        <div class="vault-note-kicker">Obsidian note · ${escapeHtml(event.vaultNote.title)}</div>
+        ${sectionNav}
+        ${noteHtml}
+      </section>`
+    : "";
+  const quality = event.quality || { label: "unknown", score: 0, missing: [] };
+  const facets = event.facets || {};
+  const facetRows = [
+    ["Decision makers", facets.decision],
+    ["Power / institution", facets.power],
+    ["Material infrastructure", facets.material],
+    ["Closure devices", facets.closure],
+    ["Controversy", facets.controversy]
+  ].filter(([, values]) => values?.length);
+  const claims = `
+    <div class="analysis-boxes">
+      ${event.vaultNote?.citation ? `<section><span>Citation / Source</span><p>${escapeHtml(event.vaultNote.citation)}</p></section>` : ""}
+      ${event.vaultNote?.keyClaim ? `<section><span>Key Claim</span><p>${escapeHtml(event.vaultNote.keyClaim)}</p></section>` : ""}
+      <section><span>Why This Matters</span><p>${escapeHtml(whyItMatters(event))}</p></section>
+      <section><span>Reading Prompt</span><p>Who gets to decide what counts as success here, who benefits from that definition, and what world of labs, capital, law, data, labor, or infrastructure makes the event possible?</p></section>
+    </div>`;
+  const facetHtml = facetRows.length
+    ? `<div class="facet-grid">${facetRows.map(([label, values]) => `<div><span>${escapeHtml(label)}</span>${values.slice(0, 6).map((value) => `<b>${escapeHtml(value)}</b>`).join("")}</div>`).join("")}</div>`
+    : "";
+  const noteStatus = !noteAvailable
+    ? `<p class="vault-note-unavailable">This event is missing full note content in the local export.</p>`
+    : "";
   els.detail.className = `detail-panel ${typeClass(event.type)}`;
   els.detail.innerHTML = `
     <button class="detail-close" type="button" aria-label="Close details">×</button>
+    <div class="detail-nav" role="group" aria-label="Event navigation">
+      <button type="button" data-step="-1">Previous</button>
+      <button type="button" data-step="1">Next</button>
+    </div>
     <span class="type-pill">${escapeHtml(event.type)}</span>
     ${event.draft ? `<span class="draft-pill" title="Drafted by Claude, not yet reviewed">Draft</span>` : ""}
+    ${event.isNew ? `<span class="draft-pill">New</span>` : ""}
+    <span class="quality-badge ${qualityClass(event)}">${escapeHtml(quality.label)} · ${quality.score}/10</span>
     <h2>${escapeHtml(event.title)}</h2>
-    <p>${escapeHtml(event.summary)}</p>
+    <p>${highlight(event.summary)}</p>
     ${event.detail ? `<p class="detail-claim">${escapeHtml(event.detail)}</p>` : ""}
     <div class="detail-grid">
       <div><span>Date</span>${escapeHtml(displayDate(event))}</div>
       <div><span>Concepts</span>${concepts}</div>
       <div><span>Source</span>${source}</div>
+      <div><span>Centrality</span>${event.centrality || 0} links/backlinks</div>
+      <div><span>Completeness</span>${quality.missing?.length ? `Missing ${escapeHtml(quality.missing.join(", "))}` : "No major gaps flagged"}</div>
     </div>
+    <div class="detail-actions">
+      ${event.obsidianUri ? `<a class="vault-note-toggle" href="${escapeHtml(event.obsidianUri)}">Open in Obsidian</a>` : ""}
+      <button class="vault-note-toggle secondary-action" type="button" data-show-chain="${escapeHtml(event.id)}">${state.chainRootId === event.id ? "Refresh chain" : "Show chain"}</button>
+    </div>
+    ${noteStatus}
+    ${claims}
+    ${facetHtml}
+    <div class="vault-note-actions">${noteButton}</div>
+    ${notePanel}
     ${connections}
+    ${backlinkPanel}
   `;
 }
 
@@ -426,7 +954,10 @@ function renderTypeFilters() {
   const present = new Set(state.events.map((event) => event.type));
   els.typeFilters.innerHTML = typeOrder
     .filter((type) => present.has(type))
-    .map((type) => `<button class="chip is-active ${typeClass(type)}" type="button" data-type="${escapeHtml(type)}" aria-pressed="true">${escapeHtml(type)}</button>`)
+    .map((type) => {
+      const active = state.activeTypes.has(type);
+      return `<button class="chip ${active ? "is-active" : ""} ${typeClass(type)}" type="button" data-type="${escapeHtml(type)}" aria-pressed="${active ? "true" : "false"}">${escapeHtml(type)}</button>`;
+    })
     .join("");
 }
 
@@ -457,9 +988,7 @@ function computeBounds() {
 
 async function init() {
   try {
-    const response = await fetch("data/events.json", { cache: "no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const payload = await response.json();
+    const payload = timelinePayload;
     state.events = payload.events;
     state.activeTypes = new Set(typeOrder);
     els.syncTime.textContent = new Date(payload.generatedAt).toLocaleString([], {
@@ -472,12 +1001,29 @@ async function init() {
     renderTypeFilters();
     renderLensOptions();
     renderWeekOptions();
+    renderDecadeShortcuts();
     fitTimeline();
   } catch (error) {
     els.cardLayer.innerHTML = `<p class="empty-state">The timeline data could not be loaded. Run <code>npm run update</code>, then refresh.</p>`;
     els.syncTime.textContent = "Data unavailable";
   }
 }
+
+els.filtersToggle.addEventListener("click", () => {
+  togglePanel(els.filterDock, els.filtersToggle);
+});
+
+els.filtersClose.addEventListener("click", () => {
+  setPanelOpen(els.filterDock, els.filtersToggle, false);
+});
+
+els.preferencesToggle.addEventListener("click", () => {
+  togglePanel(els.preferencesMenu, els.preferencesToggle);
+});
+
+els.preferencesClose.addEventListener("click", () => {
+  setPanelOpen(els.preferencesMenu, els.preferencesToggle, false);
+});
 
 els.typeFilters.addEventListener("click", (event) => {
   const button = event.target.closest("[data-type]");
@@ -491,6 +1037,129 @@ els.typeFilters.addEventListener("click", (event) => {
   button.classList.toggle("is-active", state.activeTypes.has(type));
   button.setAttribute("aria-pressed", String(state.activeTypes.has(type)));
   renderTimeline();
+});
+
+els.resetFilters.addEventListener("click", () => {
+  state.activeTypes = new Set(typeOrder);
+  state.query = "";
+  state.lens = "";
+  state.week = "";
+  state.analysisLens = "";
+  state.minImportance = 0;
+  state.newOnly = false;
+  state.debateMap = false;
+  state.narrativeMode = false;
+  state.chainRootId = null;
+  state.worldLayers.clear();
+  state.selectedId = null;
+  state.showVaultNote = false;
+  els.search.value = "";
+  els.lensSelect.value = "";
+  els.weekSelect.value = "";
+  els.analysisLens.value = "";
+  els.importanceRange.value = "0";
+  els.importanceReadout.textContent = "All";
+  els.newOnlyToggle.setAttribute("aria-pressed", "false");
+  els.newOnlyToggle.classList.remove("is-active");
+  els.debateToggle.setAttribute("aria-pressed", "false");
+  els.debateToggle.classList.remove("is-active");
+  els.narrativeToggle.setAttribute("aria-pressed", "false");
+  els.narrativeToggle.classList.remove("is-active");
+  document.querySelectorAll("[data-world-layer]").forEach((button) => {
+    button.setAttribute("aria-pressed", "false");
+    button.classList.remove("is-active");
+  });
+  renderTypeFilters();
+  fitTimeline();
+});
+
+els.listToggle.addEventListener("click", () => {
+  state.viewMode = state.viewMode === "list" ? "timeline" : "list";
+  els.listToggle.setAttribute("aria-pressed", String(state.viewMode === "list"));
+  els.listToggle.classList.toggle("is-active", state.viewMode === "list");
+  renderTimeline();
+});
+
+els.readingModeToggle.addEventListener("click", () => {
+  state.readingMode = !state.readingMode;
+  document.body.classList.toggle("reading-mode", state.readingMode);
+  els.readingModeToggle.setAttribute("aria-pressed", String(state.readingMode));
+  els.readingModeToggle.classList.toggle("is-active", state.readingMode);
+  setPanelOpen(els.preferencesMenu, els.preferencesToggle, false);
+  setPanelOpen(els.filterDock, els.filtersToggle, false);
+});
+
+els.splitPaneToggle.addEventListener("click", () => {
+  state.splitPane = !state.splitPane;
+  document.body.classList.toggle("split-pane", state.splitPane);
+  els.splitPaneToggle.setAttribute("aria-pressed", String(state.splitPane));
+  els.splitPaneToggle.classList.toggle("is-active", state.splitPane);
+  renderTimeline();
+});
+
+els.newOnlyToggle.addEventListener("click", () => {
+  state.newOnly = !state.newOnly;
+  els.newOnlyToggle.setAttribute("aria-pressed", String(state.newOnly));
+  els.newOnlyToggle.classList.toggle("is-active", state.newOnly);
+  renderTimeline();
+});
+
+els.debateToggle.addEventListener("click", () => {
+  state.debateMap = !state.debateMap;
+  els.debateToggle.setAttribute("aria-pressed", String(state.debateMap));
+  els.debateToggle.classList.toggle("is-active", state.debateMap);
+  if (state.debateMap) state.worldLayers.add("controversy");
+  renderTimeline();
+});
+
+els.narrativeToggle.addEventListener("click", () => {
+  state.narrativeMode = !state.narrativeMode;
+  els.narrativeToggle.setAttribute("aria-pressed", String(state.narrativeMode));
+  els.narrativeToggle.classList.toggle("is-active", state.narrativeMode);
+  renderTimeline();
+});
+
+els.importanceRange.addEventListener("input", (event) => {
+  state.minImportance = Number(event.target.value);
+  els.importanceReadout.textContent = state.minImportance ? `${state.minImportance}+` : "All";
+  renderTimeline();
+});
+
+els.presetRow.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-preset]");
+  if (!button) return;
+  applyPreset(button.dataset.preset);
+});
+
+els.darkToggle.addEventListener("click", () => {
+  state.dark = !state.dark;
+  document.documentElement.classList.toggle("theme-dark", state.dark);
+  els.darkToggle.setAttribute("aria-pressed", String(state.dark));
+  els.darkToggle.classList.toggle("is-active", state.dark);
+});
+
+els.printButton.addEventListener("click", () => window.print());
+
+els.densitySelect.addEventListener("change", (event) => {
+  state.density = event.target.value;
+  renderTimeline();
+});
+
+els.jumpYear.addEventListener("change", (event) => {
+  const year = Number(event.target.value);
+  if (!Number.isFinite(year)) return;
+  els.viewport.scrollLeft = Math.max(0, yearToX(year) - els.viewport.clientWidth / 2);
+  renderTicks();
+  renderMinimap(visibleEvents());
+});
+
+els.decadeShortcuts.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-year]");
+  if (!button) return;
+  const year = Number(button.dataset.year);
+  els.viewport.scrollLeft = Math.max(0, yearToX(year) - 80);
+  renderTicks();
+  renderMinimap(visibleEvents());
 });
 
 els.search.addEventListener("input", (event) => {
@@ -579,15 +1248,47 @@ els.viewport.addEventListener("click", (event) => {
 let scrollFrame = 0;
 els.viewport.addEventListener("scroll", () => {
   cancelAnimationFrame(scrollFrame);
-  scrollFrame = requestAnimationFrame(renderTicks);
+  scrollFrame = requestAnimationFrame(() => {
+    renderTicks();
+    renderMinimap(visibleEvents());
+  });
 });
 
 els.cardLayer.addEventListener("click", (event) => {
   const card = event.target.closest("[data-id]");
   if (!card) return;
-  state.selectedId = card.dataset.id;
-  scrollEventIntoView(state.events.find((item) => item.id === state.selectedId));
-  renderTimeline();
+  selectEvent(card.dataset.id);
+});
+
+let hoverTimer;
+
+els.cardLayer.addEventListener("pointerover", (event) => {
+  const card = event.target.closest("[data-id]");
+  if (!card) return;
+  const item = eventById(card.dataset.id);
+  if (!item) return;
+  const { clientX, clientY } = event;
+  clearTimeout(hoverTimer);
+  hoverTimer = setTimeout(() => showHoverPreview(item, clientX, clientY), els.hoverPreview.hidden ? 220 : 60);
+});
+
+function showHoverPreview(item, clientX, clientY) {
+  els.hoverPreview.hidden = false;
+  els.hoverPreview.className = `hover-preview ${typeClass(item.type)}`;
+  els.hoverPreview.style.left = `${Math.min(window.innerWidth - 300, clientX + 12)}px`;
+  els.hoverPreview.style.top = `${Math.max(80, clientY - 16)}px`;
+  els.hoverPreview.innerHTML = `
+    <b>${escapeHtml(displayDate(item))}</b>
+    <strong>${escapeHtml(item.title)}</strong>
+    <p>${escapeHtml(excerpt(item.vaultNote?.keyClaim || item.summary, 150))}</p>
+    ${(item.vaultNote?.citation || item.sourceNote) ? `<small>${escapeHtml(excerpt(item.vaultNote?.citation || item.sourceNote, 130))}</small>` : ""}
+  `;
+}
+
+els.cardLayer.addEventListener("pointerout", (event) => {
+  if (!event.target.closest("[data-id]")) return;
+  clearTimeout(hoverTimer);
+  els.hoverPreview.hidden = true;
 });
 
 els.detail.addEventListener("click", (event) => {
@@ -598,21 +1299,45 @@ els.detail.addEventListener("click", (event) => {
   }
   const goto = event.target.closest("[data-goto]");
   if (goto) {
-    const target = state.events.find((item) => item.id === goto.dataset.goto);
-    if (!target) return;
-    state.selectedId = target.id;
-    scrollEventIntoView(target);
+    selectEvent(goto.dataset.goto);
+    return;
+  }
+  const step = event.target.closest("[data-step]");
+  if (step) {
+    selectAdjacent(Number(step.dataset.step));
+    return;
+  }
+  const noteSection = event.target.closest("[data-note-section]");
+  if (noteSection) {
+    state.noteSection = state.noteSection === noteSection.dataset.noteSection ? "" : noteSection.dataset.noteSection;
+    renderDetail(eventById(state.selectedId));
+    return;
+  }
+  const noteToggle = event.target.closest("[data-toggle-note]");
+  if (noteToggle) {
+    state.showVaultNote = !state.showVaultNote;
+    renderDetail(state.events.find((item) => item.id === state.selectedId));
+    return;
+  }
+  const chain = event.target.closest("[data-show-chain]");
+  if (chain) {
+    state.chainRootId = chain.dataset.showChain;
     renderTimeline();
     return;
   }
   if (!event.target.closest(".detail-close")) return;
   state.selectedId = null;
+  state.showVaultNote = false;
   renderTimeline();
 });
 
 els.lensSelect.addEventListener("change", (event) => setLens(event.target.value));
 els.weekSelect.addEventListener("change", (event) => {
   state.week = event.target.value;
+  renderTimeline();
+});
+els.analysisLens.addEventListener("change", (event) => {
+  state.analysisLens = event.target.value;
   renderTimeline();
 });
 
@@ -623,12 +1348,99 @@ els.linksToggle.addEventListener("click", () => {
   renderTimeline();
 });
 
+els.legendToggle.addEventListener("click", () => {
+  state.showLegend = !state.showLegend;
+  els.legendToggle.setAttribute("aria-pressed", String(state.showLegend));
+  els.legendToggle.classList.toggle("is-active", state.showLegend);
+  renderPanels();
+});
+
+els.glossaryToggle.addEventListener("click", () => {
+  state.showGlossary = !state.showGlossary;
+  els.glossaryToggle.setAttribute("aria-pressed", String(state.showGlossary));
+  els.glossaryToggle.classList.toggle("is-active", state.showGlossary);
+  renderPanels();
+});
+
+els.bibliographyToggle.addEventListener("click", () => {
+  state.showBibliography = !state.showBibliography;
+  els.bibliographyToggle.setAttribute("aria-pressed", String(state.showBibliography));
+  els.bibliographyToggle.classList.toggle("is-active", state.showBibliography);
+  renderPanels();
+});
+
+els.preferencesMenu.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-world-layer]");
+  if (!button) return;
+  const layer = button.dataset.worldLayer;
+  if (state.worldLayers.has(layer)) state.worldLayers.delete(layer);
+  else state.worldLayers.add(layer);
+  const active = state.worldLayers.has(layer);
+  button.setAttribute("aria-pressed", String(active));
+  button.classList.toggle("is-active", active);
+  renderTimeline();
+});
+
+els.chainPanel.addEventListener("click", (event) => {
+  if (!event.target.closest("[data-clear-chain]")) return;
+  state.chainRootId = null;
+  renderTimeline();
+});
+
+els.trailPanel.addEventListener("click", (event) => {
+  const goto = event.target.closest("[data-goto]");
+  if (goto) selectEvent(goto.dataset.goto);
+});
+
+document.addEventListener("click", (event) => {
+  const chain = event.target.closest("[data-show-chain]");
+  if (!chain) return;
+  state.chainRootId = chain.dataset.showChain;
+  renderTimeline();
+});
+
+els.listPanel.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-id]");
+  if (!button) return;
+  selectEvent(button.dataset.id);
+});
+
+els.selectedRibbon.addEventListener("click", (event) => {
+  const step = event.target.closest("[data-step]");
+  if (step) selectAdjacent(Number(step.dataset.step));
+});
+
+els.minimapTrack.addEventListener("click", (event) => {
+  const rect = els.minimapTrack.getBoundingClientRect();
+  const ratio = (event.clientX - rect.left) / rect.width;
+  const year = state.bounds.min + ratio * (state.bounds.max - state.bounds.min);
+  els.viewport.scrollLeft = Math.max(0, yearToX(year) - els.viewport.clientWidth / 2);
+  renderTicks();
+  renderMinimap(visibleEvents());
+});
+
 document.addEventListener("keydown", (event) => {
-  if (event.target.matches("input")) return;
+  if (event.target.matches("input, select, textarea")) return;
+  if (event.key === "Escape" && state.readingMode) {
+    state.readingMode = false;
+    document.body.classList.remove("reading-mode");
+    els.readingModeToggle.setAttribute("aria-pressed", "false");
+    els.readingModeToggle.classList.remove("is-active");
+    return;
+  }
+  if (event.key === "Escape" && (!els.filterDock.hidden || !els.preferencesMenu.hidden)) {
+    setPanelOpen(els.filterDock, els.filtersToggle, false);
+    setPanelOpen(els.preferencesMenu, els.preferencesToggle, false);
+    return;
+  }
   if (event.key === "Escape" && (state.selectedId || state.lens)) {
     if (state.selectedId) state.selectedId = null;
     else setLens("");
     renderTimeline();
+  } else if (event.key === "ArrowRight") {
+    selectAdjacent(1);
+  } else if (event.key === "ArrowLeft") {
+    selectAdjacent(-1);
   } else if (event.key === "+" || event.key === "=") {
     zoomTo(state.pxPerYear * 1.4);
   } else if (event.key === "-") {

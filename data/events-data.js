@@ -1,4 +1,4 @@
-{
+const timelinePayload = {
   "generatedAt": "2026-10-02T16:06:37.935Z",
   "vaultPath": "/Users/nathanjohnson/Documents/Obsidian Vault",
   "offloadedNotes": [
@@ -26153,4 +26153,6 @@
       "isNew": true
     }
   ]
-}
+};
+
+export default timelinePayload;
