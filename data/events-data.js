@@ -1,5 +1,5 @@
 const timelinePayload = {
-  "generatedAt": "2026-10-02T16:06:37.935Z",
+  "generatedAt": "2026-10-02T19:13:29.392Z",
   "vaultPath": "/Users/nathanjohnson/Documents/Obsidian Vault",
   "offloadedNotes": [
     "ImageNet Classification with Deep Convolutional Neural Networks"
@@ -40,6 +40,13 @@ const timelinePayload = {
       "title": "McCarthy's Lisp paper",
       "missing": [
         "institution/world context"
+      ]
+    },
+    {
+      "id": "1961-unimate-enters-gm-production",
+      "title": "Unimate enters GM production",
+      "missing": [
+        "decision-maker context"
       ]
     },
     {
@@ -95,6 +102,13 @@ const timelinePayload = {
       "missing": [
         "decision-maker context",
         "institution/world context"
+      ]
+    },
+    {
+      "id": "1987-lisp-machine-market-collapse",
+      "title": "Lisp machine market collapse",
+      "missing": [
+        "decision-maker context"
       ]
     },
     {
@@ -353,20 +367,6 @@ const timelinePayload = {
       "missing": [
         "decision-maker context"
       ]
-    },
-    {
-      "id": "2026-unimate-enters-gm-production",
-      "title": "Unimate enters GM production",
-      "missing": [
-        "decision-maker context"
-      ]
-    },
-    {
-      "id": "2026-lisp-machine-market-collapse",
-      "title": "Lisp machine market collapse",
-      "missing": [
-        "decision-maker context"
-      ]
     }
   ],
   "events": [
@@ -620,7 +620,7 @@ const timelinePayload = {
         "1943-mcculloch-pitts-neuron-logic",
         "1950-computing-machinery-and-intelligence",
         "1955-56-a-proposal-for-the-dartmouth-summer-research-projecton-artificial-intelligence",
-        "2026-unimate-enters-gm-production"
+        "1961-unimate-enters-gm-production"
       ],
       "backlinks": [
         "1949-hebb-s-organization-of-behavior",
@@ -1031,13 +1031,14 @@ const timelinePayload = {
         "1956-logic-theorist",
         "1958-mechanisation-of-thought-conference",
         "1960-mccarthy-s-lisp-paper",
+        "1965-dendral-begins",
         "1966-weizenbaum-s-eliza",
         "1979-aaai-founded",
         "2006-12-the-data-that-transformed-ai-research-and-possibly-the-world",
         "2016-mastering-the-game-of-go-with-deepneural-networks-and-tree-search",
         "2023-histories-of-artificial-intelligence-a-genealogy-of-power"
       ],
-      "centrality": 16,
+      "centrality": 17,
       "isNew": false
     },
     {
@@ -1153,14 +1154,16 @@ const timelinePayload = {
         "1955-56-a-proposal-for-the-dartmouth-summer-research-projecton-artificial-intelligence",
         "1943-mcculloch-pitts-neuron-logic",
         "1958-mechanisation-of-thought-conference",
-        "1960-mccarthy-s-lisp-paper"
+        "1960-mccarthy-s-lisp-paper",
+        "1965-dendral-begins"
       ],
       "backlinks": [
         "1958-mechanisation-of-thought-conference",
         "1960-mccarthy-s-lisp-paper",
+        "1965-dendral-begins",
         "1989-watkins-s-q-learning"
       ],
-      "centrality": 8,
+      "centrality": 10,
       "isNew": false
     },
     {
@@ -1437,9 +1440,9 @@ const timelinePayload = {
         "1956-logic-theorist",
         "1958-rosenblatt-s-perceptron",
         "1960-mccarthy-s-lisp-paper",
+        "1961-unimate-enters-gm-production",
         "1966-alpac-report",
-        "1980-fukushima-s-neocognitron",
-        "2026-unimate-enters-gm-production"
+        "1980-fukushima-s-neocognitron"
       ],
       "centrality": 13,
       "isNew": false
@@ -1566,20 +1569,289 @@ const timelinePayload = {
         "1958-mechanisation-of-thought-conference",
         "1955-56-a-proposal-for-the-dartmouth-summer-research-projecton-artificial-intelligence",
         "1971-winograd-s-shrdlu",
-        "2026-lisp-machine-market-collapse"
+        "1987-lisp-machine-market-collapse"
       ],
       "backlinks": [
         "1956-logic-theorist",
         "1958-mechanisation-of-thought-conference",
         "1971-winograd-s-shrdlu",
+        "1972-mycin-at-stanford",
         "1979-aaai-founded",
         "1982-japan-s-fifth-generation-project",
         "1983-darpa-strategic-computing",
-        "1984-mycin-at-stanford",
-        "1988-pearl-s-bayesian-networks",
-        "2026-lisp-machine-market-collapse"
+        "1987-lisp-machine-market-collapse",
+        "1988-pearl-s-bayesian-networks"
       ],
       "centrality": 14,
+      "isNew": false
+    },
+    {
+      "id": "1961-unimate-enters-gm-production",
+      "title": "Unimate enters GM production",
+      "yearLabel": "1961-09-20",
+      "date": "1961-09-20",
+      "startYear": 1961,
+      "endYear": 1961,
+      "type": "Corporate release",
+      "concepts": [
+        "System Builders",
+        "Appropriation"
+      ],
+      "allConcepts": [
+        "System Builders",
+        "Appropriation"
+      ],
+      "summary": "Both sources tell the same story: in 1961 General Motors put the first Unimate, a hydraulic, programmable arm built by Unimation, to work in a New Jersey plant unloading hot metal castings from a die-casting machine. It is presented as the first successful application of an industrial robot. The sources trace it to George Devol's 1954 patent for a \"programmed article transfer\" device and to Joseph Engelberger's work in financing and selling it. The Spectrum article adds the commercial and labor history: GM bought the first machine below cost, Unimation took years to turn a profit, American workers later protested robot-heavy lines, and the technology found its main early market in Japan.",
+      "sourceNote": "Unimate enters General Motors production",
+      "sourceUrl": "https://robotsguide.com/robots/unimate",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "vaultNote": {
+        "title": "Unimate enters General Motors production",
+        "available": true,
+        "html": "<h3>&quot;Unimate&quot;</h3><h4>Citation</h4><p>IEEE Spectrum. n.d. &quot;Unimate.&quot; <em>ROBOTS: Your Guide to the World of Robotics</em>. Accessed September 2026. https://robotsguide.com/robots/unimate</p><p>Source used for this note: the ROBOTS guide entry above, and <em>IEEE Spectrum</em>'s &quot;Past Forward&quot; article on the Unimate (print title &quot;Unimate Punches In,&quot; September 2022), https://spectrum.ieee.org/unimation-robot</p><h4>Core Claim</h4><p>Both sources tell the same story: in 1961 General Motors put the first Unimate, a hydraulic, programmable arm built by Unimation, to work in a New Jersey plant unloading hot metal castings from a die-casting machine. It is presented as the first successful application of an industrial robot. The sources trace it to George Devol's 1954 patent for a &quot;programmed article transfer&quot; device and to Joseph Engelberger's work in financing and selling it. The Spectrum article adds the commercial and labor history: GM bought the first machine below cost, Unimation took years to turn a profit, American workers later protested robot-heavy lines, and the technology found its main early market in Japan.</p><h4>AI History Notes</h4><ul><li>The machine: six degrees of freedom (three in the arm, three in the wrist), hydraulic actuators, memory for hundreds of programmed steps on a magnetic drum, custom rotary encoders, and position repeatability within 1 mm. The Spectrum article gives the prototype's weight as about 1,360 kg and its lifting capacity as up to 45 kg.</li><li>Programming was by demonstration: the original Unimate had no programming language. An operator moved the arm to each position, the machine recorded it, and it played back the sequence. A language, VAL, came with Unimation's purchase of Victor Scheinman's Vicarm and was part of its robots from 1973.</li><li>The deployment: Engelberger surveyed 15 automobile plants and 20 other manufacturers; GM was the first buyer. It paid $18,000 for the first Unimate against an estimated $65,000 production cost, a price Engelberger accepted in order to name GM as a client. List price was $35,000 by the early 1970s, and Unimation did not turn a profit until 1975.</li><li>The sources differ on details: the ROBOTS entry places the first installation in Ewing Township, N.J., and says Westinghouse bought Unimation in 1983 for $107 million; the Spectrum article names GM's Ternstedt plant in Trenton and says Condec sold Unimation to Western Electric for $107 million in 1983.</li><li>Japan: after a 1966 session with Japanese industrial leaders, Kawasaki partnered with Unimation in 1968 and completed the first Kawasaki-Unimate 2000 in 1969. By the mid-1980s, the article says, Japan had nearly 70 percent of the world's robots.</li></ul><h4>History of Technology Notes</h4><ul><li>Where it sits in the process: the Unimate is factory automation with no learning or reasoning. It repeats recorded motions. It belongs in an AI timeline as the start of the industrial robot as an installed, sold product, the physical system that later robotics research (and later AI in robots) would inherit. At this point momentum is slow: one discounted sale to GM, fourteen years to profit, a decade for wide adoption even in Japan.</li><li>System Builders: the sources credit the Unimate's success as much to organization as to engineering. Devol held the patent; Engelberger found the backer (Condec's Norman Schafler), surveyed the market, priced the first unit to win GM as a reference customer, marketed the robot on television, and negotiated the Kawasaki partnership. The Spectrum article describes Devol as &quot;the technical genius&quot; and Engelberger as having &quot;a flair for marketing.&quot;</li><li>Interpretative Flexibility: Engelberger presented the same machine differently to different groups. To a public worried about job loss he made it &quot;personable,&quot; opening beer and conducting a band on television. To executives, a spoof résumé said it worked 24 hours a day and never asked for a raise. The robot was a helper with dirty work and a replacement for paid labor at the same time.</li></ul><h4>Social History / SCOT Notes</h4><ul><li>Relevant Social Groups: workers' response depended on the job. At GM's first site nobody objected, because unloading the die-cast machine was &quot;a terrible job that no one wanted to do&quot;; the first spot-welding robots at Norwood in 1967 also passed quietly. At Lordstown in 1970–72, a 28-robot welding line came with layoffs, faster line speeds and mandatory overtime, and workers filed over 16,000 grievances and struck for 22 days. The article suggests Lordstown hurt Unimation's reputation at home.</li><li>Appropriation: Japanese industry adopted the Unimate for its own labor problem, the &quot;3K&quot; jobs (difficult, dirty, dangerous), especially welding positions it could not fill. A Kawasaki-Unimate welder reportedly did the work of 20 human welders. The robot's main early success came through a partner's use of it in a different labor market.</li></ul><h4>Historical References and Lineages</h4><ul><li>Before: Mechanisation of Thought Processes (1958) included industrial automation among the uses of machine &quot;thought,&quot; and the Unimate prototype was built the same year.</li><li>After: Shakey the Robot (1969) and Stanford Cart crosses a room (1979) are research robots that tried to add perception and planning; Roomba launches (2002) and DARPA Grand Challenge 2004 carry robots into homes and open terrain.</li></ul><h4>Why This Matters</h4><p>The Unimate shows automation reaching a factory before AI did. Its commercial path depended on a discounted first sale, marketing aimed separately at workers and executives, and a foreign partner. Its reception depended on the job it replaced: welcome for a dangerous task nobody wanted, resisted when it came bundled with speed-ups and layoffs. For Synthesis — AI as Technology History, the note supports the argument that what a machine means is set by the labor relations around it. The same arm was a helper at Trenton and a threat at Lordstown.</p><h4>Useful Quotes / Evidence</h4><ul><li>&quot;It took over the dirty, dreary, and dangerous job of unloading the finished castings from a die-cast press.&quot;</li></ul><p>The first task, and the framing of it.</p><ul><li>&quot;Although programmable, the original Unimate did not have a programming language.&quot;</li></ul><p>How far the machine was from AI.</p><ul><li>&quot;Engelberger accepted the price because he recognized the value in being able to point to GM as a client.&quot;</li></ul><p>The first sale as a marketing move.</p><ul><li>&quot;never demands a wage increase&quot;</li></ul><p>The pitch to executives: the robot as cheaper labor.</p><ul><li>&quot;The Lordstown plant is often viewed as a textbook example of factory workers revolting against automation.&quot;</li></ul><p>The labor conflict that followed.</p><h4>Possible Tags</h4><p>#ai-history #history-of-technology #robotics #automation #labor #general-motors</p>",
+        "sections": [
+          {
+            "id": "citation",
+            "title": "Citation",
+            "html": "<p>IEEE Spectrum. n.d. &quot;Unimate.&quot; <em>ROBOTS: Your Guide to the World of Robotics</em>. Accessed September 2026. https://robotsguide.com/robots/unimate</p><p>Source used for this note: the ROBOTS guide entry above, and <em>IEEE Spectrum</em>'s &quot;Past Forward&quot; article on the Unimate (print title &quot;Unimate Punches In,&quot; September 2022), https://spectrum.ieee.org/unimation-robot</p>",
+            "text": "IEEE Spectrum. n.d. \"Unimate.\" ROBOTS: Your Guide to the World of Robotics. Accessed September 2026. https://robotsguide.com/robots/unimate\n\nSource used for this note: the ROBOTS guide entry above, and IEEE Spectrum's \"Past Forward\" article on the Unimate (print title \"Unimate Punches In,\" September 2022), https://spectrum.ieee.org/unimation-robot"
+          },
+          {
+            "id": "core-claim",
+            "title": "Core Claim",
+            "html": "<p>Both sources tell the same story: in 1961 General Motors put the first Unimate, a hydraulic, programmable arm built by Unimation, to work in a New Jersey plant unloading hot metal castings from a die-casting machine. It is presented as the first successful application of an industrial robot. The sources trace it to George Devol's 1954 patent for a &quot;programmed article transfer&quot; device and to Joseph Engelberger's work in financing and selling it. The Spectrum article adds the commercial and labor history: GM bought the first machine below cost, Unimation took years to turn a profit, American workers later protested robot-heavy lines, and the technology found its main early market in Japan.</p>",
+            "text": "Both sources tell the same story: in 1961 General Motors put the first Unimate, a hydraulic, programmable arm built by Unimation, to work in a New Jersey plant unloading hot metal castings from a die-casting machine. It is presented as the first successful application of an industrial robot. The sources trace it to George Devol's 1954 patent for a \"programmed article transfer\" device and to Joseph Engelberger's work in financing and selling it. The Spectrum article adds the commercial and labor history: GM bought the first machine below cost, Unimation took years to turn a profit, American workers later protested robot-heavy lines, and the technology found its main early market in Japan."
+          },
+          {
+            "id": "ai-history-notes",
+            "title": "AI History Notes",
+            "html": "<ul><li>The machine: six degrees of freedom (three in the arm, three in the wrist), hydraulic actuators, memory for hundreds of programmed steps on a magnetic drum, custom rotary encoders, and position repeatability within 1 mm. The Spectrum article gives the prototype's weight as about 1,360 kg and its lifting capacity as up to 45 kg.</li><li>Programming was by demonstration: the original Unimate had no programming language. An operator moved the arm to each position, the machine recorded it, and it played back the sequence. A language, VAL, came with Unimation's purchase of Victor Scheinman's Vicarm and was part of its robots from 1973.</li><li>The deployment: Engelberger surveyed 15 automobile plants and 20 other manufacturers; GM was the first buyer. It paid $18,000 for the first Unimate against an estimated $65,000 production cost, a price Engelberger accepted in order to name GM as a client. List price was $35,000 by the early 1970s, and Unimation did not turn a profit until 1975.</li><li>The sources differ on details: the ROBOTS entry places the first installation in Ewing Township, N.J., and says Westinghouse bought Unimation in 1983 for $107 million; the Spectrum article names GM's Ternstedt plant in Trenton and says Condec sold Unimation to Western Electric for $107 million in 1983.</li><li>Japan: after a 1966 session with Japanese industrial leaders, Kawasaki partnered with Unimation in 1968 and completed the first Kawasaki-Unimate 2000 in 1969. By the mid-1980s, the article says, Japan had nearly 70 percent of the world's robots.</li></ul>",
+            "text": "- The machine: six degrees of freedom (three in the arm, three in the wrist), hydraulic actuators, memory for hundreds of programmed steps on a magnetic drum, custom rotary encoders, and position repeatability within 1 mm. The Spectrum article gives the prototype's weight as about 1,360 kg and its lifting capacity as up to 45 kg.\n- Programming was by demonstration: the original Unimate had no programming language. An operator moved the arm to each position, the machine recorded it, and it played back the sequence. A language, VAL, came with Unimation's purchase of Victor Scheinman's Vicarm and was part of its robots from 1973.\n- The deployment: Engelberger surveyed 15 automobile plants and 20 other manufacturers; GM was the first buyer. It paid $18,000 for the first Unimate against an estimated $65,000 production cost, a price Engelberger accepted in order to name GM as a client. List pr"
+          },
+          {
+            "id": "history-of-technology-notes",
+            "title": "History of Technology Notes",
+            "html": "<ul><li>Where it sits in the process: the Unimate is factory automation with no learning or reasoning. It repeats recorded motions. It belongs in an AI timeline as the start of the industrial robot as an installed, sold product, the physical system that later robotics research (and later AI in robots) would inherit. At this point momentum is slow: one discounted sale to GM, fourteen years to profit, a decade for wide adoption even in Japan.</li><li>System Builders: the sources credit the Unimate's success as much to organization as to engineering. Devol held the patent; Engelberger found the backer (Condec's Norman Schafler), surveyed the market, priced the first unit to win GM as a reference customer, marketed the robot on television, and negotiated the Kawasaki partnership. The Spectrum article describes Devol as &quot;the technical genius&quot; and Engelberger as having &quot;a flair for marketing.&quot;</li><li>Interpretative Flexibility: Engelberger presented the same machine differently to different groups. To a public worried about job loss he made it &quot;personable,&quot; opening beer and conducting a band on television. To executives, a spoof résumé said it worked 24 hours a day and never asked for a raise. The robot was a helper with dirty work and a replacement for paid labor at the same time.</li></ul>",
+            "text": "- Where it sits in the process: the Unimate is factory automation with no learning or reasoning. It repeats recorded motions. It belongs in an AI timeline as the start of the industrial robot as an installed, sold product, the physical system that later robotics research (and later AI in robots) would inherit. At this point momentum is slow: one discounted sale to GM, fourteen years to profit, a decade for wide adoption even in Japan.\n- System Builders: the sources credit the Unimate's success as much to organization as to engineering. Devol held the patent; Engelberger found the backer (Condec's Norman Schafler), surveyed the market, priced the first unit to win GM as a reference customer, marketed the robot on television, and negotiated the Kawasaki partnership. The Spectrum article describes Devol as \"the technical genius\" and Engelberger as having \"a flair for marketing.\"\n- Interpret"
+          },
+          {
+            "id": "social-history-scot-notes",
+            "title": "Social History / SCOT Notes",
+            "html": "<ul><li>Relevant Social Groups: workers' response depended on the job. At GM's first site nobody objected, because unloading the die-cast machine was &quot;a terrible job that no one wanted to do&quot;; the first spot-welding robots at Norwood in 1967 also passed quietly. At Lordstown in 1970–72, a 28-robot welding line came with layoffs, faster line speeds and mandatory overtime, and workers filed over 16,000 grievances and struck for 22 days. The article suggests Lordstown hurt Unimation's reputation at home.</li><li>Appropriation: Japanese industry adopted the Unimate for its own labor problem, the &quot;3K&quot; jobs (difficult, dirty, dangerous), especially welding positions it could not fill. A Kawasaki-Unimate welder reportedly did the work of 20 human welders. The robot's main early success came through a partner's use of it in a different labor market.</li></ul>",
+            "text": "- Relevant Social Groups: workers' response depended on the job. At GM's first site nobody objected, because unloading the die-cast machine was \"a terrible job that no one wanted to do\"; the first spot-welding robots at Norwood in 1967 also passed quietly. At Lordstown in 1970–72, a 28-robot welding line came with layoffs, faster line speeds and mandatory overtime, and workers filed over 16,000 grievances and struck for 22 days. The article suggests Lordstown hurt Unimation's reputation at home.\n- Appropriation: Japanese industry adopted the Unimate for its own labor problem, the \"3K\" jobs (difficult, dirty, dangerous), especially welding positions it could not fill. A Kawasaki-Unimate welder reportedly did the work of 20 human welders. The robot's main early success came through a partner's use of it in a different labor market."
+          },
+          {
+            "id": "historical-references-and-lineages",
+            "title": "Historical References and Lineages",
+            "html": "<ul><li>Before: Mechanisation of Thought Processes (1958) included industrial automation among the uses of machine &quot;thought,&quot; and the Unimate prototype was built the same year.</li><li>After: Shakey the Robot (1969) and Stanford Cart crosses a room (1979) are research robots that tried to add perception and planning; Roomba launches (2002) and DARPA Grand Challenge 2004 carry robots into homes and open terrain.</li></ul>",
+            "text": "- Before: Mechanisation of Thought Processes (1958) included industrial automation among the uses of machine \"thought,\" and the Unimate prototype was built the same year.\n- After: Shakey the Robot (1969) and Stanford Cart crosses a room (1979) are research robots that tried to add perception and planning; Roomba launches (2002) and DARPA Grand Challenge 2004 carry robots into homes and open terrain."
+          },
+          {
+            "id": "why-this-matters",
+            "title": "Why This Matters",
+            "html": "<p>The Unimate shows automation reaching a factory before AI did. Its commercial path depended on a discounted first sale, marketing aimed separately at workers and executives, and a foreign partner. Its reception depended on the job it replaced: welcome for a dangerous task nobody wanted, resisted when it came bundled with speed-ups and layoffs. For Synthesis — AI as Technology History, the note supports the argument that what a machine means is set by the labor relations around it. The same arm was a helper at Trenton and a threat at Lordstown.</p>",
+            "text": "The Unimate shows automation reaching a factory before AI did. Its commercial path depended on a discounted first sale, marketing aimed separately at workers and executives, and a foreign partner. Its reception depended on the job it replaced: welcome for a dangerous task nobody wanted, resisted when it came bundled with speed-ups and layoffs. For Synthesis — AI as Technology History, the note supports the argument that what a machine means is set by the labor relations around it. The same arm was a helper at Trenton and a threat at Lordstown."
+          },
+          {
+            "id": "useful-quotes-evidence",
+            "title": "Useful Quotes / Evidence",
+            "html": "<ul><li>&quot;It took over the dirty, dreary, and dangerous job of unloading the finished castings from a die-cast press.&quot;</li></ul><p>The first task, and the framing of it.</p><ul><li>&quot;Although programmable, the original Unimate did not have a programming language.&quot;</li></ul><p>How far the machine was from AI.</p><ul><li>&quot;Engelberger accepted the price because he recognized the value in being able to point to GM as a client.&quot;</li></ul><p>The first sale as a marketing move.</p><ul><li>&quot;never demands a wage increase&quot;</li></ul><p>The pitch to executives: the robot as cheaper labor.</p><ul><li>&quot;The Lordstown plant is often viewed as a textbook example of factory workers revolting against automation.&quot;</li></ul><p>The labor conflict that followed.</p>",
+            "text": "- \"It took over the dirty, dreary, and dangerous job of unloading the finished castings from a die-cast press.\"\n  The first task, and the framing of it.\n- \"Although programmable, the original Unimate did not have a programming language.\"\n  How far the machine was from AI.\n- \"Engelberger accepted the price because he recognized the value in being able to point to GM as a client.\"\n  The first sale as a marketing move.\n- \"never demands a wage increase\"\n  The pitch to executives: the robot as cheaper labor.\n- \"The Lordstown plant is often viewed as a textbook example of factory workers revolting against automation.\"\n  The labor conflict that followed."
+          },
+          {
+            "id": "possible-tags",
+            "title": "Possible Tags",
+            "html": "<p>#ai-history #history-of-technology #robotics #automation #labor #general-motors</p>",
+            "text": "ai-history #history-of-technology #robotics #automation #labor #general-motors"
+          }
+        ],
+        "citation": "IEEE Spectrum. n.d. \"Unimate.\" ROBOTS: Your Guide to the World of Robotics. Accessed September 2026. https://robotsguide.com/robots/unimate",
+        "keyClaim": "Both sources tell the same story: in 1961 General Motors put the first Unimate, a hydraulic, programmable arm built by Unimation, to work in a New Jersey plant unloading hot metal castings from a die-casting machine. It is presented as the first successful application of an industrial robot. The sources trace it to George Devol's 1954 patent for a \"programmed article transfer\" device and to Joseph Engelberger's work in financing and selling it. The Spectrum article adds the commercial and labor history: GM bought the first machine below cost, Unimation took years to turn a profit, American workers later protested robot-heavy lines, and the technology found its main early market in Japan.",
+        "textLength": 6680
+      },
+      "quality": {
+        "score": 8,
+        "label": "complete",
+        "missing": [
+          "decision-maker context"
+        ],
+        "sections": 9,
+        "words": 1060
+      },
+      "facets": {
+        "decision": [
+          "lab"
+        ],
+        "power": [
+          "market",
+          "corporate",
+          "labor",
+          "public"
+        ],
+        "material": [
+          "labor"
+        ],
+        "closure": [
+          "test",
+          "order",
+          "demo"
+        ],
+        "controversy": [
+          "ban"
+        ],
+        "governance": true
+      },
+      "obsidianUri": "obsidian://open?path=%2FUsers%2Fnathanjohnson%2FDocuments%2FObsidian%20Vault%2FUnimate%20enters%20General%20Motors%20production.md",
+      "links": [
+        "1958-mechanisation-of-thought-conference",
+        "1966-sri-s-shakey-the-robot",
+        "1979-stanford-cart-crosses-a-room",
+        "2002-irobot-s-roomba-launches",
+        "2004-darpa-grand-challenge-2004"
+      ],
+      "backlinks": [
+        "1948-wiener-s-cybernetics",
+        "1966-sri-s-shakey-the-robot",
+        "2002-irobot-s-roomba-launches"
+      ],
+      "centrality": 8,
+      "isNew": false
+    },
+    {
+      "id": "1965-dendral-begins",
+      "title": "DENDRAL begins",
+      "yearLabel": "1965",
+      "date": null,
+      "startYear": 1965,
+      "endYear": 1965,
+      "type": "Model innovation",
+      "concepts": [
+        "System Builders",
+        "Technological Frame"
+      ],
+      "allConcepts": [
+        "System Builders",
+        "Technological Frame"
+      ],
+      "summary": "The National Library of Medicine's essay presents DENDRAL, begun at Stanford in 1965, as \"a prototype for expert systems and the first use of artificial intelligence in biomedical research.\" Joshua Lederberg, Edward Feigenbaum and Carl Djerassi built a program that inferred the molecular structure of unknown organic compounds from mass-spectrometer data. The essay argues that DENDRAL's main significance was theoretical: it moved AI from chess and other controlled settings to real scientific problems, and it forced its builders to formalize expert reasoning. It is equally direct about the limits. Expert systems were costly, narrow and slow to build, never replaced the scientist or physician, and struggled to win acceptance from the professionals they were meant to help.",
+      "sourceNote": "DENDRAL and expert-system chemistry",
+      "sourceUrl": "https://profiles.nlm.nih.gov/spotlight/bb/feature/ai",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "vaultNote": {
+        "title": "DENDRAL and expert-system chemistry",
+        "available": true,
+        "html": "<h3>&quot;DENDRAL and expert-system chemistry&quot;</h3><h4>Citation</h4><p>National Library of Medicine. n.d. &quot;Computers, Artificial Intelligence, and Expert Systems in Biomedical Research.&quot; <em>Profiles in Science: The Joshua Lederberg Papers</em>. National Library of Medicine. https://profiles.nlm.nih.gov/spotlight/bb/feature/ai</p><p>Source used for this note: the NLM Profiles in Science exhibit essay above, a secondary account written for Lederberg's papers. No primary DENDRAL report was cached.</p><h4>Core Claim</h4><p>The National Library of Medicine's essay presents DENDRAL, begun at Stanford in 1965, as &quot;a prototype for expert systems and the first use of artificial intelligence in biomedical research.&quot; Joshua Lederberg, Edward Feigenbaum and Carl Djerassi built a program that inferred the molecular structure of unknown organic compounds from mass-spectrometer data. The essay argues that DENDRAL's main significance was theoretical: it moved AI from chess and other controlled settings to real scientific problems, and it forced its builders to formalize expert reasoning. It is equally direct about the limits. Expert systems were costly, narrow and slow to build, never replaced the scientist or physician, and struggled to win acceptance from the professionals they were meant to help.</p><h4>AI History Notes</h4><ul><li>Origin: Lederberg's work for NASA's Mars missions from 1961, where he designed a computer-controlled mass spectrometer to look for signs of life, led him to apply computerized spectrometry to the chemistry lab. In 1965 this became the basis of DENDRAL (for Dendritic Algorithm).</li><li>Builders: Lederberg, Stanford computer science chair Edward A. Feigenbaum, and chemistry professor Carl Djerassi. Bruce Buchanan and others distilled &quot;heuristics&quot; from extended interviews with Lederberg and other experts and coded them as symbolic computation.</li><li>Method: using ion fragmentation patterns as input, the program generated and tested hypotheses, ruling out structurally implausible candidates as it searched a tree of possible atomic configurations. Lederberg worked out the graph-theoretic notation that let computers represent molecular structures.</li><li>Performance: once fully operational, it did the structure-matching task faster than an expert spectrometrist, with comparable accuracy.</li><li>Infrastructure: DENDRAL was the first AI application on ACME, a time-shared computer installed at Stanford Medical School in 1965 with Lederberg as principal investigator. SUMEX-AIM succeeded ACME in 1973 as a national AI-in-medicine resource that users reached over the ARPANET. By 1980 SUMEX hosted nineteen projects, including DENDRAL's spin-offs CONGEN and Meta-DENDRAL, and MYCIN.</li><li>Limits: after more than a decade, DENDRAL still handled only compounds from specific groups, and the rule-generating spin-offs stayed tied to mass spectrometry.</li></ul><h4>History of Technology Notes</h4><ul><li>System Builders: Lederberg built more than a program. He was principal investigator on ACME, the machine DENDRAL ran on, and the essay traces a line from it to SUMEX-AIM, a national resource linked over the ARPANET that hosted nineteen projects by 1980. The essay also notes that expert systems &quot;could not be supported outside of major research institutions like Stanford, or without generous federal funding.&quot; DENDRAL's reach came from this organized system of hardware, network access and federal money, which is why early expert-systems work clustered at a few funded centers.</li><li>Technological Frame: the builders' frame defined AI as symbol manipulation, such as an &quot;if-then&quot; inference, rather than numerical calculation, and it treated expertise as rules that could be drawn out of interviews with experts. That frame made the &quot;knowledge acquisition&quot; problem the central task and set the template for later expert systems. It also explains the limit the essay records: every domain needed exact symbolic formulation, so systems stayed narrow.</li><li>Where it sits in the process: in 1965 what AI could do outside games was an open question, and DENDRAL was an early working answer in a real domain. It started the expert-systems line, which gained institutional support through SUMEX in the 1970s. The essay's account of its costs and narrowness shows the problems that would limit that line later.</li></ul><h4>Social History / SCOT Notes</h4><ul><li>Interpretative Flexibility: participants and the press read expert systems as potential replacements for scientists and doctors, while the systems worked in practice as advisers. The essay states that &quot;in no case did these expert systems replace the scientist or physician.&quot; The same artifact carried a replacement meaning and an assistant meaning, and only use settled which one held.</li><li>Relevant Social Groups: the builders (Lederberg, Feigenbaum, Djerassi, Buchanan) are not the only group. The intended users, fellow scientists and physicians, were &quot;skeptical or uninterested,&quot; and the builders &quot;struggled to find acceptance&quot; even for an advisory role. Remote users at Pittsburgh and UCLA used SUMEX for their own programs (INTERNIST, PARRY). The groups that controlled uptake were the professionals whose judgment the systems modeled, not the AI researchers.</li></ul><h4>Historical References and Lineages</h4><ul><li>Before: A PROPOSAL FOR THE DARTMOUTH SUMMER RESEARCH PROJECTON ARTIFICIAL INTELLIGENCE (1955) and The Logic Theory Machine (1956), from the 1950s AI work in chess and controlled settings that DENDRAL's creators wanted to move beyond.</li><li>After: MYCIN (1972), which the essay lists among the SUMEX projects hosted alongside DENDRAL.</li><li>After: &quot;R1 - A Rule-Based Configurer of Computer Systems&quot;, a later rule-based expert system in the vault, built on the same approach of encoding expert rules.</li><li>After: Fifth Generation Computer Systems project (1982), a national program centered on knowledge-based systems; Feigenbaum later co-wrote the evaluation of it used in that note.</li></ul><h4>Why This Matters</h4><p>DENDRAL is where AI's symbolic approach first claimed a real scientific task, and where the costs of that approach first showed up. For Synthesis — AI as Technology History, it shows AI capability tied to institutions from the start: a NASA-derived instrument, a time-shared machine at a medical school, a national network resource and federal funding. Its builders concluded that human inductive reasoning &quot;is a process of daunting complexity,&quot; and professional users did not simply accept machine advice. The essay is written for Lederberg's papers, but it records these limits plainly.</p><h4>Useful Quotes / Evidence</h4><ul><li>&quot;in 1965, they became the foundation of DENDRAL, a prototype for expert systems and the first use of artificial intelligence in biomedical research.&quot;</li></ul><p>The date and the claim of priority.</p><ul><li>&quot;They wanted to show that computers could become experts within a concrete knowledge domain, such as mass spectrometry, where they could solve problems, explain their own conclusions, and interact with human users.&quot;</li></ul><p>The builders' goal: moving AI out of games into a real domain.</p><ul><li>&quot;Expert systems were custom-made and took years of intense labor to develop, which meant that they could not be supported outside of major research institutions like Stanford, or without generous federal funding.&quot;</li></ul><p>Cost and institutional dependence.</p><ul><li>&quot;Contrary to the speculations of participants and of the popular media, in no case did these expert systems replace the scientist or physician. At best, they could advise and assist them.&quot;</li></ul><p>The gap between the replacement story and actual use.</p><h4>Possible Tags</h4><p>#ai-history #history-of-technology #expert-systems #symbolic-ai #stanford #biomedicine</p>",
+        "sections": [
+          {
+            "id": "citation",
+            "title": "Citation",
+            "html": "<p>National Library of Medicine. n.d. &quot;Computers, Artificial Intelligence, and Expert Systems in Biomedical Research.&quot; <em>Profiles in Science: The Joshua Lederberg Papers</em>. National Library of Medicine. https://profiles.nlm.nih.gov/spotlight/bb/feature/ai</p><p>Source used for this note: the NLM Profiles in Science exhibit essay above, a secondary account written for Lederberg's papers. No primary DENDRAL report was cached.</p>",
+            "text": "National Library of Medicine. n.d. \"Computers, Artificial Intelligence, and Expert Systems in Biomedical Research.\" Profiles in Science: The Joshua Lederberg Papers. National Library of Medicine. https://profiles.nlm.nih.gov/spotlight/bb/feature/ai\n\nSource used for this note: the NLM Profiles in Science exhibit essay above, a secondary account written for Lederberg's papers. No primary DENDRAL report was cached."
+          },
+          {
+            "id": "core-claim",
+            "title": "Core Claim",
+            "html": "<p>The National Library of Medicine's essay presents DENDRAL, begun at Stanford in 1965, as &quot;a prototype for expert systems and the first use of artificial intelligence in biomedical research.&quot; Joshua Lederberg, Edward Feigenbaum and Carl Djerassi built a program that inferred the molecular structure of unknown organic compounds from mass-spectrometer data. The essay argues that DENDRAL's main significance was theoretical: it moved AI from chess and other controlled settings to real scientific problems, and it forced its builders to formalize expert reasoning. It is equally direct about the limits. Expert systems were costly, narrow and slow to build, never replaced the scientist or physician, and struggled to win acceptance from the professionals they were meant to help.</p>",
+            "text": "The National Library of Medicine's essay presents DENDRAL, begun at Stanford in 1965, as \"a prototype for expert systems and the first use of artificial intelligence in biomedical research.\" Joshua Lederberg, Edward Feigenbaum and Carl Djerassi built a program that inferred the molecular structure of unknown organic compounds from mass-spectrometer data. The essay argues that DENDRAL's main significance was theoretical: it moved AI from chess and other controlled settings to real scientific problems, and it forced its builders to formalize expert reasoning. It is equally direct about the limits. Expert systems were costly, narrow and slow to build, never replaced the scientist or physician, and struggled to win acceptance from the professionals they were meant to help."
+          },
+          {
+            "id": "ai-history-notes",
+            "title": "AI History Notes",
+            "html": "<ul><li>Origin: Lederberg's work for NASA's Mars missions from 1961, where he designed a computer-controlled mass spectrometer to look for signs of life, led him to apply computerized spectrometry to the chemistry lab. In 1965 this became the basis of DENDRAL (for Dendritic Algorithm).</li><li>Builders: Lederberg, Stanford computer science chair Edward A. Feigenbaum, and chemistry professor Carl Djerassi. Bruce Buchanan and others distilled &quot;heuristics&quot; from extended interviews with Lederberg and other experts and coded them as symbolic computation.</li><li>Method: using ion fragmentation patterns as input, the program generated and tested hypotheses, ruling out structurally implausible candidates as it searched a tree of possible atomic configurations. Lederberg worked out the graph-theoretic notation that let computers represent molecular structures.</li><li>Performance: once fully operational, it did the structure-matching task faster than an expert spectrometrist, with comparable accuracy.</li><li>Infrastructure: DENDRAL was the first AI application on ACME, a time-shared computer installed at Stanford Medical School in 1965 with Lederberg as principal investigator. SUMEX-AIM succeeded ACME in 1973 as a national AI-in-medicine resource that users reached over the ARPANET. By 1980 SUMEX hosted nineteen projects, including DENDRAL's spin-offs CONGEN and Meta-DENDRAL, and MYCIN.</li><li>Limits: after more than a decade, DENDRAL still handled only compounds from specific groups, and the rule-generating spin-offs stayed tied to mass spectrometry.</li></ul>",
+            "text": "- Origin: Lederberg's work for NASA's Mars missions from 1961, where he designed a computer-controlled mass spectrometer to look for signs of life, led him to apply computerized spectrometry to the chemistry lab. In 1965 this became the basis of DENDRAL (for Dendritic Algorithm).\n- Builders: Lederberg, Stanford computer science chair Edward A. Feigenbaum, and chemistry professor Carl Djerassi. Bruce Buchanan and others distilled \"heuristics\" from extended interviews with Lederberg and other experts and coded them as symbolic computation.\n- Method: using ion fragmentation patterns as input, the program generated and tested hypotheses, ruling out structurally implausible candidates as it searched a tree of possible atomic configurations. Lederberg worked out the graph-theoretic notation that let computers represent molecular structures.\n- Performance: once fully operational, it did the str"
+          },
+          {
+            "id": "history-of-technology-notes",
+            "title": "History of Technology Notes",
+            "html": "<ul><li>System Builders: Lederberg built more than a program. He was principal investigator on ACME, the machine DENDRAL ran on, and the essay traces a line from it to SUMEX-AIM, a national resource linked over the ARPANET that hosted nineteen projects by 1980. The essay also notes that expert systems &quot;could not be supported outside of major research institutions like Stanford, or without generous federal funding.&quot; DENDRAL's reach came from this organized system of hardware, network access and federal money, which is why early expert-systems work clustered at a few funded centers.</li><li>Technological Frame: the builders' frame defined AI as symbol manipulation, such as an &quot;if-then&quot; inference, rather than numerical calculation, and it treated expertise as rules that could be drawn out of interviews with experts. That frame made the &quot;knowledge acquisition&quot; problem the central task and set the template for later expert systems. It also explains the limit the essay records: every domain needed exact symbolic formulation, so systems stayed narrow.</li><li>Where it sits in the process: in 1965 what AI could do outside games was an open question, and DENDRAL was an early working answer in a real domain. It started the expert-systems line, which gained institutional support through SUMEX in the 1970s. The essay's account of its costs and narrowness shows the problems that would limit that line later.</li></ul>",
+            "text": "- System Builders: Lederberg built more than a program. He was principal investigator on ACME, the machine DENDRAL ran on, and the essay traces a line from it to SUMEX-AIM, a national resource linked over the ARPANET that hosted nineteen projects by 1980. The essay also notes that expert systems \"could not be supported outside of major research institutions like Stanford, or without generous federal funding.\" DENDRAL's reach came from this organized system of hardware, network access and federal money, which is why early expert-systems work clustered at a few funded centers.\n- Technological Frame: the builders' frame defined AI as symbol manipulation, such as an \"if-then\" inference, rather than numerical calculation, and it treated expertise as rules that could be drawn out of interviews with experts. That frame made the \"knowledge acquisition\" problem the central task and set the templa"
+          },
+          {
+            "id": "social-history-scot-notes",
+            "title": "Social History / SCOT Notes",
+            "html": "<ul><li>Interpretative Flexibility: participants and the press read expert systems as potential replacements for scientists and doctors, while the systems worked in practice as advisers. The essay states that &quot;in no case did these expert systems replace the scientist or physician.&quot; The same artifact carried a replacement meaning and an assistant meaning, and only use settled which one held.</li><li>Relevant Social Groups: the builders (Lederberg, Feigenbaum, Djerassi, Buchanan) are not the only group. The intended users, fellow scientists and physicians, were &quot;skeptical or uninterested,&quot; and the builders &quot;struggled to find acceptance&quot; even for an advisory role. Remote users at Pittsburgh and UCLA used SUMEX for their own programs (INTERNIST, PARRY). The groups that controlled uptake were the professionals whose judgment the systems modeled, not the AI researchers.</li></ul>",
+            "text": "- Interpretative Flexibility: participants and the press read expert systems as potential replacements for scientists and doctors, while the systems worked in practice as advisers. The essay states that \"in no case did these expert systems replace the scientist or physician.\" The same artifact carried a replacement meaning and an assistant meaning, and only use settled which one held.\n- Relevant Social Groups: the builders (Lederberg, Feigenbaum, Djerassi, Buchanan) are not the only group. The intended users, fellow scientists and physicians, were \"skeptical or uninterested,\" and the builders \"struggled to find acceptance\" even for an advisory role. Remote users at Pittsburgh and UCLA used SUMEX for their own programs (INTERNIST, PARRY). The groups that controlled uptake were the professionals whose judgment the systems modeled, not the AI researchers."
+          },
+          {
+            "id": "historical-references-and-lineages",
+            "title": "Historical References and Lineages",
+            "html": "<ul><li>Before: A PROPOSAL FOR THE DARTMOUTH SUMMER RESEARCH PROJECTON ARTIFICIAL INTELLIGENCE (1955) and The Logic Theory Machine (1956), from the 1950s AI work in chess and controlled settings that DENDRAL's creators wanted to move beyond.</li><li>After: MYCIN (1972), which the essay lists among the SUMEX projects hosted alongside DENDRAL.</li><li>After: &quot;R1 - A Rule-Based Configurer of Computer Systems&quot;, a later rule-based expert system in the vault, built on the same approach of encoding expert rules.</li><li>After: Fifth Generation Computer Systems project (1982), a national program centered on knowledge-based systems; Feigenbaum later co-wrote the evaluation of it used in that note.</li></ul>",
+            "text": "- Before: A PROPOSAL FOR THE DARTMOUTH SUMMER RESEARCH PROJECTON ARTIFICIAL INTELLIGENCE (1955) and The Logic Theory Machine (1956), from the 1950s AI work in chess and controlled settings that DENDRAL's creators wanted to move beyond.\n- After: MYCIN (1972), which the essay lists among the SUMEX projects hosted alongside DENDRAL.\n- After: \"R1 - A Rule-Based Configurer of Computer Systems\", a later rule-based expert system in the vault, built on the same approach of encoding expert rules.\n- After: Fifth Generation Computer Systems project (1982), a national program centered on knowledge-based systems; Feigenbaum later co-wrote the evaluation of it used in that note."
+          },
+          {
+            "id": "why-this-matters",
+            "title": "Why This Matters",
+            "html": "<p>DENDRAL is where AI's symbolic approach first claimed a real scientific task, and where the costs of that approach first showed up. For Synthesis — AI as Technology History, it shows AI capability tied to institutions from the start: a NASA-derived instrument, a time-shared machine at a medical school, a national network resource and federal funding. Its builders concluded that human inductive reasoning &quot;is a process of daunting complexity,&quot; and professional users did not simply accept machine advice. The essay is written for Lederberg's papers, but it records these limits plainly.</p>",
+            "text": "DENDRAL is where AI's symbolic approach first claimed a real scientific task, and where the costs of that approach first showed up. For Synthesis — AI as Technology History, it shows AI capability tied to institutions from the start: a NASA-derived instrument, a time-shared machine at a medical school, a national network resource and federal funding. Its builders concluded that human inductive reasoning \"is a process of daunting complexity,\" and professional users did not simply accept machine advice. The essay is written for Lederberg's papers, but it records these limits plainly."
+          },
+          {
+            "id": "useful-quotes-evidence",
+            "title": "Useful Quotes / Evidence",
+            "html": "<ul><li>&quot;in 1965, they became the foundation of DENDRAL, a prototype for expert systems and the first use of artificial intelligence in biomedical research.&quot;</li></ul><p>The date and the claim of priority.</p><ul><li>&quot;They wanted to show that computers could become experts within a concrete knowledge domain, such as mass spectrometry, where they could solve problems, explain their own conclusions, and interact with human users.&quot;</li></ul><p>The builders' goal: moving AI out of games into a real domain.</p><ul><li>&quot;Expert systems were custom-made and took years of intense labor to develop, which meant that they could not be supported outside of major research institutions like Stanford, or without generous federal funding.&quot;</li></ul><p>Cost and institutional dependence.</p><ul><li>&quot;Contrary to the speculations of participants and of the popular media, in no case did these expert systems replace the scientist or physician. At best, they could advise and assist them.&quot;</li></ul><p>The gap between the replacement story and actual use.</p>",
+            "text": "- \"in 1965, they became the foundation of DENDRAL, a prototype for expert systems and the first use of artificial intelligence in biomedical research.\"\n  The date and the claim of priority.\n- \"They wanted to show that computers could become experts within a concrete knowledge domain, such as mass spectrometry, where they could solve problems, explain their own conclusions, and interact with human users.\"\n  The builders' goal: moving AI out of games into a real domain.\n- \"Expert systems were custom-made and took years of intense labor to develop, which meant that they could not be supported outside of major research institutions like Stanford, or without generous federal funding.\"\n  Cost and institutional dependence.\n- \"Contrary to the speculations of participants and of the popular media, in no case did these expert systems replace the scientist or physician. At best, they could advise a"
+          },
+          {
+            "id": "possible-tags",
+            "title": "Possible Tags",
+            "html": "<p>#ai-history #history-of-technology #expert-systems #symbolic-ai #stanford #biomedicine</p>",
+            "text": "ai-history #history-of-technology #expert-systems #symbolic-ai #stanford #biomedicine"
+          }
+        ],
+        "citation": "National Library of Medicine. n.d. \"Computers, Artificial Intelligence, and Expert Systems in Biomedical Research.\" Profiles in Science: The Joshua Lederberg Papers. National Library of Medicine. https://profiles.nlm.nih.gov/spotlight/bb/feature/ai",
+        "keyClaim": "The National Library of Medicine's essay presents DENDRAL, begun at Stanford in 1965, as \"a prototype for expert systems and the first use of artificial intelligence in biomedical research.\" Joshua Lederberg, Edward Feigenbaum and Carl Djerassi built a program that inferred the molecular structure of unknown organic compounds from mass-spectrometer data. The essay argues that DENDRAL's main significance was theoretical: it moved AI from chess and other controlled settings to real scientific problems, and it forced its builders to formalize expert reasoning. It is equally direct about the limits. Expert systems were costly, narrow and slow to build, never replaced the scientist or physician, ",
+        "textLength": 7630
+      },
+      "quality": {
+        "score": 9,
+        "label": "complete",
+        "missing": [],
+        "sections": 9,
+        "words": 1134
+      },
+      "facets": {
+        "decision": [
+          "lab",
+          "foundation"
+        ],
+        "power": [
+          "state",
+          "labor",
+          "institution"
+        ],
+        "material": [
+          "compute",
+          "labor",
+          "infrastructure"
+        ],
+        "closure": [
+          "test",
+          "evaluation"
+        ],
+        "controversy": [],
+        "governance": true
+      },
+      "obsidianUri": "obsidian://open?path=%2FUsers%2Fnathanjohnson%2FDocuments%2FObsidian%20Vault%2FDENDRAL%20and%20expert-system%20chemistry.md",
+      "links": [
+        "1955-56-a-proposal-for-the-dartmouth-summer-research-projecton-artificial-intelligence",
+        "1956-logic-theorist",
+        "1972-mycin-at-stanford",
+        "1982-r1-xcon-expert-systems-go-commercial",
+        "1982-japan-s-fifth-generation-project"
+      ],
+      "backlinks": [
+        "1956-logic-theorist",
+        "1972-mycin-at-stanford",
+        "1973-lighthill-report",
+        "1982-r1-xcon-expert-systems-go-commercial",
+        "1982-japan-s-fifth-generation-project"
+      ],
+      "centrality": 10,
       "isNew": false
     },
     {
@@ -1832,22 +2104,22 @@ const timelinePayload = {
       },
       "obsidianUri": "obsidian://open?path=%2FUsers%2Fnathanjohnson%2FDocuments%2FObsidian%20Vault%2FShakey%20the%20Robot.md",
       "links": [
-        "2026-unimate-enters-gm-production",
+        "1961-unimate-enters-gm-production",
         "1958-rosenblatt-s-perceptron",
         "1973-lighthill-report",
-        "1980-stanford-cart-crosses-a-room",
+        "1979-stanford-cart-crosses-a-room",
         "2004-darpa-grand-challenge-2004",
         "2002-irobot-s-roomba-launches",
         "2011-apple-unveils-siri-with-iphone-4s"
       ],
       "backlinks": [
+        "1961-unimate-enters-gm-production",
         "1973-lighthill-report",
-        "1980-stanford-cart-crosses-a-room",
+        "1979-stanford-cart-crosses-a-room",
         "1983-darpa-strategic-computing",
         "1988-pearl-s-bayesian-networks",
         "2002-irobot-s-roomba-launches",
-        "2004-darpa-grand-challenge-2004",
-        "2026-unimate-enters-gm-production"
+        "2004-darpa-grand-challenge-2004"
       ],
       "centrality": 14,
       "isNew": false
@@ -2348,13 +2620,148 @@ const timelinePayload = {
         "1966-weizenbaum-s-eliza",
         "1966-alpac-report",
         "1960-mccarthy-s-lisp-paper",
-        "1984-mycin-at-stanford",
+        "1972-mycin-at-stanford",
         "1973-lighthill-report"
       ],
       "backlinks": [
         "1960-mccarthy-s-lisp-paper",
         "1966-weizenbaum-s-eliza",
         "1973-lighthill-report"
+      ],
+      "centrality": 8,
+      "isNew": false
+    },
+    {
+      "id": "1972-mycin-at-stanford",
+      "title": "MYCIN at Stanford",
+      "yearLabel": "1972",
+      "date": null,
+      "startYear": 1972,
+      "endYear": 1972,
+      "type": "Model innovation",
+      "concepts": [
+        "Closure",
+        "System Builders",
+        "Black Box"
+      ],
+      "allConcepts": [
+        "Closure",
+        "System Builders",
+        "Black Box",
+        "Use Stage"
+      ],
+      "summary": "MYCIN was a Stanford program that advised physicians on the diagnosis and antibiotic treatment of infectious diseases. Its builders, Bruce Buchanan and Edward Shortliffe, looking back in 1984, present it as an experiment testing whether \"a rule-based formalism was sufficient\" for an expert consultation system that performs well, can be changed easily, and can be understood. They say the answer was yes, and call it \"one of the best-known lessons in the history of AI.\" The National Library of Medicine's exhibit on Joshua Lederberg places MYCIN among Stanford's expert-system projects and records their limits: they were costly to build, confined to narrow domains, and met skepticism from the physicians they were meant to help.",
+      "sourceNote": "MYCIN",
+      "sourceUrl": "https://www.shortliffe.net/Buchanan-Shortliffe-1984/MYCIN%20Book.htm",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "vaultNote": {
+        "title": "MYCIN",
+        "available": true,
+        "html": "<h3>&quot;MYCIN&quot;</h3><h4>Citation</h4><p>Buchanan, Bruce G., and Edward H. Shortliffe, eds. 1984. <em>Rule-Based Expert Systems: The MYCIN Experiments of the Stanford Heuristic Programming Project</em>. Reading, MA: Addison-Wesley. Preface and chapter 1. https://www.shortliffe.net/Buchanan-Shortliffe-1984/MYCIN%20Book.htm</p><p>U.S. National Library of Medicine. n.d. &quot;Computers, Artificial Intelligence, and Expert Systems in Biomedical Research.&quot; <em>The Joshua Lederberg Papers</em>, Profiles in Science. https://profiles.nlm.nih.gov/spotlight/bb/feature/ai</p><h4>Core Claim</h4><p>MYCIN was a Stanford program that advised physicians on the diagnosis and antibiotic treatment of infectious diseases. Its builders, Bruce Buchanan and Edward Shortliffe, looking back in 1984, present it as an experiment testing whether &quot;a rule-based formalism was sufficient&quot; for an expert consultation system that performs well, can be changed easily, and can be understood. They say the answer was yes, and call it &quot;one of the best-known lessons in the history of AI.&quot; The National Library of Medicine's exhibit on Joshua Lederberg places MYCIN among Stanford's expert-system projects and records their limits: they were costly to build, confined to narrow domains, and met skepticism from the physicians they were meant to help.</p><h4>AI History Notes</h4><ul><li>The project began in spring 1972 with discussions among Stanford medical school and computer science researchers. Shortliffe's 1974 PhD dissertation described the first version.</li><li>Origins: Stanley Cohen, chief of clinical pharmacology, was building MEDIPHOR, a drug-interaction warning system, with Buchanan and Shortliffe. The group first planned a program to monitor antibiotic prescriptions. It would have needed data from three separate Stanford computers and much more medical knowledge, so the team turned instead to an interactive program that consults with physicians.</li><li>Physicians Thomas Merigan and Stanton Axline of the infectious disease division supplied expertise. The name, chosen at Axline's suggestion, is the suffix of many antibiotic names.</li><li>Design: medical knowledge stored mostly as IF–THEN rules, kept separate from the inference engine that chains them, mainly backward from a goal. The first grant application (October 1973) named three components: a consultation program, explanation of its reasoning, and acquisition of rules from experts.</li><li>MYCIN grew out of DENDRAL, the Stanford chemistry program led by Lederberg and Edward Feigenbaum, and belonged to the Stanford Heuristic Programming Project. EMYCIN (&quot;essential MYCIN&quot;) was the framework without its medical knowledge, reused to build other expert systems.</li><li>Infrastructure and funding: almost all computing ran on SUMEX-AIM, a national AI-in-medicine resource at Stanford that the NLM exhibit says was reached via the ARPANET. Funders included NIH, NSF, DARPA, the Office of Naval Research and the National Library of Medicine.</li><li>The NLM exhibit's verdict on the Stanford systems: expert systems took years to build and depended on major institutions and federal funding; &quot;in no case did these expert systems replace the scientist or physician.&quot;</li></ul><h4>History of Technology Notes</h4><ul><li>Interpretative Flexibility: MYCIN's purpose changed during design. It began as a prescription monitor and became a consultant because the team saw that a monitor would need expertise &quot;in the field of antimicrobial selection&quot; anyway, and because a consultation program avoided the problem of linking three computers. The form the artifact took came from institutional and technical constraints, not from one plan.</li><li>Closure: the authors present the rule-based question as settled: they tested the hypothesis and &quot;the positive answer&quot; became a well-known lesson. EMYCIN is the sign of that closure: the rule-based shell, emptied of medicine, was treated as a general-purpose way to build expert systems. In the 1970s, this made rules plus an inference engine the standard form of applied AI.</li><li>System Builders: Buchanan and Shortliffe credit Feigenbaum and Lederberg with creating &quot;the intellectual and computing environment at Stanford&quot; that made the work possible. The NLM exhibit shows what that environment was: ACME and then SUMEX-AIM, a shared national computing resource, and a stream of federal grants. MYCIN was one product of a larger system assembled around Stanford.</li><li>Where it sits in the process: in 1972–74 expert systems were moving from chemistry into medicine and toward closure as AI's dominant applied form. The NLM account shows the limits that would later matter: narrow domains, high cost, and dependence on federal funding.</li></ul><h4>Social History / SCOT Notes</h4><ul><li>Relevant Social Groups: the builders were computer scientists and physicians working together, and the design followed what the physicians could accept. The team chose rules over semantic networks because Cohen and Axline found rules &quot;easier to understand,&quot; since chained rules gave lines of reasoning they &quot;could understand and critique.&quot; Outside the team, the NLM exhibit reports that many physicians &quot;remained skeptical or uninterested.&quot; The group the system was meant to serve did not adopt it.</li><li>Black Box: MYCIN was designed against opacity. Explanation &quot;was a major design requirement from the start,&quot; and the 1973 grant promised a program able to justify its recommendations. The builders treated physicians' trust as depending on seeing the reasoning, so the system opened its own reasoning instead of asking to be trusted.</li><li>Use Stage: the builders learned that &quot;a useful system had to be well enough engineered to make people want to use it; high performance alone was not sufficient.&quot;</li></ul><h4>Historical References and Lineages</h4><ul><li>Before: DENDRAL and expert-system chemistry (1965), the Stanford program from which MYCIN took its production-rule approach.</li><li>After: &quot;R1 - A Rule-Based Configurer of Computer Systems&quot; (1982), a rule-based expert system built for industry rather than medicine.</li><li>After: Lisp machine market collapse (1987), the later downturn in the commercial market for AI hardware of the expert-system period.</li></ul><h4>Why This Matters</h4><p>MYCIN is the classic case of expert-system AI: knowledge taken from human experts, written as rules, and applied by a separate inference engine. Its builders treated its success as a scientific finding and turned its structure into a reusable product, EMYCIN. The NLM account adds what the builders' retrospective does not stress: expert systems depended on federal money and Stanford's computing, stayed narrow, and did not win over physicians. For Synthesis — AI as Technology History, MYCIN shows closure around a technical method happening in the lab while use by its intended groups never followed.</p><h4>Useful Quotes / Evidence</h4><ul><li>&quot;It was begun in the spring of 1972 with a set of discussions among medical school and computer science researchers interested in applying more intelligence to computer programs that interpret medical data.&quot;</li></ul><p>The project's start.</p><ul><li>&quot;Cohen and Axline found easier to understand, particularly because chained rules led to lines of reasoning that they could understand and critique.&quot;</li></ul><p>Physicians' needs shaping the design.</p><ul><li>&quot;Thus our concept of a computer-based consultant was born&quot;</li></ul><p>The shift from monitor to consultant.</p><ul><li>&quot;Contrary to the speculations of participants and of the popular media, in no case did these expert systems replace the scientist or physician.&quot;</li></ul><p>The NLM exhibit's verdict.</p><h4>Possible Tags</h4><p>#ai-history #history-of-technology #expert-systems #medicine #stanford #symbolic-ai</p>",
+        "sections": [
+          {
+            "id": "citation",
+            "title": "Citation",
+            "html": "<p>Buchanan, Bruce G., and Edward H. Shortliffe, eds. 1984. <em>Rule-Based Expert Systems: The MYCIN Experiments of the Stanford Heuristic Programming Project</em>. Reading, MA: Addison-Wesley. Preface and chapter 1. https://www.shortliffe.net/Buchanan-Shortliffe-1984/MYCIN%20Book.htm</p><p>U.S. National Library of Medicine. n.d. &quot;Computers, Artificial Intelligence, and Expert Systems in Biomedical Research.&quot; <em>The Joshua Lederberg Papers</em>, Profiles in Science. https://profiles.nlm.nih.gov/spotlight/bb/feature/ai</p>",
+            "text": "Buchanan, Bruce G., and Edward H. Shortliffe, eds. 1984. Rule-Based Expert Systems: The MYCIN Experiments of the Stanford Heuristic Programming Project. Reading, MA: Addison-Wesley. Preface and chapter 1. https://www.shortliffe.net/Buchanan-Shortliffe-1984/MYCIN%20Book.htm\n\nU.S. National Library of Medicine. n.d. \"Computers, Artificial Intelligence, and Expert Systems in Biomedical Research.\" The Joshua Lederberg Papers, Profiles in Science. https://profiles.nlm.nih.gov/spotlight/bb/feature/ai"
+          },
+          {
+            "id": "core-claim",
+            "title": "Core Claim",
+            "html": "<p>MYCIN was a Stanford program that advised physicians on the diagnosis and antibiotic treatment of infectious diseases. Its builders, Bruce Buchanan and Edward Shortliffe, looking back in 1984, present it as an experiment testing whether &quot;a rule-based formalism was sufficient&quot; for an expert consultation system that performs well, can be changed easily, and can be understood. They say the answer was yes, and call it &quot;one of the best-known lessons in the history of AI.&quot; The National Library of Medicine's exhibit on Joshua Lederberg places MYCIN among Stanford's expert-system projects and records their limits: they were costly to build, confined to narrow domains, and met skepticism from the physicians they were meant to help.</p>",
+            "text": "MYCIN was a Stanford program that advised physicians on the diagnosis and antibiotic treatment of infectious diseases. Its builders, Bruce Buchanan and Edward Shortliffe, looking back in 1984, present it as an experiment testing whether \"a rule-based formalism was sufficient\" for an expert consultation system that performs well, can be changed easily, and can be understood. They say the answer was yes, and call it \"one of the best-known lessons in the history of AI.\" The National Library of Medicine's exhibit on Joshua Lederberg places MYCIN among Stanford's expert-system projects and records their limits: they were costly to build, confined to narrow domains, and met skepticism from the physicians they were meant to help."
+          },
+          {
+            "id": "ai-history-notes",
+            "title": "AI History Notes",
+            "html": "<ul><li>The project began in spring 1972 with discussions among Stanford medical school and computer science researchers. Shortliffe's 1974 PhD dissertation described the first version.</li><li>Origins: Stanley Cohen, chief of clinical pharmacology, was building MEDIPHOR, a drug-interaction warning system, with Buchanan and Shortliffe. The group first planned a program to monitor antibiotic prescriptions. It would have needed data from three separate Stanford computers and much more medical knowledge, so the team turned instead to an interactive program that consults with physicians.</li><li>Physicians Thomas Merigan and Stanton Axline of the infectious disease division supplied expertise. The name, chosen at Axline's suggestion, is the suffix of many antibiotic names.</li><li>Design: medical knowledge stored mostly as IF–THEN rules, kept separate from the inference engine that chains them, mainly backward from a goal. The first grant application (October 1973) named three components: a consultation program, explanation of its reasoning, and acquisition of rules from experts.</li><li>MYCIN grew out of DENDRAL, the Stanford chemistry program led by Lederberg and Edward Feigenbaum, and belonged to the Stanford Heuristic Programming Project. EMYCIN (&quot;essential MYCIN&quot;) was the framework without its medical knowledge, reused to build other expert systems.</li><li>Infrastructure and funding: almost all computing ran on SUMEX-AIM, a national AI-in-medicine resource at Stanford that the NLM exhibit says was reached via the ARPANET. Funders included NIH, NSF, DARPA, the Office of Naval Research and the National Library of Medicine.</li><li>The NLM exhibit's verdict on the Stanford systems: expert systems took years to build and depended on major institutions and federal funding; &quot;in no case did these expert systems replace the scientist or physician.&quot;</li></ul>",
+            "text": "- The project began in spring 1972 with discussions among Stanford medical school and computer science researchers. Shortliffe's 1974 PhD dissertation described the first version.\n- Origins: Stanley Cohen, chief of clinical pharmacology, was building MEDIPHOR, a drug-interaction warning system, with Buchanan and Shortliffe. The group first planned a program to monitor antibiotic prescriptions. It would have needed data from three separate Stanford computers and much more medical knowledge, so the team turned instead to an interactive program that consults with physicians.\n- Physicians Thomas Merigan and Stanton Axline of the infectious disease division supplied expertise. The name, chosen at Axline's suggestion, is the suffix of many antibiotic names.\n- Design: medical knowledge stored mostly as IF–THEN rules, kept separate from the inference engine that chains them, mainly backward from"
+          },
+          {
+            "id": "history-of-technology-notes",
+            "title": "History of Technology Notes",
+            "html": "<ul><li>Interpretative Flexibility: MYCIN's purpose changed during design. It began as a prescription monitor and became a consultant because the team saw that a monitor would need expertise &quot;in the field of antimicrobial selection&quot; anyway, and because a consultation program avoided the problem of linking three computers. The form the artifact took came from institutional and technical constraints, not from one plan.</li><li>Closure: the authors present the rule-based question as settled: they tested the hypothesis and &quot;the positive answer&quot; became a well-known lesson. EMYCIN is the sign of that closure: the rule-based shell, emptied of medicine, was treated as a general-purpose way to build expert systems. In the 1970s, this made rules plus an inference engine the standard form of applied AI.</li><li>System Builders: Buchanan and Shortliffe credit Feigenbaum and Lederberg with creating &quot;the intellectual and computing environment at Stanford&quot; that made the work possible. The NLM exhibit shows what that environment was: ACME and then SUMEX-AIM, a shared national computing resource, and a stream of federal grants. MYCIN was one product of a larger system assembled around Stanford.</li><li>Where it sits in the process: in 1972–74 expert systems were moving from chemistry into medicine and toward closure as AI's dominant applied form. The NLM account shows the limits that would later matter: narrow domains, high cost, and dependence on federal funding.</li></ul>",
+            "text": "- Interpretative Flexibility: MYCIN's purpose changed during design. It began as a prescription monitor and became a consultant because the team saw that a monitor would need expertise \"in the field of antimicrobial selection\" anyway, and because a consultation program avoided the problem of linking three computers. The form the artifact took came from institutional and technical constraints, not from one plan.\n- Closure: the authors present the rule-based question as settled: they tested the hypothesis and \"the positive answer\" became a well-known lesson. EMYCIN is the sign of that closure: the rule-based shell, emptied of medicine, was treated as a general-purpose way to build expert systems. In the 1970s, this made rules plus an inference engine the standard form of applied AI.\n- System Builders: Buchanan and Shortliffe credit Feigenbaum and Lederberg with creating \"the intellectual a"
+          },
+          {
+            "id": "social-history-scot-notes",
+            "title": "Social History / SCOT Notes",
+            "html": "<ul><li>Relevant Social Groups: the builders were computer scientists and physicians working together, and the design followed what the physicians could accept. The team chose rules over semantic networks because Cohen and Axline found rules &quot;easier to understand,&quot; since chained rules gave lines of reasoning they &quot;could understand and critique.&quot; Outside the team, the NLM exhibit reports that many physicians &quot;remained skeptical or uninterested.&quot; The group the system was meant to serve did not adopt it.</li><li>Black Box: MYCIN was designed against opacity. Explanation &quot;was a major design requirement from the start,&quot; and the 1973 grant promised a program able to justify its recommendations. The builders treated physicians' trust as depending on seeing the reasoning, so the system opened its own reasoning instead of asking to be trusted.</li><li>Use Stage: the builders learned that &quot;a useful system had to be well enough engineered to make people want to use it; high performance alone was not sufficient.&quot;</li></ul>",
+            "text": "- Relevant Social Groups: the builders were computer scientists and physicians working together, and the design followed what the physicians could accept. The team chose rules over semantic networks because Cohen and Axline found rules \"easier to understand,\" since chained rules gave lines of reasoning they \"could understand and critique.\" Outside the team, the NLM exhibit reports that many physicians \"remained skeptical or uninterested.\" The group the system was meant to serve did not adopt it.\n- Black Box: MYCIN was designed against opacity. Explanation \"was a major design requirement from the start,\" and the 1973 grant promised a program able to justify its recommendations. The builders treated physicians' trust as depending on seeing the reasoning, so the system opened its own reasoning instead of asking to be trusted.\n- Use Stage: the builders learned that \"a useful system had to be"
+          },
+          {
+            "id": "historical-references-and-lineages",
+            "title": "Historical References and Lineages",
+            "html": "<ul><li>Before: DENDRAL and expert-system chemistry (1965), the Stanford program from which MYCIN took its production-rule approach.</li><li>After: &quot;R1 - A Rule-Based Configurer of Computer Systems&quot; (1982), a rule-based expert system built for industry rather than medicine.</li><li>After: Lisp machine market collapse (1987), the later downturn in the commercial market for AI hardware of the expert-system period.</li></ul>",
+            "text": "- Before: DENDRAL and expert-system chemistry (1965), the Stanford program from which MYCIN took its production-rule approach.\n- After: \"R1 - A Rule-Based Configurer of Computer Systems\" (1982), a rule-based expert system built for industry rather than medicine.\n- After: Lisp machine market collapse (1987), the later downturn in the commercial market for AI hardware of the expert-system period."
+          },
+          {
+            "id": "why-this-matters",
+            "title": "Why This Matters",
+            "html": "<p>MYCIN is the classic case of expert-system AI: knowledge taken from human experts, written as rules, and applied by a separate inference engine. Its builders treated its success as a scientific finding and turned its structure into a reusable product, EMYCIN. The NLM account adds what the builders' retrospective does not stress: expert systems depended on federal money and Stanford's computing, stayed narrow, and did not win over physicians. For Synthesis — AI as Technology History, MYCIN shows closure around a technical method happening in the lab while use by its intended groups never followed.</p>",
+            "text": "MYCIN is the classic case of expert-system AI: knowledge taken from human experts, written as rules, and applied by a separate inference engine. Its builders treated its success as a scientific finding and turned its structure into a reusable product, EMYCIN. The NLM account adds what the builders' retrospective does not stress: expert systems depended on federal money and Stanford's computing, stayed narrow, and did not win over physicians. For Synthesis — AI as Technology History, MYCIN shows closure around a technical method happening in the lab while use by its intended groups never followed."
+          },
+          {
+            "id": "useful-quotes-evidence",
+            "title": "Useful Quotes / Evidence",
+            "html": "<ul><li>&quot;It was begun in the spring of 1972 with a set of discussions among medical school and computer science researchers interested in applying more intelligence to computer programs that interpret medical data.&quot;</li></ul><p>The project's start.</p><ul><li>&quot;Cohen and Axline found easier to understand, particularly because chained rules led to lines of reasoning that they could understand and critique.&quot;</li></ul><p>Physicians' needs shaping the design.</p><ul><li>&quot;Thus our concept of a computer-based consultant was born&quot;</li></ul><p>The shift from monitor to consultant.</p><ul><li>&quot;Contrary to the speculations of participants and of the popular media, in no case did these expert systems replace the scientist or physician.&quot;</li></ul><p>The NLM exhibit's verdict.</p>",
+            "text": "- \"It was begun in the spring of 1972 with a set of discussions among medical school and computer science researchers interested in applying more intelligence to computer programs that interpret medical data.\"\n  The project's start.\n- \"Cohen and Axline found easier to understand, particularly because chained rules led to lines of reasoning that they could understand and critique.\"\n  Physicians' needs shaping the design.\n- \"Thus our concept of a computer-based consultant was born\"\n  The shift from monitor to consultant.\n- \"Contrary to the speculations of participants and of the popular media, in no case did these expert systems replace the scientist or physician.\"\n  The NLM exhibit's verdict."
+          },
+          {
+            "id": "possible-tags",
+            "title": "Possible Tags",
+            "html": "<p>#ai-history #history-of-technology #expert-systems #medicine #stanford #symbolic-ai</p>",
+            "text": "ai-history #history-of-technology #expert-systems #medicine #stanford #symbolic-ai"
+          }
+        ],
+        "citation": "Buchanan, Bruce G., and Edward H. Shortliffe, eds. 1984. Rule-Based Expert Systems: The MYCIN Experiments of the Stanford Heuristic Programming Project. Reading, MA: Addison-Wesley. Preface and chapter 1. https://www.shortliffe.net/Buchanan-Shortliffe-1984/MYCIN%20Book.htm",
+        "keyClaim": "MYCIN was a Stanford program that advised physicians on the diagnosis and antibiotic treatment of infectious diseases. Its builders, Bruce Buchanan and Edward Shortliffe, looking back in 1984, present it as an experiment testing whether \"a rule-based formalism was sufficient\" for an expert consultation system that performs well, can be changed easily, and can be understood. They say the answer was yes, and call it \"one of the best-known lessons in the history of AI.\" The National Library of Medicine's exhibit on Joshua Lederberg places MYCIN among Stanford's expert-system projects and records their limits: they were costly to build, confined to narrow domains, and met skepticism from the phy",
+        "textLength": 7581
+      },
+      "quality": {
+        "score": 9,
+        "label": "complete",
+        "missing": [],
+        "sections": 9,
+        "words": 1127
+      },
+      "facets": {
+        "decision": [
+          "lab",
+          "funder"
+        ],
+        "power": [
+          "market",
+          "institution"
+        ],
+        "material": [
+          "compute",
+          "infrastructure"
+        ],
+        "closure": [
+          "standard",
+          "test",
+          "verdict",
+          "framework"
+        ],
+        "controversy": [],
+        "governance": true
+      },
+      "obsidianUri": "obsidian://open?path=%2FUsers%2Fnathanjohnson%2FDocuments%2FObsidian%20Vault%2FMYCIN.md",
+      "links": [
+        "1965-dendral-begins",
+        "1982-r1-xcon-expert-systems-go-commercial",
+        "1987-lisp-machine-market-collapse",
+        "1960-mccarthy-s-lisp-paper"
+      ],
+      "backlinks": [
+        "1965-dendral-begins",
+        "1971-winograd-s-shrdlu",
+        "1982-r1-xcon-expert-systems-go-commercial",
+        "1988-pearl-s-bayesian-networks"
       ],
       "centrality": 8,
       "isNew": false
@@ -2481,6 +2888,7 @@ const timelinePayload = {
       "obsidianUri": "obsidian://open?path=%2FUsers%2Fnathanjohnson%2FDocuments%2FObsidian%20Vault%2FLighthill%20Report.md",
       "links": [
         "1966-alpac-report",
+        "1965-dendral-begins",
         "1971-winograd-s-shrdlu",
         "1966-sri-s-shakey-the-robot",
         "1969-minsky-papert-s-perceptrons",
@@ -2495,7 +2903,137 @@ const timelinePayload = {
         "1982-r1-xcon-expert-systems-go-commercial",
         "1983-darpa-strategic-computing"
       ],
-      "centrality": 12,
+      "centrality": 13,
+      "isNew": false
+    },
+    {
+      "id": "1979-stanford-cart-crosses-a-room",
+      "title": "Stanford Cart crosses a room",
+      "yearLabel": "1979",
+      "date": null,
+      "startYear": 1979,
+      "endYear": 1979,
+      "type": "Model innovation",
+      "concepts": [
+        "Appropriation",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Appropriation",
+        "Path Dependence"
+      ],
+      "summary": "Earnest, a former executive officer of the Stanford Artificial Intelligence Lab (SAIL), tells the history of one machine over 46 years. The Stanford Cart began as a NASA-related testbed for driving a Moon rover from Earth, was taken over by SAIL as a robot road vehicle for research on visual navigation, and in 1979, under Hans Moravec, \"successfully crossed a chair-filled room without human intervention in about five hours.\" Earnest traces a line from the cart through SAIL's later robot vehicle Stanley to the Google driverless car.",
+      "sourceNote": "Stanford Cart crosses a room",
+      "sourceUrl": "",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "vaultNote": {
+        "title": "Stanford Cart crosses a room",
+        "available": true,
+        "html": "<h3>&quot;Stanford Cart crosses a room&quot;</h3><h4>Citation</h4><p>Moravec, Hans Peter. 1980. &quot;Obstacle Avoidance and Navigation in the Real World by a Seeing Robot Rover.&quot; PhD diss., Stanford University.</p><p>Source used for this note: Les Earnest, &quot;Stanford Cart&quot; (December 2012), https://web.stanford.edu/~learnest/cart.htm (live page offline; text from the Wayback Machine snapshot of January 26, 2013)</p><h4>Core Claim</h4><p>Earnest, a former executive officer of the Stanford Artificial Intelligence Lab (SAIL), tells the history of one machine over 46 years. The Stanford Cart began as a NASA-related testbed for driving a Moon rover from Earth, was taken over by SAIL as a robot road vehicle for research on visual navigation, and in 1979, under Hans Moravec, &quot;successfully crossed a chair-filled room without human intervention in about five hours.&quot; Earnest traces a line from the cart through SAIL's later robot vehicle Stanley to the Google driverless car.</p><h4>AI History Notes</h4><ul><li>1960–61: mechanical engineering student James L. Adams built the cart for research on remote control with video. He had worked at the Jet Propulsion Laboratory on Project Prospector, which assumed someone on Earth could drive a Moon vehicle by TV camera. Adams showed that with a Moon round-trip delay of about 2.5 seconds the vehicle could not be reliably controlled above about 0.2 mph.</li><li>1962–63: Paul W. Braisted added an analog predictor that raised controllable speed to 5 mph, but teleoperation still could not avoid obstacles closer than the distance traveled during the delay. Earnest writes that Kennedy's September 12, 1962 announcement of a crewed Moon mission put off the application.</li><li>1966–71: Earnest found the cart unused and brought it to SAIL to build a vision-guided road vehicle. SAIL got an experimental FCC TV license; students drove it around the neighborhood from a desk; John McCarthy took over supervision. Using a KA10 processor (about 0.65 MIPS), Rodney Schmidt got it to follow a white line at about 0.8 mph.</li><li>1971–80: Hans Moravec came to Stanford to work on visual navigation. After the cart toppled off a ramp in October 1973, he had Victor Scheinman build a camera &quot;slider&quot; in 1977 to take multiple views without moving the cart. With a KL10 (about 2.5 MIPS) and multi-ocular vision, the cart moved &quot;in one meter spurts punctuated by ten to fifteen minute pauses for image processing and route planning.&quot; In 1979 it crossed a chair-filled room on its own in about five hours. Moravec finished his dissertation in 1980.</li><li>After 1980: SAIL shut down; the cart went into storage, then into the Computer Museum's &quot;Robot Theater&quot; in Boston (1987), and later onto static display at the Computer History Museum (from 2011).</li></ul><h4>History of Technology Notes</h4><ul><li>Where it sits in the process: the 1979 crossing is a proof of possibility, not a stabilized technology. Autonomous navigation by vision worked only in a controlled room, slowly, on a large time-shared computer. The field is still in an open phase where the question is whether this can be done at all.</li><li>Appropriation: the cart was built for one purpose and used for another. A NASA-motivated teleoperation testbed was taken over by an AI lab and turned into a platform for machine vision; Earnest says he &quot;talked its creator&quot; into letting SAIL use it. The same hardware later served as a museum show piece. Each group put the object to its own use.</li><li>Path Dependence: the cart's history ties AI navigation to its origins in remote control. Adams's result (delay makes teleoperation impossible at useful speeds) is the problem autonomy was meant to solve, and Earnest's account runs a single institutional line from the cart to Moravec at Carnegie Mellon's Robotics Institute and to Thrun's revived SAIL, Stanley and the Google car.</li><li>Computing constraints were the binding limit at every stage: 0.65 MIPS for line-following, 2.5 MIPS for room crossing at ten to fifteen minutes of processing per meter. The cart's pace was set by the time-shared computers of the lab.</li></ul><h4>Social History / SCOT Notes</h4><ul><li>Relevant Social Groups: NASA and JPL (who assumed teleoperation would work), mechanical engineering students, the FCC (whose experimental license made the TV link legal), SAIL's AI researchers, students who drove the cart around as a &quot;popular pasttime,&quot; and later museum audiences. What the cart was for changed as it passed between them.</li><li>Interpretative Flexibility: Earnest gives the cart four identities in one account: Moon-rover research platform, robot road vehicle, &quot;show business&quot; exhibit, and retired museum artifact. The 1979 crossing is what later accounts treat as its defining moment, but that is a retrospective choice; Earnest's own framing is a &quot;career of ups and downs.&quot;</li></ul><h4>Historical References and Lineages</h4><ul><li>Before: Shakey the Robot (from 1966) was a contemporary mobile-robot project at SRI that also used a TV camera and off-board computing.</li><li>After: Earnest names Stanley, which won the 2005 DARPA Grand Challenge (see DARPA Grand Challenge 2004 for the series), and says Thrun and colleagues then created the Google driverless car (Google self-driving car project begins, 2009).</li></ul><h4>Why This Matters</h4><p>The cart shows how slowly and locally autonomous navigation began: a machine built for another purpose, moved into an AI lab, needing hours to cross a room. Its history runs from the space program through a university AI lab to later self-driving projects, with the same institutions and people carrying it forward. For Synthesis — AI as Technology History, it supports the view that AI capabilities often came from appropriated hardware and long institutional continuity rather than from single breakthroughs, and that computing power set the pace.</p><h4>Useful Quotes / Evidence</h4><ul><li>&quot;The Stanford Cart has had a 46 year career of ups and downs.&quot;</li></ul><p>Earnest's framing of the machine's history.</p><ul><li>&quot;However Adams showed that assumption to be false.&quot;</li></ul><p>The teleoperation result that defined the problem.</p><ul><li>&quot;The cart moved in one meter spurts punctuated by ten to fifteen minute pauses for image processing and route planning.&quot;</li></ul><p>The computing cost of vision-based navigation in the late 1970s.</p><ul><li>&quot;In 1979, the cart successfully crossed a chair-filled room without human intervention in about five hours.&quot;</li></ul><p>The event itself.</p><ul><li>&quot;proving that even old robots can have a second career in show business.&quot;</li></ul><p>The cart's later life as a museum exhibit.</p><h4>Possible Tags</h4><p>#ai-history #history-of-technology #robotics #computer-vision #autonomous-vehicles #stanford</p>",
+        "sections": [
+          {
+            "id": "citation",
+            "title": "Citation",
+            "html": "<p>Moravec, Hans Peter. 1980. &quot;Obstacle Avoidance and Navigation in the Real World by a Seeing Robot Rover.&quot; PhD diss., Stanford University.</p><p>Source used for this note: Les Earnest, &quot;Stanford Cart&quot; (December 2012), https://web.stanford.edu/~learnest/cart.htm (live page offline; text from the Wayback Machine snapshot of January 26, 2013)</p>",
+            "text": "Moravec, Hans Peter. 1980. \"Obstacle Avoidance and Navigation in the Real World by a Seeing Robot Rover.\" PhD diss., Stanford University.\n\nSource used for this note: Les Earnest, \"Stanford Cart\" (December 2012), https://web.stanford.edu/~learnest/cart.htm (live page offline; text from the Wayback Machine snapshot of January 26, 2013)"
+          },
+          {
+            "id": "core-claim",
+            "title": "Core Claim",
+            "html": "<p>Earnest, a former executive officer of the Stanford Artificial Intelligence Lab (SAIL), tells the history of one machine over 46 years. The Stanford Cart began as a NASA-related testbed for driving a Moon rover from Earth, was taken over by SAIL as a robot road vehicle for research on visual navigation, and in 1979, under Hans Moravec, &quot;successfully crossed a chair-filled room without human intervention in about five hours.&quot; Earnest traces a line from the cart through SAIL's later robot vehicle Stanley to the Google driverless car.</p>",
+            "text": "Earnest, a former executive officer of the Stanford Artificial Intelligence Lab (SAIL), tells the history of one machine over 46 years. The Stanford Cart began as a NASA-related testbed for driving a Moon rover from Earth, was taken over by SAIL as a robot road vehicle for research on visual navigation, and in 1979, under Hans Moravec, \"successfully crossed a chair-filled room without human intervention in about five hours.\" Earnest traces a line from the cart through SAIL's later robot vehicle Stanley to the Google driverless car."
+          },
+          {
+            "id": "ai-history-notes",
+            "title": "AI History Notes",
+            "html": "<ul><li>1960–61: mechanical engineering student James L. Adams built the cart for research on remote control with video. He had worked at the Jet Propulsion Laboratory on Project Prospector, which assumed someone on Earth could drive a Moon vehicle by TV camera. Adams showed that with a Moon round-trip delay of about 2.5 seconds the vehicle could not be reliably controlled above about 0.2 mph.</li><li>1962–63: Paul W. Braisted added an analog predictor that raised controllable speed to 5 mph, but teleoperation still could not avoid obstacles closer than the distance traveled during the delay. Earnest writes that Kennedy's September 12, 1962 announcement of a crewed Moon mission put off the application.</li><li>1966–71: Earnest found the cart unused and brought it to SAIL to build a vision-guided road vehicle. SAIL got an experimental FCC TV license; students drove it around the neighborhood from a desk; John McCarthy took over supervision. Using a KA10 processor (about 0.65 MIPS), Rodney Schmidt got it to follow a white line at about 0.8 mph.</li><li>1971–80: Hans Moravec came to Stanford to work on visual navigation. After the cart toppled off a ramp in October 1973, he had Victor Scheinman build a camera &quot;slider&quot; in 1977 to take multiple views without moving the cart. With a KL10 (about 2.5 MIPS) and multi-ocular vision, the cart moved &quot;in one meter spurts punctuated by ten to fifteen minute pauses for image processing and route planning.&quot; In 1979 it crossed a chair-filled room on its own in about five hours. Moravec finished his dissertation in 1980.</li><li>After 1980: SAIL shut down; the cart went into storage, then into the Computer Museum's &quot;Robot Theater&quot; in Boston (1987), and later onto static display at the Computer History Museum (from 2011).</li></ul>",
+            "text": "- 1960–61: mechanical engineering student James L. Adams built the cart for research on remote control with video. He had worked at the Jet Propulsion Laboratory on Project Prospector, which assumed someone on Earth could drive a Moon vehicle by TV camera. Adams showed that with a Moon round-trip delay of about 2.5 seconds the vehicle could not be reliably controlled above about 0.2 mph.\n- 1962–63: Paul W. Braisted added an analog predictor that raised controllable speed to 5 mph, but teleoperation still could not avoid obstacles closer than the distance traveled during the delay. Earnest writes that Kennedy's September 12, 1962 announcement of a crewed Moon mission put off the application.\n- 1966–71: Earnest found the cart unused and brought it to SAIL to build a vision-guided road vehicle. SAIL got an experimental FCC TV license; students drove it around the neighborhood from a desk; J"
+          },
+          {
+            "id": "history-of-technology-notes",
+            "title": "History of Technology Notes",
+            "html": "<ul><li>Where it sits in the process: the 1979 crossing is a proof of possibility, not a stabilized technology. Autonomous navigation by vision worked only in a controlled room, slowly, on a large time-shared computer. The field is still in an open phase where the question is whether this can be done at all.</li><li>Appropriation: the cart was built for one purpose and used for another. A NASA-motivated teleoperation testbed was taken over by an AI lab and turned into a platform for machine vision; Earnest says he &quot;talked its creator&quot; into letting SAIL use it. The same hardware later served as a museum show piece. Each group put the object to its own use.</li><li>Path Dependence: the cart's history ties AI navigation to its origins in remote control. Adams's result (delay makes teleoperation impossible at useful speeds) is the problem autonomy was meant to solve, and Earnest's account runs a single institutional line from the cart to Moravec at Carnegie Mellon's Robotics Institute and to Thrun's revived SAIL, Stanley and the Google car.</li><li>Computing constraints were the binding limit at every stage: 0.65 MIPS for line-following, 2.5 MIPS for room crossing at ten to fifteen minutes of processing per meter. The cart's pace was set by the time-shared computers of the lab.</li></ul>",
+            "text": "- Where it sits in the process: the 1979 crossing is a proof of possibility, not a stabilized technology. Autonomous navigation by vision worked only in a controlled room, slowly, on a large time-shared computer. The field is still in an open phase where the question is whether this can be done at all.\n- Appropriation: the cart was built for one purpose and used for another. A NASA-motivated teleoperation testbed was taken over by an AI lab and turned into a platform for machine vision; Earnest says he \"talked its creator\" into letting SAIL use it. The same hardware later served as a museum show piece. Each group put the object to its own use.\n- Path Dependence: the cart's history ties AI navigation to its origins in remote control. Adams's result (delay makes teleoperation impossible at useful speeds) is the problem autonomy was meant to solve, and Earnest's account runs a single instit"
+          },
+          {
+            "id": "social-history-scot-notes",
+            "title": "Social History / SCOT Notes",
+            "html": "<ul><li>Relevant Social Groups: NASA and JPL (who assumed teleoperation would work), mechanical engineering students, the FCC (whose experimental license made the TV link legal), SAIL's AI researchers, students who drove the cart around as a &quot;popular pasttime,&quot; and later museum audiences. What the cart was for changed as it passed between them.</li><li>Interpretative Flexibility: Earnest gives the cart four identities in one account: Moon-rover research platform, robot road vehicle, &quot;show business&quot; exhibit, and retired museum artifact. The 1979 crossing is what later accounts treat as its defining moment, but that is a retrospective choice; Earnest's own framing is a &quot;career of ups and downs.&quot;</li></ul>",
+            "text": "- Relevant Social Groups: NASA and JPL (who assumed teleoperation would work), mechanical engineering students, the FCC (whose experimental license made the TV link legal), SAIL's AI researchers, students who drove the cart around as a \"popular pasttime,\" and later museum audiences. What the cart was for changed as it passed between them.\n- Interpretative Flexibility: Earnest gives the cart four identities in one account: Moon-rover research platform, robot road vehicle, \"show business\" exhibit, and retired museum artifact. The 1979 crossing is what later accounts treat as its defining moment, but that is a retrospective choice; Earnest's own framing is a \"career of ups and downs.\""
+          },
+          {
+            "id": "historical-references-and-lineages",
+            "title": "Historical References and Lineages",
+            "html": "<ul><li>Before: Shakey the Robot (from 1966) was a contemporary mobile-robot project at SRI that also used a TV camera and off-board computing.</li><li>After: Earnest names Stanley, which won the 2005 DARPA Grand Challenge (see DARPA Grand Challenge 2004 for the series), and says Thrun and colleagues then created the Google driverless car (Google self-driving car project begins, 2009).</li></ul>",
+            "text": "- Before: Shakey the Robot (from 1966) was a contemporary mobile-robot project at SRI that also used a TV camera and off-board computing.\n- After: Earnest names Stanley, which won the 2005 DARPA Grand Challenge (see DARPA Grand Challenge 2004 for the series), and says Thrun and colleagues then created the Google driverless car (Google self-driving car project begins, 2009)."
+          },
+          {
+            "id": "why-this-matters",
+            "title": "Why This Matters",
+            "html": "<p>The cart shows how slowly and locally autonomous navigation began: a machine built for another purpose, moved into an AI lab, needing hours to cross a room. Its history runs from the space program through a university AI lab to later self-driving projects, with the same institutions and people carrying it forward. For Synthesis — AI as Technology History, it supports the view that AI capabilities often came from appropriated hardware and long institutional continuity rather than from single breakthroughs, and that computing power set the pace.</p>",
+            "text": "The cart shows how slowly and locally autonomous navigation began: a machine built for another purpose, moved into an AI lab, needing hours to cross a room. Its history runs from the space program through a university AI lab to later self-driving projects, with the same institutions and people carrying it forward. For Synthesis — AI as Technology History, it supports the view that AI capabilities often came from appropriated hardware and long institutional continuity rather than from single breakthroughs, and that computing power set the pace."
+          },
+          {
+            "id": "useful-quotes-evidence",
+            "title": "Useful Quotes / Evidence",
+            "html": "<ul><li>&quot;The Stanford Cart has had a 46 year career of ups and downs.&quot;</li></ul><p>Earnest's framing of the machine's history.</p><ul><li>&quot;However Adams showed that assumption to be false.&quot;</li></ul><p>The teleoperation result that defined the problem.</p><ul><li>&quot;The cart moved in one meter spurts punctuated by ten to fifteen minute pauses for image processing and route planning.&quot;</li></ul><p>The computing cost of vision-based navigation in the late 1970s.</p><ul><li>&quot;In 1979, the cart successfully crossed a chair-filled room without human intervention in about five hours.&quot;</li></ul><p>The event itself.</p><ul><li>&quot;proving that even old robots can have a second career in show business.&quot;</li></ul><p>The cart's later life as a museum exhibit.</p>",
+            "text": "- \"The Stanford Cart has had a 46 year career of ups and downs.\"\n  Earnest's framing of the machine's history.\n- \"However Adams showed that assumption to be false.\"\n  The teleoperation result that defined the problem.\n- \"The cart moved in one meter spurts punctuated by ten to fifteen minute pauses for image processing and route planning.\"\n  The computing cost of vision-based navigation in the late 1970s.\n- \"In 1979, the cart successfully crossed a chair-filled room without human intervention in about five hours.\"\n  The event itself.\n- \"proving that even old robots can have a second career in show business.\"\n  The cart's later life as a museum exhibit."
+          },
+          {
+            "id": "possible-tags",
+            "title": "Possible Tags",
+            "html": "<p>#ai-history #history-of-technology #robotics #computer-vision #autonomous-vehicles #stanford</p>",
+            "text": "ai-history #history-of-technology #robotics #computer-vision #autonomous-vehicles #stanford"
+          }
+        ],
+        "citation": "Moravec, Hans Peter. 1980. \"Obstacle Avoidance and Navigation in the Real World by a Seeing Robot Rover.\" PhD diss., Stanford University.",
+        "keyClaim": "Earnest, a former executive officer of the Stanford Artificial Intelligence Lab (SAIL), tells the history of one machine over 46 years. The Stanford Cart began as a NASA-related testbed for driving a Moon rover from Earth, was taken over by SAIL as a robot road vehicle for research on visual navigation, and in 1979, under Hans Moravec, \"successfully crossed a chair-filled room without human intervention in about five hours.\" Earnest traces a line from the cart through SAIL's later robot vehicle Stanley to the Google driverless car.",
+        "textLength": 6563
+      },
+      "quality": {
+        "score": 9,
+        "label": "complete",
+        "missing": [],
+        "sections": 9,
+        "words": 1054
+      },
+      "facets": {
+        "decision": [
+          "board",
+          "lab"
+        ],
+        "power": [
+          "university",
+          "labor",
+          "platform",
+          "institution"
+        ],
+        "material": [
+          "compute",
+          "labor"
+        ],
+        "closure": [
+          "test"
+        ],
+        "controversy": [],
+        "governance": false
+      },
+      "obsidianUri": "obsidian://open?path=%2FUsers%2Fnathanjohnson%2FDocuments%2FObsidian%20Vault%2FStanford%20Cart%20crosses%20a%20room.md",
+      "links": [
+        "1966-sri-s-shakey-the-robot",
+        "2004-darpa-grand-challenge-2004",
+        "2009-google-self-driving-car-project"
+      ],
+      "backlinks": [
+        "1961-unimate-enters-gm-production",
+        "1966-sri-s-shakey-the-robot",
+        "2002-irobot-s-roomba-launches",
+        "2004-darpa-grand-challenge-2004"
+      ],
+      "centrality": 7,
       "isNew": false
     },
     {
@@ -2620,142 +3158,12 @@ const timelinePayload = {
         "1955-56-a-proposal-for-the-dartmouth-summer-research-projecton-artificial-intelligence",
         "1982-r1-xcon-expert-systems-go-commercial",
         "1983-darpa-strategic-computing",
-        "2026-lisp-machine-market-collapse",
+        "1987-lisp-machine-market-collapse",
         "1960-mccarthy-s-lisp-paper"
       ],
       "backlinks": [
         "1955-56-a-proposal-for-the-dartmouth-summer-research-projecton-artificial-intelligence",
         "2016-partnership-on-ai-announced"
-      ],
-      "centrality": 7,
-      "isNew": false
-    },
-    {
-      "id": "1980-stanford-cart-crosses-a-room",
-      "title": "Stanford Cart crosses a room",
-      "yearLabel": "1980",
-      "date": null,
-      "startYear": 1980,
-      "endYear": 1980,
-      "type": "Model innovation",
-      "concepts": [
-        "Appropriation",
-        "Path Dependence"
-      ],
-      "allConcepts": [
-        "Appropriation",
-        "Path Dependence"
-      ],
-      "summary": "Earnest, a former executive officer of the Stanford Artificial Intelligence Lab (SAIL), tells the history of one machine over 46 years. The Stanford Cart began as a NASA-related testbed for driving a Moon rover from Earth, was taken over by SAIL as a robot road vehicle for research on visual navigation, and in 1979, under Hans Moravec, \"successfully crossed a chair-filled room without human intervention in about five hours.\" Earnest traces a line from the cart through SAIL's later robot vehicle Stanley to the Google driverless car.",
-      "sourceNote": "Stanford Cart crosses a room",
-      "sourceUrl": "",
-      "status": "vault",
-      "draft": true,
-      "week": "",
-      "origin": "note",
-      "vaultNote": {
-        "title": "Stanford Cart crosses a room",
-        "available": true,
-        "html": "<h3>&quot;Stanford Cart crosses a room&quot;</h3><h4>Citation</h4><p>Moravec, Hans Peter. 1980. &quot;Obstacle Avoidance and Navigation in the Real World by a Seeing Robot Rover.&quot; PhD diss., Stanford University.</p><p>Source used for this note: Les Earnest, &quot;Stanford Cart&quot; (December 2012), https://web.stanford.edu/~learnest/cart.htm (live page offline; text from the Wayback Machine snapshot of January 26, 2013)</p><h4>Core Claim</h4><p>Earnest, a former executive officer of the Stanford Artificial Intelligence Lab (SAIL), tells the history of one machine over 46 years. The Stanford Cart began as a NASA-related testbed for driving a Moon rover from Earth, was taken over by SAIL as a robot road vehicle for research on visual navigation, and in 1979, under Hans Moravec, &quot;successfully crossed a chair-filled room without human intervention in about five hours.&quot; Earnest traces a line from the cart through SAIL's later robot vehicle Stanley to the Google driverless car.</p><h4>AI History Notes</h4><ul><li>1960–61: mechanical engineering student James L. Adams built the cart for research on remote control with video. He had worked at the Jet Propulsion Laboratory on Project Prospector, which assumed someone on Earth could drive a Moon vehicle by TV camera. Adams showed that with a Moon round-trip delay of about 2.5 seconds the vehicle could not be reliably controlled above about 0.2 mph.</li><li>1962–63: Paul W. Braisted added an analog predictor that raised controllable speed to 5 mph, but teleoperation still could not avoid obstacles closer than the distance traveled during the delay. Earnest writes that Kennedy's September 12, 1962 announcement of a crewed Moon mission put off the application.</li><li>1966–71: Earnest found the cart unused and brought it to SAIL to build a vision-guided road vehicle. SAIL got an experimental FCC TV license; students drove it around the neighborhood from a desk; John McCarthy took over supervision. Using a KA10 processor (about 0.65 MIPS), Rodney Schmidt got it to follow a white line at about 0.8 mph.</li><li>1971–80: Hans Moravec came to Stanford to work on visual navigation. After the cart toppled off a ramp in October 1973, he had Victor Scheinman build a camera &quot;slider&quot; in 1977 to take multiple views without moving the cart. With a KL10 (about 2.5 MIPS) and multi-ocular vision, the cart moved &quot;in one meter spurts punctuated by ten to fifteen minute pauses for image processing and route planning.&quot; In 1979 it crossed a chair-filled room on its own in about five hours. Moravec finished his dissertation in 1980.</li><li>After 1980: SAIL shut down; the cart went into storage, then into the Computer Museum's &quot;Robot Theater&quot; in Boston (1987), and later onto static display at the Computer History Museum (from 2011).</li></ul><h4>History of Technology Notes</h4><ul><li>Where it sits in the process: the 1979 crossing is a proof of possibility, not a stabilized technology. Autonomous navigation by vision worked only in a controlled room, slowly, on a large time-shared computer. The field is still in an open phase where the question is whether this can be done at all.</li><li>Appropriation: the cart was built for one purpose and used for another. A NASA-motivated teleoperation testbed was taken over by an AI lab and turned into a platform for machine vision; Earnest says he &quot;talked its creator&quot; into letting SAIL use it. The same hardware later served as a museum show piece. Each group put the object to its own use.</li><li>Path Dependence: the cart's history ties AI navigation to its origins in remote control. Adams's result (delay makes teleoperation impossible at useful speeds) is the problem autonomy was meant to solve, and Earnest's account runs a single institutional line from the cart to Moravec at Carnegie Mellon's Robotics Institute and to Thrun's revived SAIL, Stanley and the Google car.</li><li>Computing constraints were the binding limit at every stage: 0.65 MIPS for line-following, 2.5 MIPS for room crossing at ten to fifteen minutes of processing per meter. The cart's pace was set by the time-shared computers of the lab.</li></ul><h4>Social History / SCOT Notes</h4><ul><li>Relevant Social Groups: NASA and JPL (who assumed teleoperation would work), mechanical engineering students, the FCC (whose experimental license made the TV link legal), SAIL's AI researchers, students who drove the cart around as a &quot;popular pasttime,&quot; and later museum audiences. What the cart was for changed as it passed between them.</li><li>Interpretative Flexibility: Earnest gives the cart four identities in one account: Moon-rover research platform, robot road vehicle, &quot;show business&quot; exhibit, and retired museum artifact. The 1979 crossing is what later accounts treat as its defining moment, but that is a retrospective choice; Earnest's own framing is a &quot;career of ups and downs.&quot;</li></ul><h4>Historical References and Lineages</h4><ul><li>Before: Shakey the Robot (from 1966) was a contemporary mobile-robot project at SRI that also used a TV camera and off-board computing.</li><li>After: Earnest names Stanley, which won the 2005 DARPA Grand Challenge (see DARPA Grand Challenge 2004 for the series), and says Thrun and colleagues then created the Google driverless car (Google self-driving car project begins, 2009).</li></ul><h4>Why This Matters</h4><p>The cart shows how slowly and locally autonomous navigation began: a machine built for another purpose, moved into an AI lab, needing hours to cross a room. Its history runs from the space program through a university AI lab to later self-driving projects, with the same institutions and people carrying it forward. For Synthesis — AI as Technology History, it supports the view that AI capabilities often came from appropriated hardware and long institutional continuity rather than from single breakthroughs, and that computing power set the pace.</p><h4>Useful Quotes / Evidence</h4><ul><li>&quot;The Stanford Cart has had a 46 year career of ups and downs.&quot;</li></ul><p>Earnest's framing of the machine's history.</p><ul><li>&quot;However Adams showed that assumption to be false.&quot;</li></ul><p>The teleoperation result that defined the problem.</p><ul><li>&quot;The cart moved in one meter spurts punctuated by ten to fifteen minute pauses for image processing and route planning.&quot;</li></ul><p>The computing cost of vision-based navigation in the late 1970s.</p><ul><li>&quot;In 1979, the cart successfully crossed a chair-filled room without human intervention in about five hours.&quot;</li></ul><p>The event itself.</p><ul><li>&quot;proving that even old robots can have a second career in show business.&quot;</li></ul><p>The cart's later life as a museum exhibit.</p><h4>Possible Tags</h4><p>#ai-history #history-of-technology #robotics #computer-vision #autonomous-vehicles #stanford</p>",
-        "sections": [
-          {
-            "id": "citation",
-            "title": "Citation",
-            "html": "<p>Moravec, Hans Peter. 1980. &quot;Obstacle Avoidance and Navigation in the Real World by a Seeing Robot Rover.&quot; PhD diss., Stanford University.</p><p>Source used for this note: Les Earnest, &quot;Stanford Cart&quot; (December 2012), https://web.stanford.edu/~learnest/cart.htm (live page offline; text from the Wayback Machine snapshot of January 26, 2013)</p>",
-            "text": "Moravec, Hans Peter. 1980. \"Obstacle Avoidance and Navigation in the Real World by a Seeing Robot Rover.\" PhD diss., Stanford University.\n\nSource used for this note: Les Earnest, \"Stanford Cart\" (December 2012), https://web.stanford.edu/~learnest/cart.htm (live page offline; text from the Wayback Machine snapshot of January 26, 2013)"
-          },
-          {
-            "id": "core-claim",
-            "title": "Core Claim",
-            "html": "<p>Earnest, a former executive officer of the Stanford Artificial Intelligence Lab (SAIL), tells the history of one machine over 46 years. The Stanford Cart began as a NASA-related testbed for driving a Moon rover from Earth, was taken over by SAIL as a robot road vehicle for research on visual navigation, and in 1979, under Hans Moravec, &quot;successfully crossed a chair-filled room without human intervention in about five hours.&quot; Earnest traces a line from the cart through SAIL's later robot vehicle Stanley to the Google driverless car.</p>",
-            "text": "Earnest, a former executive officer of the Stanford Artificial Intelligence Lab (SAIL), tells the history of one machine over 46 years. The Stanford Cart began as a NASA-related testbed for driving a Moon rover from Earth, was taken over by SAIL as a robot road vehicle for research on visual navigation, and in 1979, under Hans Moravec, \"successfully crossed a chair-filled room without human intervention in about five hours.\" Earnest traces a line from the cart through SAIL's later robot vehicle Stanley to the Google driverless car."
-          },
-          {
-            "id": "ai-history-notes",
-            "title": "AI History Notes",
-            "html": "<ul><li>1960–61: mechanical engineering student James L. Adams built the cart for research on remote control with video. He had worked at the Jet Propulsion Laboratory on Project Prospector, which assumed someone on Earth could drive a Moon vehicle by TV camera. Adams showed that with a Moon round-trip delay of about 2.5 seconds the vehicle could not be reliably controlled above about 0.2 mph.</li><li>1962–63: Paul W. Braisted added an analog predictor that raised controllable speed to 5 mph, but teleoperation still could not avoid obstacles closer than the distance traveled during the delay. Earnest writes that Kennedy's September 12, 1962 announcement of a crewed Moon mission put off the application.</li><li>1966–71: Earnest found the cart unused and brought it to SAIL to build a vision-guided road vehicle. SAIL got an experimental FCC TV license; students drove it around the neighborhood from a desk; John McCarthy took over supervision. Using a KA10 processor (about 0.65 MIPS), Rodney Schmidt got it to follow a white line at about 0.8 mph.</li><li>1971–80: Hans Moravec came to Stanford to work on visual navigation. After the cart toppled off a ramp in October 1973, he had Victor Scheinman build a camera &quot;slider&quot; in 1977 to take multiple views without moving the cart. With a KL10 (about 2.5 MIPS) and multi-ocular vision, the cart moved &quot;in one meter spurts punctuated by ten to fifteen minute pauses for image processing and route planning.&quot; In 1979 it crossed a chair-filled room on its own in about five hours. Moravec finished his dissertation in 1980.</li><li>After 1980: SAIL shut down; the cart went into storage, then into the Computer Museum's &quot;Robot Theater&quot; in Boston (1987), and later onto static display at the Computer History Museum (from 2011).</li></ul>",
-            "text": "- 1960–61: mechanical engineering student James L. Adams built the cart for research on remote control with video. He had worked at the Jet Propulsion Laboratory on Project Prospector, which assumed someone on Earth could drive a Moon vehicle by TV camera. Adams showed that with a Moon round-trip delay of about 2.5 seconds the vehicle could not be reliably controlled above about 0.2 mph.\n- 1962–63: Paul W. Braisted added an analog predictor that raised controllable speed to 5 mph, but teleoperation still could not avoid obstacles closer than the distance traveled during the delay. Earnest writes that Kennedy's September 12, 1962 announcement of a crewed Moon mission put off the application.\n- 1966–71: Earnest found the cart unused and brought it to SAIL to build a vision-guided road vehicle. SAIL got an experimental FCC TV license; students drove it around the neighborhood from a desk; J"
-          },
-          {
-            "id": "history-of-technology-notes",
-            "title": "History of Technology Notes",
-            "html": "<ul><li>Where it sits in the process: the 1979 crossing is a proof of possibility, not a stabilized technology. Autonomous navigation by vision worked only in a controlled room, slowly, on a large time-shared computer. The field is still in an open phase where the question is whether this can be done at all.</li><li>Appropriation: the cart was built for one purpose and used for another. A NASA-motivated teleoperation testbed was taken over by an AI lab and turned into a platform for machine vision; Earnest says he &quot;talked its creator&quot; into letting SAIL use it. The same hardware later served as a museum show piece. Each group put the object to its own use.</li><li>Path Dependence: the cart's history ties AI navigation to its origins in remote control. Adams's result (delay makes teleoperation impossible at useful speeds) is the problem autonomy was meant to solve, and Earnest's account runs a single institutional line from the cart to Moravec at Carnegie Mellon's Robotics Institute and to Thrun's revived SAIL, Stanley and the Google car.</li><li>Computing constraints were the binding limit at every stage: 0.65 MIPS for line-following, 2.5 MIPS for room crossing at ten to fifteen minutes of processing per meter. The cart's pace was set by the time-shared computers of the lab.</li></ul>",
-            "text": "- Where it sits in the process: the 1979 crossing is a proof of possibility, not a stabilized technology. Autonomous navigation by vision worked only in a controlled room, slowly, on a large time-shared computer. The field is still in an open phase where the question is whether this can be done at all.\n- Appropriation: the cart was built for one purpose and used for another. A NASA-motivated teleoperation testbed was taken over by an AI lab and turned into a platform for machine vision; Earnest says he \"talked its creator\" into letting SAIL use it. The same hardware later served as a museum show piece. Each group put the object to its own use.\n- Path Dependence: the cart's history ties AI navigation to its origins in remote control. Adams's result (delay makes teleoperation impossible at useful speeds) is the problem autonomy was meant to solve, and Earnest's account runs a single instit"
-          },
-          {
-            "id": "social-history-scot-notes",
-            "title": "Social History / SCOT Notes",
-            "html": "<ul><li>Relevant Social Groups: NASA and JPL (who assumed teleoperation would work), mechanical engineering students, the FCC (whose experimental license made the TV link legal), SAIL's AI researchers, students who drove the cart around as a &quot;popular pasttime,&quot; and later museum audiences. What the cart was for changed as it passed between them.</li><li>Interpretative Flexibility: Earnest gives the cart four identities in one account: Moon-rover research platform, robot road vehicle, &quot;show business&quot; exhibit, and retired museum artifact. The 1979 crossing is what later accounts treat as its defining moment, but that is a retrospective choice; Earnest's own framing is a &quot;career of ups and downs.&quot;</li></ul>",
-            "text": "- Relevant Social Groups: NASA and JPL (who assumed teleoperation would work), mechanical engineering students, the FCC (whose experimental license made the TV link legal), SAIL's AI researchers, students who drove the cart around as a \"popular pasttime,\" and later museum audiences. What the cart was for changed as it passed between them.\n- Interpretative Flexibility: Earnest gives the cart four identities in one account: Moon-rover research platform, robot road vehicle, \"show business\" exhibit, and retired museum artifact. The 1979 crossing is what later accounts treat as its defining moment, but that is a retrospective choice; Earnest's own framing is a \"career of ups and downs.\""
-          },
-          {
-            "id": "historical-references-and-lineages",
-            "title": "Historical References and Lineages",
-            "html": "<ul><li>Before: Shakey the Robot (from 1966) was a contemporary mobile-robot project at SRI that also used a TV camera and off-board computing.</li><li>After: Earnest names Stanley, which won the 2005 DARPA Grand Challenge (see DARPA Grand Challenge 2004 for the series), and says Thrun and colleagues then created the Google driverless car (Google self-driving car project begins, 2009).</li></ul>",
-            "text": "- Before: Shakey the Robot (from 1966) was a contemporary mobile-robot project at SRI that also used a TV camera and off-board computing.\n- After: Earnest names Stanley, which won the 2005 DARPA Grand Challenge (see DARPA Grand Challenge 2004 for the series), and says Thrun and colleagues then created the Google driverless car (Google self-driving car project begins, 2009)."
-          },
-          {
-            "id": "why-this-matters",
-            "title": "Why This Matters",
-            "html": "<p>The cart shows how slowly and locally autonomous navigation began: a machine built for another purpose, moved into an AI lab, needing hours to cross a room. Its history runs from the space program through a university AI lab to later self-driving projects, with the same institutions and people carrying it forward. For Synthesis — AI as Technology History, it supports the view that AI capabilities often came from appropriated hardware and long institutional continuity rather than from single breakthroughs, and that computing power set the pace.</p>",
-            "text": "The cart shows how slowly and locally autonomous navigation began: a machine built for another purpose, moved into an AI lab, needing hours to cross a room. Its history runs from the space program through a university AI lab to later self-driving projects, with the same institutions and people carrying it forward. For Synthesis — AI as Technology History, it supports the view that AI capabilities often came from appropriated hardware and long institutional continuity rather than from single breakthroughs, and that computing power set the pace."
-          },
-          {
-            "id": "useful-quotes-evidence",
-            "title": "Useful Quotes / Evidence",
-            "html": "<ul><li>&quot;The Stanford Cart has had a 46 year career of ups and downs.&quot;</li></ul><p>Earnest's framing of the machine's history.</p><ul><li>&quot;However Adams showed that assumption to be false.&quot;</li></ul><p>The teleoperation result that defined the problem.</p><ul><li>&quot;The cart moved in one meter spurts punctuated by ten to fifteen minute pauses for image processing and route planning.&quot;</li></ul><p>The computing cost of vision-based navigation in the late 1970s.</p><ul><li>&quot;In 1979, the cart successfully crossed a chair-filled room without human intervention in about five hours.&quot;</li></ul><p>The event itself.</p><ul><li>&quot;proving that even old robots can have a second career in show business.&quot;</li></ul><p>The cart's later life as a museum exhibit.</p>",
-            "text": "- \"The Stanford Cart has had a 46 year career of ups and downs.\"\n  Earnest's framing of the machine's history.\n- \"However Adams showed that assumption to be false.\"\n  The teleoperation result that defined the problem.\n- \"The cart moved in one meter spurts punctuated by ten to fifteen minute pauses for image processing and route planning.\"\n  The computing cost of vision-based navigation in the late 1970s.\n- \"In 1979, the cart successfully crossed a chair-filled room without human intervention in about five hours.\"\n  The event itself.\n- \"proving that even old robots can have a second career in show business.\"\n  The cart's later life as a museum exhibit."
-          },
-          {
-            "id": "possible-tags",
-            "title": "Possible Tags",
-            "html": "<p>#ai-history #history-of-technology #robotics #computer-vision #autonomous-vehicles #stanford</p>",
-            "text": "ai-history #history-of-technology #robotics #computer-vision #autonomous-vehicles #stanford"
-          }
-        ],
-        "citation": "Moravec, Hans Peter. 1980. \"Obstacle Avoidance and Navigation in the Real World by a Seeing Robot Rover.\" PhD diss., Stanford University.",
-        "keyClaim": "Earnest, a former executive officer of the Stanford Artificial Intelligence Lab (SAIL), tells the history of one machine over 46 years. The Stanford Cart began as a NASA-related testbed for driving a Moon rover from Earth, was taken over by SAIL as a robot road vehicle for research on visual navigation, and in 1979, under Hans Moravec, \"successfully crossed a chair-filled room without human intervention in about five hours.\" Earnest traces a line from the cart through SAIL's later robot vehicle Stanley to the Google driverless car.",
-        "textLength": 6563
-      },
-      "quality": {
-        "score": 9,
-        "label": "complete",
-        "missing": [],
-        "sections": 9,
-        "words": 1054
-      },
-      "facets": {
-        "decision": [
-          "board",
-          "lab"
-        ],
-        "power": [
-          "university",
-          "labor",
-          "platform",
-          "institution"
-        ],
-        "material": [
-          "compute",
-          "labor"
-        ],
-        "closure": [
-          "test"
-        ],
-        "controversy": [],
-        "governance": false
-      },
-      "obsidianUri": "obsidian://open?path=%2FUsers%2Fnathanjohnson%2FDocuments%2FObsidian%20Vault%2FStanford%20Cart%20crosses%20a%20room.md",
-      "links": [
-        "1966-sri-s-shakey-the-robot",
-        "2004-darpa-grand-challenge-2004",
-        "2009-google-self-driving-car-project"
-      ],
-      "backlinks": [
-        "1966-sri-s-shakey-the-robot",
-        "2002-irobot-s-roomba-launches",
-        "2004-darpa-grand-challenge-2004",
-        "2026-unimate-enters-gm-production"
       ],
       "centrality": 7,
       "isNew": false
@@ -3009,17 +3417,19 @@ const timelinePayload = {
       "obsidianUri": "obsidian://open?path=%2FUsers%2Fnathanjohnson%2FDocuments%2FObsidian%20Vault%2F%22R1%20-%20A%20Rule-Based%20Configurer%20of%20Computer%20Systems%22.md",
       "links": [
         "1986-backpropagation-popularized",
+        "1965-dendral-begins",
+        "1972-mycin-at-stanford",
         "1973-lighthill-report",
         "1982-japan-s-fifth-generation-project",
-        "1983-darpa-strategic-computing",
-        "1984-mycin-at-stanford"
+        "1983-darpa-strategic-computing"
       ],
       "backlinks": [
+        "1965-dendral-begins",
+        "1972-mycin-at-stanford",
         "1979-aaai-founded",
-        "1984-mycin-at-stanford",
-        "2026-lisp-machine-market-collapse"
+        "1987-lisp-machine-market-collapse"
       ],
-      "centrality": 8,
+      "centrality": 10,
       "isNew": false
     },
     {
@@ -3143,17 +3553,19 @@ const timelinePayload = {
       },
       "obsidianUri": "obsidian://open?path=%2FUsers%2Fnathanjohnson%2FDocuments%2FObsidian%20Vault%2FFifth%20Generation%20Computer%20Systems%20project.md",
       "links": [
+        "1965-dendral-begins",
         "1960-mccarthy-s-lisp-paper",
         "1983-darpa-strategic-computing",
-        "2026-lisp-machine-market-collapse"
+        "1987-lisp-machine-market-collapse"
       ],
       "backlinks": [
+        "1965-dendral-begins",
         "1973-lighthill-report",
         "1982-r1-xcon-expert-systems-go-commercial",
         "1983-darpa-strategic-computing",
-        "2026-lisp-machine-market-collapse"
+        "1987-lisp-machine-market-collapse"
       ],
-      "centrality": 7,
+      "centrality": 9,
       "isNew": false
     },
     {
@@ -3285,7 +3697,7 @@ const timelinePayload = {
         "1973-lighthill-report",
         "1982-japan-s-fifth-generation-project",
         "1966-sri-s-shakey-the-robot",
-        "2026-lisp-machine-market-collapse",
+        "1987-lisp-machine-market-collapse",
         "2004-darpa-grand-challenge-2004",
         "1960-mccarthy-s-lisp-paper"
       ],
@@ -3294,143 +3706,10 @@ const timelinePayload = {
         "1979-aaai-founded",
         "1982-r1-xcon-expert-systems-go-commercial",
         "1982-japan-s-fifth-generation-project",
-        "2004-darpa-grand-challenge-2004",
-        "2026-lisp-machine-market-collapse"
+        "1987-lisp-machine-market-collapse",
+        "2004-darpa-grand-challenge-2004"
       ],
       "centrality": 12,
-      "isNew": false
-    },
-    {
-      "id": "1984-mycin-at-stanford",
-      "title": "MYCIN at Stanford",
-      "yearLabel": "1984",
-      "date": null,
-      "startYear": 1984,
-      "endYear": 1984,
-      "type": "Model innovation",
-      "concepts": [
-        "Closure",
-        "System Builders",
-        "Black Box"
-      ],
-      "allConcepts": [
-        "Closure",
-        "System Builders",
-        "Black Box",
-        "Use Stage"
-      ],
-      "summary": "MYCIN was a Stanford program that advised physicians on the diagnosis and antibiotic treatment of infectious diseases. Its builders, Bruce Buchanan and Edward Shortliffe, looking back in 1984, present it as an experiment testing whether \"a rule-based formalism was sufficient\" for an expert consultation system that performs well, can be changed easily, and can be understood. They say the answer was yes, and call it \"one of the best-known lessons in the history of AI.\" The National Library of Medicine's exhibit on Joshua Lederberg places MYCIN among Stanford's expert-system projects and records their limits: they were costly to build, confined to narrow domains, and met skepticism from the physicians they were meant to help.",
-      "sourceNote": "MYCIN",
-      "sourceUrl": "https://www.shortliffe.net/Buchanan-Shortliffe-1984/MYCIN%20Book.htm",
-      "status": "vault",
-      "draft": true,
-      "week": "",
-      "origin": "note",
-      "vaultNote": {
-        "title": "MYCIN",
-        "available": true,
-        "html": "<h3>&quot;MYCIN&quot;</h3><h4>Citation</h4><p>Buchanan, Bruce G., and Edward H. Shortliffe, eds. 1984. <em>Rule-Based Expert Systems: The MYCIN Experiments of the Stanford Heuristic Programming Project</em>. Reading, MA: Addison-Wesley. Preface and chapter 1. https://www.shortliffe.net/Buchanan-Shortliffe-1984/MYCIN%20Book.htm</p><p>U.S. National Library of Medicine. n.d. &quot;Computers, Artificial Intelligence, and Expert Systems in Biomedical Research.&quot; <em>The Joshua Lederberg Papers</em>, Profiles in Science. https://profiles.nlm.nih.gov/spotlight/bb/feature/ai</p><h4>Core Claim</h4><p>MYCIN was a Stanford program that advised physicians on the diagnosis and antibiotic treatment of infectious diseases. Its builders, Bruce Buchanan and Edward Shortliffe, looking back in 1984, present it as an experiment testing whether &quot;a rule-based formalism was sufficient&quot; for an expert consultation system that performs well, can be changed easily, and can be understood. They say the answer was yes, and call it &quot;one of the best-known lessons in the history of AI.&quot; The National Library of Medicine's exhibit on Joshua Lederberg places MYCIN among Stanford's expert-system projects and records their limits: they were costly to build, confined to narrow domains, and met skepticism from the physicians they were meant to help.</p><h4>AI History Notes</h4><ul><li>The project began in spring 1972 with discussions among Stanford medical school and computer science researchers. Shortliffe's 1974 PhD dissertation described the first version.</li><li>Origins: Stanley Cohen, chief of clinical pharmacology, was building MEDIPHOR, a drug-interaction warning system, with Buchanan and Shortliffe. The group first planned a program to monitor antibiotic prescriptions. It would have needed data from three separate Stanford computers and much more medical knowledge, so the team turned instead to an interactive program that consults with physicians.</li><li>Physicians Thomas Merigan and Stanton Axline of the infectious disease division supplied expertise. The name, chosen at Axline's suggestion, is the suffix of many antibiotic names.</li><li>Design: medical knowledge stored mostly as IF–THEN rules, kept separate from the inference engine that chains them, mainly backward from a goal. The first grant application (October 1973) named three components: a consultation program, explanation of its reasoning, and acquisition of rules from experts.</li><li>MYCIN grew out of DENDRAL, the Stanford chemistry program led by Lederberg and Edward Feigenbaum, and belonged to the Stanford Heuristic Programming Project. EMYCIN (&quot;essential MYCIN&quot;) was the framework without its medical knowledge, reused to build other expert systems.</li><li>Infrastructure and funding: almost all computing ran on SUMEX-AIM, a national AI-in-medicine resource at Stanford that the NLM exhibit says was reached via the ARPANET. Funders included NIH, NSF, DARPA, the Office of Naval Research and the National Library of Medicine.</li><li>The NLM exhibit's verdict on the Stanford systems: expert systems took years to build and depended on major institutions and federal funding; &quot;in no case did these expert systems replace the scientist or physician.&quot;</li></ul><h4>History of Technology Notes</h4><ul><li>Interpretative Flexibility: MYCIN's purpose changed during design. It began as a prescription monitor and became a consultant because the team saw that a monitor would need expertise &quot;in the field of antimicrobial selection&quot; anyway, and because a consultation program avoided the problem of linking three computers. The form the artifact took came from institutional and technical constraints, not from one plan.</li><li>Closure: the authors present the rule-based question as settled: they tested the hypothesis and &quot;the positive answer&quot; became a well-known lesson. EMYCIN is the sign of that closure: the rule-based shell, emptied of medicine, was treated as a general-purpose way to build expert systems. In the 1970s, this made rules plus an inference engine the standard form of applied AI.</li><li>System Builders: Buchanan and Shortliffe credit Feigenbaum and Lederberg with creating &quot;the intellectual and computing environment at Stanford&quot; that made the work possible. The NLM exhibit shows what that environment was: ACME and then SUMEX-AIM, a shared national computing resource, and a stream of federal grants. MYCIN was one product of a larger system assembled around Stanford.</li><li>Where it sits in the process: in 1972–74 expert systems were moving from chemistry into medicine and toward closure as AI's dominant applied form. The NLM account shows the limits that would later matter: narrow domains, high cost, and dependence on federal funding.</li></ul><h4>Social History / SCOT Notes</h4><ul><li>Relevant Social Groups: the builders were computer scientists and physicians working together, and the design followed what the physicians could accept. The team chose rules over semantic networks because Cohen and Axline found rules &quot;easier to understand,&quot; since chained rules gave lines of reasoning they &quot;could understand and critique.&quot; Outside the team, the NLM exhibit reports that many physicians &quot;remained skeptical or uninterested.&quot; The group the system was meant to serve did not adopt it.</li><li>Black Box: MYCIN was designed against opacity. Explanation &quot;was a major design requirement from the start,&quot; and the 1973 grant promised a program able to justify its recommendations. The builders treated physicians' trust as depending on seeing the reasoning, so the system opened its own reasoning instead of asking to be trusted.</li><li>Use Stage: the builders learned that &quot;a useful system had to be well enough engineered to make people want to use it; high performance alone was not sufficient.&quot;</li></ul><h4>Historical References and Lineages</h4><ul><li>Before: DENDRAL and expert-system chemistry (1965), the Stanford program from which MYCIN took its production-rule approach.</li><li>After: &quot;R1 - A Rule-Based Configurer of Computer Systems&quot; (1982), a rule-based expert system built for industry rather than medicine.</li><li>After: Lisp machine market collapse (1987), the later downturn in the commercial market for AI hardware of the expert-system period.</li></ul><h4>Why This Matters</h4><p>MYCIN is the classic case of expert-system AI: knowledge taken from human experts, written as rules, and applied by a separate inference engine. Its builders treated its success as a scientific finding and turned its structure into a reusable product, EMYCIN. The NLM account adds what the builders' retrospective does not stress: expert systems depended on federal money and Stanford's computing, stayed narrow, and did not win over physicians. For Synthesis — AI as Technology History, MYCIN shows closure around a technical method happening in the lab while use by its intended groups never followed.</p><h4>Useful Quotes / Evidence</h4><ul><li>&quot;It was begun in the spring of 1972 with a set of discussions among medical school and computer science researchers interested in applying more intelligence to computer programs that interpret medical data.&quot;</li></ul><p>The project's start.</p><ul><li>&quot;Cohen and Axline found easier to understand, particularly because chained rules led to lines of reasoning that they could understand and critique.&quot;</li></ul><p>Physicians' needs shaping the design.</p><ul><li>&quot;Thus our concept of a computer-based consultant was born&quot;</li></ul><p>The shift from monitor to consultant.</p><ul><li>&quot;Contrary to the speculations of participants and of the popular media, in no case did these expert systems replace the scientist or physician.&quot;</li></ul><p>The NLM exhibit's verdict.</p><h4>Possible Tags</h4><p>#ai-history #history-of-technology #expert-systems #medicine #stanford #symbolic-ai</p>",
-        "sections": [
-          {
-            "id": "citation",
-            "title": "Citation",
-            "html": "<p>Buchanan, Bruce G., and Edward H. Shortliffe, eds. 1984. <em>Rule-Based Expert Systems: The MYCIN Experiments of the Stanford Heuristic Programming Project</em>. Reading, MA: Addison-Wesley. Preface and chapter 1. https://www.shortliffe.net/Buchanan-Shortliffe-1984/MYCIN%20Book.htm</p><p>U.S. National Library of Medicine. n.d. &quot;Computers, Artificial Intelligence, and Expert Systems in Biomedical Research.&quot; <em>The Joshua Lederberg Papers</em>, Profiles in Science. https://profiles.nlm.nih.gov/spotlight/bb/feature/ai</p>",
-            "text": "Buchanan, Bruce G., and Edward H. Shortliffe, eds. 1984. Rule-Based Expert Systems: The MYCIN Experiments of the Stanford Heuristic Programming Project. Reading, MA: Addison-Wesley. Preface and chapter 1. https://www.shortliffe.net/Buchanan-Shortliffe-1984/MYCIN%20Book.htm\n\nU.S. National Library of Medicine. n.d. \"Computers, Artificial Intelligence, and Expert Systems in Biomedical Research.\" The Joshua Lederberg Papers, Profiles in Science. https://profiles.nlm.nih.gov/spotlight/bb/feature/ai"
-          },
-          {
-            "id": "core-claim",
-            "title": "Core Claim",
-            "html": "<p>MYCIN was a Stanford program that advised physicians on the diagnosis and antibiotic treatment of infectious diseases. Its builders, Bruce Buchanan and Edward Shortliffe, looking back in 1984, present it as an experiment testing whether &quot;a rule-based formalism was sufficient&quot; for an expert consultation system that performs well, can be changed easily, and can be understood. They say the answer was yes, and call it &quot;one of the best-known lessons in the history of AI.&quot; The National Library of Medicine's exhibit on Joshua Lederberg places MYCIN among Stanford's expert-system projects and records their limits: they were costly to build, confined to narrow domains, and met skepticism from the physicians they were meant to help.</p>",
-            "text": "MYCIN was a Stanford program that advised physicians on the diagnosis and antibiotic treatment of infectious diseases. Its builders, Bruce Buchanan and Edward Shortliffe, looking back in 1984, present it as an experiment testing whether \"a rule-based formalism was sufficient\" for an expert consultation system that performs well, can be changed easily, and can be understood. They say the answer was yes, and call it \"one of the best-known lessons in the history of AI.\" The National Library of Medicine's exhibit on Joshua Lederberg places MYCIN among Stanford's expert-system projects and records their limits: they were costly to build, confined to narrow domains, and met skepticism from the physicians they were meant to help."
-          },
-          {
-            "id": "ai-history-notes",
-            "title": "AI History Notes",
-            "html": "<ul><li>The project began in spring 1972 with discussions among Stanford medical school and computer science researchers. Shortliffe's 1974 PhD dissertation described the first version.</li><li>Origins: Stanley Cohen, chief of clinical pharmacology, was building MEDIPHOR, a drug-interaction warning system, with Buchanan and Shortliffe. The group first planned a program to monitor antibiotic prescriptions. It would have needed data from three separate Stanford computers and much more medical knowledge, so the team turned instead to an interactive program that consults with physicians.</li><li>Physicians Thomas Merigan and Stanton Axline of the infectious disease division supplied expertise. The name, chosen at Axline's suggestion, is the suffix of many antibiotic names.</li><li>Design: medical knowledge stored mostly as IF–THEN rules, kept separate from the inference engine that chains them, mainly backward from a goal. The first grant application (October 1973) named three components: a consultation program, explanation of its reasoning, and acquisition of rules from experts.</li><li>MYCIN grew out of DENDRAL, the Stanford chemistry program led by Lederberg and Edward Feigenbaum, and belonged to the Stanford Heuristic Programming Project. EMYCIN (&quot;essential MYCIN&quot;) was the framework without its medical knowledge, reused to build other expert systems.</li><li>Infrastructure and funding: almost all computing ran on SUMEX-AIM, a national AI-in-medicine resource at Stanford that the NLM exhibit says was reached via the ARPANET. Funders included NIH, NSF, DARPA, the Office of Naval Research and the National Library of Medicine.</li><li>The NLM exhibit's verdict on the Stanford systems: expert systems took years to build and depended on major institutions and federal funding; &quot;in no case did these expert systems replace the scientist or physician.&quot;</li></ul>",
-            "text": "- The project began in spring 1972 with discussions among Stanford medical school and computer science researchers. Shortliffe's 1974 PhD dissertation described the first version.\n- Origins: Stanley Cohen, chief of clinical pharmacology, was building MEDIPHOR, a drug-interaction warning system, with Buchanan and Shortliffe. The group first planned a program to monitor antibiotic prescriptions. It would have needed data from three separate Stanford computers and much more medical knowledge, so the team turned instead to an interactive program that consults with physicians.\n- Physicians Thomas Merigan and Stanton Axline of the infectious disease division supplied expertise. The name, chosen at Axline's suggestion, is the suffix of many antibiotic names.\n- Design: medical knowledge stored mostly as IF–THEN rules, kept separate from the inference engine that chains them, mainly backward from"
-          },
-          {
-            "id": "history-of-technology-notes",
-            "title": "History of Technology Notes",
-            "html": "<ul><li>Interpretative Flexibility: MYCIN's purpose changed during design. It began as a prescription monitor and became a consultant because the team saw that a monitor would need expertise &quot;in the field of antimicrobial selection&quot; anyway, and because a consultation program avoided the problem of linking three computers. The form the artifact took came from institutional and technical constraints, not from one plan.</li><li>Closure: the authors present the rule-based question as settled: they tested the hypothesis and &quot;the positive answer&quot; became a well-known lesson. EMYCIN is the sign of that closure: the rule-based shell, emptied of medicine, was treated as a general-purpose way to build expert systems. In the 1970s, this made rules plus an inference engine the standard form of applied AI.</li><li>System Builders: Buchanan and Shortliffe credit Feigenbaum and Lederberg with creating &quot;the intellectual and computing environment at Stanford&quot; that made the work possible. The NLM exhibit shows what that environment was: ACME and then SUMEX-AIM, a shared national computing resource, and a stream of federal grants. MYCIN was one product of a larger system assembled around Stanford.</li><li>Where it sits in the process: in 1972–74 expert systems were moving from chemistry into medicine and toward closure as AI's dominant applied form. The NLM account shows the limits that would later matter: narrow domains, high cost, and dependence on federal funding.</li></ul>",
-            "text": "- Interpretative Flexibility: MYCIN's purpose changed during design. It began as a prescription monitor and became a consultant because the team saw that a monitor would need expertise \"in the field of antimicrobial selection\" anyway, and because a consultation program avoided the problem of linking three computers. The form the artifact took came from institutional and technical constraints, not from one plan.\n- Closure: the authors present the rule-based question as settled: they tested the hypothesis and \"the positive answer\" became a well-known lesson. EMYCIN is the sign of that closure: the rule-based shell, emptied of medicine, was treated as a general-purpose way to build expert systems. In the 1970s, this made rules plus an inference engine the standard form of applied AI.\n- System Builders: Buchanan and Shortliffe credit Feigenbaum and Lederberg with creating \"the intellectual a"
-          },
-          {
-            "id": "social-history-scot-notes",
-            "title": "Social History / SCOT Notes",
-            "html": "<ul><li>Relevant Social Groups: the builders were computer scientists and physicians working together, and the design followed what the physicians could accept. The team chose rules over semantic networks because Cohen and Axline found rules &quot;easier to understand,&quot; since chained rules gave lines of reasoning they &quot;could understand and critique.&quot; Outside the team, the NLM exhibit reports that many physicians &quot;remained skeptical or uninterested.&quot; The group the system was meant to serve did not adopt it.</li><li>Black Box: MYCIN was designed against opacity. Explanation &quot;was a major design requirement from the start,&quot; and the 1973 grant promised a program able to justify its recommendations. The builders treated physicians' trust as depending on seeing the reasoning, so the system opened its own reasoning instead of asking to be trusted.</li><li>Use Stage: the builders learned that &quot;a useful system had to be well enough engineered to make people want to use it; high performance alone was not sufficient.&quot;</li></ul>",
-            "text": "- Relevant Social Groups: the builders were computer scientists and physicians working together, and the design followed what the physicians could accept. The team chose rules over semantic networks because Cohen and Axline found rules \"easier to understand,\" since chained rules gave lines of reasoning they \"could understand and critique.\" Outside the team, the NLM exhibit reports that many physicians \"remained skeptical or uninterested.\" The group the system was meant to serve did not adopt it.\n- Black Box: MYCIN was designed against opacity. Explanation \"was a major design requirement from the start,\" and the 1973 grant promised a program able to justify its recommendations. The builders treated physicians' trust as depending on seeing the reasoning, so the system opened its own reasoning instead of asking to be trusted.\n- Use Stage: the builders learned that \"a useful system had to be"
-          },
-          {
-            "id": "historical-references-and-lineages",
-            "title": "Historical References and Lineages",
-            "html": "<ul><li>Before: DENDRAL and expert-system chemistry (1965), the Stanford program from which MYCIN took its production-rule approach.</li><li>After: &quot;R1 - A Rule-Based Configurer of Computer Systems&quot; (1982), a rule-based expert system built for industry rather than medicine.</li><li>After: Lisp machine market collapse (1987), the later downturn in the commercial market for AI hardware of the expert-system period.</li></ul>",
-            "text": "- Before: DENDRAL and expert-system chemistry (1965), the Stanford program from which MYCIN took its production-rule approach.\n- After: \"R1 - A Rule-Based Configurer of Computer Systems\" (1982), a rule-based expert system built for industry rather than medicine.\n- After: Lisp machine market collapse (1987), the later downturn in the commercial market for AI hardware of the expert-system period."
-          },
-          {
-            "id": "why-this-matters",
-            "title": "Why This Matters",
-            "html": "<p>MYCIN is the classic case of expert-system AI: knowledge taken from human experts, written as rules, and applied by a separate inference engine. Its builders treated its success as a scientific finding and turned its structure into a reusable product, EMYCIN. The NLM account adds what the builders' retrospective does not stress: expert systems depended on federal money and Stanford's computing, stayed narrow, and did not win over physicians. For Synthesis — AI as Technology History, MYCIN shows closure around a technical method happening in the lab while use by its intended groups never followed.</p>",
-            "text": "MYCIN is the classic case of expert-system AI: knowledge taken from human experts, written as rules, and applied by a separate inference engine. Its builders treated its success as a scientific finding and turned its structure into a reusable product, EMYCIN. The NLM account adds what the builders' retrospective does not stress: expert systems depended on federal money and Stanford's computing, stayed narrow, and did not win over physicians. For Synthesis — AI as Technology History, MYCIN shows closure around a technical method happening in the lab while use by its intended groups never followed."
-          },
-          {
-            "id": "useful-quotes-evidence",
-            "title": "Useful Quotes / Evidence",
-            "html": "<ul><li>&quot;It was begun in the spring of 1972 with a set of discussions among medical school and computer science researchers interested in applying more intelligence to computer programs that interpret medical data.&quot;</li></ul><p>The project's start.</p><ul><li>&quot;Cohen and Axline found easier to understand, particularly because chained rules led to lines of reasoning that they could understand and critique.&quot;</li></ul><p>Physicians' needs shaping the design.</p><ul><li>&quot;Thus our concept of a computer-based consultant was born&quot;</li></ul><p>The shift from monitor to consultant.</p><ul><li>&quot;Contrary to the speculations of participants and of the popular media, in no case did these expert systems replace the scientist or physician.&quot;</li></ul><p>The NLM exhibit's verdict.</p>",
-            "text": "- \"It was begun in the spring of 1972 with a set of discussions among medical school and computer science researchers interested in applying more intelligence to computer programs that interpret medical data.\"\n  The project's start.\n- \"Cohen and Axline found easier to understand, particularly because chained rules led to lines of reasoning that they could understand and critique.\"\n  Physicians' needs shaping the design.\n- \"Thus our concept of a computer-based consultant was born\"\n  The shift from monitor to consultant.\n- \"Contrary to the speculations of participants and of the popular media, in no case did these expert systems replace the scientist or physician.\"\n  The NLM exhibit's verdict."
-          },
-          {
-            "id": "possible-tags",
-            "title": "Possible Tags",
-            "html": "<p>#ai-history #history-of-technology #expert-systems #medicine #stanford #symbolic-ai</p>",
-            "text": "ai-history #history-of-technology #expert-systems #medicine #stanford #symbolic-ai"
-          }
-        ],
-        "citation": "Buchanan, Bruce G., and Edward H. Shortliffe, eds. 1984. Rule-Based Expert Systems: The MYCIN Experiments of the Stanford Heuristic Programming Project. Reading, MA: Addison-Wesley. Preface and chapter 1. https://www.shortliffe.net/Buchanan-Shortliffe-1984/MYCIN%20Book.htm",
-        "keyClaim": "MYCIN was a Stanford program that advised physicians on the diagnosis and antibiotic treatment of infectious diseases. Its builders, Bruce Buchanan and Edward Shortliffe, looking back in 1984, present it as an experiment testing whether \"a rule-based formalism was sufficient\" for an expert consultation system that performs well, can be changed easily, and can be understood. They say the answer was yes, and call it \"one of the best-known lessons in the history of AI.\" The National Library of Medicine's exhibit on Joshua Lederberg places MYCIN among Stanford's expert-system projects and records their limits: they were costly to build, confined to narrow domains, and met skepticism from the phy",
-        "textLength": 7581
-      },
-      "quality": {
-        "score": 9,
-        "label": "complete",
-        "missing": [],
-        "sections": 9,
-        "words": 1127
-      },
-      "facets": {
-        "decision": [
-          "lab",
-          "funder"
-        ],
-        "power": [
-          "market",
-          "institution"
-        ],
-        "material": [
-          "compute",
-          "infrastructure"
-        ],
-        "closure": [
-          "standard",
-          "test",
-          "verdict",
-          "framework"
-        ],
-        "controversy": [],
-        "governance": true
-      },
-      "obsidianUri": "obsidian://open?path=%2FUsers%2Fnathanjohnson%2FDocuments%2FObsidian%20Vault%2FMYCIN.md",
-      "links": [
-        "1982-r1-xcon-expert-systems-go-commercial",
-        "2026-lisp-machine-market-collapse",
-        "1960-mccarthy-s-lisp-paper"
-      ],
-      "backlinks": [
-        "1971-winograd-s-shrdlu",
-        "1982-r1-xcon-expert-systems-go-commercial",
-        "1988-pearl-s-bayesian-networks"
-      ],
-      "centrality": 6,
       "isNew": false
     },
     {
@@ -3628,6 +3907,143 @@ const timelinePayload = {
       "isNew": false
     },
     {
+      "id": "1987-lisp-machine-market-collapse",
+      "title": "Lisp machine market collapse",
+      "yearLabel": "1987",
+      "date": null,
+      "startYear": 1987,
+      "endYear": 1987,
+      "type": "Infrastructure / compute",
+      "concepts": [
+        "Closure",
+        "Technological Momentum",
+        "Path Dependence"
+      ],
+      "allConcepts": [
+        "Closure",
+        "Technological Momentum",
+        "Path Dependence",
+        "Economic Consolidation"
+      ],
+      "summary": "Lisp machines were computers built to run the Lisp language efficiently, the preferred language of US AI research. They grew out of MIT's AI Lab in the 1970s, were commercialized by Symbolics, Lisp Machines Inc. (LMI), Texas Instruments and Xerox, and served the expert-system boom of the early 1980s. In 1987, according to the \"AI winter\" article, the market for specialized Lisp-based AI hardware collapsed, because general-purpose workstations and later desktop computers could run Lisp well enough. \"An entire industry worth half a billion dollars was replaced in a single year.\" By the early 1990s most Lisp machine companies had failed or left the field.",
+      "sourceNote": "Lisp machine market collapse",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lisp_machine",
+      "status": "vault",
+      "draft": true,
+      "week": "",
+      "origin": "note",
+      "vaultNote": {
+        "title": "Lisp machine market collapse",
+        "available": true,
+        "html": "<h3>&quot;Lisp machine market collapse&quot;</h3><h4>Citation</h4><p>Wikipedia contributors. 2026. &quot;Lisp machine.&quot; <em>Wikipedia</em>. Retrieved September 25, 2026. https://en.wikipedia.org/wiki/Lisp_machine</p><p>Source used for this note: the &quot;Lisp machine&quot; article above and the section &quot;The setbacks of the late 1980s and early 1990s&quot; in Wikipedia, &quot;AI winter&quot; (retrieved September 25, 2026), https://en.wikipedia.org/wiki/AI_winter. No single primary document records the collapse; both articles draw on H. P. Newquist, <em>The Brain Makers</em> (1994), among others.</p><h4>Core Claim</h4><p>Lisp machines were computers built to run the Lisp language efficiently, the preferred language of US AI research. They grew out of MIT's AI Lab in the 1970s, were commercialized by Symbolics, Lisp Machines Inc. (LMI), Texas Instruments and Xerox, and served the expert-system boom of the early 1980s. In 1987, according to the &quot;AI winter&quot; article, the market for specialized Lisp-based AI hardware collapsed, because general-purpose workstations and later desktop computers could run Lisp well enough. &quot;An entire industry worth half a billion dollars was replaced in a single year.&quot; By the early 1990s most Lisp machine companies had failed or left the field.</p><h4>AI History Notes</h4><ul><li>Origins: AI programs of the 1960s and 1970s needed large amounts of processor time and memory, and exceeded the address space of the DEC PDP-10. In 1973 Richard Greenblatt and Thomas Knight at the MIT AI Lab began building hardware that ran basic Lisp operations directly, with type checks run alongside arithmetic.</li><li>The CONS machine and its successor, the CADR, followed; about 25 prototype CADRs sold for about $50,000 each. After a 1978 AI conference at MIT, DARPA began funding development.</li><li>Commercialization split the lab. In February 1979 the hackers sided with Russell Noftsker's venture-funded Symbolics over Greenblatt's self-sustaining plan; Greenblatt founded LMI with orders from CDC. Richard Stallman blamed Symbolics for the decline of the lab's hacker community.</li><li>Products: Symbolics sold about 100 LM-2s at $70,000 each, then the 3600 family; LMI sold about 200 LAMBDAs; TI licensed the LAMBDA as the Explorer; Xerox built its own Interlisp machines. Perhaps 7,000 Lisp machines existed in total by 1988.</li><li>The boom they served: the XCON expert system reportedly saved DEC $40 million over six years, and by 1985 corporations were spending over a billion dollars on AI, mostly on in-house departments.</li><li>The collapse: Sun workstations, portable Lisps from Lucid and Franz on UNIX, and then Apple and IBM desktops (with rule engines such as CLIPS) matched Lisp machines on performance at lower cost. Symbolics, LMI and Lucid failed; TI and Xerox left the field. Expert systems themselves proved &quot;brittle&quot; and expensive to maintain.</li></ul><h4>History of Technology Notes</h4><ul><li>Where it sits in the process: this is a Closure reached in the market. The question of whether AI needed its own specialized hardware was answered &quot;no&quot; within about a year, and AI software moved onto general-purpose machines.</li><li>Technological Momentum: general-purpose computing had more momentum than AI-specific hardware. Lisp machines had real technical strengths (tagged architecture, hardware garbage collection, Chaosnet networking), but Sun, Apple and IBM machines rode a much larger market, and portable Lisp implementations let AI software follow them. The article sums up the result: the alternatives &quot;left consumers with no reason to buy an expensive machine specialized for running LISP.&quot;</li><li>Path Dependence: the machines were designed around the needs of AI researchers of the 1970s (single users, large address spaces, one language). The Symbolics machine &quot;was never adapted for conventional purposes,&quot; so when AI demand fell there was no other market to fall back on.</li></ul><h4>Social History / SCOT Notes</h4><ul><li>Relevant Social Groups: MIT AI Lab hackers, venture investors, DARPA, corporate AI departments buying expert systems, and later workstation makers each shaped the machines. The 1979 split over how to commercialize (venture-funded firm versus a lab-style start-up) was a dispute over what kind of organization should carry the technology.</li><li>Interpretative Flexibility: the same machine was a hacker's research tool, a commercial workstation for expert systems, and, in some sales, a graphics and animation system. When the AI reading lost its market, the other readings were too small to keep the firms alive.</li><li>Economic Consolidation: the collapse moved AI computing into a small number of general-purpose platform makers. The makers of special hardware went out of business; for a time the survivors were software firms such as Lucid selling Lisp for other companies' machines, and Lucid too failed by the early 1990s.</li></ul><h4>Historical References and Lineages</h4><ul><li>Before: Recursive Functions of Symbolic Expressions and Their Computation by Machine (1960) introduced the Lisp language the machines were built for. &quot;R1 - A Rule-Based Configurer of Computer Systems&quot; is the expert system at DEC known as XCON, part of the boom the machines served. Fifth Generation Computer Systems project (1982) and Strategic Computing Initiative (1983) funded AI work that ran on Lisp hardware.</li><li>After: Probabilistic Reasoning in Intelligent Systems (1988) appeared the next year, as AI research turned toward probabilistic methods.</li></ul><h4>Why This Matters</h4><p>The collapse shows AI's commercial fortunes tied to a hardware bet. When the specialized machines lost to general-purpose computing, the firms that had grown with the expert-system boom lost their business, and the AI industry contracted. For Synthesis — AI as Technology History, it supports the argument that AI's trajectory depends on its infrastructure and on who controls it: in 1987 AI lost its own hardware and moved onto platforms built for other markets. It also shows that the &quot;AI winter&quot; had a market cause, not only a scientific one.</p><h4>Useful Quotes / Evidence</h4><ul><li>&quot;In a sense, they were the first commercial single-user workstations.&quot;</li></ul><p>What Lisp machines were, apart from AI.</p><ul><li>&quot;The ensuing discussions of the choice divided the lab into two factions.&quot;</li></ul><p>The 1979 split at MIT over commercialization.</p><ul><li>&quot;These alternatives left consumers with no reason to buy an expensive machine specialized for running LISP.&quot;</li></ul><p>Why the market collapsed.</p><ul><li>&quot;An entire industry worth half a billion dollars was replaced in a single year.&quot;</li></ul><p>The scale and speed of the collapse.</p><ul><li>&quot;Expert systems proved useful, but only in a few special contexts.&quot;</li></ul><p>The limits of the software the machines served.</p><h4>Possible Tags</h4><p>#ai-history #history-of-technology #ai-winter #hardware #expert-systems #lisp</p>",
+        "sections": [
+          {
+            "id": "citation",
+            "title": "Citation",
+            "html": "<p>Wikipedia contributors. 2026. &quot;Lisp machine.&quot; <em>Wikipedia</em>. Retrieved September 25, 2026. https://en.wikipedia.org/wiki/Lisp_machine</p><p>Source used for this note: the &quot;Lisp machine&quot; article above and the section &quot;The setbacks of the late 1980s and early 1990s&quot; in Wikipedia, &quot;AI winter&quot; (retrieved September 25, 2026), https://en.wikipedia.org/wiki/AI_winter. No single primary document records the collapse; both articles draw on H. P. Newquist, <em>The Brain Makers</em> (1994), among others.</p>",
+            "text": "Wikipedia contributors. 2026. \"Lisp machine.\" Wikipedia. Retrieved September 25, 2026. https://en.wikipedia.org/wiki/Lisp_machine\n\nSource used for this note: the \"Lisp machine\" article above and the section \"The setbacks of the late 1980s and early 1990s\" in Wikipedia, \"AI winter\" (retrieved September 25, 2026), https://en.wikipedia.org/wiki/AI_winter. No single primary document records the collapse; both articles draw on H. P. Newquist, The Brain Makers (1994), among others."
+          },
+          {
+            "id": "core-claim",
+            "title": "Core Claim",
+            "html": "<p>Lisp machines were computers built to run the Lisp language efficiently, the preferred language of US AI research. They grew out of MIT's AI Lab in the 1970s, were commercialized by Symbolics, Lisp Machines Inc. (LMI), Texas Instruments and Xerox, and served the expert-system boom of the early 1980s. In 1987, according to the &quot;AI winter&quot; article, the market for specialized Lisp-based AI hardware collapsed, because general-purpose workstations and later desktop computers could run Lisp well enough. &quot;An entire industry worth half a billion dollars was replaced in a single year.&quot; By the early 1990s most Lisp machine companies had failed or left the field.</p>",
+            "text": "Lisp machines were computers built to run the Lisp language efficiently, the preferred language of US AI research. They grew out of MIT's AI Lab in the 1970s, were commercialized by Symbolics, Lisp Machines Inc. (LMI), Texas Instruments and Xerox, and served the expert-system boom of the early 1980s. In 1987, according to the \"AI winter\" article, the market for specialized Lisp-based AI hardware collapsed, because general-purpose workstations and later desktop computers could run Lisp well enough. \"An entire industry worth half a billion dollars was replaced in a single year.\" By the early 1990s most Lisp machine companies had failed or left the field."
+          },
+          {
+            "id": "ai-history-notes",
+            "title": "AI History Notes",
+            "html": "<ul><li>Origins: AI programs of the 1960s and 1970s needed large amounts of processor time and memory, and exceeded the address space of the DEC PDP-10. In 1973 Richard Greenblatt and Thomas Knight at the MIT AI Lab began building hardware that ran basic Lisp operations directly, with type checks run alongside arithmetic.</li><li>The CONS machine and its successor, the CADR, followed; about 25 prototype CADRs sold for about $50,000 each. After a 1978 AI conference at MIT, DARPA began funding development.</li><li>Commercialization split the lab. In February 1979 the hackers sided with Russell Noftsker's venture-funded Symbolics over Greenblatt's self-sustaining plan; Greenblatt founded LMI with orders from CDC. Richard Stallman blamed Symbolics for the decline of the lab's hacker community.</li><li>Products: Symbolics sold about 100 LM-2s at $70,000 each, then the 3600 family; LMI sold about 200 LAMBDAs; TI licensed the LAMBDA as the Explorer; Xerox built its own Interlisp machines. Perhaps 7,000 Lisp machines existed in total by 1988.</li><li>The boom they served: the XCON expert system reportedly saved DEC $40 million over six years, and by 1985 corporations were spending over a billion dollars on AI, mostly on in-house departments.</li><li>The collapse: Sun workstations, portable Lisps from Lucid and Franz on UNIX, and then Apple and IBM desktops (with rule engines such as CLIPS) matched Lisp machines on performance at lower cost. Symbolics, LMI and Lucid failed; TI and Xerox left the field. Expert systems themselves proved &quot;brittle&quot; and expensive to maintain.</li></ul>",
+            "text": "- Origins: AI programs of the 1960s and 1970s needed large amounts of processor time and memory, and exceeded the address space of the DEC PDP-10. In 1973 Richard Greenblatt and Thomas Knight at the MIT AI Lab began building hardware that ran basic Lisp operations directly, with type checks run alongside arithmetic.\n- The CONS machine and its successor, the CADR, followed; about 25 prototype CADRs sold for about $50,000 each. After a 1978 AI conference at MIT, DARPA began funding development.\n- Commercialization split the lab. In February 1979 the hackers sided with Russell Noftsker's venture-funded Symbolics over Greenblatt's self-sustaining plan; Greenblatt founded LMI with orders from CDC. Richard Stallman blamed Symbolics for the decline of the lab's hacker community.\n- Products: Symbolics sold about 100 LM-2s at $70,000 each, then the 3600 family; LMI sold about 200 LAMBDAs; TI lice"
+          },
+          {
+            "id": "history-of-technology-notes",
+            "title": "History of Technology Notes",
+            "html": "<ul><li>Where it sits in the process: this is a Closure reached in the market. The question of whether AI needed its own specialized hardware was answered &quot;no&quot; within about a year, and AI software moved onto general-purpose machines.</li><li>Technological Momentum: general-purpose computing had more momentum than AI-specific hardware. Lisp machines had real technical strengths (tagged architecture, hardware garbage collection, Chaosnet networking), but Sun, Apple and IBM machines rode a much larger market, and portable Lisp implementations let AI software follow them. The article sums up the result: the alternatives &quot;left consumers with no reason to buy an expensive machine specialized for running LISP.&quot;</li><li>Path Dependence: the machines were designed around the needs of AI researchers of the 1970s (single users, large address spaces, one language). The Symbolics machine &quot;was never adapted for conventional purposes,&quot; so when AI demand fell there was no other market to fall back on.</li></ul>",
+            "text": "- Where it sits in the process: this is a Closure reached in the market. The question of whether AI needed its own specialized hardware was answered \"no\" within about a year, and AI software moved onto general-purpose machines.\n- Technological Momentum: general-purpose computing had more momentum than AI-specific hardware. Lisp machines had real technical strengths (tagged architecture, hardware garbage collection, Chaosnet networking), but Sun, Apple and IBM machines rode a much larger market, and portable Lisp implementations let AI software follow them. The article sums up the result: the alternatives \"left consumers with no reason to buy an expensive machine specialized for running LISP.\"\n- Path Dependence: the machines were designed around the needs of AI researchers of the 1970s (single users, large address spaces, one language). The Symbolics machine \"was never adapted for convent"
+          },
+          {
+            "id": "social-history-scot-notes",
+            "title": "Social History / SCOT Notes",
+            "html": "<ul><li>Relevant Social Groups: MIT AI Lab hackers, venture investors, DARPA, corporate AI departments buying expert systems, and later workstation makers each shaped the machines. The 1979 split over how to commercialize (venture-funded firm versus a lab-style start-up) was a dispute over what kind of organization should carry the technology.</li><li>Interpretative Flexibility: the same machine was a hacker's research tool, a commercial workstation for expert systems, and, in some sales, a graphics and animation system. When the AI reading lost its market, the other readings were too small to keep the firms alive.</li><li>Economic Consolidation: the collapse moved AI computing into a small number of general-purpose platform makers. The makers of special hardware went out of business; for a time the survivors were software firms such as Lucid selling Lisp for other companies' machines, and Lucid too failed by the early 1990s.</li></ul>",
+            "text": "- Relevant Social Groups: MIT AI Lab hackers, venture investors, DARPA, corporate AI departments buying expert systems, and later workstation makers each shaped the machines. The 1979 split over how to commercialize (venture-funded firm versus a lab-style start-up) was a dispute over what kind of organization should carry the technology.\n- Interpretative Flexibility: the same machine was a hacker's research tool, a commercial workstation for expert systems, and, in some sales, a graphics and animation system. When the AI reading lost its market, the other readings were too small to keep the firms alive.\n- Economic Consolidation: the collapse moved AI computing into a small number of general-purpose platform makers. The makers of special hardware went out of business; for a time the survivors were software firms such as Lucid selling Lisp for other companies' machines, and Lucid too faile"
+          },
+          {
+            "id": "historical-references-and-lineages",
+            "title": "Historical References and Lineages",
+            "html": "<ul><li>Before: Recursive Functions of Symbolic Expressions and Their Computation by Machine (1960) introduced the Lisp language the machines were built for. &quot;R1 - A Rule-Based Configurer of Computer Systems&quot; is the expert system at DEC known as XCON, part of the boom the machines served. Fifth Generation Computer Systems project (1982) and Strategic Computing Initiative (1983) funded AI work that ran on Lisp hardware.</li><li>After: Probabilistic Reasoning in Intelligent Systems (1988) appeared the next year, as AI research turned toward probabilistic methods.</li></ul>",
+            "text": "- Before: Recursive Functions of Symbolic Expressions and Their Computation by Machine (1960) introduced the Lisp language the machines were built for. \"R1 - A Rule-Based Configurer of Computer Systems\" is the expert system at DEC known as XCON, part of the boom the machines served. Fifth Generation Computer Systems project (1982) and Strategic Computing Initiative (1983) funded AI work that ran on Lisp hardware.\n- After: Probabilistic Reasoning in Intelligent Systems (1988) appeared the next year, as AI research turned toward probabilistic methods."
+          },
+          {
+            "id": "why-this-matters",
+            "title": "Why This Matters",
+            "html": "<p>The collapse shows AI's commercial fortunes tied to a hardware bet. When the specialized machines lost to general-purpose computing, the firms that had grown with the expert-system boom lost their business, and the AI industry contracted. For Synthesis — AI as Technology History, it supports the argument that AI's trajectory depends on its infrastructure and on who controls it: in 1987 AI lost its own hardware and moved onto platforms built for other markets. It also shows that the &quot;AI winter&quot; had a market cause, not only a scientific one.</p>",
+            "text": "The collapse shows AI's commercial fortunes tied to a hardware bet. When the specialized machines lost to general-purpose computing, the firms that had grown with the expert-system boom lost their business, and the AI industry contracted. For Synthesis — AI as Technology History, it supports the argument that AI's trajectory depends on its infrastructure and on who controls it: in 1987 AI lost its own hardware and moved onto platforms built for other markets. It also shows that the \"AI winter\" had a market cause, not only a scientific one."
+          },
+          {
+            "id": "useful-quotes-evidence",
+            "title": "Useful Quotes / Evidence",
+            "html": "<ul><li>&quot;In a sense, they were the first commercial single-user workstations.&quot;</li></ul><p>What Lisp machines were, apart from AI.</p><ul><li>&quot;The ensuing discussions of the choice divided the lab into two factions.&quot;</li></ul><p>The 1979 split at MIT over commercialization.</p><ul><li>&quot;These alternatives left consumers with no reason to buy an expensive machine specialized for running LISP.&quot;</li></ul><p>Why the market collapsed.</p><ul><li>&quot;An entire industry worth half a billion dollars was replaced in a single year.&quot;</li></ul><p>The scale and speed of the collapse.</p><ul><li>&quot;Expert systems proved useful, but only in a few special contexts.&quot;</li></ul><p>The limits of the software the machines served.</p>",
+            "text": "- \"In a sense, they were the first commercial single-user workstations.\"\n  What Lisp machines were, apart from AI.\n- \"The ensuing discussions of the choice divided the lab into two factions.\"\n  The 1979 split at MIT over commercialization.\n- \"These alternatives left consumers with no reason to buy an expensive machine specialized for running LISP.\"\n  Why the market collapsed.\n- \"An entire industry worth half a billion dollars was replaced in a single year.\"\n  The scale and speed of the collapse.\n- \"Expert systems proved useful, but only in a few special contexts.\"\n  The limits of the software the machines served."
+          },
+          {
+            "id": "possible-tags",
+            "title": "Possible Tags",
+            "html": "<p>#ai-history #history-of-technology #ai-winter #hardware #expert-systems #lisp</p>",
+            "text": "ai-history #history-of-technology #ai-winter #hardware #expert-systems #lisp"
+          }
+        ],
+        "citation": "Wikipedia contributors. 2026. \"Lisp machine.\" Wikipedia. Retrieved September 25, 2026. https://en.wikipedia.org/wiki/Lisp_machine",
+        "keyClaim": "Lisp machines were computers built to run the Lisp language efficiently, the preferred language of US AI research. They grew out of MIT's AI Lab in the 1970s, were commercialized by Symbolics, Lisp Machines Inc. (LMI), Texas Instruments and Xerox, and served the expert-system boom of the early 1980s. In 1987, according to the \"AI winter\" article, the market for specialized Lisp-based AI hardware collapsed, because general-purpose workstations and later desktop computers could run Lisp well enough. \"An entire industry worth half a billion dollars was replaced in a single year.\" By the early 1990s most Lisp machine companies had failed or left the field.",
+        "textLength": 6714
+      },
+      "quality": {
+        "score": 8,
+        "label": "complete",
+        "missing": [
+          "decision-maker context"
+        ],
+        "sections": 9,
+        "words": 1034
+      },
+      "facets": {
+        "decision": [
+          "lab"
+        ],
+        "power": [
+          "market",
+          "corporate",
+          "platform"
+        ],
+        "material": [
+          "compute",
+          "infrastructure"
+        ],
+        "closure": [
+          "order"
+        ],
+        "controversy": [],
+        "governance": true
+      },
+      "obsidianUri": "obsidian://open?path=%2FUsers%2Fnathanjohnson%2FDocuments%2FObsidian%20Vault%2FLisp%20machine%20market%20collapse.md",
+      "links": [
+        "1960-mccarthy-s-lisp-paper",
+        "1982-r1-xcon-expert-systems-go-commercial",
+        "1982-japan-s-fifth-generation-project",
+        "1983-darpa-strategic-computing",
+        "1988-pearl-s-bayesian-networks"
+      ],
+      "backlinks": [
+        "1960-mccarthy-s-lisp-paper",
+        "1972-mycin-at-stanford",
+        "1979-aaai-founded",
+        "1982-japan-s-fifth-generation-project",
+        "1983-darpa-strategic-computing",
+        "1988-pearl-s-bayesian-networks"
+      ],
+      "centrality": 11,
+      "isNew": false
+    },
+    {
       "id": "1988-pearl-s-bayesian-networks",
       "title": "Pearl's Bayesian networks",
       "yearLabel": "1988",
@@ -3744,15 +4160,15 @@ const timelinePayload = {
       },
       "obsidianUri": "obsidian://open?path=%2FUsers%2Fnathanjohnson%2FDocuments%2FObsidian%20Vault%2FProbabilistic%20Reasoning%20in%20Intelligent%20Systems.md",
       "links": [
-        "1984-mycin-at-stanford",
+        "1972-mycin-at-stanford",
         "1966-sri-s-shakey-the-robot",
-        "2026-lisp-machine-market-collapse",
+        "1987-lisp-machine-market-collapse",
         "1989-watkins-s-q-learning",
         "1995-support-vector-networks",
         "1960-mccarthy-s-lisp-paper"
       ],
       "backlinks": [
-        "2026-lisp-machine-market-collapse"
+        "1987-lisp-machine-market-collapse"
       ],
       "centrality": 7,
       "isNew": false
@@ -5066,15 +5482,15 @@ const timelinePayload = {
       },
       "obsidianUri": "obsidian://open?path=%2FUsers%2Fnathanjohnson%2FDocuments%2FObsidian%20Vault%2FRoomba%20launches.md",
       "links": [
-        "2026-unimate-enters-gm-production",
+        "1961-unimate-enters-gm-production",
         "1966-sri-s-shakey-the-robot",
-        "1980-stanford-cart-crosses-a-room",
+        "1979-stanford-cart-crosses-a-room",
         "2004-darpa-grand-challenge-2004",
         "2014-amazon-echo-and-alexa-launch"
       ],
       "backlinks": [
-        "1966-sri-s-shakey-the-robot",
-        "2026-unimate-enters-gm-production"
+        "1961-unimate-enters-gm-production",
+        "1966-sri-s-shakey-the-robot"
       ],
       "centrality": 7,
       "isNew": false
@@ -5204,19 +5620,19 @@ const timelinePayload = {
       "obsidianUri": "obsidian://open?path=%2FUsers%2Fnathanjohnson%2FDocuments%2FObsidian%20Vault%2FDARPA%20Grand%20Challenge%202004.md",
       "links": [
         "1966-sri-s-shakey-the-robot",
-        "1980-stanford-cart-crosses-a-room",
+        "1979-stanford-cart-crosses-a-room",
         "1983-darpa-strategic-computing",
         "2009-google-self-driving-car-project",
         "2009-imagenet-presented-at-cvpr",
         "2006-12-the-data-that-transformed-ai-research-and-possibly-the-world"
       ],
       "backlinks": [
+        "1961-unimate-enters-gm-production",
         "1966-sri-s-shakey-the-robot",
-        "1980-stanford-cart-crosses-a-room",
+        "1979-stanford-cart-crosses-a-room",
         "1983-darpa-strategic-computing",
         "2002-irobot-s-roomba-launches",
-        "2009-google-self-driving-car-project",
-        "2026-unimate-enters-gm-production"
+        "2009-google-self-driving-car-project"
       ],
       "centrality": 12,
       "isNew": false
@@ -6214,7 +6630,7 @@ const timelinePayload = {
         "2004-darpa-grand-challenge-2004"
       ],
       "backlinks": [
-        "1980-stanford-cart-crosses-a-room",
+        "1979-stanford-cart-crosses-a-room",
         "2004-darpa-grand-challenge-2004"
       ],
       "centrality": 3,
@@ -25878,278 +26294,6 @@ const timelinePayload = {
         "2026-xai-and-doj-sue-colorado"
       ],
       "centrality": 5,
-      "isNew": true
-    },
-    {
-      "id": "2026-unimate-enters-gm-production",
-      "title": "Unimate enters GM production",
-      "yearLabel": "2026-09-20",
-      "date": "2026-09-20",
-      "startYear": 2026,
-      "endYear": 2026,
-      "type": "Corporate release",
-      "concepts": [
-        "System Builders",
-        "Appropriation"
-      ],
-      "allConcepts": [
-        "System Builders",
-        "Appropriation"
-      ],
-      "summary": "Both sources tell the same story: in 1961 General Motors put the first Unimate, a hydraulic, programmable arm built by Unimation, to work in a New Jersey plant unloading hot metal castings from a die-casting machine. It is presented as the first successful application of an industrial robot. The sources trace it to George Devol's 1954 patent for a \"programmed article transfer\" device and to Joseph Engelberger's work in financing and selling it. The Spectrum article adds the commercial and labor history: GM bought the first machine below cost, Unimation took years to turn a profit, American workers later protested robot-heavy lines, and the technology found its main early market in Japan.",
-      "sourceNote": "Unimate enters General Motors production",
-      "sourceUrl": "https://robotsguide.com/robots/unimate",
-      "status": "vault",
-      "draft": true,
-      "week": "",
-      "origin": "note",
-      "vaultNote": {
-        "title": "Unimate enters General Motors production",
-        "available": true,
-        "html": "<h3>&quot;Unimate&quot;</h3><h4>Citation</h4><p>IEEE Spectrum. n.d. &quot;Unimate.&quot; <em>ROBOTS: Your Guide to the World of Robotics</em>. Accessed September 2026. https://robotsguide.com/robots/unimate</p><p>Source used for this note: the ROBOTS guide entry above, and <em>IEEE Spectrum</em>'s &quot;Past Forward&quot; article on the Unimate (print title &quot;Unimate Punches In,&quot; September 2022), https://spectrum.ieee.org/unimation-robot</p><h4>Core Claim</h4><p>Both sources tell the same story: in 1961 General Motors put the first Unimate, a hydraulic, programmable arm built by Unimation, to work in a New Jersey plant unloading hot metal castings from a die-casting machine. It is presented as the first successful application of an industrial robot. The sources trace it to George Devol's 1954 patent for a &quot;programmed article transfer&quot; device and to Joseph Engelberger's work in financing and selling it. The Spectrum article adds the commercial and labor history: GM bought the first machine below cost, Unimation took years to turn a profit, American workers later protested robot-heavy lines, and the technology found its main early market in Japan.</p><h4>AI History Notes</h4><ul><li>The machine: six degrees of freedom (three in the arm, three in the wrist), hydraulic actuators, memory for hundreds of programmed steps on a magnetic drum, custom rotary encoders, and position repeatability within 1 mm. The Spectrum article gives the prototype's weight as about 1,360 kg and its lifting capacity as up to 45 kg.</li><li>Programming was by demonstration: the original Unimate had no programming language. An operator moved the arm to each position, the machine recorded it, and it played back the sequence. A language, VAL, came with Unimation's purchase of Victor Scheinman's Vicarm and was part of its robots from 1973.</li><li>The deployment: Engelberger surveyed 15 automobile plants and 20 other manufacturers; GM was the first buyer. It paid $18,000 for the first Unimate against an estimated $65,000 production cost, a price Engelberger accepted in order to name GM as a client. List price was $35,000 by the early 1970s, and Unimation did not turn a profit until 1975.</li><li>The sources differ on details: the ROBOTS entry places the first installation in Ewing Township, N.J., and says Westinghouse bought Unimation in 1983 for $107 million; the Spectrum article names GM's Ternstedt plant in Trenton and says Condec sold Unimation to Western Electric for $107 million in 1983.</li><li>Japan: after a 1966 session with Japanese industrial leaders, Kawasaki partnered with Unimation in 1968 and completed the first Kawasaki-Unimate 2000 in 1969. By the mid-1980s, the article says, Japan had nearly 70 percent of the world's robots.</li></ul><h4>History of Technology Notes</h4><ul><li>Where it sits in the process: the Unimate is factory automation with no learning or reasoning. It repeats recorded motions. It belongs in an AI timeline as the start of the industrial robot as an installed, sold product, the physical system that later robotics research (and later AI in robots) would inherit. At this point momentum is slow: one discounted sale to GM, fourteen years to profit, a decade for wide adoption even in Japan.</li><li>System Builders: the sources credit the Unimate's success as much to organization as to engineering. Devol held the patent; Engelberger found the backer (Condec's Norman Schafler), surveyed the market, priced the first unit to win GM as a reference customer, marketed the robot on television, and negotiated the Kawasaki partnership. The Spectrum article describes Devol as &quot;the technical genius&quot; and Engelberger as having &quot;a flair for marketing.&quot;</li><li>Interpretative Flexibility: Engelberger presented the same machine differently to different groups. To a public worried about job loss he made it &quot;personable,&quot; opening beer and conducting a band on television. To executives, a spoof résumé said it worked 24 hours a day and never asked for a raise. The robot was a helper with dirty work and a replacement for paid labor at the same time.</li></ul><h4>Social History / SCOT Notes</h4><ul><li>Relevant Social Groups: workers' response depended on the job. At GM's first site nobody objected, because unloading the die-cast machine was &quot;a terrible job that no one wanted to do&quot;; the first spot-welding robots at Norwood in 1967 also passed quietly. At Lordstown in 1970–72, a 28-robot welding line came with layoffs, faster line speeds and mandatory overtime, and workers filed over 16,000 grievances and struck for 22 days. The article suggests Lordstown hurt Unimation's reputation at home.</li><li>Appropriation: Japanese industry adopted the Unimate for its own labor problem, the &quot;3K&quot; jobs (difficult, dirty, dangerous), especially welding positions it could not fill. A Kawasaki-Unimate welder reportedly did the work of 20 human welders. The robot's main early success came through a partner's use of it in a different labor market.</li></ul><h4>Historical References and Lineages</h4><ul><li>Before: Mechanisation of Thought Processes (1958) included industrial automation among the uses of machine &quot;thought,&quot; and the Unimate prototype was built the same year.</li><li>After: Shakey the Robot (1969) and Stanford Cart crosses a room (1979) are research robots that tried to add perception and planning; Roomba launches (2002) and DARPA Grand Challenge 2004 carry robots into homes and open terrain.</li></ul><h4>Why This Matters</h4><p>The Unimate shows automation reaching a factory before AI did. Its commercial path depended on a discounted first sale, marketing aimed separately at workers and executives, and a foreign partner. Its reception depended on the job it replaced: welcome for a dangerous task nobody wanted, resisted when it came bundled with speed-ups and layoffs. For Synthesis — AI as Technology History, the note supports the argument that what a machine means is set by the labor relations around it. The same arm was a helper at Trenton and a threat at Lordstown.</p><h4>Useful Quotes / Evidence</h4><ul><li>&quot;It took over the dirty, dreary, and dangerous job of unloading the finished castings from a die-cast press.&quot;</li></ul><p>The first task, and the framing of it.</p><ul><li>&quot;Although programmable, the original Unimate did not have a programming language.&quot;</li></ul><p>How far the machine was from AI.</p><ul><li>&quot;Engelberger accepted the price because he recognized the value in being able to point to GM as a client.&quot;</li></ul><p>The first sale as a marketing move.</p><ul><li>&quot;never demands a wage increase&quot;</li></ul><p>The pitch to executives: the robot as cheaper labor.</p><ul><li>&quot;The Lordstown plant is often viewed as a textbook example of factory workers revolting against automation.&quot;</li></ul><p>The labor conflict that followed.</p><h4>Possible Tags</h4><p>#ai-history #history-of-technology #robotics #automation #labor #general-motors</p>",
-        "sections": [
-          {
-            "id": "citation",
-            "title": "Citation",
-            "html": "<p>IEEE Spectrum. n.d. &quot;Unimate.&quot; <em>ROBOTS: Your Guide to the World of Robotics</em>. Accessed September 2026. https://robotsguide.com/robots/unimate</p><p>Source used for this note: the ROBOTS guide entry above, and <em>IEEE Spectrum</em>'s &quot;Past Forward&quot; article on the Unimate (print title &quot;Unimate Punches In,&quot; September 2022), https://spectrum.ieee.org/unimation-robot</p>",
-            "text": "IEEE Spectrum. n.d. \"Unimate.\" ROBOTS: Your Guide to the World of Robotics. Accessed September 2026. https://robotsguide.com/robots/unimate\n\nSource used for this note: the ROBOTS guide entry above, and IEEE Spectrum's \"Past Forward\" article on the Unimate (print title \"Unimate Punches In,\" September 2022), https://spectrum.ieee.org/unimation-robot"
-          },
-          {
-            "id": "core-claim",
-            "title": "Core Claim",
-            "html": "<p>Both sources tell the same story: in 1961 General Motors put the first Unimate, a hydraulic, programmable arm built by Unimation, to work in a New Jersey plant unloading hot metal castings from a die-casting machine. It is presented as the first successful application of an industrial robot. The sources trace it to George Devol's 1954 patent for a &quot;programmed article transfer&quot; device and to Joseph Engelberger's work in financing and selling it. The Spectrum article adds the commercial and labor history: GM bought the first machine below cost, Unimation took years to turn a profit, American workers later protested robot-heavy lines, and the technology found its main early market in Japan.</p>",
-            "text": "Both sources tell the same story: in 1961 General Motors put the first Unimate, a hydraulic, programmable arm built by Unimation, to work in a New Jersey plant unloading hot metal castings from a die-casting machine. It is presented as the first successful application of an industrial robot. The sources trace it to George Devol's 1954 patent for a \"programmed article transfer\" device and to Joseph Engelberger's work in financing and selling it. The Spectrum article adds the commercial and labor history: GM bought the first machine below cost, Unimation took years to turn a profit, American workers later protested robot-heavy lines, and the technology found its main early market in Japan."
-          },
-          {
-            "id": "ai-history-notes",
-            "title": "AI History Notes",
-            "html": "<ul><li>The machine: six degrees of freedom (three in the arm, three in the wrist), hydraulic actuators, memory for hundreds of programmed steps on a magnetic drum, custom rotary encoders, and position repeatability within 1 mm. The Spectrum article gives the prototype's weight as about 1,360 kg and its lifting capacity as up to 45 kg.</li><li>Programming was by demonstration: the original Unimate had no programming language. An operator moved the arm to each position, the machine recorded it, and it played back the sequence. A language, VAL, came with Unimation's purchase of Victor Scheinman's Vicarm and was part of its robots from 1973.</li><li>The deployment: Engelberger surveyed 15 automobile plants and 20 other manufacturers; GM was the first buyer. It paid $18,000 for the first Unimate against an estimated $65,000 production cost, a price Engelberger accepted in order to name GM as a client. List price was $35,000 by the early 1970s, and Unimation did not turn a profit until 1975.</li><li>The sources differ on details: the ROBOTS entry places the first installation in Ewing Township, N.J., and says Westinghouse bought Unimation in 1983 for $107 million; the Spectrum article names GM's Ternstedt plant in Trenton and says Condec sold Unimation to Western Electric for $107 million in 1983.</li><li>Japan: after a 1966 session with Japanese industrial leaders, Kawasaki partnered with Unimation in 1968 and completed the first Kawasaki-Unimate 2000 in 1969. By the mid-1980s, the article says, Japan had nearly 70 percent of the world's robots.</li></ul>",
-            "text": "- The machine: six degrees of freedom (three in the arm, three in the wrist), hydraulic actuators, memory for hundreds of programmed steps on a magnetic drum, custom rotary encoders, and position repeatability within 1 mm. The Spectrum article gives the prototype's weight as about 1,360 kg and its lifting capacity as up to 45 kg.\n- Programming was by demonstration: the original Unimate had no programming language. An operator moved the arm to each position, the machine recorded it, and it played back the sequence. A language, VAL, came with Unimation's purchase of Victor Scheinman's Vicarm and was part of its robots from 1973.\n- The deployment: Engelberger surveyed 15 automobile plants and 20 other manufacturers; GM was the first buyer. It paid $18,000 for the first Unimate against an estimated $65,000 production cost, a price Engelberger accepted in order to name GM as a client. List pr"
-          },
-          {
-            "id": "history-of-technology-notes",
-            "title": "History of Technology Notes",
-            "html": "<ul><li>Where it sits in the process: the Unimate is factory automation with no learning or reasoning. It repeats recorded motions. It belongs in an AI timeline as the start of the industrial robot as an installed, sold product, the physical system that later robotics research (and later AI in robots) would inherit. At this point momentum is slow: one discounted sale to GM, fourteen years to profit, a decade for wide adoption even in Japan.</li><li>System Builders: the sources credit the Unimate's success as much to organization as to engineering. Devol held the patent; Engelberger found the backer (Condec's Norman Schafler), surveyed the market, priced the first unit to win GM as a reference customer, marketed the robot on television, and negotiated the Kawasaki partnership. The Spectrum article describes Devol as &quot;the technical genius&quot; and Engelberger as having &quot;a flair for marketing.&quot;</li><li>Interpretative Flexibility: Engelberger presented the same machine differently to different groups. To a public worried about job loss he made it &quot;personable,&quot; opening beer and conducting a band on television. To executives, a spoof résumé said it worked 24 hours a day and never asked for a raise. The robot was a helper with dirty work and a replacement for paid labor at the same time.</li></ul>",
-            "text": "- Where it sits in the process: the Unimate is factory automation with no learning or reasoning. It repeats recorded motions. It belongs in an AI timeline as the start of the industrial robot as an installed, sold product, the physical system that later robotics research (and later AI in robots) would inherit. At this point momentum is slow: one discounted sale to GM, fourteen years to profit, a decade for wide adoption even in Japan.\n- System Builders: the sources credit the Unimate's success as much to organization as to engineering. Devol held the patent; Engelberger found the backer (Condec's Norman Schafler), surveyed the market, priced the first unit to win GM as a reference customer, marketed the robot on television, and negotiated the Kawasaki partnership. The Spectrum article describes Devol as \"the technical genius\" and Engelberger as having \"a flair for marketing.\"\n- Interpret"
-          },
-          {
-            "id": "social-history-scot-notes",
-            "title": "Social History / SCOT Notes",
-            "html": "<ul><li>Relevant Social Groups: workers' response depended on the job. At GM's first site nobody objected, because unloading the die-cast machine was &quot;a terrible job that no one wanted to do&quot;; the first spot-welding robots at Norwood in 1967 also passed quietly. At Lordstown in 1970–72, a 28-robot welding line came with layoffs, faster line speeds and mandatory overtime, and workers filed over 16,000 grievances and struck for 22 days. The article suggests Lordstown hurt Unimation's reputation at home.</li><li>Appropriation: Japanese industry adopted the Unimate for its own labor problem, the &quot;3K&quot; jobs (difficult, dirty, dangerous), especially welding positions it could not fill. A Kawasaki-Unimate welder reportedly did the work of 20 human welders. The robot's main early success came through a partner's use of it in a different labor market.</li></ul>",
-            "text": "- Relevant Social Groups: workers' response depended on the job. At GM's first site nobody objected, because unloading the die-cast machine was \"a terrible job that no one wanted to do\"; the first spot-welding robots at Norwood in 1967 also passed quietly. At Lordstown in 1970–72, a 28-robot welding line came with layoffs, faster line speeds and mandatory overtime, and workers filed over 16,000 grievances and struck for 22 days. The article suggests Lordstown hurt Unimation's reputation at home.\n- Appropriation: Japanese industry adopted the Unimate for its own labor problem, the \"3K\" jobs (difficult, dirty, dangerous), especially welding positions it could not fill. A Kawasaki-Unimate welder reportedly did the work of 20 human welders. The robot's main early success came through a partner's use of it in a different labor market."
-          },
-          {
-            "id": "historical-references-and-lineages",
-            "title": "Historical References and Lineages",
-            "html": "<ul><li>Before: Mechanisation of Thought Processes (1958) included industrial automation among the uses of machine &quot;thought,&quot; and the Unimate prototype was built the same year.</li><li>After: Shakey the Robot (1969) and Stanford Cart crosses a room (1979) are research robots that tried to add perception and planning; Roomba launches (2002) and DARPA Grand Challenge 2004 carry robots into homes and open terrain.</li></ul>",
-            "text": "- Before: Mechanisation of Thought Processes (1958) included industrial automation among the uses of machine \"thought,\" and the Unimate prototype was built the same year.\n- After: Shakey the Robot (1969) and Stanford Cart crosses a room (1979) are research robots that tried to add perception and planning; Roomba launches (2002) and DARPA Grand Challenge 2004 carry robots into homes and open terrain."
-          },
-          {
-            "id": "why-this-matters",
-            "title": "Why This Matters",
-            "html": "<p>The Unimate shows automation reaching a factory before AI did. Its commercial path depended on a discounted first sale, marketing aimed separately at workers and executives, and a foreign partner. Its reception depended on the job it replaced: welcome for a dangerous task nobody wanted, resisted when it came bundled with speed-ups and layoffs. For Synthesis — AI as Technology History, the note supports the argument that what a machine means is set by the labor relations around it. The same arm was a helper at Trenton and a threat at Lordstown.</p>",
-            "text": "The Unimate shows automation reaching a factory before AI did. Its commercial path depended on a discounted first sale, marketing aimed separately at workers and executives, and a foreign partner. Its reception depended on the job it replaced: welcome for a dangerous task nobody wanted, resisted when it came bundled with speed-ups and layoffs. For Synthesis — AI as Technology History, the note supports the argument that what a machine means is set by the labor relations around it. The same arm was a helper at Trenton and a threat at Lordstown."
-          },
-          {
-            "id": "useful-quotes-evidence",
-            "title": "Useful Quotes / Evidence",
-            "html": "<ul><li>&quot;It took over the dirty, dreary, and dangerous job of unloading the finished castings from a die-cast press.&quot;</li></ul><p>The first task, and the framing of it.</p><ul><li>&quot;Although programmable, the original Unimate did not have a programming language.&quot;</li></ul><p>How far the machine was from AI.</p><ul><li>&quot;Engelberger accepted the price because he recognized the value in being able to point to GM as a client.&quot;</li></ul><p>The first sale as a marketing move.</p><ul><li>&quot;never demands a wage increase&quot;</li></ul><p>The pitch to executives: the robot as cheaper labor.</p><ul><li>&quot;The Lordstown plant is often viewed as a textbook example of factory workers revolting against automation.&quot;</li></ul><p>The labor conflict that followed.</p>",
-            "text": "- \"It took over the dirty, dreary, and dangerous job of unloading the finished castings from a die-cast press.\"\n  The first task, and the framing of it.\n- \"Although programmable, the original Unimate did not have a programming language.\"\n  How far the machine was from AI.\n- \"Engelberger accepted the price because he recognized the value in being able to point to GM as a client.\"\n  The first sale as a marketing move.\n- \"never demands a wage increase\"\n  The pitch to executives: the robot as cheaper labor.\n- \"The Lordstown plant is often viewed as a textbook example of factory workers revolting against automation.\"\n  The labor conflict that followed."
-          },
-          {
-            "id": "possible-tags",
-            "title": "Possible Tags",
-            "html": "<p>#ai-history #history-of-technology #robotics #automation #labor #general-motors</p>",
-            "text": "ai-history #history-of-technology #robotics #automation #labor #general-motors"
-          }
-        ],
-        "citation": "IEEE Spectrum. n.d. \"Unimate.\" ROBOTS: Your Guide to the World of Robotics. Accessed September 2026. https://robotsguide.com/robots/unimate",
-        "keyClaim": "Both sources tell the same story: in 1961 General Motors put the first Unimate, a hydraulic, programmable arm built by Unimation, to work in a New Jersey plant unloading hot metal castings from a die-casting machine. It is presented as the first successful application of an industrial robot. The sources trace it to George Devol's 1954 patent for a \"programmed article transfer\" device and to Joseph Engelberger's work in financing and selling it. The Spectrum article adds the commercial and labor history: GM bought the first machine below cost, Unimation took years to turn a profit, American workers later protested robot-heavy lines, and the technology found its main early market in Japan.",
-        "textLength": 6680
-      },
-      "quality": {
-        "score": 8,
-        "label": "complete",
-        "missing": [
-          "decision-maker context"
-        ],
-        "sections": 9,
-        "words": 1060
-      },
-      "facets": {
-        "decision": [
-          "lab"
-        ],
-        "power": [
-          "market",
-          "corporate",
-          "labor",
-          "public"
-        ],
-        "material": [
-          "labor"
-        ],
-        "closure": [
-          "test",
-          "order",
-          "demo"
-        ],
-        "controversy": [
-          "ban"
-        ],
-        "governance": true
-      },
-      "obsidianUri": "obsidian://open?path=%2FUsers%2Fnathanjohnson%2FDocuments%2FObsidian%20Vault%2FUnimate%20enters%20General%20Motors%20production.md",
-      "links": [
-        "1958-mechanisation-of-thought-conference",
-        "1966-sri-s-shakey-the-robot",
-        "1980-stanford-cart-crosses-a-room",
-        "2002-irobot-s-roomba-launches",
-        "2004-darpa-grand-challenge-2004"
-      ],
-      "backlinks": [
-        "1948-wiener-s-cybernetics",
-        "1966-sri-s-shakey-the-robot",
-        "2002-irobot-s-roomba-launches"
-      ],
-      "centrality": 8,
-      "isNew": true
-    },
-    {
-      "id": "2026-lisp-machine-market-collapse",
-      "title": "Lisp machine market collapse",
-      "yearLabel": "2026-09-25",
-      "date": "2026-09-25",
-      "startYear": 2026,
-      "endYear": 2026,
-      "type": "Infrastructure / compute",
-      "concepts": [
-        "Closure",
-        "Technological Momentum",
-        "Path Dependence"
-      ],
-      "allConcepts": [
-        "Closure",
-        "Technological Momentum",
-        "Path Dependence",
-        "Economic Consolidation"
-      ],
-      "summary": "Lisp machines were computers built to run the Lisp language efficiently, the preferred language of US AI research. They grew out of MIT's AI Lab in the 1970s, were commercialized by Symbolics, Lisp Machines Inc. (LMI), Texas Instruments and Xerox, and served the expert-system boom of the early 1980s. In 1987, according to the \"AI winter\" article, the market for specialized Lisp-based AI hardware collapsed, because general-purpose workstations and later desktop computers could run Lisp well enough. \"An entire industry worth half a billion dollars was replaced in a single year.\" By the early 1990s most Lisp machine companies had failed or left the field.",
-      "sourceNote": "Lisp machine market collapse",
-      "sourceUrl": "https://en.wikipedia.org/wiki/Lisp_machine",
-      "status": "vault",
-      "draft": true,
-      "week": "",
-      "origin": "note",
-      "vaultNote": {
-        "title": "Lisp machine market collapse",
-        "available": true,
-        "html": "<h3>&quot;Lisp machine market collapse&quot;</h3><h4>Citation</h4><p>Wikipedia contributors. 2026. &quot;Lisp machine.&quot; <em>Wikipedia</em>. Retrieved September 25, 2026. https://en.wikipedia.org/wiki/Lisp_machine</p><p>Source used for this note: the &quot;Lisp machine&quot; article above and the section &quot;The setbacks of the late 1980s and early 1990s&quot; in Wikipedia, &quot;AI winter&quot; (retrieved September 25, 2026), https://en.wikipedia.org/wiki/AI_winter. No single primary document records the collapse; both articles draw on H. P. Newquist, <em>The Brain Makers</em> (1994), among others.</p><h4>Core Claim</h4><p>Lisp machines were computers built to run the Lisp language efficiently, the preferred language of US AI research. They grew out of MIT's AI Lab in the 1970s, were commercialized by Symbolics, Lisp Machines Inc. (LMI), Texas Instruments and Xerox, and served the expert-system boom of the early 1980s. In 1987, according to the &quot;AI winter&quot; article, the market for specialized Lisp-based AI hardware collapsed, because general-purpose workstations and later desktop computers could run Lisp well enough. &quot;An entire industry worth half a billion dollars was replaced in a single year.&quot; By the early 1990s most Lisp machine companies had failed or left the field.</p><h4>AI History Notes</h4><ul><li>Origins: AI programs of the 1960s and 1970s needed large amounts of processor time and memory, and exceeded the address space of the DEC PDP-10. In 1973 Richard Greenblatt and Thomas Knight at the MIT AI Lab began building hardware that ran basic Lisp operations directly, with type checks run alongside arithmetic.</li><li>The CONS machine and its successor, the CADR, followed; about 25 prototype CADRs sold for about $50,000 each. After a 1978 AI conference at MIT, DARPA began funding development.</li><li>Commercialization split the lab. In February 1979 the hackers sided with Russell Noftsker's venture-funded Symbolics over Greenblatt's self-sustaining plan; Greenblatt founded LMI with orders from CDC. Richard Stallman blamed Symbolics for the decline of the lab's hacker community.</li><li>Products: Symbolics sold about 100 LM-2s at $70,000 each, then the 3600 family; LMI sold about 200 LAMBDAs; TI licensed the LAMBDA as the Explorer; Xerox built its own Interlisp machines. Perhaps 7,000 Lisp machines existed in total by 1988.</li><li>The boom they served: the XCON expert system reportedly saved DEC $40 million over six years, and by 1985 corporations were spending over a billion dollars on AI, mostly on in-house departments.</li><li>The collapse: Sun workstations, portable Lisps from Lucid and Franz on UNIX, and then Apple and IBM desktops (with rule engines such as CLIPS) matched Lisp machines on performance at lower cost. Symbolics, LMI and Lucid failed; TI and Xerox left the field. Expert systems themselves proved &quot;brittle&quot; and expensive to maintain.</li></ul><h4>History of Technology Notes</h4><ul><li>Where it sits in the process: this is a Closure reached in the market. The question of whether AI needed its own specialized hardware was answered &quot;no&quot; within about a year, and AI software moved onto general-purpose machines.</li><li>Technological Momentum: general-purpose computing had more momentum than AI-specific hardware. Lisp machines had real technical strengths (tagged architecture, hardware garbage collection, Chaosnet networking), but Sun, Apple and IBM machines rode a much larger market, and portable Lisp implementations let AI software follow them. The article sums up the result: the alternatives &quot;left consumers with no reason to buy an expensive machine specialized for running LISP.&quot;</li><li>Path Dependence: the machines were designed around the needs of AI researchers of the 1970s (single users, large address spaces, one language). The Symbolics machine &quot;was never adapted for conventional purposes,&quot; so when AI demand fell there was no other market to fall back on.</li></ul><h4>Social History / SCOT Notes</h4><ul><li>Relevant Social Groups: MIT AI Lab hackers, venture investors, DARPA, corporate AI departments buying expert systems, and later workstation makers each shaped the machines. The 1979 split over how to commercialize (venture-funded firm versus a lab-style start-up) was a dispute over what kind of organization should carry the technology.</li><li>Interpretative Flexibility: the same machine was a hacker's research tool, a commercial workstation for expert systems, and, in some sales, a graphics and animation system. When the AI reading lost its market, the other readings were too small to keep the firms alive.</li><li>Economic Consolidation: the collapse moved AI computing into a small number of general-purpose platform makers. The makers of special hardware went out of business; for a time the survivors were software firms such as Lucid selling Lisp for other companies' machines, and Lucid too failed by the early 1990s.</li></ul><h4>Historical References and Lineages</h4><ul><li>Before: Recursive Functions of Symbolic Expressions and Their Computation by Machine (1960) introduced the Lisp language the machines were built for. &quot;R1 - A Rule-Based Configurer of Computer Systems&quot; is the expert system at DEC known as XCON, part of the boom the machines served. Fifth Generation Computer Systems project (1982) and Strategic Computing Initiative (1983) funded AI work that ran on Lisp hardware.</li><li>After: Probabilistic Reasoning in Intelligent Systems (1988) appeared the next year, as AI research turned toward probabilistic methods.</li></ul><h4>Why This Matters</h4><p>The collapse shows AI's commercial fortunes tied to a hardware bet. When the specialized machines lost to general-purpose computing, the firms that had grown with the expert-system boom lost their business, and the AI industry contracted. For Synthesis — AI as Technology History, it supports the argument that AI's trajectory depends on its infrastructure and on who controls it: in 1987 AI lost its own hardware and moved onto platforms built for other markets. It also shows that the &quot;AI winter&quot; had a market cause, not only a scientific one.</p><h4>Useful Quotes / Evidence</h4><ul><li>&quot;In a sense, they were the first commercial single-user workstations.&quot;</li></ul><p>What Lisp machines were, apart from AI.</p><ul><li>&quot;The ensuing discussions of the choice divided the lab into two factions.&quot;</li></ul><p>The 1979 split at MIT over commercialization.</p><ul><li>&quot;These alternatives left consumers with no reason to buy an expensive machine specialized for running LISP.&quot;</li></ul><p>Why the market collapsed.</p><ul><li>&quot;An entire industry worth half a billion dollars was replaced in a single year.&quot;</li></ul><p>The scale and speed of the collapse.</p><ul><li>&quot;Expert systems proved useful, but only in a few special contexts.&quot;</li></ul><p>The limits of the software the machines served.</p><h4>Possible Tags</h4><p>#ai-history #history-of-technology #ai-winter #hardware #expert-systems #lisp</p>",
-        "sections": [
-          {
-            "id": "citation",
-            "title": "Citation",
-            "html": "<p>Wikipedia contributors. 2026. &quot;Lisp machine.&quot; <em>Wikipedia</em>. Retrieved September 25, 2026. https://en.wikipedia.org/wiki/Lisp_machine</p><p>Source used for this note: the &quot;Lisp machine&quot; article above and the section &quot;The setbacks of the late 1980s and early 1990s&quot; in Wikipedia, &quot;AI winter&quot; (retrieved September 25, 2026), https://en.wikipedia.org/wiki/AI_winter. No single primary document records the collapse; both articles draw on H. P. Newquist, <em>The Brain Makers</em> (1994), among others.</p>",
-            "text": "Wikipedia contributors. 2026. \"Lisp machine.\" Wikipedia. Retrieved September 25, 2026. https://en.wikipedia.org/wiki/Lisp_machine\n\nSource used for this note: the \"Lisp machine\" article above and the section \"The setbacks of the late 1980s and early 1990s\" in Wikipedia, \"AI winter\" (retrieved September 25, 2026), https://en.wikipedia.org/wiki/AI_winter. No single primary document records the collapse; both articles draw on H. P. Newquist, The Brain Makers (1994), among others."
-          },
-          {
-            "id": "core-claim",
-            "title": "Core Claim",
-            "html": "<p>Lisp machines were computers built to run the Lisp language efficiently, the preferred language of US AI research. They grew out of MIT's AI Lab in the 1970s, were commercialized by Symbolics, Lisp Machines Inc. (LMI), Texas Instruments and Xerox, and served the expert-system boom of the early 1980s. In 1987, according to the &quot;AI winter&quot; article, the market for specialized Lisp-based AI hardware collapsed, because general-purpose workstations and later desktop computers could run Lisp well enough. &quot;An entire industry worth half a billion dollars was replaced in a single year.&quot; By the early 1990s most Lisp machine companies had failed or left the field.</p>",
-            "text": "Lisp machines were computers built to run the Lisp language efficiently, the preferred language of US AI research. They grew out of MIT's AI Lab in the 1970s, were commercialized by Symbolics, Lisp Machines Inc. (LMI), Texas Instruments and Xerox, and served the expert-system boom of the early 1980s. In 1987, according to the \"AI winter\" article, the market for specialized Lisp-based AI hardware collapsed, because general-purpose workstations and later desktop computers could run Lisp well enough. \"An entire industry worth half a billion dollars was replaced in a single year.\" By the early 1990s most Lisp machine companies had failed or left the field."
-          },
-          {
-            "id": "ai-history-notes",
-            "title": "AI History Notes",
-            "html": "<ul><li>Origins: AI programs of the 1960s and 1970s needed large amounts of processor time and memory, and exceeded the address space of the DEC PDP-10. In 1973 Richard Greenblatt and Thomas Knight at the MIT AI Lab began building hardware that ran basic Lisp operations directly, with type checks run alongside arithmetic.</li><li>The CONS machine and its successor, the CADR, followed; about 25 prototype CADRs sold for about $50,000 each. After a 1978 AI conference at MIT, DARPA began funding development.</li><li>Commercialization split the lab. In February 1979 the hackers sided with Russell Noftsker's venture-funded Symbolics over Greenblatt's self-sustaining plan; Greenblatt founded LMI with orders from CDC. Richard Stallman blamed Symbolics for the decline of the lab's hacker community.</li><li>Products: Symbolics sold about 100 LM-2s at $70,000 each, then the 3600 family; LMI sold about 200 LAMBDAs; TI licensed the LAMBDA as the Explorer; Xerox built its own Interlisp machines. Perhaps 7,000 Lisp machines existed in total by 1988.</li><li>The boom they served: the XCON expert system reportedly saved DEC $40 million over six years, and by 1985 corporations were spending over a billion dollars on AI, mostly on in-house departments.</li><li>The collapse: Sun workstations, portable Lisps from Lucid and Franz on UNIX, and then Apple and IBM desktops (with rule engines such as CLIPS) matched Lisp machines on performance at lower cost. Symbolics, LMI and Lucid failed; TI and Xerox left the field. Expert systems themselves proved &quot;brittle&quot; and expensive to maintain.</li></ul>",
-            "text": "- Origins: AI programs of the 1960s and 1970s needed large amounts of processor time and memory, and exceeded the address space of the DEC PDP-10. In 1973 Richard Greenblatt and Thomas Knight at the MIT AI Lab began building hardware that ran basic Lisp operations directly, with type checks run alongside arithmetic.\n- The CONS machine and its successor, the CADR, followed; about 25 prototype CADRs sold for about $50,000 each. After a 1978 AI conference at MIT, DARPA began funding development.\n- Commercialization split the lab. In February 1979 the hackers sided with Russell Noftsker's venture-funded Symbolics over Greenblatt's self-sustaining plan; Greenblatt founded LMI with orders from CDC. Richard Stallman blamed Symbolics for the decline of the lab's hacker community.\n- Products: Symbolics sold about 100 LM-2s at $70,000 each, then the 3600 family; LMI sold about 200 LAMBDAs; TI lice"
-          },
-          {
-            "id": "history-of-technology-notes",
-            "title": "History of Technology Notes",
-            "html": "<ul><li>Where it sits in the process: this is a Closure reached in the market. The question of whether AI needed its own specialized hardware was answered &quot;no&quot; within about a year, and AI software moved onto general-purpose machines.</li><li>Technological Momentum: general-purpose computing had more momentum than AI-specific hardware. Lisp machines had real technical strengths (tagged architecture, hardware garbage collection, Chaosnet networking), but Sun, Apple and IBM machines rode a much larger market, and portable Lisp implementations let AI software follow them. The article sums up the result: the alternatives &quot;left consumers with no reason to buy an expensive machine specialized for running LISP.&quot;</li><li>Path Dependence: the machines were designed around the needs of AI researchers of the 1970s (single users, large address spaces, one language). The Symbolics machine &quot;was never adapted for conventional purposes,&quot; so when AI demand fell there was no other market to fall back on.</li></ul>",
-            "text": "- Where it sits in the process: this is a Closure reached in the market. The question of whether AI needed its own specialized hardware was answered \"no\" within about a year, and AI software moved onto general-purpose machines.\n- Technological Momentum: general-purpose computing had more momentum than AI-specific hardware. Lisp machines had real technical strengths (tagged architecture, hardware garbage collection, Chaosnet networking), but Sun, Apple and IBM machines rode a much larger market, and portable Lisp implementations let AI software follow them. The article sums up the result: the alternatives \"left consumers with no reason to buy an expensive machine specialized for running LISP.\"\n- Path Dependence: the machines were designed around the needs of AI researchers of the 1970s (single users, large address spaces, one language). The Symbolics machine \"was never adapted for convent"
-          },
-          {
-            "id": "social-history-scot-notes",
-            "title": "Social History / SCOT Notes",
-            "html": "<ul><li>Relevant Social Groups: MIT AI Lab hackers, venture investors, DARPA, corporate AI departments buying expert systems, and later workstation makers each shaped the machines. The 1979 split over how to commercialize (venture-funded firm versus a lab-style start-up) was a dispute over what kind of organization should carry the technology.</li><li>Interpretative Flexibility: the same machine was a hacker's research tool, a commercial workstation for expert systems, and, in some sales, a graphics and animation system. When the AI reading lost its market, the other readings were too small to keep the firms alive.</li><li>Economic Consolidation: the collapse moved AI computing into a small number of general-purpose platform makers. The makers of special hardware went out of business; for a time the survivors were software firms such as Lucid selling Lisp for other companies' machines, and Lucid too failed by the early 1990s.</li></ul>",
-            "text": "- Relevant Social Groups: MIT AI Lab hackers, venture investors, DARPA, corporate AI departments buying expert systems, and later workstation makers each shaped the machines. The 1979 split over how to commercialize (venture-funded firm versus a lab-style start-up) was a dispute over what kind of organization should carry the technology.\n- Interpretative Flexibility: the same machine was a hacker's research tool, a commercial workstation for expert systems, and, in some sales, a graphics and animation system. When the AI reading lost its market, the other readings were too small to keep the firms alive.\n- Economic Consolidation: the collapse moved AI computing into a small number of general-purpose platform makers. The makers of special hardware went out of business; for a time the survivors were software firms such as Lucid selling Lisp for other companies' machines, and Lucid too faile"
-          },
-          {
-            "id": "historical-references-and-lineages",
-            "title": "Historical References and Lineages",
-            "html": "<ul><li>Before: Recursive Functions of Symbolic Expressions and Their Computation by Machine (1960) introduced the Lisp language the machines were built for. &quot;R1 - A Rule-Based Configurer of Computer Systems&quot; is the expert system at DEC known as XCON, part of the boom the machines served. Fifth Generation Computer Systems project (1982) and Strategic Computing Initiative (1983) funded AI work that ran on Lisp hardware.</li><li>After: Probabilistic Reasoning in Intelligent Systems (1988) appeared the next year, as AI research turned toward probabilistic methods.</li></ul>",
-            "text": "- Before: Recursive Functions of Symbolic Expressions and Their Computation by Machine (1960) introduced the Lisp language the machines were built for. \"R1 - A Rule-Based Configurer of Computer Systems\" is the expert system at DEC known as XCON, part of the boom the machines served. Fifth Generation Computer Systems project (1982) and Strategic Computing Initiative (1983) funded AI work that ran on Lisp hardware.\n- After: Probabilistic Reasoning in Intelligent Systems (1988) appeared the next year, as AI research turned toward probabilistic methods."
-          },
-          {
-            "id": "why-this-matters",
-            "title": "Why This Matters",
-            "html": "<p>The collapse shows AI's commercial fortunes tied to a hardware bet. When the specialized machines lost to general-purpose computing, the firms that had grown with the expert-system boom lost their business, and the AI industry contracted. For Synthesis — AI as Technology History, it supports the argument that AI's trajectory depends on its infrastructure and on who controls it: in 1987 AI lost its own hardware and moved onto platforms built for other markets. It also shows that the &quot;AI winter&quot; had a market cause, not only a scientific one.</p>",
-            "text": "The collapse shows AI's commercial fortunes tied to a hardware bet. When the specialized machines lost to general-purpose computing, the firms that had grown with the expert-system boom lost their business, and the AI industry contracted. For Synthesis — AI as Technology History, it supports the argument that AI's trajectory depends on its infrastructure and on who controls it: in 1987 AI lost its own hardware and moved onto platforms built for other markets. It also shows that the \"AI winter\" had a market cause, not only a scientific one."
-          },
-          {
-            "id": "useful-quotes-evidence",
-            "title": "Useful Quotes / Evidence",
-            "html": "<ul><li>&quot;In a sense, they were the first commercial single-user workstations.&quot;</li></ul><p>What Lisp machines were, apart from AI.</p><ul><li>&quot;The ensuing discussions of the choice divided the lab into two factions.&quot;</li></ul><p>The 1979 split at MIT over commercialization.</p><ul><li>&quot;These alternatives left consumers with no reason to buy an expensive machine specialized for running LISP.&quot;</li></ul><p>Why the market collapsed.</p><ul><li>&quot;An entire industry worth half a billion dollars was replaced in a single year.&quot;</li></ul><p>The scale and speed of the collapse.</p><ul><li>&quot;Expert systems proved useful, but only in a few special contexts.&quot;</li></ul><p>The limits of the software the machines served.</p>",
-            "text": "- \"In a sense, they were the first commercial single-user workstations.\"\n  What Lisp machines were, apart from AI.\n- \"The ensuing discussions of the choice divided the lab into two factions.\"\n  The 1979 split at MIT over commercialization.\n- \"These alternatives left consumers with no reason to buy an expensive machine specialized for running LISP.\"\n  Why the market collapsed.\n- \"An entire industry worth half a billion dollars was replaced in a single year.\"\n  The scale and speed of the collapse.\n- \"Expert systems proved useful, but only in a few special contexts.\"\n  The limits of the software the machines served."
-          },
-          {
-            "id": "possible-tags",
-            "title": "Possible Tags",
-            "html": "<p>#ai-history #history-of-technology #ai-winter #hardware #expert-systems #lisp</p>",
-            "text": "ai-history #history-of-technology #ai-winter #hardware #expert-systems #lisp"
-          }
-        ],
-        "citation": "Wikipedia contributors. 2026. \"Lisp machine.\" Wikipedia. Retrieved September 25, 2026. https://en.wikipedia.org/wiki/Lisp_machine",
-        "keyClaim": "Lisp machines were computers built to run the Lisp language efficiently, the preferred language of US AI research. They grew out of MIT's AI Lab in the 1970s, were commercialized by Symbolics, Lisp Machines Inc. (LMI), Texas Instruments and Xerox, and served the expert-system boom of the early 1980s. In 1987, according to the \"AI winter\" article, the market for specialized Lisp-based AI hardware collapsed, because general-purpose workstations and later desktop computers could run Lisp well enough. \"An entire industry worth half a billion dollars was replaced in a single year.\" By the early 1990s most Lisp machine companies had failed or left the field.",
-        "textLength": 6714
-      },
-      "quality": {
-        "score": 8,
-        "label": "complete",
-        "missing": [
-          "decision-maker context"
-        ],
-        "sections": 9,
-        "words": 1034
-      },
-      "facets": {
-        "decision": [
-          "lab"
-        ],
-        "power": [
-          "market",
-          "corporate",
-          "platform"
-        ],
-        "material": [
-          "compute",
-          "infrastructure"
-        ],
-        "closure": [
-          "order"
-        ],
-        "controversy": [],
-        "governance": true
-      },
-      "obsidianUri": "obsidian://open?path=%2FUsers%2Fnathanjohnson%2FDocuments%2FObsidian%20Vault%2FLisp%20machine%20market%20collapse.md",
-      "links": [
-        "1960-mccarthy-s-lisp-paper",
-        "1982-r1-xcon-expert-systems-go-commercial",
-        "1982-japan-s-fifth-generation-project",
-        "1983-darpa-strategic-computing",
-        "1988-pearl-s-bayesian-networks"
-      ],
-      "backlinks": [
-        "1960-mccarthy-s-lisp-paper",
-        "1979-aaai-founded",
-        "1982-japan-s-fifth-generation-project",
-        "1983-darpa-strategic-computing",
-        "1984-mycin-at-stanford",
-        "1988-pearl-s-bayesian-networks"
-      ],
-      "centrality": 11,
       "isNew": true
     }
   ]
