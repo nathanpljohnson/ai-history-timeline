@@ -224,7 +224,8 @@ kbd {
   padding: 3px;
 }
 
-.mode-tabs button {
+.mode-tabs button,
+.mode-tabs .mode-link {
   background: transparent;
   border: 0;
   border-radius: 999px;
@@ -235,6 +236,15 @@ kbd {
   padding: .32rem .95rem;
   transition: background .2s var(--ease), color .2s var(--ease);
 }
+
+.mode-tabs .mode-link {
+  margin-left: 3px;
+  border-left: 1px solid var(--line);
+  border-radius: 0 999px 999px 0;
+  text-decoration: none;
+}
+
+.mode-tabs .mode-link:hover { color: var(--ink); }
 
 .mode-tabs button[aria-selected="true"] {
   background: var(--ink);
@@ -1305,7 +1315,7 @@ body.list-mode .viewport, body.list-mode .gutter { visibility: hidden; }
   .masthead { gap: .5rem; padding: .5rem .75rem; }
   .mast-title h1 { font-size: 1.05rem; white-space: normal; }
   .mast-count { display: none; }
-  .mode-tabs button { padding: .3rem .6rem; font-size: .76rem; }
+  .mode-tabs button, .mode-tabs .mode-link { padding: .3rem .6rem; font-size: .76rem; }
   .search { flex: 1; width: auto; }
   .toolbar { padding: .35rem .75rem; }
   .tb-zoom input[type="range"], .scale-btn, .count-now { display: none; }
