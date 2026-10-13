@@ -1,5 +1,5 @@
 const timelinePayload = {
-  "generatedAt": "2026-10-02T19:13:29.392Z",
+  "generatedAt": "2026-10-13T15:36:49.629Z",
   "vaultPath": "/Users/nathanjohnson/Documents/Obsidian Vault",
   "offloadedNotes": [
     "ImageNet Classification with Deep Convolutional Neural Networks"
@@ -26157,7 +26157,7 @@ const timelinePayload = {
         "2026-big-tech-ai-capex-2026"
       ],
       "centrality": 4,
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "2026-doj-backs-openai-on-fair-use",
