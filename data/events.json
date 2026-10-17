@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T15:36:49.629Z",
+  "generatedAt": "2026-10-17T13:10:51.234Z",
   "vaultPath": "/Users/nathanjohnson/Documents/Obsidian Vault",
   "offloadedNotes": [
     "ImageNet Classification with Deep Convolutional Neural Networks"
@@ -26294,7 +26294,7 @@
         "2026-xai-and-doj-sue-colorado"
       ],
       "centrality": 5,
-      "isNew": true
+      "isNew": false
     }
   ]
 }
